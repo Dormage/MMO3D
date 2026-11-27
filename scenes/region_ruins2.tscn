@@ -10,6 +10,7 @@ glb_path = "res://assets/worlds/ruins2/ruins2_terrain.glb"
 extra_glb_paths = PackedStringArray("res://assets/worlds/ruins2/ruins2_keep.glb", "res://assets/worlds/ruins2/ruins2_landmarks.glb", "res://assets/worlds/ruins2/ruins2_flora.glb")
 ground_meshes = PackedStringArray("Terrain_GT")
 solid_meshes = PackedStringArray("")
+generate_render_lods = false
 default_meshes_solid = true
 decor_meshes = PackedStringArray("Flora_", "Backdrop")
 spawn_center = Vector2(23, -62)
