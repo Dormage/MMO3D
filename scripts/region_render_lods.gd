@@ -66,7 +66,14 @@ static func generate(root: Node) -> Dictionary:
 		var rebuilt := importer.get_mesh()
 		rebuilt.custom_aabb = source.custom_aabb
 		rebuilt.lightmap_size_hint = source.lightmap_size_hint
-		rebuilt.shadow_mesh = source.shadow_mesh
+		# The old optimized shadow mesh has the source's LOD index streams.
+		# GLES3 selects a LOD from the rebuilt main surface and uses that same
+		# index for its shadow surface; carrying over fewer/different shadow
+		# LODs can dereference a missing index buffer and crash the renderer.
+		# ImporterMesh.create_shadow_mesh() is not exposed to GDScript. Use the
+		# engine's main-surface shadow fallback so both passes share valid LODs.
+		# Ordinary shadows remain enabled, and LOD0 geometry is unchanged.
+		rebuilt.shadow_mesh = null
 		for meta in source.get_meta_list():
 			rebuilt.set_meta(meta, source.get_meta(meta))
 		meshes[key] = rebuilt

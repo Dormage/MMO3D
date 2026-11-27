@@ -1,0 +1,3332 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "repository": "https://github.com/Dormage/MMO3D",
+  "base_commit": "dbefb091",
+  "engine": {
+    "version": "4.6.3.stable.official.7d41c59c4",
+    "reported_version": "4.6.3-stable (official)",
+    "executable": "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+    "archive_sha256": "d0bc2113065e481c9c2c2b2c37daa4e8be3fe9e27f0ab9ab0b6096e9a37907f3",
+    "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3"
+  },
+  "host": {
+    "os": "Linux",
+    "architecture": "x86_64",
+    "kernel": "6.18.57",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "target_user_hardware": false,
+    "software_renderer": "llvmpipe (LLVM 19.1.7, 256 bits)"
+  },
+  "measurement": {
+    "mode": "headless CPU loading and scene-lifecycle verification",
+    "configured_renderer": "gl_compatibility",
+    "configured_driver": "opengl3",
+    "renderer_exercised": false,
+    "population": "disabled with --nopop",
+    "physics_target_hz": 60,
+    "max_physics_steps_per_frame": 4,
+    "sequence": [
+      "town",
+      "desert",
+      "town"
+    ],
+    "input_steps": [
+      -1,
+      1
+    ],
+    "minimum_movement_metres_per_destination": 1.0,
+    "environment_note": "PERF_LOG=1 was set explicitly; all other environment variables were inherited. No DISPLAY or FPS override was set.",
+    "command_provenance": "Exact executable, arguments and explicit environment supplied by the benchmark runner; SWITCH_START records independently report mode, engine and route.",
+    "sampling_note": "Four serial runs with one observation per load. These are measured samples, not confidence intervals or target-hardware FPS.",
+    "ready_s_definition": "Wall time from initial scene load or Tab input until a replacement Game, correct mounted region, active camera, populated navigation, and supported player are ready; excludes the subsequent eight settling frames and movement check.",
+    "phase_definition": "LOAD_PHASE timings are milliseconds. nav.total includes nav.bake/nav.stitch where applicable; totals must not be added to their components. Null means no phase record was emitted, as on a cache hit that skips baking.",
+    "cache_state_definitions": {
+      "baked": "Conditioned region scene cache was generated in this load.",
+      "hit": "Existing persisted data was reused.",
+      "bypassed_rebuilt": "--no-nav-cache forced a navigation bake.",
+      "miss_rebuilt": "Navigation cache lookup missed and a bake occurred.",
+      "not_implemented_recomputed": "Stitch metadata reuse was not implemented at this stage.",
+      "bypassed_recomputed": "--no-stitch-cache forced the original link search; computed metadata could still be persisted."
+    },
+    "scope": "headless_runs; rendered runs have separate mode and settings below"
+  },
+  "interpretation": [
+    "rebuild_nav first visits to town/desert generated conditioned-region caches. These are first observed cache misses, not controlled cold filesystem-cache measurements.",
+    "cached_nav reused the conditioned regions and baked navigation, but still recomputed stitch links on every visit.",
+    "The final nav_world implementation changed the script stamp in the navigation key. uncached_stitch therefore rebaked town and desert on their first visits, despite region-cache hits. Its return to town hit the now-current baked-navigation cache.",
+    "The controlled stitch comparison uses only the return-to-town load in uncached_stitch versus cached_stitch: both region and baked-navigation caches hit, on the same implementation and route.",
+    "The desert change from 9.409387 to 2.024023 seconds includes skipping a 6737.399 ms Recast bake as well as stitch reuse. It is not a stitch-only improvement.",
+    "Headless mode does not validate OpenGL rendering or GPU performance. Rendered/software-renderer results are recorded separately.",
+    "Passing local movement verifies the tested spawn routes; unchanged navigation warnings and unreached groups remain visible in diagnostics. It does not prove every authored navigation edge is traversable."
+  ],
+  "controlled_warm_town_comparison": {
+    "before": {
+      "run": "uncached_stitch",
+      "load_index": 2,
+      "ready_s": 5.728887,
+      "nav_stitch_ms": 4159.111,
+      "nav_total_ms": 4184.496
+    },
+    "after": {
+      "run": "cached_stitch",
+      "load_index": 2,
+      "ready_s": 1.554021,
+      "nav_stitch_ms": 2.777,
+      "nav_total_ms": 8.082
+    },
+    "ready_seconds_saved": 4.174866,
+    "ready_reduction_percent": 72.874,
+    "cache_control": "Both observations hit conditioned-region and baked-navigation caches. --no-stitch-cache is the only invocation difference. OS cache and ordinary timing noise were not controlled."
+  },
+  "headless_runs": [
+    {
+      "id": "rebuild_nav",
+      "implementation_stage": "authored_nav_key_fixed_before_stitch_cache",
+      "source_log": "mmo_switch_rebuild_nav.log",
+      "source_log_sha256": "2c7277da00e52fd9e1faf433fc2509bd2cc898ffb7fd03cd171c2c54762d9782",
+      "environment": {
+        "PERF_LOG": "1"
+      },
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300",
+        "--no-nav-cache"
+      ],
+      "SWITCH_START": {
+        "display": "headless",
+        "engine": "4.6.3-stable (official)",
+        "headless": true,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          1
+        ]
+      },
+      "loads": [
+        {
+          "load_index": 0,
+          "kind": "initial_load",
+          "cache": {
+            "region": "baked",
+            "region_resource_resident": null,
+            "nav": "bypassed_rebuilt",
+            "stitch": "not_implemented_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 965.067,
+            "region.collision_total": 785.777,
+            "nav.bake": 308.427,
+            "nav.stitch": 4215.478,
+            "nav.total": 4584.738
+          },
+          "additional_phase_ms": {
+            "region.glb_load": 331.15,
+            "region.nav_markers": 118.706,
+            "region.condition": 86.019,
+            "region.render_lods": 406.503,
+            "nav.marker_faces": 41.041
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 32715572674,
+            "nav_polygons": 10205,
+            "ready_s": 7.021763,
+            "region": "town"
+          },
+          "source_ready_line": 97
+        },
+        {
+          "load_index": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "baked",
+            "region_resource_resident": null,
+            "nav": "bypassed_rebuilt",
+            "stitch": "not_implemented_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 1180.996,
+            "region.collision_total": 1495.208,
+            "nav.bake": 6622.724,
+            "nav.stitch": 510.145,
+            "nav.total": 7283.497
+          },
+          "additional_phase_ms": {
+            "region.glb_load": 168.987,
+            "region.nav_markers": 182.879,
+            "region.condition": 188.62,
+            "region.render_lods": 595.954,
+            "nav.marker_faces": 128.109
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 98,
+              "links": 0,
+              "unreached": 94
+            },
+            "mesh": {
+              "polygons": 17179,
+              "vertices": 11262,
+              "region_polygons": 17179,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 51657049560,
+            "nav_polygons": 17179,
+            "ready_s": 10.349535,
+            "region": "desert"
+          },
+          "source_ready_line": 344
+        },
+        {
+          "load_index": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "bypassed_rebuilt",
+            "stitch": "not_implemented_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 511.324,
+            "region.collision_total": 793.4,
+            "nav.bake": 296.037,
+            "nav.stitch": 4228.157,
+            "nav.total": 4563.209
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 419.739,
+            "region.nav_markers": 90.531,
+            "nav.marker_faces": 22.967
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 118447148597,
+            "nav_polygons": 10205,
+            "ready_s": 6.280179,
+            "region": "town"
+          },
+          "source_ready_line": 423
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 24.656248,
+        "gap_frames": 4,
+        "headless": true,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 3,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "from": "town",
+            "moved_m": 1.03781042248011,
+            "nav_polygons": 17179,
+            "new_game_id": 51657049560,
+            "old_game_id": 32715572674,
+            "ready_s": 10.349535,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "desert",
+            "moved_m": 1.01888039708138,
+            "nav_polygons": 10205,
+            "new_game_id": 118447148597,
+            "old_game_id": 51657049560,
+            "ready_s": 6.280179,
+            "step": 1,
+            "to": "town"
+          }
+        ]
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+            "count": 3
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "id": "cached_nav",
+      "implementation_stage": "authored_nav_key_fixed_before_stitch_cache",
+      "source_log": "mmo_switch_cached_nav.log",
+      "source_log_sha256": "35636b43ee5714542157ca7ade2c52cb916ddaa0625265af3f9b25eb6344353d",
+      "environment": {
+        "PERF_LOG": "1"
+      },
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300"
+      ],
+      "SWITCH_START": {
+        "display": "headless",
+        "engine": "4.6.3-stable (official)",
+        "headless": true,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          1
+        ]
+      },
+      "loads": [
+        {
+          "load_index": 0,
+          "kind": "initial_load",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "hit",
+            "stitch": "not_implemented_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 187.168,
+            "region.collision_total": 770.315,
+            "nav.bake": null,
+            "nav.stitch": 4398.544,
+            "nav.total": 4410.553
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 151.417,
+            "region.nav_markers": 34.867,
+            "nav.cache_read": 3.85
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 32715572674,
+            "nav_polygons": 10205,
+            "ready_s": 6.047371,
+            "region": "town"
+          },
+          "source_ready_line": 83
+        },
+        {
+          "load_index": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "hit",
+            "stitch": "not_implemented_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 204.331,
+            "region.collision_total": 1452.118,
+            "nav.bake": null,
+            "nav.stitch": 487.767,
+            "nav.total": 498.523
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 44.743,
+            "region.nav_markers": 153.515,
+            "nav.cache_read": 4.72
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 98,
+              "links": 0,
+              "unreached": 94
+            },
+            "mesh": {
+              "polygons": 17179,
+              "vertices": 11262,
+              "region_polygons": 17179,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 50683971032,
+            "nav_polygons": 17179,
+            "ready_s": 2.557939,
+            "region": "desert"
+          },
+          "source_ready_line": 316
+        },
+        {
+          "load_index": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "hit",
+            "stitch": "not_implemented_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 212.41,
+            "region.collision_total": 803.934,
+            "nav.bake": null,
+            "nav.stitch": 4339.976,
+            "nav.total": 4348.897
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 167.326,
+            "region.nav_markers": 44.072,
+            "nav.cache_read": 3.191
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 115427249726,
+            "nav_polygons": 10205,
+            "ready_s": 5.75543,
+            "region": "town"
+          },
+          "source_ready_line": 388
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 15.366203,
+        "gap_frames": 4,
+        "headless": true,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 3,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "from": "town",
+            "moved_m": 1.03781042248011,
+            "nav_polygons": 17179,
+            "new_game_id": 50683971032,
+            "old_game_id": 32715572674,
+            "ready_s": 2.557939,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "desert",
+            "moved_m": 1.01888039708138,
+            "nav_polygons": 10205,
+            "new_game_id": 115427249726,
+            "old_game_id": 50683971032,
+            "ready_s": 5.75543,
+            "step": 1,
+            "to": "town"
+          }
+        ]
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "id": "uncached_stitch",
+      "implementation_stage": "exact_stitch_cache_implemented",
+      "source_log": "mmo_switch_uncached_stitch.log",
+      "source_log_sha256": "c7e9c576d62aaa1321aa41ef1e8f8b9adba869b8903eec9bbaf08a0a795aa4f0",
+      "environment": {
+        "PERF_LOG": "1"
+      },
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300",
+        "--no-stitch-cache"
+      ],
+      "SWITCH_START": {
+        "display": "headless",
+        "engine": "4.6.3-stable (official)",
+        "headless": true,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          1
+        ]
+      },
+      "loads": [
+        {
+          "load_index": 0,
+          "kind": "initial_load",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "miss_rebuilt",
+            "stitch": "bypassed_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 790.394,
+            "region.collision_total": 918.379,
+            "nav.bake": 299.308,
+            "nav.stitch": 4203.228,
+            "nav.total": 4560.205
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 656.682,
+            "region.nav_markers": 132.617,
+            "nav.marker_faces": 40.435
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 32715572674,
+            "nav_polygons": 10205,
+            "ready_s": 6.966353,
+            "region": "town"
+          },
+          "source_ready_line": 90
+        },
+        {
+          "load_index": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "miss_rebuilt",
+            "stitch": "bypassed_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 228.833,
+            "region.collision_total": 1446.257,
+            "nav.bake": 6737.399,
+            "nav.stitch": 491.475,
+            "nav.total": 7350.142
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 58.057,
+            "region.nav_markers": 164.753,
+            "nav.marker_faces": 97.551
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 98,
+              "links": 0,
+              "unreached": 94
+            },
+            "mesh": {
+              "polygons": 17179,
+              "vertices": 11262,
+              "region_polygons": 17179,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 50969183704,
+            "nav_polygons": 17179,
+            "ready_s": 9.409387,
+            "region": "desert"
+          },
+          "source_ready_line": 330
+        },
+        {
+          "load_index": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "hit",
+            "stitch": "bypassed_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 386.238,
+            "region.collision_total": 759.951,
+            "nav.bake": null,
+            "nav.stitch": 4159.111,
+            "nav.total": 4184.496
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 302.586,
+            "region.nav_markers": 82.436,
+            "nav.cache_read": 2.904,
+            "nav.stitch_cache_write": 8.917
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 115947341330,
+            "nav_polygons": 10205,
+            "ready_s": 5.728887,
+            "region": "town"
+          },
+          "source_ready_line": 403
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 23.117408,
+        "gap_frames": 4,
+        "headless": true,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 3,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "from": "town",
+            "moved_m": 1.03781042248011,
+            "nav_polygons": 17179,
+            "new_game_id": 50969183704,
+            "old_game_id": 32715572674,
+            "ready_s": 9.409387,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "desert",
+            "moved_m": 1.01888039708138,
+            "nav_polygons": 10205,
+            "new_game_id": 115947341330,
+            "old_game_id": 50969183704,
+            "ready_s": 5.728887,
+            "step": 1,
+            "to": "town"
+          }
+        ]
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+            "count": 2
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "id": "cached_stitch",
+      "implementation_stage": "exact_stitch_cache_implemented",
+      "source_log": "mmo_switch_cached_stitch.log",
+      "source_log_sha256": "fc3df907be1bf5829c6ed547c6b7cc77329bc095dd7da963a0f8ada9f69a2de8",
+      "environment": {
+        "PERF_LOG": "1"
+      },
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300"
+      ],
+      "SWITCH_START": {
+        "display": "headless",
+        "engine": "4.6.3-stable (official)",
+        "headless": true,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          1
+        ]
+      },
+      "loads": [
+        {
+          "load_index": 0,
+          "kind": "initial_load",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 177.045,
+            "region.collision_total": 812.43,
+            "nav.bake": null,
+            "nav.stitch": 2.841,
+            "nav.total": 8.185
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 130.197,
+            "region.nav_markers": 45.967,
+            "nav.cache_read": 2.974
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 32715572674,
+            "nav_polygons": 10205,
+            "ready_s": 1.6544,
+            "region": "town"
+          },
+          "source_ready_line": 80
+        },
+        {
+          "load_index": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 178.437,
+            "region.collision_total": 1419.065,
+            "nav.bake": null,
+            "nav.stitch": 4.427,
+            "nav.total": 12.995
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 33.51,
+            "region.nav_markers": 139.273,
+            "nav.cache_read": 4.688
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 98,
+              "links": 0,
+              "unreached": 94
+            },
+            "mesh": {
+              "polygons": 17179,
+              "vertices": 11262,
+              "region_polygons": 17179,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 50834965976,
+            "nav_polygons": 17179,
+            "ready_s": 2.024023,
+            "region": "desert"
+          },
+          "source_ready_line": 314
+        },
+        {
+          "load_index": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "region_resource_resident": false,
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 314.998,
+            "region.collision_total": 798.875,
+            "nav.bake": null,
+            "nav.stitch": 2.777,
+            "nav.total": 8.082
+          },
+          "additional_phase_ms": {
+            "region.cache_read": 231.508,
+            "region.nav_markers": 82.41,
+            "nav.cache_read": 2.966
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 115695685182,
+            "nav_polygons": 10205,
+            "ready_s": 1.554021,
+            "region": "town"
+          },
+          "source_ready_line": 387
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 6.23151,
+        "gap_frames": 4,
+        "headless": true,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 3,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "from": "town",
+            "moved_m": 1.03781042248011,
+            "nav_polygons": 17179,
+            "new_game_id": 50834965976,
+            "old_game_id": 32715572674,
+            "ready_s": 2.024023,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "desert",
+            "moved_m": 1.01888039708138,
+            "nav_polygons": 10205,
+            "new_game_id": 115695685182,
+            "old_game_id": 50834965976,
+            "ready_s": 1.554021,
+            "step": 1,
+            "to": "town"
+          }
+        ]
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "rendered_runs": [
+    {
+      "id": "rendered_463_roundtrip",
+      "implementation_stage": "persistent_transition_fixed_shadow_lod_bug_present",
+      "source_log": "mmo_rendered_463_roundtrip.log",
+      "source_log_sha256": "6de53ba2288757bdf337d18f9645a6ac6118ffbe7f10e18fc2f6dd1da5c2a9eb",
+      "engine_header": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1",
+        "DISPLAY": "127.0.0.1:92",
+        "LIBGL_ALWAYS_SOFTWARE": "1"
+      },
+      "authentication_note": "XAUTHORITY referenced a temporary session file; no credential or session-file contents are retained.",
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--windowed",
+        "--resolution",
+        "640x360",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300"
+      ],
+      "render_lods_enabled": true,
+      "shadows_enabled": true,
+      "population_enabled": false,
+      "outcome": "native_crash",
+      "SWITCH_START": {
+        "display": "X11",
+        "engine": "4.6.3-stable (official)",
+        "headless": false,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          1
+        ]
+      },
+      "SWITCH_READY": [
+        {
+          "game_id": 33285998020,
+          "nav_polygons": 10205,
+          "ready_s": 9.35686,
+          "region": "town"
+        }
+      ],
+      "SWITCH_PASS": null,
+      "crash": {
+        "signal": 11,
+        "completed_verified_transitions": 0,
+        "pending_destination": "desert",
+        "destination_ready_record_present": false,
+        "native_stack_addresses": [
+          "0x7f403181bd70",
+          "0x167ab0b",
+          "0x167cc2a",
+          "0x168afdc",
+          "0x4243d10",
+          "0x4249389",
+          "0x3ae0857",
+          "0x3aef0ef",
+          "0x3cf435b",
+          "0x565f00",
+          "0x4321ef",
+          "0x7f4031805ca8",
+          "0x7f4031805d65",
+          "0x48b13a"
+        ],
+        "interpretation": "Native crash during the first town-to-desert replacement, before a verified destination or SWITCH_PASS. Requested later steps were never completed."
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+            "count": 1
+          },
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      },
+      "movement_budget": "8 wall-clock seconds"
+    },
+    {
+      "id": "rendered_472_default",
+      "implementation_stage": "persistent_transition_fixed_shadow_lod_bug_present",
+      "source_log": "mmo_rendered_472_default.log",
+      "source_log_sha256": "d9b10ff640eed22f702c883361d0f5bf956b2518d1639294a8fe2ef4fc0e0154",
+      "engine_header": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1",
+        "DISPLAY": "127.0.0.1:92",
+        "LIBGL_ALWAYS_SOFTWARE": "1"
+      },
+      "authentication_note": "XAUTHORITY referenced a temporary session file; no credential or session-file contents are retained.",
+      "command": [
+        "/usr/local/bin/godot",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--windowed",
+        "--resolution",
+        "640x360",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300",
+        "--switch-steps=-1,-1,-1,-1,-1"
+      ],
+      "render_lods_enabled": true,
+      "shadows_enabled": true,
+      "population_enabled": false,
+      "outcome": "native_crash",
+      "SWITCH_START": {
+        "display": "X11",
+        "engine": "4.7.2-stable (official)",
+        "headless": false,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "SWITCH_READY": [
+        {
+          "game_id": 33738982879,
+          "nav_polygons": 10205,
+          "ready_s": 9.914461,
+          "region": "town"
+        }
+      ],
+      "SWITCH_PASS": null,
+      "crash": {
+        "signal": 11,
+        "completed_verified_transitions": 0,
+        "pending_destination": "desert",
+        "destination_ready_record_present": false,
+        "native_stack_addresses": [
+          "0x7faf7ed12d70",
+          "0x18a0b93",
+          "0x18a2d44",
+          "0x1921a87",
+          "0x4e213a5",
+          "0x42dbf23",
+          "0x3c3c2af",
+          "0x3c74ae5",
+          "0x3e071cb",
+          "0x566334",
+          "0x42c157",
+          "0x7faf7ecfcca8",
+          "0x7faf7ecfcd65",
+          "0x48a6da"
+        ],
+        "interpretation": "Native crash during the first town-to-desert replacement, before a verified destination or SWITCH_PASS. Requested later steps were never completed."
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+            "count": 1
+          },
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      },
+      "movement_budget": "8 wall-clock seconds"
+    },
+    {
+      "id": "rendered_463_no_lods",
+      "implementation_stage": "persistent_transition_fixed_shadow_lod_bug_present",
+      "source_log": "mmo_rendered_463_no_lods.log",
+      "source_log_sha256": "89ccc5d314c39c0dea276023199455166d2304d63395701dece1f4d798973644",
+      "engine_header": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1",
+        "DISPLAY": "127.0.0.1:92",
+        "LIBGL_ALWAYS_SOFTWARE": "1"
+      },
+      "authentication_note": "XAUTHORITY referenced a temporary session file; no credential or session-file contents are retained.",
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--windowed",
+        "--resolution",
+        "640x360",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300",
+        "--no-render-lods"
+      ],
+      "render_lods_enabled": false,
+      "shadows_enabled": true,
+      "population_enabled": false,
+      "outcome": "pass",
+      "SWITCH_START": {
+        "display": "X11",
+        "engine": "4.6.3-stable (official)",
+        "headless": false,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          1
+        ]
+      },
+      "SWITCH_READY": [
+        {
+          "game_id": 33218889156,
+          "nav_polygons": 10205,
+          "ready_s": 4.000554,
+          "region": "town"
+        },
+        {
+          "game_id": 52932117977,
+          "nav_polygons": 17179,
+          "ready_s": 8.812022,
+          "region": "desert"
+        },
+        {
+          "game_id": 116584875794,
+          "nav_polygons": 10205,
+          "ready_s": 2.564042,
+          "region": "town"
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 26.110017,
+        "gap_frames": 4,
+        "headless": false,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 3,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 2446,
+            "from": "town",
+            "moved_m": 1.22887669503689,
+            "nav_polygons": 17179,
+            "new_game_id": 52932117977,
+            "old_game_id": 33218889156,
+            "ready_s": 8.812022,
+            "rendered_objects_last_frame": 2659,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 88,
+            "from": "desert",
+            "moved_m": 1.14333233237267,
+            "nav_polygons": 10205,
+            "new_game_id": 116584875794,
+            "old_game_id": 52932117977,
+            "ready_s": 2.564042,
+            "rendered_objects_last_frame": 298,
+            "step": 1,
+            "to": "town"
+          }
+        ]
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+            "count": 1
+          },
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      },
+      "movement_budget": "8 wall-clock seconds"
+    },
+    {
+      "id": "rendered_463_no_shadows",
+      "implementation_stage": "persistent_transition_fixed_shadow_lod_bug_present",
+      "source_log": "mmo_rendered_463_no_shadows.log",
+      "source_log_sha256": "ac05a51efa46aaa54dd50ff7c9fadbe272981e5949ee923f57f6c532ac6fca55",
+      "engine_header": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1",
+        "DISPLAY": "127.0.0.1:92",
+        "LIBGL_ALWAYS_SOFTWARE": "1"
+      },
+      "authentication_note": "XAUTHORITY referenced a temporary session file; no credential or session-file contents are retained.",
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--windowed",
+        "--resolution",
+        "640x360",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300",
+        "--noshadow"
+      ],
+      "render_lods_enabled": true,
+      "shadows_enabled": false,
+      "population_enabled": false,
+      "outcome": "pass",
+      "SWITCH_START": {
+        "display": "X11",
+        "engine": "4.6.3-stable (official)",
+        "headless": false,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          1
+        ]
+      },
+      "SWITCH_READY": [
+        {
+          "game_id": 33218889156,
+          "nav_polygons": 10205,
+          "ready_s": 5.167324,
+          "region": "town"
+        },
+        {
+          "game_id": 52412024281,
+          "nav_polygons": 17179,
+          "ready_s": 7.001103,
+          "region": "desert"
+        },
+        {
+          "game_id": 115729237778,
+          "nav_polygons": 10205,
+          "ready_s": 2.131377,
+          "region": "town"
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 18.101138,
+        "gap_frames": 4,
+        "headless": false,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 3,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 283,
+            "from": "town",
+            "moved_m": 1.22885070741177,
+            "nav_polygons": 17179,
+            "new_game_id": 52412024281,
+            "old_game_id": 33218889156,
+            "ready_s": 7.001103,
+            "rendered_objects_last_frame": 496,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 36,
+            "from": "desert",
+            "moved_m": 1.14333233237267,
+            "nav_polygons": 10205,
+            "new_game_id": 115729237778,
+            "old_game_id": 52412024281,
+            "ready_s": 2.131377,
+            "rendered_objects_last_frame": 246,
+            "step": 1,
+            "to": "town"
+          }
+        ]
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+            "count": 1
+          },
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      },
+      "movement_budget": "8 wall-clock seconds"
+    },
+    {
+      "id": "rendered_463_fixed",
+      "implementation_stage": "shadow_lod_fallback_fixed",
+      "source_log": "mmo_rendered_463_fixed.log",
+      "source_log_sha256": "aca93fd1bbe039ecdabbd75d1b3fab7efebc55c3c37bb3ed2731c95a4aa8ee18",
+      "engine_header": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1",
+        "DISPLAY": "127.0.0.1:92",
+        "LIBGL_ALWAYS_SOFTWARE": "1"
+      },
+      "authentication_note": "XAUTHORITY referenced a temporary session file; no credential or session-file contents are retained.",
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--windowed",
+        "--resolution",
+        "640x360",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300"
+      ],
+      "render_lods_enabled": true,
+      "shadows_enabled": true,
+      "population_enabled": false,
+      "outcome": "pass",
+      "SWITCH_START": {
+        "display": "X11",
+        "engine": "4.6.3-stable (official)",
+        "headless": false,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          1
+        ]
+      },
+      "SWITCH_READY": [
+        {
+          "game_id": 33218889156,
+          "nav_polygons": 10205,
+          "ready_s": 3.79169,
+          "region": "town"
+        },
+        {
+          "game_id": 53636761049,
+          "nav_polygons": 17179,
+          "ready_s": 5.530057,
+          "region": "desert"
+        },
+        {
+          "game_id": 119168567053,
+          "nav_polygons": 10205,
+          "ready_s": 2.231941,
+          "region": "town"
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 20.68743,
+        "gap_frames": 4,
+        "headless": false,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 3,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 2446,
+            "from": "town",
+            "moved_m": 1.22885070741177,
+            "nav_polygons": 17179,
+            "new_game_id": 53636761049,
+            "old_game_id": 33218889156,
+            "ready_s": 5.530057,
+            "rendered_objects_last_frame": 2659,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 88,
+            "from": "desert",
+            "moved_m": 1.14333233237267,
+            "nav_polygons": 10205,
+            "new_game_id": 119168567053,
+            "old_game_id": 53636761049,
+            "ready_s": 2.231941,
+            "rendered_objects_last_frame": 298,
+            "step": 1,
+            "to": "town"
+          }
+        ]
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+            "count": 1
+          },
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      },
+      "movement_budget": "8 wall-clock seconds"
+    },
+    {
+      "id": "rendered_472_fixed_fullcycle_wall_budget",
+      "implementation_stage": "shadow_lod_fallback_fixed",
+      "source_log": "mmo_rendered_472_fixed_fullcycle.log",
+      "source_log_sha256": "f8cb513b8027f829915879cdca3f77632f7ea320c426e1eb87c4fd69a1e92489",
+      "engine_header": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1",
+        "DISPLAY": "127.0.0.1:92",
+        "LIBGL_ALWAYS_SOFTWARE": "1"
+      },
+      "authentication_note": "XAUTHORITY referenced a temporary session file; no credential or session-file contents are retained.",
+      "command": [
+        "/usr/local/bin/godot",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--windowed",
+        "--resolution",
+        "640x360",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--switch-timeout=300",
+        "--switch-steps=-1,-1,-1,-1,-1"
+      ],
+      "render_lods_enabled": true,
+      "shadows_enabled": true,
+      "population_enabled": true,
+      "movement_budget": "8 wall-clock seconds",
+      "outcome": "harness_failure",
+      "SWITCH_START": {
+        "display": "X11",
+        "engine": "4.7.2-stable (official)",
+        "headless": false,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "SWITCH_READY": [
+        {
+          "game_id": 33688651231,
+          "nav_polygons": 10205,
+          "ready_s": 7.734779,
+          "region": "town"
+        },
+        {
+          "game_id": 331266131424,
+          "nav_polygons": 17179,
+          "ready_s": 13.037169,
+          "region": "desert"
+        },
+        {
+          "game_id": 757810071028,
+          "nav_polygons": 11445,
+          "ready_s": 52.727706,
+          "region": "wetlands"
+        }
+      ],
+      "SWITCH_OK": [
+        {
+          "camera": "RPGCamera",
+          "draw_calls_last_frame": 3596,
+          "from": "town",
+          "moved_m": 1.22885070741177,
+          "nav_polygons": 17179,
+          "new_game_id": 331266131424,
+          "old_game_id": 33688651231,
+          "ready_s": 13.037169,
+          "rendered_objects_last_frame": 3992,
+          "step": -1,
+          "to": "desert"
+        }
+      ],
+      "SWITCH_FAIL": {
+        "current_scene": "Game:<Node3D#757810071028>",
+        "reason": "Replacement player could not walk 1.00 supported metres",
+        "region": "wetlands",
+        "stage": "walking after switch to wetlands"
+      },
+      "SWITCH_PASS": null,
+      "failure_analysis": {
+        "classification": "movement harness wall-clock timing limitation under software rendering",
+        "completed_verified_transitions": 1,
+        "native_crash_observed": false,
+        "interpretation": "The wetlands replacement had a valid camera, navigation and supported player at SWITCH_READY, but the required one-metre movement was not verified before the old eight-wall-second movement deadline. This run is a failure, not a completed full cycle.",
+        "last_movement_window": {
+          "wall_s": 3.648,
+          "render_frames": 2,
+          "fps": 0.5,
+          "physics_ticks": 8,
+          "physics_ticks_per_second": 2.19,
+          "ticks_per_render_frame": 4.0,
+          "reported_velocity_xz_mps": 3.82,
+          "player_distance_xz_m": 0.382,
+          "achieved_wall_mps": 0.105
+        },
+        "causal_note": "At roughly two achieved physics ticks per wall second with a four-step-per-frame cap, eight wall seconds provide only a fraction of a simulated second. The log records actual movement, but not the required distance.",
+        "followup": "The harness was changed to allow eight seconds of physics ticks while keeping the per-stage wall timeout and unchanged distance/support assertions. Production game code was unchanged by this harness adjustment; the rerun is recorded separately only after completion."
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+            "count": 1
+          },
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          },
+          {
+            "message": "Property agent_max_climb is floored to cell_height voxel units and loses precision.",
+            "count": 1
+          },
+          {
+            "message": "Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 4 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "id": "rendered_472_fixed_fullcycle_physics_budget",
+      "implementation_stage": "shadow_lod_fallback_fixed_before_water_cache_parity_fix",
+      "source_log": "mmo_rendered_472_fixed_fullcycle_physics_budget.log",
+      "source_log_sha256": "cd3ee83cc363599c0997cdf624c9837a0fe1b69bac1038bcf6242cd192127df5",
+      "engine_header": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1",
+        "DISPLAY": "127.0.0.1:92",
+        "LIBGL_ALWAYS_SOFTWARE": "1"
+      },
+      "authentication_note": "XAUTHORITY referenced a temporary session file; no credential or session-file contents are retained.",
+      "command": [
+        "/usr/local/bin/godot",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--windowed",
+        "--resolution",
+        "640x360",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--switch-timeout=300",
+        "--switch-steps=-1,-1,-1,-1,-1"
+      ],
+      "render_lods_enabled": true,
+      "shadows_enabled": true,
+      "population_enabled": true,
+      "water_cache_parity_fix_applied": false,
+      "movement_budget": "8 simulated seconds (480 physics ticks at 60 Hz), with a 300-second per-stage wall limit",
+      "outcome": "pass",
+      "exit_code": 0,
+      "SWITCH_START": {
+        "display": "X11",
+        "engine": "4.7.2-stable (official)",
+        "headless": false,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "SWITCH_READY": [
+        {
+          "game_id": 33688651231,
+          "nav_polygons": 10205,
+          "ready_s": 5.665008,
+          "region": "town"
+        },
+        {
+          "game_id": 330746037728,
+          "nav_polygons": 17179,
+          "ready_s": 6.300836,
+          "region": "desert"
+        },
+        {
+          "game_id": 756535002612,
+          "nav_polygons": 11047,
+          "ready_s": 22.244021,
+          "region": "wetlands"
+        },
+        {
+          "game_id": 776650888498,
+          "nav_polygons": 8297,
+          "ready_s": 43.120627,
+          "region": "graveyard"
+        },
+        {
+          "game_id": 819046915045,
+          "nav_polygons": 1787,
+          "ready_s": 14.587124,
+          "region": "island"
+        },
+        {
+          "game_id": 1109326303465,
+          "nav_polygons": 10205,
+          "ready_s": 2.960773,
+          "region": "town"
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 167.767601,
+        "gap_frames": 10,
+        "headless": false,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 6,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 3751,
+            "from": "town",
+            "moved_m": 1.22885070741177,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 2.68113,
+            "nav_polygons": 17179,
+            "new_game_id": 330746037728,
+            "old_game_id": 33688651231,
+            "ready_s": 6.300836,
+            "rendered_objects_last_frame": 4147,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 94,
+            "from": "desert",
+            "moved_m": 1.14602822065353,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 13.25277,
+            "nav_polygons": 11047,
+            "new_game_id": 756535002612,
+            "old_game_id": 330746037728,
+            "ready_s": 22.244021,
+            "rendered_objects_last_frame": 308,
+            "step": -1,
+            "to": "wetlands"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 431,
+            "from": "wetlands",
+            "moved_m": 1.14621402323246,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 8.32838,
+            "nav_polygons": 8297,
+            "new_game_id": 776650888498,
+            "old_game_id": 756535002612,
+            "ready_s": 43.120627,
+            "rendered_objects_last_frame": 646,
+            "step": -1,
+            "to": "graveyard"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 1313,
+            "from": "graveyard",
+            "moved_m": 1.14624011516571,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 6.748492,
+            "nav_polygons": 1787,
+            "new_game_id": 819046915045,
+            "old_game_id": 776650888498,
+            "ready_s": 14.587124,
+            "rendered_objects_last_frame": 1691,
+            "step": -1,
+            "to": "island"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 1481,
+            "from": "island",
+            "moved_m": 1.14333233237267,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 2.131125,
+            "nav_polygons": 10205,
+            "new_game_id": 1109326303465,
+            "old_game_id": 819046915045,
+            "ready_s": 2.960773,
+            "rendered_objects_last_frame": 1855,
+            "step": -1,
+            "to": "town"
+          }
+        ]
+      },
+      "interpretation": "Completed town -> desert -> wetlands -> graveyard -> island -> town with rendering, ordinary shadows, generated LODs, populations and supported movement. This run precedes the final water-cache parity change. llvmpipe readiness/movement wall times are functional verification, not target-GPU performance measurements.",
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+            "count": 1
+          },
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          },
+          {
+            "message": "Property agent_max_climb is floored to cell_height voxel units and loses precision.",
+            "count": 2
+          },
+          {
+            "message": "Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+            "count": 3
+          },
+          {
+            "message": "Navigation region synchronization had 17 edge error(s).",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 1 edge error(s).",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 3 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "id": "final_rendered_472_warm_fullcycle",
+      "implementation_stage": "all_production_fixes_including_water_cache_parity",
+      "source_log": "mmo_final_rendered_472_warm_fullcycle.log",
+      "source_log_sha256": "845dece6b42cda4071d874cc03cd21a85f2b2513687fbb73800945d75ba53002",
+      "engine_header": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1",
+        "DISPLAY": "127.0.0.1:92",
+        "LIBGL_ALWAYS_SOFTWARE": "1"
+      },
+      "authentication_note": "XAUTHORITY referenced a temporary session file; no credential or session-file contents are retained.",
+      "command": [
+        "/usr/local/bin/godot",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--windowed",
+        "--resolution",
+        "640x360",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--switch-timeout=300",
+        "--switch-steps=-1,-1,-1,-1,-1"
+      ],
+      "render_lods_enabled": true,
+      "shadows_enabled": true,
+      "population_enabled": true,
+      "water_cache_parity_fix_applied": true,
+      "movement_budget": "8 simulated seconds (480 physics ticks at 60 Hz), with a 300-second per-stage wall limit",
+      "outcome": "pass",
+      "exit_code": 0,
+      "SWITCH_START": {
+        "display": "X11",
+        "engine": "4.7.2-stable (official)",
+        "headless": false,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "SWITCH_READY": [
+        {
+          "game_id": 33688651231,
+          "nav_polygons": 10205,
+          "ready_s": 6.126504,
+          "region": "town"
+        },
+        {
+          "game_id": 330846701024,
+          "nav_polygons": 17179,
+          "ready_s": 4.129853,
+          "region": "desert"
+        },
+        {
+          "game_id": 757138982388,
+          "nav_polygons": 11445,
+          "ready_s": 8.138692,
+          "region": "wetlands"
+        },
+        {
+          "game_id": 777472972082,
+          "nav_polygons": 8297,
+          "ready_s": 9.448161,
+          "region": "graveyard"
+        },
+        {
+          "game_id": 818828811236,
+          "nav_polygons": 1787,
+          "ready_s": 7.385466,
+          "region": "island"
+        },
+        {
+          "game_id": 1106943938812,
+          "nav_polygons": 10205,
+          "ready_s": 2.664286,
+          "region": "town"
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 109.797446,
+        "gap_frames": 10,
+        "headless": false,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 6,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 3469,
+            "from": "town",
+            "moved_m": 1.22885070741177,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 2.526086,
+            "nav_polygons": 17179,
+            "new_game_id": 330846701024,
+            "old_game_id": 33688651231,
+            "ready_s": 4.129853,
+            "rendered_objects_last_frame": 3846,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 95,
+            "from": "desert",
+            "moved_m": 1.14602927863598,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 12.684911,
+            "nav_polygons": 11445,
+            "new_game_id": 757138982388,
+            "old_game_id": 330846701024,
+            "ready_s": 8.138692,
+            "rendered_objects_last_frame": 309,
+            "step": -1,
+            "to": "wetlands"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 434,
+            "from": "wetlands",
+            "moved_m": 1.14621402323246,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 8.521409,
+            "nav_polygons": 8297,
+            "new_game_id": 777472972082,
+            "old_game_id": 757138982388,
+            "ready_s": 9.448161,
+            "rendered_objects_last_frame": 648,
+            "step": -1,
+            "to": "graveyard"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 1287,
+            "from": "graveyard",
+            "moved_m": 1.14624011516571,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 6.715914,
+            "nav_polygons": 1787,
+            "new_game_id": 818828811236,
+            "old_game_id": 777472972082,
+            "ready_s": 7.385466,
+            "rendered_objects_last_frame": 1665,
+            "step": -1,
+            "to": "island"
+          },
+          {
+            "camera": "RPGCamera",
+            "draw_calls_last_frame": 1269,
+            "from": "island",
+            "moved_m": 1.14333233237267,
+            "movement_physics_ticks": 28,
+            "movement_wall_s": 2.139019,
+            "nav_polygons": 10205,
+            "new_game_id": 1106943938812,
+            "old_game_id": 818828811236,
+            "ready_s": 2.664286,
+            "rendered_objects_last_frame": 1643,
+            "step": -1,
+            "to": "town"
+          }
+        ]
+      },
+      "load_details": [
+        {
+          "load_index": 0,
+          "region": "town",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 625.309,
+            "region.collision_total": 856.997,
+            "nav.bake": null,
+            "nav.stitch": 2.824,
+            "nav.total": 9.168
+          },
+          "water": {
+            "cached_level_m": 0.0,
+            "cached_has_water": false
+          },
+          "source_ready_line": 136
+        },
+        {
+          "load_index": 1,
+          "region": "desert",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 352.708,
+            "region.collision_total": 1521.773,
+            "nav.bake": null,
+            "nav.stitch": 5.633,
+            "nav.total": 16.82
+          },
+          "water": {
+            "cached_level_m": 0.8,
+            "cached_has_water": true,
+            "gameplay_level_m": 0.8
+          },
+          "source_ready_line": 419
+        },
+        {
+          "load_index": 2,
+          "region": "wetlands",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 727.063,
+            "region.collision_total": 1911.45,
+            "nav.bake": null,
+            "nav.stitch": 3.036,
+            "nav.total": 1223.443
+          },
+          "water": {
+            "cached_level_m": 0.0,
+            "cached_has_water": true,
+            "gameplay_level_m": 0.0
+          },
+          "source_ready_line": 539
+        },
+        {
+          "load_index": 3,
+          "region": "graveyard",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 658.937,
+            "region.collision_total": 1786.12,
+            "nav.bake": null,
+            "nav.stitch": 2.522,
+            "nav.total": 7.307
+          },
+          "water": {
+            "cached_level_m": -0.5,
+            "cached_has_water": true,
+            "gameplay_level_m": -0.5
+          },
+          "source_ready_line": 650
+        },
+        {
+          "load_index": 4,
+          "region": "island",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 43.852,
+            "region.collision_total": 1213.766,
+            "nav.bake": null,
+            "nav.stitch": 1.525,
+            "nav.total": 872.94
+          },
+          "water": {
+            "cached_level_m": -0.15,
+            "cached_has_water": true,
+            "gameplay_level_m": -0.15
+          },
+          "source_ready_line": 830
+        },
+        {
+          "load_index": 5,
+          "region": "town",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 102.644,
+            "region.collision_total": 806.893,
+            "nav.bake": null,
+            "nav.stitch": 3.247,
+            "nav.total": 8.799
+          },
+          "water": {
+            "cached_level_m": 0.0,
+            "cached_has_water": false
+          },
+          "source_ready_line": 964
+        }
+      ],
+      "cache_validation": {
+        "region_cache_hits": 6,
+        "nav_cache_hits": 6,
+        "stitch_cache_hits": 6,
+        "nav_bake_records": 0,
+        "wetlands_cached_level_m": 0.0,
+        "wetlands_gameplay_level_m": 0.0,
+        "wetlands_nav_polygons": 11445,
+        "all_assertions_passed": true
+      },
+      "interpretation": "Final production code completed town -> desert -> wetlands -> graveyard -> island -> town with rendering, ordinary shadows, generated LODs, populations and supported movement. All loads reused region/nav/stitch caches and wetlands retained the finalized water state. llvmpipe results verify behavior and rendering, not user-GPU FPS.",
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.",
+            "count": 1
+          },
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 4 edge error(s).",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 1 edge error(s).",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 3 edge error(s).",
+            "count": 1
+          }
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "other_engines": [
+    {
+      "version": "4.7.2.stable.official.ed1daf0bf",
+      "commit": "ed1daf0bf001b61586d9930840f2f1394092c079",
+      "executable": "/usr/local/bin/godot",
+      "resolved_executable": "/opt/godot/4.7.2/Godot_v4.7.2-stable_linux.x86_64"
+    }
+  ],
+  "rendered_measurement": {
+    "mode": "Compatibility OpenGL, X11 window, software rendering",
+    "renderer_exercised": true,
+    "configured_renderer": "gl_compatibility",
+    "configured_driver": "opengl3",
+    "observed_api": "OpenGL API 4.5 (Core Profile)",
+    "mesa_version": "25.0.7-2+deb13u1",
+    "device": "Mesa - llvmpipe (LLVM 19.1.7, 256 bits)",
+    "window_resolution": [
+      640,
+      360
+    ],
+    "audio_driver": "Dummy",
+    "fps_override": null,
+    "interpretation": "These rendered runs test native-crash behavior, visible rendering, replacement readiness and movement. Software rendering is not a measurement of the user GPU; different cache states mean the timings are not a controlled performance comparison.",
+    "completion_rule": "Only runs ending in SWITCH_PASS, SWITCH_FAIL, or a recorded native crash are included. A requested full cycle is not counted as completed after an early crash or movement assertion failure."
+  },
+  "renderer_diagnosis": {
+    "summary": "Regenerating main-mesh LODs while retaining the imported optimized shadow mesh creates incompatible LOD index ranges. GLES3 selects an LOD from the main surface and applies that same index to the shadow surface.",
+    "project_file": "scripts/region_render_lods.gd",
+    "unsafe_assignment": "rebuilt.shadow_mesh = source.shadow_mesh",
+    "repair": "Clear shadow_mesh only on meshes whose main LODs were regenerated. The existing renderer fallback uses the main surface for shadows, so both passes use matching LOD buffers. Ordinary shadows remain enabled; skipped and unmodified meshes retain compatible source shadows.",
+    "evidence_source": "mmo_shadow_lod_evidence.json",
+    "evidence_source_sha256": "4aac6ffa83b1266d1db9155f6458c3a7fe9fe62390425fe34793e6cb4c38fff2",
+    "fault_attribution": {
+      "engine_version": "4.6.3.stable.official",
+      "engine_commit": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+      "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+      "stripped_binary": true,
+      "full_debug_symbolization": false,
+      "signal": 11,
+      "first_fault_instruction": "0x167ab0b: mov 0xc(%rax),%eax",
+      "native_stack_addresses": [
+        "0x167ab0b",
+        "0x167cc2a",
+        "0x168afdc",
+        "0x4243d10",
+        "0x4249389",
+        "0x3ae0857",
+        "0x3aef0ef",
+        "0x3cf435b",
+        "0x565f00",
+        "0x4321ef"
+      ],
+      "interpretation": "Instruction pattern matches one-based LOD index minus one, 16-byte Surface::LOD stride, and 12-byte index_buffer member offset. This is source/disassembly attribution of an inlined operation, not full debug-symbol symbolization.",
+      "source_correspondence": "The exact 4.6.3 GLES3 source selects the main-surface LOD, uses the shadow surface during shadow rendering, and indexes that surface with the chosen LOD. The fault instruction and surrounding index arithmetic match this inlined buffer access. This is source/disassembly attribution, not a named stack trace from debug symbols."
+    },
+    "official_sources": [
+      {
+        "tag": "4.6.3-stable",
+        "url": "https://github.com/godotengine/godot/blob/4.6.3-stable/drivers/gles3/storage/mesh_storage.h"
+      },
+      {
+        "tag": "4.6.3-stable",
+        "url": "https://github.com/godotengine/godot/blob/4.6.3-stable/drivers/gles3/rasterizer_scene_gles3.cpp"
+      },
+      {
+        "tag": "4.6.3-stable",
+        "url": "https://github.com/godotengine/godot/blob/4.6.3-stable/scene/resources/3d/importer_mesh.cpp"
+      }
+    ],
+    "runtime_api_probe": "ImporterMesh.has_method(\"create_shadow_mesh\") returned false on exact Godot 4.6.3; regenerating an optimized shadow mesh through this internal API is unavailable to GDScript.",
+    "controls": [
+      {
+        "run": "rendered_463_roundtrip",
+        "result": "Default pre-repair render LODs and shadows: native signal 11 before the first destination was verified."
+      },
+      {
+        "run": "rendered_472_default",
+        "result": "Same default failure on 4.7.2; its requested five-switch route stopped at the first transition."
+      },
+      {
+        "run": "rendered_463_no_lods",
+        "result": "Disable generated render LODs, retain shadows: verified town-to-desert-to-town round trip passes."
+      },
+      {
+        "run": "rendered_463_no_shadows",
+        "result": "Retain generated render LODs, disable shadows: verified round trip passes."
+      },
+      {
+        "run": "rendered_463_fixed",
+        "result": "After repair, generated render LODs and ordinary shadows are both enabled: verified round trip passes with nonzero rendered draw/object counts and movement."
+      },
+      {
+        "run": "rendered_472_fixed_fullcycle_physics_budget",
+        "result": "After the movement budget was expressed in simulated physics time, all five population-enabled rendered transitions passed on 4.7.2 with LODs and shadows enabled. This run predates the final water-cache parity change."
+      },
+      {
+        "run": "final_rendered_472_warm_fullcycle",
+        "result": "Final production code, including water-cache parity, passes all five population-enabled rendered transitions with LODs and shadows enabled. All six loads hit region/nav/stitch caches; no errors or native crashes."
+      }
+    ]
+  },
+  "render_lod_unit_regression": {
+    "script": "res://tests/test_region_render_lods.gd",
+    "coverage": [
+      "Initially compatible main/shadow fixtures with three surfaces and no reduced LODs, and with two surfaces and one matching imported LOD.",
+      "Regenerated main geometry exceeds the old shadow LOD range; reproducing the old pointer assignment is detected as unsafe.",
+      "Effective shadow geometry corresponds to every main surface and LOD after repair and after resource serialization.",
+      "Ordinary cast_shadow remains enabled; base vertex attributes, materials, faces, transforms and shared geometry are preserved.",
+      "Skipped skinned meshes and a single triangle that gains no new LOD retain their original compatible mesh/shadow references."
+    ],
+    "comparison_note": "The old helper completed 95 assertions with five safety failures. Two additional no-new-LOD preservation assertions were then added; the repaired helper completed all 97 assertions without failure on both engines. The original five failing assertions remain in the test.",
+    "runs": [
+      {
+        "id": "before",
+        "implementation_stage": "old_helper",
+        "engine_header": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+        "source_log": "mmo_render_lod_regression_before.log",
+        "source_log_sha256": "124b14c7b1604792aa5c378fb71643afaa6d280f0557ed24facd8b25dd64d862",
+        "command": [
+          "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_render_lods.gd"
+        ],
+        "exit_code": 1,
+        "result": {
+          "failures": 5,
+          "checks": 95,
+          "levels": 8,
+          "base_tris": 4096,
+          "lowest_tris": 256,
+          "complete": true
+        },
+        "failed_assertions": [
+          "regenerated geometry uses its main LOD buffers for shadows",
+          "every selected main surface/LOD has matching effective shadow geometry",
+          "region cache round trip keeps every main/shadow LOD selection valid",
+          "old one-LOD shadows cannot remain attached to regenerated geometry",
+          "serialized imported-LOD replacement retains a valid shadow fallback"
+        ]
+      },
+      {
+        "id": "after_463",
+        "implementation_stage": "shadow_lod_fallback_fixed",
+        "engine_header": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+        "source_log": "mmo_render_lod_regression_after_463.log",
+        "source_log_sha256": "fa6aca3a96ba6042536d9bf9c47e5acef1bcebae751f87f9e1e31a5be9086fa2",
+        "command": [
+          "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_render_lods.gd"
+        ],
+        "exit_code": 0,
+        "result": {
+          "failures": 0,
+          "checks": 97,
+          "levels": 8,
+          "base_tris": 4097,
+          "lowest_tris": 257,
+          "complete": true
+        },
+        "failed_assertions": []
+      },
+      {
+        "id": "after_472",
+        "implementation_stage": "shadow_lod_fallback_fixed",
+        "engine_header": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "source_log": "mmo_render_lod_regression_after_472.log",
+        "source_log_sha256": "def72f015bd773a0fc47f499ffaa8da4d77fc75abe11e78b3e4db89cebf4c456",
+        "command": [
+          "/usr/local/bin/godot",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_render_lods.gd"
+        ],
+        "exit_code": 0,
+        "result": {
+          "failures": 0,
+          "checks": 97,
+          "levels": 8,
+          "base_tris": 4097,
+          "lowest_tris": 257,
+          "complete": true
+        },
+        "failed_assertions": []
+      }
+    ]
+  },
+  "final_unit_regressions": {
+    "implementation_stage": "shadow_lod_and_water_cache_parity_fixes_applied",
+    "integrated_results_source": "mmo_integrated_unit_results.json",
+    "integrated_results_source_sha256": "bca7275a7799da6411ba8b9ec44da3baa6dfdd4d08d273012c2ebd847e1c6768",
+    "integrated_results": [
+      {
+        "engine": "463",
+        "test": "test_region_switch",
+        "command": [
+          "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_switch.gd"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 0.689,
+        "summary": [
+          "REGION_SWITCH_TEST checks=50 failures=0 started=4 finished=4 gap_frames=8 startup_probes=5"
+        ],
+        "errors": [],
+        "log": "/tmp/mmo_unit_463_test_region_switch.log",
+        "source_log_sha256": "d9c71fcba1541cb056865642df267fbb5371afb39d1e5bdcd2706bd239a9e016"
+      },
+      {
+        "engine": "463",
+        "test": "test_nav_marker_cache",
+        "command": [
+          "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_nav_marker_cache.gd"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 0.269,
+        "summary": [
+          "NAV_MARKER_CACHE_TEST PASS failures=0"
+        ],
+        "errors": [],
+        "log": "/tmp/mmo_unit_463_test_nav_marker_cache.log",
+        "source_log_sha256": "4a511bce9e9f7b60a188e9d7ade90453927a0e96a0b547d11fbf090ab05e6b9e"
+      },
+      {
+        "engine": "463",
+        "test": "test_nav_stitch_cache",
+        "command": [
+          "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_nav_stitch_cache.gd"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 0.378,
+        "summary": [
+          "NAV_STITCH_CACHE_TEST checks=76 failures=0 complete=true"
+        ],
+        "errors": [],
+        "log": "/tmp/mmo_unit_463_test_nav_stitch_cache.log",
+        "source_log_sha256": "8bc4cc40203b516f51b36ad57b65424eb8b1d8754d383d435e539a9564ae1f78"
+      },
+      {
+        "engine": "463",
+        "test": "test_region_render_lods",
+        "command": [
+          "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_render_lods.gd"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 0.253,
+        "summary": [
+          "REGION_RENDER_LODS_TEST failures=0 checks=97 levels=8 base_tris=4097 lowest_tris=257 complete=true"
+        ],
+        "errors": [],
+        "log": "/tmp/mmo_unit_463_test_region_render_lods.log",
+        "source_log_sha256": "fa6aca3a96ba6042536d9bf9c47e5acef1bcebae751f87f9e1e31a5be9086fa2"
+      },
+      {
+        "engine": "472",
+        "test": "test_region_switch",
+        "command": [
+          "/usr/local/bin/godot",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_switch.gd"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 0.739,
+        "summary": [
+          "REGION_SWITCH_TEST checks=50 failures=0 started=4 finished=4 gap_frames=8 startup_probes=5"
+        ],
+        "errors": [],
+        "log": "/tmp/mmo_unit_472_test_region_switch.log",
+        "source_log_sha256": "2c992924f6bc4dc65638ea85258609eafa64b82b39620395a4e7dbe1885d2117"
+      },
+      {
+        "engine": "472",
+        "test": "test_nav_marker_cache",
+        "command": [
+          "/usr/local/bin/godot",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_nav_marker_cache.gd"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 0.258,
+        "summary": [
+          "NAV_MARKER_CACHE_TEST PASS failures=0"
+        ],
+        "errors": [],
+        "log": "/tmp/mmo_unit_472_test_nav_marker_cache.log",
+        "source_log_sha256": "8f6069025f7b3ca60f6c286ef98f2e29cd8e08576d7b7a7d92dc733eeb0fd0fa"
+      },
+      {
+        "engine": "472",
+        "test": "test_nav_stitch_cache",
+        "command": [
+          "/usr/local/bin/godot",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_nav_stitch_cache.gd"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 0.368,
+        "summary": [
+          "NAV_STITCH_CACHE_TEST checks=76 failures=0 complete=true"
+        ],
+        "errors": [],
+        "log": "/tmp/mmo_unit_472_test_nav_stitch_cache.log",
+        "source_log_sha256": "b9e120c735bee0d270502d93bb1886a8b8964dbbe7274cb9a2c049cbfe1e8d1e"
+      },
+      {
+        "engine": "472",
+        "test": "test_region_render_lods",
+        "command": [
+          "/usr/local/bin/godot",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_render_lods.gd"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 0.267,
+        "summary": [
+          "REGION_RENDER_LODS_TEST failures=0 checks=97 levels=8 base_tris=4097 lowest_tris=257 complete=true"
+        ],
+        "errors": [],
+        "log": "/tmp/mmo_unit_472_test_region_render_lods.log",
+        "source_log_sha256": "def72f015bd773a0fc47f499ffaa8da4d77fc75abe11e78b3e4db89cebf4c456"
+      }
+    ],
+    "water_cache_results": [
+      {
+        "engine": "463",
+        "test": "test_region_water_cache",
+        "engine_header": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+        "source_log": "mmo_water_cache_regression_463.log",
+        "source_log_sha256": "51e83e0a229e223f23f4c4a0785d579bbcbd0758aa7a63de6d9c780f169ef7ee",
+        "reproduction_command": [
+          "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_water_cache.gd"
+        ],
+        "result": {
+          "failures": 0,
+          "checks": 97,
+          "complete": true
+        },
+        "summary": "REGION_WATER_CACHE_TEST failures=0 checks=97 complete=true",
+        "errors": []
+      },
+      {
+        "engine": "472",
+        "test": "test_region_water_cache",
+        "engine_header": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "source_log": "mmo_water_cache_regression_472.log",
+        "source_log_sha256": "cd0e62e464aa7a43a5e550a3a161b4a356dff509048a1515f7afd9b8d1c995dd",
+        "reproduction_command": [
+          "/usr/local/bin/godot",
+          "--headless",
+          "--path",
+          "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+          "--script",
+          "res://tests/test_region_water_cache.gd"
+        ],
+        "result": {
+          "failures": 0,
+          "checks": 97,
+          "complete": true
+        },
+        "summary": "REGION_WATER_CACHE_TEST failures=0 checks=97 complete=true",
+        "errors": []
+      }
+    ],
+    "scope": "Five small regression suites passed on both Godot 4.6.3 and 4.7.2; no whole-map performance work is done by these fixtures."
+  },
+  "water_cache_parity": {
+    "project_file": "scripts/region_map.gd",
+    "metadata_key": "_mmo3d_water_state",
+    "problem": "Cold conditioning finalized the gameplay waterline, but a warm cache load remeasured the modified visual meshes. Wetlands could change from 0.000 m on first load to 0.050 m on a cache hit, changing gameplay water state and the navigation cache key.",
+    "repair": "Save and restore finalized water presence, level and footprint cells with the conditioned region, together with the generated water extension and barrier. Invalid or legacy metadata triggers reconditioning instead of reuse of inconsistent state.",
+    "fixture_coverage": [
+      "Real conditioned-region save/load branches for wet and dry synthetic geometry.",
+      "Finalized level and every footprint cell retained; cold/warm navigation keys match.",
+      "Generated extension/barrier geometry, world transforms, ownership and shadow settings preserved without duplicate regeneration.",
+      "Invalid or missing metadata cannot partially alter state; legacy/corrupt region caches rebuild and are reusable afterward."
+    ],
+    "full_map_validation_note": "Final map-cycle verification is recorded separately from earlier measurements and renderer runs that preceded this parity change.",
+    "full_map_validation": {
+      "run": "final_headless_463_two_cycles",
+      "result": "Both wetlands visits preserve gameplay level 0.000 m and 11445 nav polygons. Every map in the second cycle hits region/nav/stitch caches without rebaking."
+    },
+    "final_rendered_validation": {
+      "run": "final_rendered_472_warm_fullcycle",
+      "result": "Wetlands retains cached and gameplay water level 0.000 m and 11445 navigation polygons on the final rendered full cycle."
+    }
+  },
+  "final_headless_runs": [
+    {
+      "id": "final_headless_463_two_cycles",
+      "implementation_stage": "all_production_fixes_including_water_cache_parity",
+      "source_log": "mmo_final_headless_463_two_cycles.log",
+      "source_log_sha256": "abe5b1ce094f2c3cc87cc7fe8886034d90443f0777b54ea0b84c3f5dde669120",
+      "engine_header": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+      "environment": {
+        "PERF_LOG": "1"
+      },
+      "command": [
+        "/workspace/scratch/fd16b0ab3d3b/tools/Godot_v4.6.3-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/workspace/scratch/fd16b0ab3d3b/MMO3D",
+        "--script",
+        "res://tools/region_switch_benchmark.gd",
+        "--",
+        "--region=town",
+        "--nopop",
+        "--switch-timeout=300",
+        "--switch-steps=-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+      ],
+      "population_enabled": false,
+      "water_cache_parity_fix_applied": true,
+      "renderer_exercised": false,
+      "movement_budget": "8 simulated seconds (480 physics ticks at 60 Hz), with a 300-second per-stage wall limit",
+      "outcome": "pass",
+      "exit_code": 0,
+      "SWITCH_START": {
+        "display": "headless",
+        "engine": "4.6.3-stable (official)",
+        "headless": true,
+        "move_metres": 1.0,
+        "renderer": "gl_compatibility",
+        "start_region": "town",
+        "steps": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "loads": [
+        {
+          "load_index": 0,
+          "cycle": 0,
+          "kind": "initial_load",
+          "cache": {
+            "region": "baked",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 1433.803,
+            "region.collision_total": 820.172,
+            "nav.bake": null,
+            "nav.stitch": 3.152,
+            "nav.total": 9.519
+          },
+          "water": {},
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 32715572674,
+            "nav_polygons": 10205,
+            "ready_s": 2.994542,
+            "region": "town"
+          },
+          "source_ready_line": 87
+        },
+        {
+          "load_index": 1,
+          "cycle": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "baked",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 1104.269,
+            "region.collision_total": 1498.028,
+            "nav.bake": null,
+            "nav.stitch": 5.414,
+            "nav.total": 16.454
+          },
+          "water": {
+            "gameplay_level_m": 0.8
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 98,
+              "links": 0,
+              "unreached": 94
+            },
+            "mesh": {
+              "polygons": 17179,
+              "vertices": 11262,
+              "region_polygons": 17179,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 52059703071,
+            "nav_polygons": 17179,
+            "ready_s": 3.045121,
+            "region": "desert"
+          },
+          "source_ready_line": 328
+        },
+        {
+          "load_index": 2,
+          "cycle": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "baked",
+            "nav": "miss_rebuilt",
+            "stitch": "miss_recomputed"
+          },
+          "load_phase_ms": {
+            "region.load_total": 26250.762,
+            "region.collision_total": 1987.969,
+            "nav.bake": 13710.448,
+            "nav.stitch": 98.022,
+            "nav.total": 15156.78
+          },
+          "water": {
+            "conditioned_extension_level_m": 0.0,
+            "gameplay_level_m": 0.0
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 18,
+              "links": 0,
+              "unreached": 3
+            },
+            "mesh": {
+              "polygons": 11445,
+              "vertices": 6628,
+              "region_polygons": 11445,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 119286009353,
+            "nav_polygons": 11445,
+            "ready_s": 43.814361,
+            "region": "wetlands"
+          },
+          "source_ready_line": 445
+        },
+        {
+          "load_index": 3,
+          "cycle": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "baked",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 27023.107,
+            "region.collision_total": 1826.273,
+            "nav.bake": null,
+            "nav.stitch": 2.366,
+            "nav.total": 7.201
+          },
+          "water": {
+            "gameplay_level_m": -0.5
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 22,
+              "links": 4,
+              "unreached": 2
+            },
+            "mesh": {
+              "polygons": 8297,
+              "vertices": 5729,
+              "region_polygons": 8297,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 141398378509,
+            "nav_polygons": 8297,
+            "ready_s": 29.281174,
+            "region": "graveyard"
+          },
+          "source_ready_line": 536
+        },
+        {
+          "load_index": 4,
+          "cycle": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "baked",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 3044.616,
+            "region.collision_total": 1119.089,
+            "nav.bake": null,
+            "nav.stitch": 0.928,
+            "nav.total": 805.675
+          },
+          "water": {
+            "gameplay_level_m": -0.15
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 53,
+              "links": 47,
+              "unreached": 0
+            },
+            "mesh": {
+              "polygons": 1787,
+              "vertices": 1568,
+              "region_polygons": 1787,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 168929790132,
+            "nav_polygons": 1787,
+            "ready_s": 5.536379,
+            "region": "island"
+          },
+          "source_ready_line": 679
+        },
+        {
+          "load_index": 5,
+          "cycle": 1,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 89.627,
+            "region.collision_total": 806.15,
+            "nav.bake": null,
+            "nav.stitch": 2.766,
+            "nav.total": 8.071
+          },
+          "water": {
+            "cached_level_m": 0.0,
+            "cached_has_water": false
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 195437791274,
+            "nav_polygons": 10205,
+            "ready_s": 1.333499,
+            "region": "town"
+          },
+          "source_ready_line": 752
+        },
+        {
+          "load_index": 6,
+          "cycle": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 180.873,
+            "region.collision_total": 1466.931,
+            "nav.bake": null,
+            "nav.stitch": 4.676,
+            "nav.total": 13.209
+          },
+          "water": {
+            "cached_level_m": 0.8,
+            "cached_has_water": true,
+            "gameplay_level_m": 0.8
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 98,
+              "links": 0,
+              "unreached": 94
+            },
+            "mesh": {
+              "polygons": 17179,
+              "vertices": 11262,
+              "region_polygons": 17179,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 214714812059,
+            "nav_polygons": 17179,
+            "ready_s": 2.085752,
+            "region": "desert"
+          },
+          "source_ready_line": 987
+        },
+        {
+          "load_index": 7,
+          "cycle": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 122.034,
+            "region.collision_total": 1820.695,
+            "nav.bake": null,
+            "nav.stitch": 3.326,
+            "nav.total": 1286.648
+          },
+          "water": {
+            "cached_level_m": 0.0,
+            "cached_has_water": true,
+            "gameplay_level_m": 0.0
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 18,
+              "links": 0,
+              "unreached": 3
+            },
+            "mesh": {
+              "polygons": 11445,
+              "vertices": 6628,
+              "region_polygons": 11445,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 278719890904,
+            "nav_polygons": 11445,
+            "ready_s": 3.648586,
+            "region": "wetlands"
+          },
+          "source_ready_line": 1080
+        },
+        {
+          "load_index": 8,
+          "cycle": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 371.695,
+            "region.collision_total": 1898.136,
+            "nav.bake": null,
+            "nav.stitch": 2.961,
+            "nav.total": 8.905
+          },
+          "water": {
+            "cached_level_m": -0.5,
+            "cached_has_water": true,
+            "gameplay_level_m": -0.5
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 22,
+              "links": 4,
+              "unreached": 2
+            },
+            "mesh": {
+              "polygons": 8297,
+              "vertices": 5729,
+              "region_polygons": 8297,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 299573972490,
+            "nav_polygons": 8297,
+            "ready_s": 2.724266,
+            "region": "graveyard"
+          },
+          "source_ready_line": 1160
+        },
+        {
+          "load_index": 9,
+          "cycle": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 43.667,
+            "region.collision_total": 1278.029,
+            "nav.bake": null,
+            "nav.stitch": 1.152,
+            "nav.total": 748.288
+          },
+          "water": {
+            "cached_level_m": -0.15,
+            "cached_has_water": true,
+            "gameplay_level_m": -0.15
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 53,
+              "links": 47,
+              "unreached": 0
+            },
+            "mesh": {
+              "polygons": 1787,
+              "vertices": 1568,
+              "region_polygons": 1787,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 325696096454,
+            "nav_polygons": 1787,
+            "ready_s": 2.670116,
+            "region": "island"
+          },
+          "source_ready_line": 1290
+        },
+        {
+          "load_index": 10,
+          "cycle": 2,
+          "kind": "region_switch",
+          "cache": {
+            "region": "hit",
+            "nav": "hit",
+            "stitch": "hit"
+          },
+          "load_phase_ms": {
+            "region.load_total": 83.166,
+            "region.collision_total": 813.579,
+            "nav.bake": null,
+            "nav.stitch": 2.901,
+            "nav.total": 8.288
+          },
+          "water": {
+            "cached_level_m": 0.0,
+            "cached_has_water": false
+          },
+          "navigation": {
+            "stitch": {
+              "parts": 110,
+              "links": 12,
+              "unreached": 14
+            },
+            "mesh": {
+              "polygons": 10205,
+              "vertices": 7110,
+              "region_polygons": 10205,
+              "map_rid_ok": true
+            }
+          },
+          "SWITCH_READY": {
+            "game_id": 349905618936,
+            "nav_polygons": 10205,
+            "ready_s": 1.333007,
+            "region": "town"
+          },
+          "source_ready_line": 1363
+        }
+      ],
+      "SWITCH_PASS": {
+        "elapsed_s": 103.394377,
+        "gap_frames": 20,
+        "headless": true,
+        "renderer": "gl_compatibility",
+        "startup_input_probes": 11,
+        "transitions": [
+          {
+            "camera": "RPGCamera",
+            "from": "town",
+            "moved_m": 1.03781042248011,
+            "movement_physics_ticks": 25,
+            "movement_wall_s": 0.411305,
+            "nav_polygons": 17179,
+            "new_game_id": 52059703071,
+            "old_game_id": 32715572674,
+            "ready_s": 3.045121,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "desert",
+            "moved_m": 1.01870113611221,
+            "movement_physics_ticks": 26,
+            "movement_wall_s": 0.427118,
+            "nav_polygons": 11445,
+            "new_game_id": 119286009353,
+            "old_game_id": 52059703071,
+            "ready_s": 43.814361,
+            "step": -1,
+            "to": "wetlands"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "wetlands",
+            "moved_m": 1.01885867118835,
+            "movement_physics_ticks": 26,
+            "movement_wall_s": 0.424497,
+            "nav_polygons": 8297,
+            "new_game_id": 141398378509,
+            "old_game_id": 119286009353,
+            "ready_s": 29.281174,
+            "step": -1,
+            "to": "graveyard"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "graveyard",
+            "moved_m": 1.01888000965118,
+            "movement_physics_ticks": 26,
+            "movement_wall_s": 0.428961,
+            "nav_polygons": 1787,
+            "new_game_id": 168929790132,
+            "old_game_id": 141398378509,
+            "ready_s": 5.536379,
+            "step": -1,
+            "to": "island"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "island",
+            "moved_m": 1.01888039708138,
+            "movement_physics_ticks": 26,
+            "movement_wall_s": 0.426975,
+            "nav_polygons": 10205,
+            "new_game_id": 195437791274,
+            "old_game_id": 168929790132,
+            "ready_s": 1.333499,
+            "step": -1,
+            "to": "town"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "town",
+            "moved_m": 1.03781042248011,
+            "movement_physics_ticks": 25,
+            "movement_wall_s": 0.405931,
+            "nav_polygons": 17179,
+            "new_game_id": 214714812059,
+            "old_game_id": 195437791274,
+            "ready_s": 2.085752,
+            "step": -1,
+            "to": "desert"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "desert",
+            "moved_m": 1.01870113611221,
+            "movement_physics_ticks": 26,
+            "movement_wall_s": 0.437854,
+            "nav_polygons": 11445,
+            "new_game_id": 278719890904,
+            "old_game_id": 214714812059,
+            "ready_s": 3.648586,
+            "step": -1,
+            "to": "wetlands"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "wetlands",
+            "moved_m": 1.01885867118835,
+            "movement_physics_ticks": 26,
+            "movement_wall_s": 0.427074,
+            "nav_polygons": 8297,
+            "new_game_id": 299573972490,
+            "old_game_id": 278719890904,
+            "ready_s": 2.724266,
+            "step": -1,
+            "to": "graveyard"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "graveyard",
+            "moved_m": 1.01888000965118,
+            "movement_physics_ticks": 26,
+            "movement_wall_s": 0.428162,
+            "nav_polygons": 1787,
+            "new_game_id": 325696096454,
+            "old_game_id": 299573972490,
+            "ready_s": 2.670116,
+            "step": -1,
+            "to": "island"
+          },
+          {
+            "camera": "RPGCamera",
+            "from": "island",
+            "moved_m": 1.08256043493748,
+            "movement_physics_ticks": 27,
+            "movement_wall_s": 0.491556,
+            "nav_polygons": 10205,
+            "new_game_id": 349905618936,
+            "old_game_id": 325696096454,
+            "ready_s": 1.333007,
+            "step": -1,
+            "to": "town"
+          }
+        ]
+      },
+      "second_cycle_validation": {
+        "regions": [
+          "desert",
+          "wetlands",
+          "graveyard",
+          "island",
+          "town"
+        ],
+        "region_cache_hits": 5,
+        "nav_cache_hits": 5,
+        "stitch_cache_hits": 5,
+        "nav_bake_records": 0,
+        "all_cache_assertions_passed": true,
+        "wetlands_gameplay_level_m": [
+          0.0,
+          0.0
+        ],
+        "wetlands_warm_cached_level_m": 0.0,
+        "wetlands_nav_polygons": [
+          11445,
+          11445
+        ],
+        "ready_s_by_region": {
+          "desert": 2.085752,
+          "wetlands": 3.648586,
+          "graveyard": 2.724266,
+          "island": 2.670116,
+          "town": 1.333007
+        }
+      },
+      "interpretation": "Ten verified transitions on the final production code. The first visit to each region regenerates its conditioned-region cache after the water-state change; navigation cache availability is recorded per load. The second cycle reuses all three cache layers and performs no navigation bake. These headless observations are independent of the earlier controlled town comparison and are not rendered FPS measurements.",
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "RegionState: no region id 'town'",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 119 edge error(s).",
+            "count": 2
+          },
+          {
+            "message": "Property agent_max_climb is floored to cell_height voxel units and loses precision.",
+            "count": 1
+          },
+          {
+            "message": "Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+            "count": 1
+          },
+          {
+            "message": "Navigation region synchronization had 4 edge error(s).",
+            "count": 2
+          },
+          {
+            "message": "Navigation region synchronization had 1 edge error(s).",
+            "count": 2
+          },
+          {
+            "message": "Navigation region synchronization had 3 edge error(s).",
+            "count": 2
+          }
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "final_validation_status": {
+    "status": "passed",
+    "implementation_stage": "all production fixes including water-cache parity",
+    "unit_suites": {
+      "engines": [
+        "4.6.3",
+        "4.7.2"
+      ],
+      "suites_per_engine": 5,
+      "total_successful_runs": 10
+    },
+    "headless": {
+      "run": "final_headless_463_two_cycles",
+      "engine": "4.6.3",
+      "verified_transitions": 10,
+      "all_second_cycle_cache_assertions_passed": true,
+      "exit_code": 0
+    },
+    "rendered": {
+      "run": "final_rendered_472_warm_fullcycle",
+      "engine": "4.7.2",
+      "verified_transitions": 5,
+      "population_enabled": true,
+      "lods_enabled": true,
+      "shadows_enabled": true,
+      "renderer": "Compatibility/OpenGL via llvmpipe",
+      "exit_code": 0
+    },
+    "scope": "Local replacement readiness, actual Tab input, busy/startup input rejection, supported movement, cache consistency and software OpenGL rendering. Target user hardware and every possible terrain route were not benchmarked.",
+    "prior_failures_retained": true
+  }
+}

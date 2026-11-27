@@ -20,6 +20,9 @@ const WATER_PAD := 1
 ## cells and the town's narrow walkable spans vanished, baking 0 polygons.
 ## 0.10 keeps the mesh; the capsule's own collision handles wall clearance.
 const AGENT_RADIUS := 0.10
+const NAV_CACHE_VERSION := 2
+const STITCH_CACHE_META := "_mmo3d_stitch_cache"
+const STITCH_CACHE_VERSION := 1
 
 var region: NavigationRegion3D
 var navmesh: NavigationMesh
@@ -69,10 +72,27 @@ var _solid_cell_count := 0
 var _dbg_slope := 0
 var _dbg_blocked := 0
 var _dbg_low := 0
+var _load_perf_enabled := false
+var _stitch_cache_dirty := false
+
+
+func _load_stamp() -> int:
+	return Time.get_ticks_usec() if _load_perf_enabled else 0
+
+
+func _load_phase(phase: String, started: int) -> int:
+	var now := _load_stamp()
+	if _load_perf_enabled:
+		print("LOAD_PHASE region=%s phase=%s ms=%.3f" % [
+			cache_id, phase, float(now - started) / 1000.0])
+	return now
 
 
 func build(map: Node3D) -> void:
 	var t0 := Time.get_ticks_msec()
+	_load_perf_enabled = OS.get_environment("PERF_LOG") == "1"
+	var started := _load_stamp()
+	var phase := started
 	_map = map
 	# Applied first, and on every load: a cached navmesh returns before the bake
 	# block below, which silently skipped this and made the margin look inert.
@@ -86,11 +106,14 @@ func build(map: Node3D) -> void:
 	var markers := map.find_children("%s*" % nav_marker_prefix, "MeshInstance3D", true, false)
 	if not markers.is_empty():
 		_build_from_markers(markers, map, t0)
+		_load_phase("nav.total", started)
 		return
 	_load_layout()
 	_collect_obstacles(map)
+	phase = _load_phase("nav.layout_obstacles", phase)
 	if carve_solids:
 		_collect_solid_footprints(map)
+	phase = _load_phase("nav.solid_footprints", phase)
 	var terrain := _find_terrain(map)
 	if terrain == null:
 		push_error("nav: Terrain not found")
@@ -142,6 +165,7 @@ func build(map: Node3D) -> void:
 				faces.append(a); faces.append(b); faces.append(c)
 			else:
 				faces.append(a); faces.append(c); faces.append(b)
+	phase = _load_phase("nav.terrain_faces", phase)
 	# Bridges and stair runs sit outside the terrain mesh, so the bake would
 	# never cross the water.  They were given layer-1 collision by name, but
 	# recast reads geometry, not collision, so add their faces explicitly.
@@ -182,10 +206,12 @@ func build(map: Node3D) -> void:
 				walk_extra += 1
 	if walk_extra > 0:
 		print("NAV_WALKABLE surfaces faces=%d" % walk_extra)
+	phase = _load_phase("nav.walkable_faces", phase)
 	source_faces = faces.size() / 3
 	# Causeway decks are thin layer-1 boxes above the terrain.  Recast cannot
 	# parse boxes from a face soup, so add their top quads explicitly.
 	var bridge_mesh := _add_bridge_mesh(map)
+	phase = _load_phase("nav.bridge_faces", phase)
 	navmesh = NavigationMesh.new()
 	navmesh.cell_size = CELL
 	navmesh.cell_height = 0.10
@@ -203,13 +229,18 @@ func build(map: Node3D) -> void:
 	# Reuse a previous bake when nothing that fed it has changed.  Baking costs
 	# 12 s on the foliage maps and ran on every single load.
 	_mask_water(map)
+	phase = _load_phase("nav.water_mask", phase)
 	if _nav_cache_load():
+		_load_phase("nav.total", started)
 		return
+	phase = _load_phase("nav.cache_check", phase)
 	var src := NavigationMeshSourceGeometryData3D.new()
 	src.add_faces(faces, Transform3D.IDENTITY)
 	if bridge_mesh != null and bridge_mesh.get_surface_count() > 0:
 		src.add_mesh(bridge_mesh, Transform3D.IDENTITY)
+	phase = _load_phase("nav.source_geometry", phase)
 	NavigationServer3D.bake_from_source_geometry_data(navmesh, src)
+	phase = _load_phase("nav.bake", phase)
 	bake_ms = Time.get_ticks_msec() - t0
 	polygons = navmesh.get_polygon_count()
 	vertices = navmesh.get_vertices().size()
@@ -221,8 +252,12 @@ func build(map: Node3D) -> void:
 	print("NAV_FILTER slope=%d blocked=%d low=%d" % [_dbg_slope, _dbg_blocked, _dbg_low])
 	print("NAV_BAKE source_tris=%d bake_ms=%d polygons=%d vertices=%d approx_cells=%d cell=%.2f" % [
 		source_faces, bake_ms, polygons, vertices, nav_cells, CELL])
+	_load_phase("nav.attach", phase)
 	_stitch_islands()
+	phase = _load_stamp()
 	_nav_cache_save()
+	_load_phase("nav.cache_write", phase)
+	_load_phase("nav.total", started)
 
 
 func _load_layout() -> void:
@@ -535,8 +570,9 @@ func _nav_signature() -> String:
 	# whenever it is re-exported.  source_faces is unknown at that point (the
 	# cache is consulted before the mesh is scanned), so it must not take part.
 	if not marker_file.is_empty():
-		return "marker|%s|%s|%.2f|%.2f|%.2f" % [cache_id, _marker_stamp(),
-			AGENT_RADIUS, CELL, stitch_max_gap]
+		return "marker-v%d|%s|%s|%s|script=%s|%.2f|%.2f|%.2f" % [
+			NAV_CACHE_VERSION, cache_id, marker_file, _marker_stamp(),
+			_file_stamp("res://scripts/nav_world.gd"), AGENT_RADIUS, CELL, stitch_max_gap]
 	# The mask decides which ground is walkable, so it belongs in the signature;
 	# leaving it out let a cached navmesh outlive a changed river footprint.
 	var sum := 0
@@ -551,16 +587,20 @@ func _nav_signature() -> String:
 ## Size and mtime of the authored navmesh, so a re-export rebakes and an
 ## untouched file loads as binary in milliseconds.
 func _marker_stamp() -> String:
-	if marker_file.is_empty():
+	return _file_stamp(marker_file)
+
+
+func _file_stamp(path: String) -> String:
+	if path.is_empty():
 		return "-"
-	if not FileAccess.file_exists(marker_file):
+	if not FileAccess.file_exists(path):
 		return "missing"
-	var f := FileAccess.open(marker_file, FileAccess.READ)
+	var f := FileAccess.open(path, FileAccess.READ)
 	if f == null:
 		return "unreadable"
 	var n := f.get_length()
 	f.close()
-	return "%d:%d" % [n, FileAccess.get_modified_time(marker_file)]
+	return "%d:%d" % [n, FileAccess.get_modified_time(path)]
 
 
 func _nav_cache_paths() -> Array:
@@ -569,6 +609,9 @@ func _nav_cache_paths() -> Array:
 
 
 func _nav_cache_load() -> bool:
+	var started := _load_stamp()
+	if OS.get_cmdline_user_args().has("--no-nav-cache"):
+		return false
 	if String(cache_id).is_empty():
 		return false
 	var paths := _nav_cache_paths()
@@ -581,7 +624,9 @@ func _nav_cache_load() -> bool:
 	f.close()
 	if stored != _nav_signature():
 		return false
+	var phase := _load_stamp()
 	var nav: NavigationMesh = ResourceLoader.load(paths[0])
+	phase = _load_phase("nav.cache_read", phase)
 	if nav == null:
 		return false
 	navmesh = nav
@@ -589,12 +634,19 @@ func _nav_cache_load() -> bool:
 	vertices = navmesh.get_vertices().size()
 	bake_ms = 0
 	nav_cells = _area_cells()
+	phase = _load_phase("nav.area_cells", phase)
 	region = NavigationRegion3D.new()
 	region.name = "NavigationRegion3D"
 	region.navigation_mesh = navmesh
 	add_child(region)
 	print("NAV_CACHE hit polygons=%d vertices=%d" % [polygons, vertices])
+	_load_phase("nav.attach", phase)
 	_stitch_islands()
+	if _stitch_cache_dirty:
+		phase = _load_stamp()
+		_nav_cache_save()
+		_load_phase("nav.stitch_cache_write", phase)
+	_load_phase("nav.cache_total", started)
 	return true
 
 
@@ -609,6 +661,7 @@ func _nav_cache_save() -> void:
 	if f != null:
 		f.store_string(_nav_signature())
 		f.close()
+		_stitch_cache_dirty = false
 
 
 ## Rasterise the water bodies into the 1 m blocking grid.
@@ -708,12 +761,14 @@ func is_water(p: Vector3) -> bool:
 ## With marker objects the artist states it directly, and the guesswork is
 ## skipped entirely.
 func _build_from_markers(markers: Array, map: Node3D, t0: int) -> void:
+	var phase := _load_stamp()
 	# The authored file is the source of truth, but re-parsing a 15 MB GLB and
 	# re-baking on every load costs seconds.  Cache the baked result against the
 	# file's size and mtime: unchanged file -> binary load, re-export -> rebake.
 	if _nav_cache_load():
 		print("NAV_MARKCACHE polygons=%d" % polygons)
 		return
+	phase = _load_phase("nav.cache_check", phase)
 	var faces := PackedVector3Array()
 	var tris := 0
 	for n in markers:
@@ -743,6 +798,7 @@ func _build_from_markers(markers: Array, map: Node3D, t0: int) -> void:
 				else:
 					faces.append(a); faces.append(c); faces.append(b)
 				tris += 1
+	phase = _load_phase("nav.marker_faces", phase)
 	navmesh = NavigationMesh.new()
 	navmesh.cell_size = CELL
 	navmesh.cell_height = 0.10
@@ -759,7 +815,9 @@ func _build_from_markers(markers: Array, map: Node3D, t0: int) -> void:
 	source_faces = tris
 	var src := NavigationMeshSourceGeometryData3D.new()
 	src.add_faces(faces, Transform3D.IDENTITY)
+	phase = _load_phase("nav.source_geometry", phase)
 	NavigationServer3D.bake_from_source_geometry_data(navmesh, src)
+	phase = _load_phase("nav.bake", phase)
 	bake_ms = Time.get_ticks_msec() - t0
 	polygons = navmesh.get_polygon_count()
 	vertices = navmesh.get_vertices().size()
@@ -770,8 +828,11 @@ func _build_from_markers(markers: Array, map: Node3D, t0: int) -> void:
 	add_child(region)
 	print("NAV_MARKERS meshes=%d tris=%d polygons=%d bake_ms=%d" % [
 		markers.size(), tris, polygons, bake_ms])
+	_load_phase("nav.attach", phase)
 	_stitch_islands()
+	phase = _load_stamp()
 	_nav_cache_save()
+	_load_phase("nav.cache_write", phase)
 
 
 ## Write the baked navmesh out as Wavefront OBJ.
@@ -816,11 +877,80 @@ func dump_obj(path: String) -> bool:
 	return true
 
 
+## Only a small list of link endpoints is cached, not live nodes or GPU assets.
+## Include the actual geometry and all link-veto inputs: a matching nav bake
+## alone does not prove that the water mask or stitching limits are unchanged.
+func _stitch_signature(verts: PackedVector3Array) -> String:
+	var digest := HashingContext.new()
+	digest.start(HashingContext.HASH_SHA256)
+	digest.update(var_to_bytes([STITCH_CACHE_VERSION,
+		_file_stamp("res://scripts/nav_world.gd"), stitch_max_gap, stitch_max_rise,
+		GRID, HALF, polygons, supplied_water, _bridge_segs]))
+	digest.update(var_to_bytes(verts))
+	for index in navmesh.get_polygon_count():
+		# Encoding each packed array includes its length, so different polygon
+		# boundaries cannot collide just because concatenated indices match.
+		digest.update(var_to_bytes(navmesh.get_polygon(index)))
+	return digest.finish().hex_encode()
+
+
+func _add_stitch_link(index: int, start: Vector3, end: Vector3) -> void:
+	var link := NavigationLink3D.new()
+	link.name = "NavStitch%d" % index
+	link.start_position = start
+	link.end_position = end
+	link.bidirectional = true
+	add_child(link)
+
+
+func _load_stitch_cache(signature: String) -> bool:
+	if OS.get_cmdline_user_args().has("--no-stitch-cache"):
+		return false
+	if not navmesh.has_meta(STITCH_CACHE_META):
+		return false
+	var cached: Variant = navmesh.get_meta(STITCH_CACHE_META)
+	if not (cached is Dictionary) or cached.get("signature", "") != signature:
+		return false
+	var endpoints: Variant = cached.get("endpoints")
+	var parts: Variant = cached.get("parts")
+	var unreached: Variant = cached.get("unreached")
+	if not (endpoints is PackedVector3Array) or endpoints.size() % 2 != 0 \
+			or not (parts is int) or parts < 1 \
+			or not (unreached is int) or unreached < 0:
+		return false
+	var count: int = endpoints.size() / 2
+	if parts > polygons or count + unreached > parts - 1:
+		return false
+	# Validate the entire entry before adding nodes; a damaged entry must fall
+	# back to the normal algorithm without leaving a partial set of links.
+	for endpoint in endpoints:
+		if not endpoint.is_finite():
+			return false
+	for index in count:
+		_add_stitch_link(index, endpoints[index * 2], endpoints[index * 2 + 1])
+	print("NAV_STITCH_CACHE hit links=%d" % count)
+	print("NAV_STITCH parts=%d links=%d unreached=%d" % [parts, count, unreached])
+	return true
+
+
+func _store_stitch_cache(signature: String, endpoints: PackedVector3Array,
+		parts: int, unreached: int) -> void:
+	navmesh.set_meta(STITCH_CACHE_META, {"signature": signature,
+		"endpoints": endpoints, "parts": parts, "unreached": unreached})
+	_stitch_cache_dirty = true
+
+
 ## Join navmesh pieces that are separated only by a bake seam.
 func _stitch_islands() -> void:
+	var started := _load_stamp()
 	if navmesh == null or polygons <= 0:
 		return
 	var verts := navmesh.get_vertices()
+	var signature := _stitch_signature(verts)
+	if _load_stitch_cache(signature):
+		_load_phase("nav.stitch", started)
+		return
+	var endpoints := PackedVector3Array()
 	var par := PackedInt32Array()
 	par.resize(polygons)
 	for i in polygons:
@@ -856,6 +986,8 @@ func _stitch_islands() -> void:
 	parts.sort_custom(func(x, y): return x.size() > y.size())
 	if parts.size() < 2:
 		print("NAV_STITCH parts=1 links=0")
+		_store_stitch_cache(signature, endpoints, parts.size(), 0)
+		_load_phase("nav.stitch", started)
 		return
 	var body: Array = (parts[0] as Array).duplicate()
 	# Bucket the connected body spatially: comparing every vertex of every piece
@@ -911,12 +1043,9 @@ func _stitch_islands() -> void:
 				and not _near_bridge((best_a.x + best_b.x) * 0.5, (best_a.z + best_b.z) * 0.5):
 			rest.remove_at(best_i)
 			continue
-		var link := NavigationLink3D.new()
-		link.name = "NavStitch%d" % links
-		link.start_position = best_a
-		link.end_position = best_b
-		link.bidirectional = true
-		add_child(link)
+		_add_stitch_link(links, best_a, best_b)
+		endpoints.append(best_a)
+		endpoints.append(best_b)
 		links += 1
 		for vb in (rest[best_i] as Array):
 			var bp2: Vector3 = verts[int(vb)]
@@ -927,6 +1056,8 @@ func _stitch_islands() -> void:
 		body.append_array(rest[best_i] as Array)
 		rest.remove_at(best_i)
 	print("NAV_STITCH parts=%d links=%d unreached=%d" % [parts.size(), links, rest.size()])
+	_store_stitch_cache(signature, endpoints, parts.size(), rest.size())
+	_load_phase("nav.stitch", started)
 
 
 func _uf_root(par: PackedInt32Array, i: int) -> int:

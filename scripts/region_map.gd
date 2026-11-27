@@ -318,6 +318,8 @@ var _prop_bodies_skipped := 0
 @export var spawn_search_radius := 50.0
 
 var spawn_xz := Vector2.ZERO
+const WATER_CACHE_META := "_mmo3d_water_state"
+const WATER_CACHE_VERSION := 1
 var _water_level := 0.0
 var _has_water := false
 var _water_cells := PackedByteArray()
@@ -326,26 +328,51 @@ var _ground: MeshInstance3D
 var _grounds: Array[MeshInstance3D] = []
 var _solids: Array[MeshInstance3D] = []
 var _others: Array[MeshInstance3D] = []
+var _load_perf_enabled := false
+
+
+func _load_stamp() -> int:
+	return Time.get_ticks_usec() if _load_perf_enabled else 0
+
+
+func _load_phase(phase: String, started: int) -> int:
+	var now := _load_stamp()
+	if _load_perf_enabled:
+		print("LOAD_PHASE region=%s phase=%s ms=%.3f" % [
+			region_id, phase, float(now - started) / 1000.0])
+	return now
 
 
 func _ready() -> void:
 	if Engine.is_editor_hint():
 		_build_editor_preview()
 		return
+	_load_perf_enabled = OS.get_environment("PERF_LOG") == "1"
+	var started := _load_stamp()
+	var phase := started
 	_build_environment()
+	phase = _load_phase("region.environment", phase)
 	_load_region()
+	phase = _load_phase("region.load_total", phase)
 	_build_collision()
+	phase = _load_phase("region.collision_total", phase)
 	_apply_ground_detail()
+	phase = _load_phase("region.ground_detail", phase)
 	# Collision reaches the physics server a frame or two after the bodies are
 	# added, so probing the ground immediately would miss every ray.
 	for _i in 3:
 		await get_tree().physics_frame
+	phase = _load_phase("region.physics_wait", phase)
 	# After the rays work: the apron measures how far the bank is from each
 	# water edge, and that measurement is a ground raycast.
 	_build_water_apron()
+	phase = _load_phase("region.water_apron", phase)
 	_find_spawn()
+	phase = _load_phase("region.spawn", phase)
 	_build_hud()
 	_report()
+	_load_phase("region.hud_report", phase)
+	_load_phase("region.ready_total", started)
 
 
 func _terrain_y(x: float, z: float) -> float:
@@ -536,6 +563,8 @@ func _render_lods_enabled() -> bool:
 ## map_layout.json, so the old water mask was always empty and the navmesh
 ## treated the riverbed as walkable -- paths and clicks crossed rivers.
 func _measure_water(node: Node) -> void:
+	_water_level = 0.0
+	_has_water = false
 	_water_cells = PackedByteArray()
 	_water_cells.resize(163 * 163)
 	_water_cells.fill(0)
@@ -616,6 +645,56 @@ func _measure_water(node: Node) -> void:
 	_has_water = true
 
 
+## Keep the finalized gameplay state, not a second interpretation of the
+## conditioned visuals. In particular, water extension rounds its waterline
+## differently from the initial footprint scan and hides the authored sheet.
+func _store_water_state(node: Node) -> void:
+	node.set_meta(WATER_CACHE_META, {"version": WATER_CACHE_VERSION,
+		"has_water": _has_water, "level": _water_level,
+		"cells": _water_cells.duplicate()})
+
+
+func _restore_water_state(node: Node) -> bool:
+	if not node.has_meta(WATER_CACHE_META):
+		return false
+	var saved: Variant = node.get_meta(WATER_CACHE_META)
+	if not (saved is Dictionary):
+		return false
+	var version: Variant = saved.get("version")
+	var has_water: Variant = saved.get("has_water")
+	var level: Variant = saved.get("level")
+	var cells: Variant = saved.get("cells")
+	if not (version is int) or version != WATER_CACHE_VERSION \
+			or not (has_water is bool) \
+			or not (level is float or level is int) or not is_finite(float(level)) \
+			or not (cells is PackedByteArray) or cells.size() != 163 * 163:
+		return false
+	for cell in cells:
+		if cell != 0 and cell != 1:
+			return false
+	# Validate everything before assigning any field. A rejected cached scene
+	# must not leave half of its state installed before the source is rebuilt.
+	_has_water = has_water
+	_water_level = float(level)
+	_water_cells = cells.duplicate()
+	return true
+
+
+func _prepare_water_cache(node: Node3D) -> void:
+	# These helpers are built as siblings while conditioning runs. Adopt them
+	# only now, preserving world transforms and the existing pass order, so the
+	# saved region includes the visible sheet and its shoreline collision wall.
+	for generated_name in ["WaterExtension", "WaterBarrier"]:
+		var generated := get_node_or_null(NodePath(generated_name)) as Node3D
+		if generated == null:
+			continue
+		generated.reparent(node, true)
+		generated.owner = node
+		for descendant in generated.find_children("*", "", true, false):
+			descendant.owner = node
+	_store_water_state(node)
+
+
 ## Hide the hand-authored navmesh so it never renders.
 ##
 ## NAV_* meshes exist to tell the baker where the player may walk; the majority
@@ -636,39 +715,63 @@ func _hide_nav_markers(node: Node) -> void:
 func _load_region() -> void:
 	if Engine.is_editor_hint():
 		return
+	var phase := _load_stamp()
 	var paths := _cache_paths()
 	var node: Node3D = null
 	var baked := false
 	var force := OS.get_cmdline_user_args().has("--rebake")
-	if not force and _cache_valid(paths):
+	var cache_valid := not force and _cache_valid(paths)
+	phase = _load_phase("region.cache_validate", phase)
+	if cache_valid:
+		if _load_perf_enabled:
+			print("REGION_RESOURCE_CACHE resident=%s path=%s" % [
+				str(ResourceLoader.has_cached(paths[0])), paths[0]])
 		var packed := ResourceLoader.load(paths[0]) as PackedScene
+		phase = _load_phase("region.cache_read", phase)
 		if packed != null:
 			node = packed.instantiate() as Node3D
-			baked = node != null
+			if node != null:
+				baked = _restore_water_state(node)
+				if not baked:
+					# Legacy or damaged caches cannot recover the authoritative
+					# waterline/footprint from already-conditioned visual meshes.
+					node.free()
+					node = null
+			phase = _load_phase("region.cache_instantiate", phase)
 	if baked:
 		node.name = "RegionWorld"
 		# In the tree before measuring: the passes need real global transforms,
 		# and a detached node returns identity for them.
 		add_child(node)
+		phase = _load_phase("region.attach", phase)
 		_hide_nav_markers(node)
 		_maybe_hide_vegetation(node)
 		_load_nav_markers()
-		_measure_water(node)
+		phase = _load_phase("region.nav_markers", phase)
+		if _load_perf_enabled:
+			print("REGION_WATER_CACHE restored level=%.3f has_water=%s" % [
+				_water_level, str(_has_water)])
 		_classify(node)
+		_load_phase("region.classify", phase)
 		print("REGION_CACHE hit %s" % paths[0])
 		return
 	# No usable bake: parse the GLB and run the full conditioning chain.
 	var fresh := preload("res://scripts/glb_util.gd").instantiate(glb_path)
+	phase = _load_phase("region.glb_load", phase)
 	if fresh == null:
 		push_error("region_map: could not load %s" % glb_path)
 		return
 	node = fresh as Node3D
 	node.name = "RegionWorld"
 	add_child(node)
+	phase = _load_phase("region.attach", phase)
 	_hide_nav_markers(node)
 	_load_nav_markers()
+	phase = _load_phase("region.nav_markers", phase)
 	_measure_water(node)
+	phase = _load_phase("region.water_measure", phase)
 	_classify(node)
+	phase = _load_phase("region.classify", phase)
 	_ensure_vertex_colour_albedo(node)
 	_fix_material_textures(node)
 	_strip_outliers(node)
@@ -683,19 +786,24 @@ func _load_region() -> void:
 	_shorten_fences_at_stone(node)
 	_add_crystal_glow(node)
 	_apply_vegetation_wind(node)
+	phase = _load_phase("region.condition", phase)
 	if _render_lods_enabled():
 		var lods := preload("res://scripts/region_render_lods.gd").generate(node)
 		print("REGION_RENDER_LODS meshes=%d surfaces=%d levels=%d base_tris=%d lowest_tris=%d ms=%d" % [
 			lods.meshes, lods.surfaces, lods.levels, lods.base_triangles,
 			lods.lowest_triangles, lods.elapsed_ms])
+	phase = _load_phase("region.render_lods", phase)
+	_prepare_water_cache(node)
 	# Pack outside the tree: a node with a parent cannot be a scene root, and
 	# the passes above must keep running while it is in the tree.
 	remove_child(node)
 	_bake(node, paths)
 	add_child(node)
+	phase = _load_phase("region.cache_write", phase)
 	# Diagnostic visibility is session state, never part of the baked asset.
 	# Otherwise a first run with --noveg poisoned later normal cache hits.
 	_maybe_hide_vegetation(node)
+	_load_phase("region.visibility", phase)
 
 
 func _cache_valid(paths: Array[String]) -> bool:
@@ -731,7 +839,7 @@ func _bake(node: Node3D, paths: Array[String]) -> void:
 func _classify(node: Node) -> void:
 	for n in node.find_children("*", "MeshInstance3D", true, false):
 		var mi := n as MeshInstance3D
-		if mi.mesh == null:
+		if mi.mesh == null or String(mi.name) == "WaterExtension":
 			continue
 		var nm := String(mi.name)
 		if nm in ground_meshes:
@@ -2039,10 +2147,12 @@ func _apply_ground_detail() -> void:
 
 
 func _build_collision() -> void:
+	var phase := _load_stamp()
 	# Deck boxes must exist before props are classified, otherwise the strip has
 	# nothing to test against and silently removes nothing.
 	if strip_props_on_decks:
 		_collect_deck_boxes()
+	phase = _load_phase("collision.deck_index", phase)
 	if _grounds.is_empty():
 		push_error("region_map: no ground mesh among %s in %s" % [str(ground_meshes), glb_path])
 	# Diagnostic: NO_GROUND_COLL=1 drops ground bodies to isolate their cost.
@@ -2057,6 +2167,7 @@ func _build_collision() -> void:
 		else:
 			_add_trimesh_body(g, gname, layer_ground)
 		gi += 1
+	phase = _load_phase("collision.ground", phase)
 	for mi in _solids:
 		# Decorative props are collision cost with no gameplay value: every rock
 		# and stump is another trimesh the capsule tests against.  Bridge decks
@@ -2066,17 +2177,21 @@ func _build_collision() -> void:
 			_prop_bodies_skipped += 1
 			continue
 		_add_classified_bodies(mi)
+		phase = _load_phase("collision.solid.%s" % mi.name, phase)
 	for mi in _others:
 		# A mesh marked walkable is deliberately not "solid", but it still needs a
 		# floor body or the player falls through it.  Everything else in the
 		# others list stays decoration.
 		if walkable_meshes.has(String(mi.name)):
 			_add_classified_bodies(mi)
+			phase = _load_phase("collision.walkable.%s" % mi.name, phase)
 			continue
 		print("REGION_COLLISION %s skipped (non-solid)" % mi.name)
 
 	print("REGION_PROPS skipped=%d" % _prop_bodies_skipped)
+	phase = _load_phase("collision.decor", phase)
 	_add_bridge_bodies()
+	_load_phase("collision.bridges", phase)
 
 
 ## Split one merged mesh into collision bodies by role.  Each primitive carries
