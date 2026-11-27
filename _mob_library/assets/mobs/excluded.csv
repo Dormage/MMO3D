@@ -1,0 +1,57 @@
+title,publicID,has_hit,has_death,locomotion,animation_count,reason_excluded,page
+Alien,sUTLXji0aL,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/sUTLXji0aL
+Alien,HYUUkdugoP,False,True,run,14,no hit clip,https://poly.pizza/m/HYUUkdugoP
+Alpaking,AQ8zbFoDln,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/AQ8zbFoDln
+Alpaking Evolved,UdJudob66v,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/UdJudob66v
+Animated Robot,QCm7qe9uNJ,False,True,run,14,no hit clip,https://poly.pizza/m/QCm7qe9uNJ
+Animated Zombie,jkrEvQZb8J,False,False,walk only,5,no hit clip; no death clip; no run clip (walk only),https://poly.pizza/m/jkrEvQZb8J
+Armabee,42djT5zJnx,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/42djT5zJnx
+Armabee Evolved,GcttdvsqsQ,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/GcttdvsqsQ
+Bat,hNO9XvjlKa,True,True,flight only,5,no run clip (flight only),https://poly.pizza/m/hNO9XvjlKa
+Bee Enemy,6HsU6GQt3a,True,True,flight only,4,no run clip (flight only),https://poly.pizza/m/6HsU6GQt3a
+Birb,gZ2ExU9OAB,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/gZ2ExU9OAB
+Cactoro,66CYX5UhRK,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/66CYX5UhRK
+Cat,2f54vbV0In,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/2f54vbV0In
+Chicken,ineV9pU5VL,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/ineV9pU5VL
+Crab Enemy,Gs3yfsV5lB,True,True,walk only,10,no run clip (walk only),https://poly.pizza/m/Gs3yfsV5lB
+Demon,Mo2ky6vkf8,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/Mo2ky6vkf8
+Dragon,3rUm1cN3yp,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/3rUm1cN3yp
+Dragon Evolved,LlwD0QNUPj,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/LlwD0QNUPj
+Enemy Flying,kzpT6fNmM5,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/kzpT6fNmM5
+Enemy Small,4LjT020LQh,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/4LjT020LQh
+Fish,7V4gaDMQV8,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/7V4gaDMQV8
+Frog,9Z2V8fpazF,False,True,no locomotion clip,4,no hit clip; no run clip (no locomotion clip),https://poly.pizza/m/9Z2V8fpazF
+Ghost,Iip30bDHmu,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/Iip30bDHmu
+Ghost Skull,TX8r9WBXpe,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/TX8r9WBXpe
+Glub,x59pqJscry,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/x59pqJscry
+Glub Evolved,Z9lddNpM1M,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/Z9lddNpM1M
+Goleling,71gomWolax,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/71gomWolax
+Goleling Evolved,iHEuXiH6Aj,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/iHEuXiH6Aj
+Green Blob,y4kJh8EeYS,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/y4kJh8EeYS
+Green Spiky Blob,IoWG5F9WUc,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/IoWG5F9WUc
+Hywirl,zjr7CmWGER,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/zjr7CmWGER
+Mushnub,LWKmS30Xxl,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/LWKmS30Xxl
+Mushnub Evolved,0SZyA6MV51,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/0SZyA6MV51
+Ninja,mCNoqcqpvC,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/mCNoqcqpvC
+Orc Enemy,Q3z8ZX4kUy,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/Q3z8ZX4kUy
+Pigeon,9NGlBTpDEr,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/9NGlBTpDEr
+Pink Slime,AyP8sQmDLh,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/AyP8sQmDLh
+Rat,iltq5bVNaV,False,True,run,6,no hit clip,https://poly.pizza/m/iltq5bVNaV
+Robot Enemy,1gNo5ezvmr,False,True,run,7,no hit clip,https://poly.pizza/m/1gNo5ezvmr
+Robot Enemy Flying,lF3jeRJwiH,False,True,run,6,no hit clip,https://poly.pizza/m/lF3jeRJwiH
+Robot Enemy Flying Gun,UDTM6X1y9a,False,True,run,6,no hit clip,https://poly.pizza/m/UDTM6X1y9a
+Robot Enemy Large,mPDR0L5uKx,False,True,run,8,no hit clip,https://poly.pizza/m/mPDR0L5uKx
+Robot Enemy Large Gun,mWojM4i2IH,False,True,run,8,no hit clip,https://poly.pizza/m/mWojM4i2IH
+Robot Enemy Legs Gun,lFZfDh2hzP,False,True,run,7,no hit clip,https://poly.pizza/m/lFZfDh2hzP
+Skeleton,wODZYCgX5Z,False,True,run,5,no hit clip,https://poly.pizza/m/wODZYCgX5Z
+Skull Enemy,EHHwZ17lWD,True,True,walk only,10,no run clip (walk only),https://poly.pizza/m/EHHwZ17lWD
+Slime,LyjSUKHKnh,False,True,walk only,4,no hit clip; no run clip (walk only),https://poly.pizza/m/LyjSUKHKnh
+Slime Enemy,eSLKTsbl7F,True,True,walk only,10,no run clip (walk only),https://poly.pizza/m/eSLKTsbl7F
+Snake,x9x0viZs8V,False,False,walk only,4,no hit clip; no death clip; no run clip (walk only),https://poly.pizza/m/x9x0viZs8V
+Spider,yRYJiAJyiM,False,True,walk only,5,no hit clip; no run clip (walk only),https://poly.pizza/m/yRYJiAJyiM
+Squidle,54QyRcsogk,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/54QyRcsogk
+Tribal,t91lDHaqRW,True,True,flight only,8,no run clip (flight only),https://poly.pizza/m/t91lDHaqRW
+Wasp,3aQgc75sUR,False,True,flight only,3,no hit clip; no run clip (flight only),https://poly.pizza/m/3aQgc75sUR
+Wizard,o87Upt5uHX,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/o87Upt5uHX
+Wolf,XU7oNeKShV,False,True,run,8,no hit clip,https://poly.pizza/m/XU7oNeKShV
+Yeti,S1E7idPFhe,True,True,walk only,9,no run clip (walk only),https://poly.pizza/m/S1E7idPFhe

@@ -1,0 +1,413 @@
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:24:14 | INFO: Data are loaded, start creating Blender stuff
+01:24:14 | INFO: Blender create Mesh node Revolver
+01:24:14 | INFO: Blender create Mesh node Sniper
+01:24:14 | INFO: Blender create Mesh node Revolver_Small
+01:24:14 | INFO: Blender create Mesh node Pistol
+01:24:14 | INFO: Blender create Mesh node SMG
+01:24:14 | INFO: Blender create Mesh node GrenadeLauncher
+01:24:14 | INFO: Blender create Mesh node ShortCannon
+01:24:14 | INFO: Blender create Mesh node Shotgun
+01:24:14 | INFO: Blender create Mesh node Sniper_2
+01:24:14 | INFO: Blender create Mesh node RocketLauncher
+01:24:14 | INFO: Blender create Mesh node AK
+01:24:14 | INFO: Blender create Mesh node Shovel
+01:24:14 | INFO: Blender create Mesh node Knife_2
+01:24:14 | INFO: Blender create Mesh node Knife_1
+01:24:14 | INFO: Blender create Mesh node Character_Enemy_Head
+01:24:14 | INFO: Blender create Mesh node Character_Enemy
+01:24:15 | INFO: glTF import finished in 0.11s
+/home/dormage/code/MMO3D2/_mob_library/scripts/render_thumbs.py:75: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:18)
+00:22.722  render           | Saved: '_mob_library/renders_humanoids/character_enemy.png'
+@@THUMB character_enemy
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:24:36 | INFO: Data are loaded, start creating Blender stuff
+01:24:36 | INFO: Blender create Mesh node Head
+01:24:36 | INFO: Blender create Mesh node ShoulderPad.L
+01:24:36 | INFO: Blender create Mesh node ShoulderPad.R
+01:24:36 | INFO: Blender create Mesh node Revolver
+01:24:36 | INFO: Blender create Mesh node Sniper
+01:24:36 | INFO: Blender create Mesh node Revolver_Small
+01:24:36 | INFO: Blender create Mesh node Pistol
+01:24:36 | INFO: Blender create Mesh node SMG
+01:24:36 | INFO: Blender create Mesh node GrenadeLauncher
+01:24:36 | INFO: Blender create Mesh node ShortCannon
+01:24:36 | INFO: Blender create Mesh node Shotgun
+01:24:36 | INFO: Blender create Mesh node Sniper_2
+01:24:36 | INFO: Blender create Mesh node RocketLauncher
+01:24:36 | INFO: Blender create Mesh node AK
+01:24:36 | INFO: Blender create Mesh node Shovel
+01:24:36 | INFO: Blender create Mesh node Knife_2
+01:24:36 | INFO: Blender create Mesh node Knife_1
+01:24:36 | INFO: Blender create Mesh node Body
+01:24:36 | INFO: glTF import finished in 0.16s
+00:26.732  render           | Saved: '_mob_library/renders_humanoids/character_soldier.png'
+@@THUMB character_soldier
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:24:40 | INFO: Data are loaded, start creating Blender stuff
+01:24:40 | INFO: Blender create Mesh node Ninja
+01:24:40 | INFO: glTF import finished in 0.07s
+00:30.112  render           | Saved: '_mob_library/renders_humanoids/ninja.png'
+@@THUMB ninja
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:24:43 | INFO: Data are loaded, start creating Blender stuff
+01:24:43 | INFO: Blender create Mesh node Weapon_Cutlass
+01:24:43 | INFO: Blender create Mesh node Captain_Barbarossa 
+01:24:43 | INFO: Blender create Mesh node Ernest
+01:24:43 | INFO: glTF import finished in 0.08s
+00:33.014  render           | Saved: '_mob_library/renders_humanoids/pirate_captain.png'
+@@THUMB pirate_captain
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:24:46 | INFO: Data are loaded, start creating Blender stuff
+01:24:46 | INFO: Blender create Mesh node Weapon_Axe
+01:24:46 | INFO: Blender create Mesh node Skeleton
+01:24:46 | INFO: glTF import finished in 0.08s
+00:36.371  render           | Saved: '_mob_library/renders_humanoids/skeleton_1xzd.png'
+@@THUMB skeleton_1xzd
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:24:49 | INFO: Data are loaded, start creating Blender stuff
+01:24:49 | INFO: Blender create Mesh node Weapon_Dagger
+01:24:49 | INFO: Blender create Mesh node Skeleton
+01:24:49 | INFO: glTF import finished in 0.09s
+00:40.204  render           | Saved: '_mob_library/renders_humanoids/skeleton_yq5a.png'
+@@THUMB skeleton_yq5a
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:24:53 | INFO: Data are loaded, start creating Blender stuff
+01:24:53 | INFO: Blender create Mesh node Soldier_Body
+01:24:53 | INFO: Blender create Mesh node Soldier_Feet
+01:24:53 | INFO: Blender create Mesh node Soldier_Head
+01:24:53 | INFO: Blender create Mesh node Soldier_Legs
+01:24:54 | INFO: glTF import finished in 0.26s
+00:45.422  render           | Saved: '_mob_library/renders_humanoids/soldier.png'
+@@THUMB soldier
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:24:58 | INFO: Data are loaded, start creating Blender stuff
+01:24:59 | INFO: Blender create Mesh node Adventurer_Feet
+01:24:59 | INFO: Blender create Mesh node Adventurer_Legs
+01:24:59 | INFO: Blender create Mesh node Adventurer_Body
+01:24:59 | INFO: Blender create Mesh node Adventurer_Head
+01:24:59 | INFO: Blender create Mesh node Backpack
+01:24:59 | INFO: glTF import finished in 0.29s
+00:50.010  render           | Saved: '_mob_library/renders_humanoids/adventurer.png'
+@@THUMB adventurer
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:03 | INFO: Data are loaded, start creating Blender stuff
+01:25:03 | INFO: Blender create Mesh node Adventurer_Body
+01:25:03 | INFO: Blender create Mesh node Adventurer_Feet
+01:25:03 | INFO: Blender create Mesh node Adventurer_Head
+01:25:03 | INFO: Blender create Mesh node Adventurer_Legs
+01:25:03 | INFO: glTF import finished in 0.18s
+00:53.699  render           | Saved: '_mob_library/renders_humanoids/adventurer_zwf0.png'
+@@THUMB adventurer_zwf0
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:07 | INFO: Data are loaded, start creating Blender stuff
+01:25:07 | INFO: Blender create Mesh node Body
+01:25:07 | INFO: Blender create Mesh node Ears
+01:25:07 | INFO: Blender create Mesh node Head
+01:25:07 | INFO: Blender create Mesh node Arms
+01:25:07 | INFO: glTF import finished in 0.08s
+00:57.036  render           | Saved: '_mob_library/renders_humanoids/animated_platformer_character.png'
+@@THUMB animated_platformer_character
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:10 | INFO: Data are loaded, start creating Blender stuff
+01:25:10 | INFO: Blender create Mesh node Pouch
+01:25:10 | INFO: Blender create Mesh node Face
+01:25:10 | INFO: Blender create Mesh node ShoulderPad.L
+01:25:10 | INFO: Blender create Mesh node ShoulderPad.R
+01:25:10 | INFO: Blender create Mesh node Wizard_Staff
+01:25:10 | INFO: Blender create Mesh node Wizard.001
+01:25:10 | INFO: glTF import finished in 0.08s
+01:00.386  render           | Saved: '_mob_library/renders_humanoids/animated_wizard.png'
+@@THUMB animated_wizard
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:13 | INFO: Data are loaded, start creating Blender stuff
+01:25:13 | INFO: Blender create Mesh node Formad_Head
+01:25:13 | INFO: Blender create Mesh node Formal_Body
+01:25:14 | INFO: Blender create Mesh node Formal_Feet
+01:25:14 | INFO: Blender create Mesh node Formal_Legs
+01:25:14 | INFO: glTF import finished in 0.20s
+01:03.975  render           | Saved: '_mob_library/renders_humanoids/animated_woman.png'
+@@THUMB animated_woman
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:17 | INFO: Data are loaded, start creating Blender stuff
+01:25:17 | INFO: Blender create Mesh node Casual_Body
+01:25:17 | INFO: Blender create Mesh node Casual_Feet
+01:25:17 | INFO: Blender create Mesh node Casual_Head
+01:25:17 | INFO: Blender create Mesh node Casual_Legs
+01:25:17 | INFO: glTF import finished in 0.23s
+01:07.613  render           | Saved: '_mob_library/renders_humanoids/animated_woman_qj2g.png'
+@@THUMB animated_woman_qj2g
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:21 | INFO: Data are loaded, start creating Blender stuff
+01:25:21 | INFO: Blender create Mesh node Weapon_DoubleAxe
+01:25:21 | INFO: Blender create Mesh node Cube.117
+01:25:21 | INFO: glTF import finished in 0.08s
+01:11.209  render           | Saved: '_mob_library/renders_humanoids/anne.png'
+@@THUMB anne
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:24 | INFO: Data are loaded, start creating Blender stuff
+01:25:24 | INFO: Blender create Mesh node Pistol
+01:25:24 | INFO: Blender create Mesh node FinnTheFrog
+01:25:24 | INFO: glTF import finished in 0.10s
+01:14.524  render           | Saved: '_mob_library/renders_humanoids/astronaut.png'
+@@THUMB astronaut
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:28 | INFO: Data are loaded, start creating Blender stuff
+01:25:28 | INFO: Blender create Mesh node SpaceSuit_Feet
+01:25:28 | INFO: Blender create Mesh node SpaceSuit_Legs
+01:25:28 | INFO: Blender create Mesh node SpaceSuit_Body
+01:25:28 | INFO: Blender create Mesh node SpaceSuit_Head
+01:25:28 | INFO: glTF import finished in 0.25s
+01:17.955  render           | Saved: '_mob_library/renders_humanoids/astronaut_3hc2.png'
+@@THUMB astronaut_3hc2
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:31 | INFO: Data are loaded, start creating Blender stuff
+01:25:31 | INFO: Blender create Mesh node Pistol
+01:25:31 | INFO: Blender create Mesh node BarbaraTheBee
+01:25:31 | INFO: glTF import finished in 0.10s
+01:21.946  render           | Saved: '_mob_library/renders_humanoids/astronaut_oges.png'
+@@THUMB astronaut_oges
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:35 | INFO: Data are loaded, start creating Blender stuff
+01:25:35 | INFO: Blender create Mesh node Pistol
+01:25:35 | INFO: Blender create Mesh node FernandoTheFlamingo
+01:25:35 | INFO: glTF import finished in 0.09s
+01:25.418  render           | Saved: '_mob_library/renders_humanoids/astronaut_zbtp.png'
+@@THUMB astronaut_zbtp
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:38 | INFO: Data are loaded, start creating Blender stuff
+01:25:38 | INFO: Blender create Mesh node Beach_Feet
+01:25:38 | INFO: Blender create Mesh node Beach_Legs
+01:25:39 | INFO: Blender create Mesh node Beach_Body
+01:25:39 | INFO: Blender create Mesh node Beach_Head
+01:25:39 | INFO: glTF import finished in 0.22s
+01:28.795  render           | Saved: '_mob_library/renders_humanoids/beach_character.png'
+@@THUMB beach_character
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:42 | INFO: Data are loaded, start creating Blender stuff
+01:25:42 | INFO: Blender create Mesh node Zombie_Arm
+01:25:42 | INFO: glTF import finished in 0.10s
+01:32.244  render           | Saved: '_mob_library/renders_humanoids/big_arm.png'
+@@THUMB big_arm
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:45 | INFO: Data are loaded, start creating Blender stuff
+01:25:45 | INFO: Blender create Mesh node Suit_Legs
+01:25:45 | INFO: Blender create Mesh node Suit_Feet
+01:25:45 | INFO: Blender create Mesh node Suit_Body
+01:25:45 | INFO: Blender create Mesh node Suit_Head
+01:25:46 | INFO: glTF import finished in 0.24s
+01:34.745  render           | Saved: '_mob_library/renders_humanoids/business_man.png'
+@@THUMB business_man
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:48 | INFO: Data are loaded, start creating Blender stuff
+01:25:48 | INFO: Blender create Mesh node Casual2_Feet
+01:25:48 | INFO: Blender create Mesh node Casual2_Body
+01:25:48 | INFO: Blender create Mesh node Casual2_Head
+01:25:48 | INFO: Blender create Mesh node Casual2_Legs
+01:25:48 | INFO: glTF import finished in 0.20s
+01:38.165  render           | Saved: '_mob_library/renders_humanoids/casual_character.png'
+@@THUMB casual_character
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:51 | INFO: Data are loaded, start creating Blender stuff
+01:25:51 | INFO: Blender create Mesh node NurbsPath.001
+01:25:51 | INFO: Blender create Mesh node Rogue
+01:25:51 | INFO: Blender create Mesh node Rogue.001
+01:25:51 | INFO: glTF import finished in 0.07s
+01:42.637  render           | Saved: '_mob_library/renders_humanoids/character_animated.png'
+@@THUMB character_animated
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:56 | INFO: Data are loaded, start creating Blender stuff
+01:25:56 | INFO: Blender create Mesh node Revolver
+01:25:56 | INFO: Blender create Mesh node Sniper
+01:25:56 | INFO: Blender create Mesh node Revolver_Small
+01:25:56 | INFO: Blender create Mesh node Pistol
+01:25:56 | INFO: Blender create Mesh node SMG
+01:25:56 | INFO: Blender create Mesh node GrenadeLauncher
+01:25:56 | INFO: Blender create Mesh node ShortCannon
+01:25:56 | INFO: Blender create Mesh node Shotgun
+01:25:56 | INFO: Blender create Mesh node Sniper_2
+01:25:56 | INFO: Blender create Mesh node RocketLauncher
+01:25:56 | INFO: Blender create Mesh node AK
+01:25:56 | INFO: Blender create Mesh node Shovel
+01:25:56 | INFO: Blender create Mesh node Knife_2
+01:25:56 | INFO: Blender create Mesh node Knife_1
+01:25:56 | INFO: Blender create Mesh node Character_Hazmat_Head
+01:25:56 | INFO: Blender create Mesh node Character_Hazmat
+01:25:56 | INFO: glTF import finished in 0.13s
+01:57.009  render           | Saved: '_mob_library/renders_humanoids/character_hazmat.png'
+@@THUMB character_hazmat
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:10 | INFO: Data are loaded, start creating Blender stuff
+01:26:10 | INFO: Blender create Mesh node Knife
+01:26:10 | INFO: Blender create Mesh node Matt
+01:26:10 | INFO: glTF import finished in 0.11s
+02:00.753  render           | Saved: '_mob_library/renders_humanoids/characters_matt.png'
+@@THUMB characters_matt
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:14 | INFO: Data are loaded, start creating Blender stuff
+01:26:14 | INFO: Blender create Mesh node Axe
+01:26:14 | INFO: Blender create Mesh node Sam
+01:26:14 | INFO: glTF import finished in 0.10s
+02:04.771  render           | Saved: '_mob_library/renders_humanoids/characters_sam.png'
+@@THUMB characters_sam
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:18 | INFO: Data are loaded, start creating Blender stuff
+01:26:18 | INFO: Blender create Mesh node WoodenBat_Saw
+01:26:18 | INFO: Blender create Mesh node Shaun
+01:26:18 | INFO: glTF import finished in 0.15s
+02:08.458  render           | Saved: '_mob_library/renders_humanoids/characters_shaun.png'
+@@THUMB characters_shaun
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:21 | INFO: Data are loaded, start creating Blender stuff
+01:26:21 | INFO: Blender create Mesh node Character
+01:26:22 | INFO: glTF import finished in 0.06s
+02:12.030  render           | Saved: '_mob_library/renders_humanoids/cube_guy_character.png'
+@@THUMB cube_guy_character
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:25 | INFO: Data are loaded, start creating Blender stuff
+01:26:25 | INFO: Blender create Mesh node Character
+01:26:25 | INFO: glTF import finished in 0.10s
+02:15.978  render           | Saved: '_mob_library/renders_humanoids/cube_woman_character.png'
+@@THUMB cube_woman_character
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:29 | INFO: Data are loaded, start creating Blender stuff
+01:26:29 | INFO: Blender create Mesh node Farmer_Feet
+01:26:29 | INFO: Blender create Mesh node Farmer_Pants
+01:26:29 | INFO: Blender create Mesh node Farmer_Body
+01:26:29 | INFO: Blender create Mesh node Farmer_Head
+01:26:29 | INFO: glTF import finished in 0.22s
+02:19.860  render           | Saved: '_mob_library/renders_humanoids/farmer.png'
+@@THUMB farmer
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:33 | INFO: Data are loaded, start creating Blender stuff
+01:26:33 | INFO: Blender create Mesh node Weapon_Lute
+01:26:33 | INFO: Blender create Mesh node Henry.002
+01:26:33 | INFO: glTF import finished in 0.08s
+02:23.634  render           | Saved: '_mob_library/renders_humanoids/henry.png'
+@@THUMB henry
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:37 | INFO: Data are loaded, start creating Blender stuff
+01:26:37 | INFO: Blender create Mesh node Sword
+01:26:37 | INFO: Blender create Mesh node Medieval_Body
+01:26:37 | INFO: Blender create Mesh node Medieval_Feet
+01:26:37 | INFO: Blender create Mesh node Medieval_Head
+01:26:37 | INFO: Blender create Mesh node Medieval_Legs
+01:26:37 | INFO: glTF import finished in 0.24s
+02:28.966  render           | Saved: '_mob_library/renders_humanoids/hooded_adventurer.png'
+@@THUMB hooded_adventurer
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:42 | INFO: Data are loaded, start creating Blender stuff
+01:26:42 | INFO: Blender create Mesh node Casual_Feet
+01:26:42 | INFO: Blender create Mesh node Casual_Legs
+01:26:42 | INFO: Blender create Mesh node Casual_Head
+01:26:42 | INFO: Blender create Mesh node Casual_Body
+01:26:42 | INFO: glTF import finished in 0.24s
+02:34.170  render           | Saved: '_mob_library/renders_humanoids/hoodie_character.png'
+@@THUMB hoodie_character
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:47 | INFO: Data are loaded, start creating Blender stuff
+01:26:47 | INFO: Blender create Mesh node King_Feet
+01:26:47 | INFO: Blender create Mesh node King_Legs
+01:26:47 | INFO: Blender create Mesh node King_Body
+01:26:47 | INFO: Blender create Mesh node King_Head
+01:26:48 | INFO: glTF import finished in 0.27s
+02:38.221  render           | Saved: '_mob_library/renders_humanoids/king.png'
+@@THUMB king
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:51 | INFO: Data are loaded, start creating Blender stuff
+01:26:51 | INFO: Blender create Mesh node Pistol
+01:26:51 | INFO: Blender create Mesh node Lis
+01:26:51 | INFO: glTF import finished in 0.12s
+02:40.495  render           | Saved: '_mob_library/renders_humanoids/lis.png'
+@@THUMB lis
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:54 | INFO: Data are loaded, start creating Blender stuff
+01:26:54 | INFO: Blender create Mesh node Weapon_Sword
+01:26:54 | INFO: Blender create Mesh node Mako
+01:26:54 | INFO: glTF import finished in 0.10s
+02:44.068  render           | Saved: '_mob_library/renders_humanoids/mako.png'
+@@THUMB mako
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:26:57 | INFO: Data are loaded, start creating Blender stuff
+01:26:57 | INFO: Blender create Mesh node Punk_Feet
+01:26:57 | INFO: Blender create Mesh node Punk_Legs
+01:26:57 | INFO: Blender create Mesh node Punk_Body
+01:26:57 | INFO: Blender create Mesh node Punk_Head
+01:26:57 | INFO: glTF import finished in 0.23s
+02:49.190  render           | Saved: '_mob_library/renders_humanoids/punk.png'
+@@THUMB punk
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:27:02 | INFO: Data are loaded, start creating Blender stuff
+01:27:02 | INFO: Blender create Mesh node Punk_Body
+01:27:02 | INFO: Blender create Mesh node Punk_Feet
+01:27:02 | INFO: Blender create Mesh node Punk_Head
+01:27:02 | INFO: Blender create Mesh node Punk_Legs
+01:27:02 | INFO: glTF import finished in 0.25s
+02:54.193  render           | Saved: '_mob_library/renders_humanoids/punk_djxo.png'
+@@THUMB punk_djxo
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:27:07 | INFO: Data are loaded, start creating Blender stuff
+01:27:07 | INFO: Blender create Mesh node Swat_Legs
+01:27:07 | INFO: Blender create Mesh node Swat_Feet
+01:27:07 | INFO: Blender create Mesh node Swat_Body
+01:27:07 | INFO: Blender create Mesh node Swat_Head
+01:27:08 | INFO: glTF import finished in 0.25s
+02:59.501  render           | Saved: '_mob_library/renders_humanoids/swat.png'
+@@THUMB swat
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:27:13 | INFO: Data are loaded, start creating Blender stuff
+01:27:13 | INFO: Blender create Mesh node Pistol
+01:27:13 | INFO: Blender create Mesh node SciFi_Body
+01:27:13 | INFO: Blender create Mesh node SciFi_Feet
+01:27:13 | INFO: Blender create Mesh node SciFi_Head
+01:27:13 | INFO: Blender create Mesh node SciFi_Legs
+01:27:13 | INFO: glTF import finished in 0.25s
+03:05.270  render           | Saved: '_mob_library/renders_humanoids/sci_fi_character.png'
+@@THUMB sci_fi_character
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:27:18 | INFO: Data are loaded, start creating Blender stuff
+01:27:18 | INFO: Blender create Mesh node Character
+01:27:18 | INFO: glTF import finished in 0.07s
+03:09.288  render           | Saved: '_mob_library/renders_humanoids/steve.png'
+@@THUMB steve
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:27:22 | INFO: Data are loaded, start creating Blender stuff
+01:27:22 | INFO: Blender create Mesh node Suit_Body
+01:27:22 | INFO: Blender create Mesh node Suit_Feet
+01:27:22 | INFO: Blender create Mesh node Suit_Head
+01:27:22 | INFO: Blender create Mesh node Suit_Legs
+01:27:23 | INFO: glTF import finished in 0.21s
+03:13.082  render           | Saved: '_mob_library/renders_humanoids/suit.png'
+@@THUMB suit
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:27:26 | INFO: Data are loaded, start creating Blender stuff
+01:27:26 | INFO: Blender create Mesh node Witch_Body
+01:27:26 | INFO: Blender create Mesh node Witch_Feet
+01:27:26 | INFO: Blender create Mesh node Witch_Head
+01:27:26 | INFO: Blender create Mesh node Witch_Legs
+01:27:26 | INFO: glTF import finished in 0.21s
+03:17.410  render           | Saved: '_mob_library/renders_humanoids/witch.png'
+@@THUMB witch
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:27:30 | INFO: Data are loaded, start creating Blender stuff
+01:27:30 | INFO: Blender create Mesh node Worker_Body
+01:27:31 | INFO: Blender create Mesh node Worker_Feet
+01:27:31 | INFO: Blender create Mesh node Worker_Head
+01:27:31 | INFO: Blender create Mesh node Worker_Legs
+01:27:31 | INFO: glTF import finished in 0.22s
+03:21.559  render           | Saved: '_mob_library/renders_humanoids/worker.png'
+@@THUMB worker
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:27:35 | INFO: Data are loaded, start creating Blender stuff
+01:27:35 | INFO: Blender create Mesh node Worker_Feet
+01:27:35 | INFO: Blender create Mesh node Worker_Legs
+01:27:35 | INFO: Blender create Mesh node Worker_Body
+01:27:35 | INFO: Blender create Mesh node Worker_Head
+01:27:35 | INFO: glTF import finished in 0.21s
+03:25.080  render           | Saved: '_mob_library/renders_humanoids/worker_yg2b.png'
+@@THUMB worker_yg2b
+@@DONE
+
+Blender quit

@@ -1,0 +1,119 @@
+{
+  "folder": "Demon_IkB63XOPvr",
+  "title": "Demon",
+  "publicID": "IkB63XOPvr",
+  "page": "https://poly.pizza/m/IkB63XOPvr",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "pack": "catalog scan",
+  "tris": 3292,
+  "bones": 12,
+  "materials": 1,
+  "files": {
+    "fbx": "Demon_IkB63XOPvr.fbx",
+    "glb": "Demon_IkB63XOPvr.glb",
+    "fbx_bytes": 596300,
+    "glb_bytes": 221092
+  },
+  "animation_count": 7,
+  "animations": [
+    {
+      "name": "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+      "clean": "Attack",
+      "channels": 8
+    },
+    {
+      "name": "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+      "clean": "Death",
+      "channels": 12
+    },
+    {
+      "name": "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+      "clean": "HitRecieve",
+      "channels": 2
+    },
+    {
+      "name": "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+      "clean": "Idle",
+      "channels": 3
+    },
+    {
+      "name": "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+      "clean": "Jump",
+      "channels": 5
+    },
+    {
+      "name": "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+      "clean": "Run",
+      "channels": 12
+    },
+    {
+      "name": "EnemyArmature|EnemyArmature|EnemyArmature|Walk",
+      "clean": "Walk",
+      "channels": 9
+    }
+  ],
+  "required": {
+    "hit": [
+      "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve"
+    ],
+    "death": [
+      "EnemyArmature|EnemyArmature|EnemyArmature|Death"
+    ],
+    "run": [
+      "EnemyArmature|EnemyArmature|EnemyArmature|Run"
+    ]
+  },
+  "required_clean": {
+    "hit": [
+      "HitRecieve"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run"
+    ]
+  },
+  "fbx_anim_stacks": 8,
+  "fbx_curve_nodes": 274,
+  "fbx_takes": [
+    "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+    "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+    "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+    "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+    "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+    "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+    "EnemyArmature|EnemyArmature|EnemyArmature|Walk"
+  ],
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "animations_present": true,
+    "all_animations_have_channels": true,
+    "fbx_has_animation": true
+  },
+  "fbx_take_strings": 7,
+  "fbx_clips": [
+    "Attack",
+    "Death",
+    "HitRecieve",
+    "Idle",
+    "Jump",
+    "Run",
+    "Walk"
+  ],
+  "glb_clips": [
+    "Attack",
+    "Death",
+    "HitRecieve",
+    "Idle",
+    "Jump",
+    "Run",
+    "Walk"
+  ],
+  "clip_parity": {
+    "only_in_glb": [],
+    "only_in_fbx": []
+  }
+}

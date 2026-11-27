@@ -1,0 +1,34 @@
+{
+  "regions": [
+    {
+      "id": "town",
+      "name": "Walled Town",
+      "scene": "res://scenes/region_town.tscn",
+      "index": 1
+    },
+    {
+      "id": "island",
+      "name": "Floating Island",
+      "scene": "res://scenes/region_island.tscn",
+      "index": 2
+    },
+    {
+      "id": "graveyard",
+      "name": "Gy Graveyard",
+      "scene": "res://scenes/region_graveyard.tscn",
+      "index": 3
+    },
+    {
+      "id": "wetlands",
+      "name": "Living Wetlands",
+      "scene": "res://scenes/region_wetlands.tscn",
+      "index": 4
+    },
+    {
+      "id": "desert",
+      "name": "Ashkari Bazaar",
+      "scene": "res://scenes/region_desert.tscn",
+      "index": 5
+    }
+  ]
+}

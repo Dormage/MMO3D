@@ -1,0 +1,15 @@
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:30:13 | INFO: Data are loaded, start creating Blender stuff
+01:30:13 | INFO: Blender create Mesh node Punk_Body
+01:30:13 | INFO: Blender create Mesh node Punk_Feet
+01:30:13 | INFO: Blender create Mesh node Punk_Head
+01:30:13 | INFO: Blender create Mesh node Punk_Legs
+01:30:13 | INFO: glTF import finished in 0.23s
+/home/dormage/code/MMO3D2/_mob_library/scripts/render_thumbs.py:75: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:18)
+00:15.442  render           | Saved: '_mob_library/renders_humanoids/punk_djxo.png'
+@@THUMB punk_djxo
+@@DONE
+
+Blender quit

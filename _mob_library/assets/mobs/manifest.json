@@ -1,0 +1,4932 @@
+[
+  {
+    "folder": "Alien_RRliSQBP7r",
+    "title": "Alien",
+    "publicID": "RRliSQBP7r",
+    "page": "https://poly.pizza/m/RRliSQBP7r",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 7676,
+    "bones": 43,
+    "materials": 5,
+    "files": {
+      "fbx": "Alien_RRliSQBP7r.fbx",
+      "glb": "Alien_RRliSQBP7r.glb",
+      "fbx_bytes": 3429164,
+      "glb_bytes": 480976
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 35
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 32
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 13
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Blue_Demon_S7jYW6Amye",
+    "title": "Blue Demon",
+    "publicID": "S7jYW6Amye",
+    "page": "https://poly.pizza/m/S7jYW6Amye",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 5800,
+    "bones": 43,
+    "materials": 6,
+    "files": {
+      "fbx": "Blue_Demon_S7jYW6Amye.fbx",
+      "glb": "Blue_Demon_S7jYW6Amye.glb",
+      "fbx_bytes": 3587644,
+      "glb_bytes": 439488
+    },
+    "animation_count": 15,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Run2",
+        "clean": "Run2",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 35
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run",
+        "CharacterArmature|Run2"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run",
+        "Run2"
+      ]
+    },
+    "fbx_anim_stacks": 16,
+    "fbx_curve_nodes": 1981,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Run2",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 15,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run2",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run2",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Bunny_irZjWFARyl",
+    "title": "Bunny",
+    "publicID": "irZjWFARyl",
+    "page": "https://poly.pizza/m/irZjWFARyl",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 8284,
+    "bones": 49,
+    "materials": 6,
+    "files": {
+      "fbx": "Bunny_irZjWFARyl.fbx",
+      "glb": "Bunny_irZjWFARyl.glb",
+      "fbx_bytes": 3921100,
+      "glb_bytes": 538360
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 17
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 29
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 31
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 39
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 19
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 17
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 2101,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Cactoro_IGn9lhdama",
+    "title": "Cactoro",
+    "publicID": "IGn9lhdama",
+    "page": "https://poly.pizza/m/IGn9lhdama",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 6398,
+    "bones": 43,
+    "materials": 6,
+    "files": {
+      "fbx": "Cactoro_IGn9lhdama.fbx",
+      "glb": "Cactoro_IGn9lhdama.glb",
+      "fbx_bytes": 3386300,
+      "glb_bytes": 471704
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 23
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 30
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 32
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Character_Enemy_mdGe4IN31v",
+    "title": "Character Enemy",
+    "publicID": "mdGe4IN31v",
+    "page": "https://poly.pizza/m/mdGe4IN31v",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 19478,
+    "bones": 43,
+    "materials": 17,
+    "files": {
+      "fbx": "Character_Enemy_mdGe4IN31v.fbx",
+      "glb": "Character_Enemy_mdGe4IN31v.glb",
+      "fbx_bytes": 9255324,
+      "glb_bytes": 1552600
+    },
+    "animation_count": 34,
+    "animations": [
+      {
+        "name": "Idle",
+        "clean": "Idle",
+        "channels": 9
+      },
+      {
+        "name": "Death",
+        "clean": "Death",
+        "channels": 19
+      },
+      {
+        "name": "Duck",
+        "clean": "Duck",
+        "channels": 13
+      },
+      {
+        "name": "HitReact",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "Idle_Shoot",
+        "clean": "Idle_Shoot",
+        "channels": 12
+      },
+      {
+        "name": "Jump",
+        "clean": "Jump",
+        "channels": 15
+      },
+      {
+        "name": "Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 15
+      },
+      {
+        "name": "Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 15
+      },
+      {
+        "name": "No",
+        "clean": "No",
+        "channels": 9
+      },
+      {
+        "name": "Punch",
+        "clean": "Punch",
+        "channels": 16
+      },
+      {
+        "name": "Run",
+        "clean": "Run",
+        "channels": 25
+      },
+      {
+        "name": "Run_Gun",
+        "clean": "Run_Gun",
+        "channels": 26
+      },
+      {
+        "name": "Run_Shoot",
+        "clean": "Run_Shoot",
+        "channels": 26
+      },
+      {
+        "name": "Walk",
+        "clean": "Walk",
+        "channels": 24
+      },
+      {
+        "name": "Walk_Shoot",
+        "clean": "Walk_Shoot",
+        "channels": 25
+      },
+      {
+        "name": "Wave",
+        "clean": "Wave",
+        "channels": 18
+      },
+      {
+        "name": "Yes",
+        "clean": "Yes",
+        "channels": 9
+      },
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 19
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 9
+      },
+      {
+        "name": "CharacterArmature|Idle_Shoot",
+        "clean": "Idle_Shoot",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 9
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run_Gun",
+        "clean": "Run_Gun",
+        "channels": 26
+      },
+      {
+        "name": "CharacterArmature|Run_Shoot",
+        "clean": "Run_Shoot",
+        "channels": 26
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 23
+      },
+      {
+        "name": "CharacterArmature|Walk_Shoot",
+        "clean": "Walk_Shoot",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 9
+      }
+    ],
+    "required": {
+      "hit": [
+        "HitReact",
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "Death",
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "Run",
+        "Run_Gun",
+        "Run_Shoot",
+        "CharacterArmature|Run",
+        "CharacterArmature|Run_Gun",
+        "CharacterArmature|Run_Shoot"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact",
+        "HitReact"
+      ],
+      "death": [
+        "Death",
+        "Death"
+      ],
+      "run": [
+        "Run",
+        "Run_Gun",
+        "Run_Shoot",
+        "Run",
+        "Run_Gun",
+        "Run_Shoot"
+      ]
+    },
+    "fbx_anim_stacks": 35,
+    "fbx_curve_nodes": 5203,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Idle_Shoot",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Run_Gun",
+      "CharacterArmature|Run_Shoot",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Walk_Shoot",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Yes",
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Idle_Shoot",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Run_Gun",
+      "Run_Shoot",
+      "Walk",
+      "Walk_Shoot",
+      "Wave",
+      "Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 34,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Idle_Shoot",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run_Gun",
+      "Run_Shoot",
+      "Walk",
+      "Walk_Shoot",
+      "Wave",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Idle_Shoot",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run_Gun",
+      "Run_Shoot",
+      "Walk",
+      "Walk_Shoot",
+      "Wave",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Character_Soldier_PpLF4rt4ah",
+    "title": "Character Soldier",
+    "publicID": "PpLF4rt4ah",
+    "page": "https://poly.pizza/m/PpLF4rt4ah",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 20712,
+    "bones": 43,
+    "materials": 14,
+    "files": {
+      "fbx": "Character_Soldier_PpLF4rt4ah.fbx",
+      "glb": "Character_Soldier_PpLF4rt4ah.glb",
+      "fbx_bytes": 3696060,
+      "glb_bytes": 1333700
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 19
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 8
+      },
+      {
+        "name": "CharacterArmature|Idle_Shoot",
+        "clean": "Idle_Shoot",
+        "channels": 11
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 9
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run_Gun",
+        "clean": "Run_Gun",
+        "channels": 26
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 9
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run",
+        "CharacterArmature|Run_Gun"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run",
+        "Run_Gun"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Idle_Shoot",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Run_Gun",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Idle_Shoot",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run_Gun",
+      "Wave",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Idle_Shoot",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run_Gun",
+      "Wave",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Demon_LnfIziKv4o",
+    "title": "Demon",
+    "publicID": "LnfIziKv4o",
+    "page": "https://poly.pizza/m/LnfIziKv4o",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 6712,
+    "bones": 43,
+    "materials": 4,
+    "files": {
+      "fbx": "Demon_LnfIziKv4o.fbx",
+      "glb": "Demon_LnfIziKv4o.glb",
+      "fbx_bytes": 3438588,
+      "glb_bytes": 485516
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Demon_IkB63XOPvr",
+    "title": "Demon",
+    "publicID": "IkB63XOPvr",
+    "page": "https://poly.pizza/m/IkB63XOPvr",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 3292,
+    "bones": 12,
+    "materials": 1,
+    "files": {
+      "fbx": "Demon_IkB63XOPvr.fbx",
+      "glb": "Demon_IkB63XOPvr.glb",
+      "fbx_bytes": 596300,
+      "glb_bytes": 221092
+    },
+    "animation_count": 7,
+    "animations": [
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+        "clean": "Attack",
+        "channels": 8
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+        "clean": "Death",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+        "clean": "HitRecieve",
+        "channels": 2
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+        "clean": "Idle",
+        "channels": 3
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+        "clean": "Jump",
+        "channels": 5
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+        "clean": "Run",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Walk",
+        "clean": "Walk",
+        "channels": 9
+      }
+    ],
+    "required": {
+      "hit": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve"
+      ],
+      "death": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Death"
+      ],
+      "run": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitRecieve"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 8,
+    "fbx_curve_nodes": 274,
+    "fbx_takes": [
+      "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+      "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Walk"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 7,
+    "fbx_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "glb_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Dino_wuerCFCWNR",
+    "title": "Dino",
+    "publicID": "wuerCFCWNR",
+    "page": "https://poly.pizza/m/wuerCFCWNR",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 5414,
+    "bones": 43,
+    "materials": 6,
+    "files": {
+      "fbx": "Dino_wuerCFCWNR.fbx",
+      "glb": "Dino_wuerCFCWNR.glb",
+      "fbx_bytes": 3358796,
+      "glb_bytes": 404176
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 35
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 32
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 13
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Enemy_Large_UgBmRVnQ9h",
+    "title": "Enemy Large",
+    "publicID": "UgBmRVnQ9h",
+    "page": "https://poly.pizza/m/UgBmRVnQ9h",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 4724,
+    "bones": 43,
+    "materials": 1,
+    "files": {
+      "fbx": "Enemy_Large_UgBmRVnQ9h.fbx",
+      "glb": "Enemy_Large_UgBmRVnQ9h.glb",
+      "fbx_bytes": 3382524,
+      "glb_bytes": 439768
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 23
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 30
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 32
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Fish_ypEYhCImAB",
+    "title": "Fish",
+    "publicID": "ypEYhCImAB",
+    "page": "https://poly.pizza/m/ypEYhCImAB",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 6854,
+    "bones": 43,
+    "materials": 6,
+    "files": {
+      "fbx": "Fish_ypEYhCImAB.fbx",
+      "glb": "Fish_ypEYhCImAB.glb",
+      "fbx_bytes": 3405932,
+      "glb_bytes": 461616
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 32
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Frog_37wofOCOzG",
+    "title": "Frog",
+    "publicID": "37wofOCOzG",
+    "page": "https://poly.pizza/m/37wofOCOzG",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 5016,
+    "bones": 43,
+    "materials": 4,
+    "files": {
+      "fbx": "Frog_37wofOCOzG.fbx",
+      "glb": "Frog_37wofOCOzG.glb",
+      "fbx_bytes": 3340188,
+      "glb_bytes": 379892
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 35
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 32
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 13
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Goblin_OdCOFSmEhl",
+    "title": "Goblin",
+    "publicID": "OdCOFSmEhl",
+    "page": "https://poly.pizza/m/OdCOFSmEhl",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 2912,
+    "bones": 12,
+    "materials": 1,
+    "files": {
+      "fbx": "Goblin_OdCOFSmEhl.fbx",
+      "glb": "Goblin_OdCOFSmEhl.glb",
+      "fbx_bytes": 586252,
+      "glb_bytes": 215420
+    },
+    "animation_count": 7,
+    "animations": [
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+        "clean": "Attack",
+        "channels": 8
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+        "clean": "Death",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+        "clean": "HitRecieve",
+        "channels": 2
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+        "clean": "Idle",
+        "channels": 3
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+        "clean": "Jump",
+        "channels": 5
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+        "clean": "Run",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Walk",
+        "clean": "Walk",
+        "channels": 9
+      }
+    ],
+    "required": {
+      "hit": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve"
+      ],
+      "death": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Death"
+      ],
+      "run": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitRecieve"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 8,
+    "fbx_curve_nodes": 274,
+    "fbx_takes": [
+      "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+      "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Walk"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 7,
+    "fbx_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "glb_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Monkroose_j4rVPvxyLg",
+    "title": "Monkroose",
+    "publicID": "j4rVPvxyLg",
+    "page": "https://poly.pizza/m/j4rVPvxyLg",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 5824,
+    "bones": 43,
+    "materials": 5,
+    "files": {
+      "fbx": "Monkroose_j4rVPvxyLg.fbx",
+      "glb": "Monkroose_j4rVPvxyLg.glb",
+      "fbx_bytes": 3371164,
+      "glb_bytes": 421164
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 35
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 32
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 13
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Mushroom_King_grnFTziU8u",
+    "title": "Mushroom King",
+    "publicID": "grnFTziU8u",
+    "page": "https://poly.pizza/m/grnFTziU8u",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 6044,
+    "bones": 43,
+    "materials": 5,
+    "files": {
+      "fbx": "Mushroom_King_grnFTziU8u.fbx",
+      "glb": "Mushroom_King_grnFTziU8u.glb",
+      "fbx_bytes": 3410892,
+      "glb_bytes": 444228
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 30
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Ninja_xGYmeDpfTu",
+    "title": "Ninja",
+    "publicID": "xGYmeDpfTu",
+    "page": "https://poly.pizza/m/xGYmeDpfTu",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 5964,
+    "bones": 43,
+    "materials": 7,
+    "files": {
+      "fbx": "Ninja_xGYmeDpfTu.fbx",
+      "glb": "Ninja_xGYmeDpfTu.glb",
+      "fbx_bytes": 3375852,
+      "glb_bytes": 457204
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Orc_5vO2YJsPEf",
+    "title": "Orc",
+    "publicID": "5vO2YJsPEf",
+    "page": "https://poly.pizza/m/5vO2YJsPEf",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 7344,
+    "bones": 43,
+    "materials": 11,
+    "files": {
+      "fbx": "Orc_5vO2YJsPEf.fbx",
+      "glb": "Orc_5vO2YJsPEf.glb",
+      "fbx_bytes": 3457068,
+      "glb_bytes": 512984
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 28
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Pirate_Captain_sN18LyyHAU",
+    "title": "Pirate Captain",
+    "publicID": "sN18LyyHAU",
+    "page": "https://poly.pizza/m/sN18LyyHAU",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 10576,
+    "bones": 45,
+    "materials": 2,
+    "files": {
+      "fbx": "Pirate_Captain_sN18LyyHAU.fbx",
+      "glb": "Pirate_Captain_sN18LyyHAU.glb",
+      "fbx_bytes": 3718572,
+      "glb_bytes": 666612
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+        "clean": "Death",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+        "clean": "HitReact",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+        "clean": "Jump_Idle",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+        "clean": "Jump_Land",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+        "clean": "No",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+        "clean": "Punch",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+        "clean": "Sword",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 23
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 12
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|"
+      ],
+      "death": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea"
+      ],
+      "run": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1933,
+    "fbx_takes": [
+      "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+      "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+      "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "CharacterArmature",
+      "Dea",
+      "Duck",
+      "Idle",
+      "Jump",
+      "Pun",
+      "Run",
+      "Swo",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "glb_clips": [
+      "CharacterArmature",
+      "Dea",
+      "Duck",
+      "Idle",
+      "Jump",
+      "Pun",
+      "Run",
+      "Swo",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Skeleton_yq5ATpujSt",
+    "title": "Skeleton",
+    "publicID": "yq5ATpujSt",
+    "page": "https://poly.pizza/m/yq5ATpujSt",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 14260,
+    "bones": 58,
+    "materials": 2,
+    "files": {
+      "fbx": "Skeleton_yq5ATpujSt.fbx",
+      "glb": "Skeleton_yq5ATpujSt.glb",
+      "fbx_bytes": 5004444,
+      "glb_bytes": 791608
+    },
+    "animation_count": 15,
+    "animations": [
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+        "clean": "Death",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idlea|CharacterArmatur",
+        "clean": "Jump_Idlea",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+        "clean": "Jump_Idle",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+        "clean": "Jump_Land",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+        "clean": "No",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+        "clean": "Punch",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+        "clean": "Sword",
+        "channels": 23
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 13
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|"
+      ],
+      "death": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea"
+      ],
+      "run": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 16,
+    "fbx_curve_nodes": 2656,
+    "fbx_takes": [
+      "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+      "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idlea|CharacterArmatur",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+      "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 15,
+    "fbx_clips": [
+      "CharacterArmatur",
+      "CharacterArmature",
+      "Dea",
+      "Duck",
+      "Idle",
+      "Jump",
+      "Pun",
+      "Run",
+      "Swo",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "glb_clips": [
+      "CharacterArmatur",
+      "CharacterArmature",
+      "Dea",
+      "Duck",
+      "Idle",
+      "Jump",
+      "Pun",
+      "Run",
+      "Swo",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Skeleton_1XZD9GK6Kj",
+    "title": "Skeleton",
+    "publicID": "1XZD9GK6Kj",
+    "page": "https://poly.pizza/m/1XZD9GK6Kj",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 11668,
+    "bones": 58,
+    "materials": 2,
+    "files": {
+      "fbx": "Skeleton_1XZD9GK6Kj.fbx",
+      "glb": "Skeleton_1XZD9GK6Kj.glb",
+      "fbx_bytes": 4923884,
+      "glb_bytes": 662212
+    },
+    "animation_count": 15,
+    "animations": [
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+        "clean": "Death",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idlea|CharacterArmatur",
+        "clean": "Jump_Idlea",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+        "clean": "Jump_Idle",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+        "clean": "Jump_Land",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+        "clean": "No",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+        "clean": "Punch",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+        "clean": "Sword",
+        "channels": 23
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 13
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|"
+      ],
+      "death": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea"
+      ],
+      "run": [
+        "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 16,
+    "fbx_curve_nodes": 2656,
+    "fbx_takes": [
+      "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+      "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idlea|CharacterArmatur",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+      "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+      "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 15,
+    "fbx_clips": [
+      "CharacterArmatur",
+      "CharacterArmature",
+      "Dea",
+      "Duck",
+      "Idle",
+      "Jump",
+      "Pun",
+      "Run",
+      "Swo",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "glb_clips": [
+      "CharacterArmatur",
+      "CharacterArmature",
+      "Dea",
+      "Duck",
+      "Idle",
+      "Jump",
+      "Pun",
+      "Run",
+      "Swo",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Skeleton_DM4QScSmbS",
+    "title": "Skeleton",
+    "publicID": "DM4QScSmbS",
+    "page": "https://poly.pizza/m/DM4QScSmbS",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 6854,
+    "bones": 12,
+    "materials": 3,
+    "files": {
+      "fbx": "Skeleton_DM4QScSmbS.fbx",
+      "glb": "Skeleton_DM4QScSmbS.glb",
+      "fbx_bytes": 708428,
+      "glb_bytes": 484864
+    },
+    "animation_count": 7,
+    "animations": [
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+        "clean": "Attack",
+        "channels": 8
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+        "clean": "Death",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+        "clean": "HitRecieve",
+        "channels": 2
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+        "clean": "Idle",
+        "channels": 3
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+        "clean": "Jump",
+        "channels": 5
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+        "clean": "Run",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Walk",
+        "clean": "Walk",
+        "channels": 9
+      }
+    ],
+    "required": {
+      "hit": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve"
+      ],
+      "death": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Death"
+      ],
+      "run": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitRecieve"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 8,
+    "fbx_curve_nodes": 274,
+    "fbx_takes": [
+      "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+      "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Walk"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 7,
+    "fbx_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "glb_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Soldier_oAArCNHjFB",
+    "title": "Soldier",
+    "publicID": "oAArCNHjFB",
+    "page": "https://poly.pizza/m/oAArCNHjFB",
+    "creator": "Quaternius",
+    "licence": "CC-BY 3.0",
+    "pack": "catalog scan",
+    "tris": 7900,
+    "bones": 62,
+    "materials": 6,
+    "files": {
+      "fbx": "Soldier_oAArCNHjFB.fbx",
+      "glb": "Soldier_oAArCNHjFB.glb",
+      "fbx_bytes": 8158044,
+      "glb_bytes": 1703996
+    },
+    "animation_count": 24,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Gun_Shoot",
+        "clean": "Gun_Shoot",
+        "channels": 29
+      },
+      {
+        "name": "CharacterArmature|HitRecieve",
+        "clean": "HitRecieve",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|HitRecieve_2",
+        "clean": "HitRecieve_2",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|Idle_Gun",
+        "clean": "Idle_Gun",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Idle_Gun_Pointing",
+        "clean": "Idle_Gun_Pointing",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Idle_Gun_Shoot",
+        "clean": "Idle_Gun_Shoot",
+        "channels": 37
+      },
+      {
+        "name": "CharacterArmature|Idle_Neutral",
+        "clean": "Idle_Neutral",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|Idle_Sword",
+        "clean": "Idle_Sword",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Interact",
+        "clean": "Interact",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Kick_Left",
+        "clean": "Kick_Left",
+        "channels": 54
+      },
+      {
+        "name": "CharacterArmature|Kick_Right",
+        "clean": "Kick_Right",
+        "channels": 54
+      },
+      {
+        "name": "CharacterArmature|Punch_Left",
+        "clean": "Punch_Left",
+        "channels": 55
+      },
+      {
+        "name": "CharacterArmature|Punch_Right",
+        "clean": "Punch_Right",
+        "channels": 55
+      },
+      {
+        "name": "CharacterArmature|Roll",
+        "clean": "Roll",
+        "channels": 57
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 53
+      },
+      {
+        "name": "CharacterArmature|Run_Back",
+        "clean": "Run_Back",
+        "channels": 53
+      },
+      {
+        "name": "CharacterArmature|Run_Left",
+        "clean": "Run_Left",
+        "channels": 55
+      },
+      {
+        "name": "CharacterArmature|Run_Right",
+        "clean": "Run_Right",
+        "channels": 55
+      },
+      {
+        "name": "CharacterArmature|Run_Shoot",
+        "clean": "Run_Shoot",
+        "channels": 53
+      },
+      {
+        "name": "CharacterArmature|Sword_Slash",
+        "clean": "Sword_Slash",
+        "channels": 34
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 29
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 22
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitRecieve",
+        "CharacterArmature|HitRecieve_2"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run",
+        "CharacterArmature|Run_Back",
+        "CharacterArmature|Run_Left",
+        "CharacterArmature|Run_Right",
+        "CharacterArmature|Run_Shoot"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitRecieve",
+        "HitRecieve_2"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run",
+        "Run_Back",
+        "Run_Left",
+        "Run_Right",
+        "Run_Shoot"
+      ]
+    },
+    "fbx_anim_stacks": 25,
+    "fbx_curve_nodes": 4537,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Gun_Shoot",
+      "CharacterArmature|HitRecieve",
+      "CharacterArmature|HitRecieve_2",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Idle_Gun",
+      "CharacterArmature|Idle_Gun_Pointing",
+      "CharacterArmature|Idle_Gun_Shoot",
+      "CharacterArmature|Idle_Neutral",
+      "CharacterArmature|Idle_Sword",
+      "CharacterArmature|Interact",
+      "CharacterArmature|Kick_Left",
+      "CharacterArmature|Kick_Right",
+      "CharacterArmature|Punch_Left",
+      "CharacterArmature|Punch_Right",
+      "CharacterArmature|Roll",
+      "CharacterArmature|Run",
+      "CharacterArmature|Run_Back",
+      "CharacterArmature|Run_Left",
+      "CharacterArmature|Run_Right",
+      "CharacterArmature|Run_Shoot",
+      "CharacterArmature|Sword_Slash",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 24,
+    "fbx_clips": [
+      "Death",
+      "Gun_Shoot",
+      "HitRecieve",
+      "HitRecieve_2",
+      "Idle",
+      "Idle_Gun",
+      "Idle_Gun_Pointing",
+      "Idle_Gun_Shoot",
+      "Idle_Neutral",
+      "Idle_Sword",
+      "Interact",
+      "Kick_Left",
+      "Kick_Right",
+      "Punch_Left",
+      "Punch_Right",
+      "Roll",
+      "Run",
+      "Run_Back",
+      "Run_Left",
+      "Run_Right",
+      "Run_Shoot",
+      "Sword_Slash",
+      "Walk",
+      "Wave"
+    ],
+    "glb_clips": [
+      "Death",
+      "Gun_Shoot",
+      "HitRecieve",
+      "HitRecieve_2",
+      "Idle",
+      "Idle_Gun",
+      "Idle_Gun_Pointing",
+      "Idle_Gun_Shoot",
+      "Idle_Neutral",
+      "Idle_Sword",
+      "Interact",
+      "Kick_Left",
+      "Kick_Right",
+      "Punch_Left",
+      "Punch_Right",
+      "Roll",
+      "Run",
+      "Run_Back",
+      "Run_Left",
+      "Run_Right",
+      "Run_Shoot",
+      "Sword_Slash",
+      "Walk",
+      "Wave"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Yeti_ceRHrn8HHE",
+    "title": "Yeti",
+    "publicID": "ceRHrn8HHE",
+    "page": "https://poly.pizza/m/ceRHrn8HHE",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "Ultimate Monsters Bundle",
+    "tris": 6094,
+    "bones": 43,
+    "materials": 6,
+    "files": {
+      "fbx": "Yeti_ceRHrn8HHE.fbx",
+      "glb": "Yeti_ceRHrn8HHE.glb",
+      "fbx_bytes": 3369964,
+      "glb_bytes": 423024
+    },
+    "animation_count": 14,
+    "animations": [
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Duck",
+        "clean": "Duck",
+        "channels": 12
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 16
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 35
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Weapon",
+        "clean": "Weapon",
+        "channels": 32
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 13
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 15,
+    "fbx_curve_nodes": 1849,
+    "fbx_takes": [
+      "CharacterArmature|Death",
+      "CharacterArmature|Duck",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Weapon",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 14,
+    "fbx_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Death",
+      "Duck",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Walk",
+      "Wave",
+      "Weapon",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Yeti_xtMYEVzyw0",
+    "title": "Yeti",
+    "publicID": "xtMYEVzyw0",
+    "page": "https://poly.pizza/m/xtMYEVzyw0",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 3070,
+    "bones": 12,
+    "materials": 1,
+    "files": {
+      "fbx": "Yeti_xtMYEVzyw0.fbx",
+      "glb": "Yeti_xtMYEVzyw0.glb",
+      "fbx_bytes": 591788,
+      "glb_bytes": 215504
+    },
+    "animation_count": 7,
+    "animations": [
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+        "clean": "Attack",
+        "channels": 8
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+        "clean": "Death",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+        "clean": "HitRecieve",
+        "channels": 2
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+        "clean": "Idle",
+        "channels": 3
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+        "clean": "Jump",
+        "channels": 5
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+        "clean": "Run",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Walk",
+        "clean": "Walk",
+        "channels": 9
+      }
+    ],
+    "required": {
+      "hit": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve"
+      ],
+      "death": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Death"
+      ],
+      "run": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitRecieve"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 8,
+    "fbx_curve_nodes": 274,
+    "fbx_takes": [
+      "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+      "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Walk"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 7,
+    "fbx_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "glb_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Zombie_VlXjG0N8Eg",
+    "title": "Zombie",
+    "publicID": "VlXjG0N8Eg",
+    "page": "https://poly.pizza/m/VlXjG0N8Eg",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 7822,
+    "bones": 50,
+    "materials": 1,
+    "files": {
+      "fbx": "Zombie_VlXjG0N8Eg.fbx",
+      "glb": "Zombie_VlXjG0N8Eg.glb",
+      "fbx_bytes": 8758620,
+      "glb_bytes": 981672
+    },
+    "animation_count": 32,
+    "animations": [
+      {
+        "name": "Crawl",
+        "clean": "Crawl",
+        "channels": 50
+      },
+      {
+        "name": "Death",
+        "clean": "Death",
+        "channels": 26
+      },
+      {
+        "name": "HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "Idle_Attack",
+        "clean": "Idle_Attack",
+        "channels": 43
+      },
+      {
+        "name": "Jump",
+        "clean": "Jump",
+        "channels": 20
+      },
+      {
+        "name": "Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 21
+      },
+      {
+        "name": "Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 20
+      },
+      {
+        "name": "No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "Punch",
+        "clean": "Punch",
+        "channels": 24
+      },
+      {
+        "name": "Run",
+        "clean": "Run",
+        "channels": 49
+      },
+      {
+        "name": "Run_Arms",
+        "clean": "Run_Arms",
+        "channels": 46
+      },
+      {
+        "name": "Walk",
+        "clean": "Walk",
+        "channels": 44
+      },
+      {
+        "name": "Wave",
+        "clean": "Wave",
+        "channels": 19
+      },
+      {
+        "name": "Yes",
+        "clean": "Yes",
+        "channels": 14
+      },
+      {
+        "name": "Run_Attack",
+        "clean": "Run_Attack",
+        "channels": 47
+      },
+      {
+        "name": "CharacterArmature|Crawl",
+        "clean": "Crawl",
+        "channels": 50
+      },
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 26
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 18
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|Idle_Attack",
+        "clean": "Idle_Attack",
+        "channels": 43
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 24
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 49
+      },
+      {
+        "name": "CharacterArmature|Run_Arms",
+        "clean": "Run_Arms",
+        "channels": 46
+      },
+      {
+        "name": "CharacterArmature|Run_Attack",
+        "clean": "Run_Attack",
+        "channels": 47
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 44
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 19
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 14
+      }
+    ],
+    "required": {
+      "hit": [
+        "HitReact",
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "Death",
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "Run",
+        "Run_Arms",
+        "Run_Attack",
+        "CharacterArmature|Run",
+        "CharacterArmature|Run_Arms",
+        "CharacterArmature|Run_Attack"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact",
+        "HitReact"
+      ],
+      "death": [
+        "Death",
+        "Death"
+      ],
+      "run": [
+        "Run",
+        "Run_Arms",
+        "Run_Attack",
+        "Run",
+        "Run_Arms",
+        "Run_Attack"
+      ]
+    },
+    "fbx_anim_stacks": 33,
+    "fbx_curve_nodes": 4897,
+    "fbx_takes": [
+      "CharacterArmature|Crawl",
+      "CharacterArmature|Death",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Idle_Attack",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Run_Arms",
+      "CharacterArmature|Run_Attack",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Yes",
+      "Crawl",
+      "Death",
+      "HitReact",
+      "Idle",
+      "Idle_Attack",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "No",
+      "Punch",
+      "Run",
+      "Run_Arms",
+      "Run_Attack",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 32,
+    "fbx_clips": [
+      "Crawl",
+      "Death",
+      "HitReact",
+      "Idle",
+      "Idle_Attack",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run_Arms",
+      "Run_Attack",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Crawl",
+      "Death",
+      "HitReact",
+      "Idle",
+      "Idle_Attack",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run_Arms",
+      "Run_Attack",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Zombie_22K0aSZkHV",
+    "title": "Zombie",
+    "publicID": "22K0aSZkHV",
+    "page": "https://poly.pizza/m/22K0aSZkHV",
+    "creator": "Quaternius",
+    "licence": "CC-BY 3.0",
+    "pack": "catalog scan",
+    "tris": 6174,
+    "bones": 50,
+    "materials": 1,
+    "files": {
+      "fbx": "Zombie_22K0aSZkHV.fbx",
+      "glb": "Zombie_22K0aSZkHV.glb",
+      "fbx_bytes": 4600284,
+      "glb_bytes": 681436
+    },
+    "animation_count": 16,
+    "animations": [
+      {
+        "name": "CharacterArmature|Crawl",
+        "clean": "Crawl",
+        "channels": 52
+      },
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 27
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 19
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 14
+      },
+      {
+        "name": "CharacterArmature|Idle_Attack",
+        "clean": "Idle_Attack",
+        "channels": 42
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 22
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 21
+      },
+      {
+        "name": "CharacterArmature|No",
+        "clean": "No",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Punch",
+        "clean": "Punch",
+        "channels": 25
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 48
+      },
+      {
+        "name": "CharacterArmature|Run_Arms",
+        "clean": "Run_Arms",
+        "channels": 45
+      },
+      {
+        "name": "CharacterArmature|Run_Attack",
+        "clean": "Run_Attack",
+        "channels": 46
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 46
+      },
+      {
+        "name": "CharacterArmature|Wave",
+        "clean": "Wave",
+        "channels": 20
+      },
+      {
+        "name": "CharacterArmature|Yes",
+        "clean": "Yes",
+        "channels": 15
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run",
+        "CharacterArmature|Run_Arms",
+        "CharacterArmature|Run_Attack"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run",
+        "Run_Arms",
+        "Run_Attack"
+      ]
+    },
+    "fbx_anim_stacks": 17,
+    "fbx_curve_nodes": 2449,
+    "fbx_takes": [
+      "CharacterArmature|Crawl",
+      "CharacterArmature|Death",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Idle_Attack",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|No",
+      "CharacterArmature|Punch",
+      "CharacterArmature|Run",
+      "CharacterArmature|Run_Arms",
+      "CharacterArmature|Run_Attack",
+      "CharacterArmature|Walk",
+      "CharacterArmature|Wave",
+      "CharacterArmature|Yes"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 16,
+    "fbx_clips": [
+      "Crawl",
+      "Death",
+      "HitReact",
+      "Idle",
+      "Idle_Attack",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run_Arms",
+      "Run_Attack",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "glb_clips": [
+      "Crawl",
+      "Death",
+      "HitReact",
+      "Idle",
+      "Idle_Attack",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Punch",
+      "Run",
+      "Run_Arms",
+      "Run_Attack",
+      "Walk",
+      "Wave",
+      "Yes"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Zombie_JoBvxIUpZP",
+    "title": "Zombie",
+    "publicID": "JoBvxIUpZP",
+    "page": "https://poly.pizza/m/JoBvxIUpZP",
+    "creator": "Quaternius",
+    "licence": "CC0 1.0",
+    "pack": "catalog scan",
+    "tris": 3550,
+    "bones": 12,
+    "materials": 1,
+    "files": {
+      "fbx": "Zombie_JoBvxIUpZP.fbx",
+      "glb": "Zombie_JoBvxIUpZP.glb",
+      "fbx_bytes": 604156,
+      "glb_bytes": 238624
+    },
+    "animation_count": 7,
+    "animations": [
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+        "clean": "Attack",
+        "channels": 8
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+        "clean": "Death",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+        "clean": "HitRecieve",
+        "channels": 2
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+        "clean": "Idle",
+        "channels": 3
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+        "clean": "Jump",
+        "channels": 5
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+        "clean": "Run",
+        "channels": 12
+      },
+      {
+        "name": "EnemyArmature|EnemyArmature|EnemyArmature|Walk",
+        "clean": "Walk",
+        "channels": 9
+      }
+    ],
+    "required": {
+      "hit": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve"
+      ],
+      "death": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Death"
+      ],
+      "run": [
+        "EnemyArmature|EnemyArmature|EnemyArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitRecieve"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 8,
+    "fbx_curve_nodes": 274,
+    "fbx_takes": [
+      "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+      "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+      "EnemyArmature|EnemyArmature|EnemyArmature|Walk"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 7,
+    "fbx_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "glb_clips": [
+      "Attack",
+      "Death",
+      "HitRecieve",
+      "Idle",
+      "Jump",
+      "Run",
+      "Walk"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  },
+  {
+    "folder": "Zombie_half_Htcsn9OrXJ",
+    "title": "Zombie half",
+    "publicID": "Htcsn9OrXJ",
+    "page": "https://poly.pizza/m/Htcsn9OrXJ",
+    "creator": "Quaternius",
+    "licence": "CC-BY 3.0",
+    "pack": "catalog scan",
+    "tris": 4774,
+    "bones": 12,
+    "materials": 1,
+    "files": {
+      "fbx": "Zombie_half_Htcsn9OrXJ.fbx",
+      "glb": "Zombie_half_Htcsn9OrXJ.glb",
+      "fbx_bytes": 796732,
+      "glb_bytes": 274224
+    },
+    "animation_count": 9,
+    "animations": [
+      {
+        "name": "CharacterArmature|Crawl",
+        "clean": "Crawl",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Death",
+        "clean": "Death",
+        "channels": 13
+      },
+      {
+        "name": "CharacterArmature|HitReact",
+        "clean": "HitReact",
+        "channels": 8
+      },
+      {
+        "name": "CharacterArmature|Idle",
+        "clean": "Idle",
+        "channels": 5
+      },
+      {
+        "name": "CharacterArmature|Jump",
+        "clean": "Jump",
+        "channels": 10
+      },
+      {
+        "name": "CharacterArmature|Jump_Idle",
+        "clean": "Jump_Idle",
+        "channels": 11
+      },
+      {
+        "name": "CharacterArmature|Jump_Land",
+        "clean": "Jump_Land",
+        "channels": 10
+      },
+      {
+        "name": "CharacterArmature|Run",
+        "clean": "Run",
+        "channels": 15
+      },
+      {
+        "name": "CharacterArmature|Walk",
+        "clean": "Walk",
+        "channels": 13
+      }
+    ],
+    "required": {
+      "hit": [
+        "CharacterArmature|HitReact"
+      ],
+      "death": [
+        "CharacterArmature|Death"
+      ],
+      "run": [
+        "CharacterArmature|Run"
+      ]
+    },
+    "required_clean": {
+      "hit": [
+        "HitReact"
+      ],
+      "death": [
+        "Death"
+      ],
+      "run": [
+        "Run"
+      ]
+    },
+    "fbx_anim_stacks": 10,
+    "fbx_curve_nodes": 352,
+    "fbx_takes": [
+      "CharacterArmature|Crawl",
+      "CharacterArmature|Death",
+      "CharacterArmature|HitReact",
+      "CharacterArmature|Idle",
+      "CharacterArmature|Jump",
+      "CharacterArmature|Jump_Idle",
+      "CharacterArmature|Jump_Land",
+      "CharacterArmature|Run",
+      "CharacterArmature|Walk"
+    ],
+    "checks": {
+      "glb_valid": true,
+      "skinned": true,
+      "animations_present": true,
+      "all_animations_have_channels": true,
+      "fbx_has_animation": true
+    },
+    "fbx_take_strings": 9,
+    "fbx_clips": [
+      "Crawl",
+      "Death",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Run",
+      "Walk"
+    ],
+    "glb_clips": [
+      "Crawl",
+      "Death",
+      "HitReact",
+      "Idle",
+      "Jump",
+      "Jump_Idle",
+      "Jump_Land",
+      "Run",
+      "Walk"
+    ],
+    "clip_parity": {
+      "only_in_glb": [],
+      "only_in_fbx": []
+    }
+  }
+]

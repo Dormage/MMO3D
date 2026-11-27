@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bbx4vxl7iigas"
+
+[deps]
+
+files=["res://_mob_library/assets/mobs/excluded.publicID.translation", "res://_mob_library/assets/mobs/excluded.has.translation", "res://_mob_library/assets/mobs/excluded.has.translation", "res://_mob_library/assets/mobs/excluded.locomotion.translation", "res://_mob_library/assets/mobs/excluded.animation.translation", "res://_mob_library/assets/mobs/excluded.reason.translation", "res://_mob_library/assets/mobs/excluded.page.translation"]
+
+source_file="res://_mob_library/assets/mobs/excluded.csv"
+dest_files=["res://_mob_library/assets/mobs/excluded.publicID.translation", "res://_mob_library/assets/mobs/excluded.has.translation", "res://_mob_library/assets/mobs/excluded.has.translation", "res://_mob_library/assets/mobs/excluded.locomotion.translation", "res://_mob_library/assets/mobs/excluded.animation.translation", "res://_mob_library/assets/mobs/excluded.reason.translation", "res://_mob_library/assets/mobs/excluded.page.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

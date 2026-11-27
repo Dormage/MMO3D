@@ -1,0 +1,25 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+sky: cloud-sea shader active
+REGION_STATE regions=4 current=0(town)
+REGION_LIGHT using shared SkySun
+REGION_MATTEX fixed=0 []
+REGION_OUTLIER dropped_tris=1848 meshes=2 limit=1000
+REGION_HIDE surfaces=4 patterns=["platformgrass", "drygrass"]
+REGION_SNAP pieces=177535 surfaces=2
+REGION_WATERX surfaces=2 level=-0.50 size=399x513 centre=(17.9,0.8)
+REGION_GLOW pieces=0 lights=0
+REGION_BRIDGE surfaces=0
+REGION_CRYSTAL surfaces=2 centre=(10.04098, 2.938271, -14.47846)
+REGION_WIND surfaces=0 textured=0 clear_pts=[]
+REGION_COLLISION GroundCollision layer=1 tris=377629
+REGION_COLLISION Solid_SM_Buildings layer=2 tris=103892
+REGION_COLLISION Walkable_SM_Buildings layer=1 tris=30100
+REGION_WALKABLE SM_Buildings as ground: ["M_StoneLight"]
+REGION_COLLISION SM_Props skipped (non-solid)
+REGION_COLLISION SM_Vegetation skipped (non-solid)
+REGION_COLLISION SM_Water skipped (non-solid)
+MONSTERS spawned=15 centre=(0.0, 0.22467, 0.0) monster02_0@walk/idle, rhino_0@walk/idle, turtle_dragon_0@walk/idle, wolf_boss_0@walk/idle, catfish_0@walk/idle, watcher_0@walk/idle, watcher_1@walk/idle, ghoul_0@walk/idle, ghoul_1@walk/idle, swarm08_0@walk/idle, swarm08_1@walk/idle, swarm08_2@walk/idle, swarm09_0@walk/idle, swarm09_1@walk/idle, arachnid_0@walk/-
+REGION_WATER surfaces=0 apron=none
+REGION_SPAWN graveyard at (0.0, 0.0) ground=0.225 radius=0.0
+REGION_MAP id=graveyard meshes=5 polys~3121549 bounds=[P: (-360.0, -2.61, -360.0), S: (720.0, 28.8252, 720.0)] spawn=(0.0, 0.22467, 0.0)

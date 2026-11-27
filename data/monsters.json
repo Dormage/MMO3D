@@ -1,0 +1,122 @@
+[
+  {
+    "key": "monster02",
+    "name": "Monster02",
+    "glb": "res://assets/models/monsters/monster02.glb",
+    "height": 1.93,
+    "radius": 0.55,
+    "speed": 1.75,
+    "wander": 5.0,
+    "scale": 1.0,
+    "count": 1,
+    "yaw_offset": 0.0
+  },
+  {
+    "key": "rhino",
+    "name": "Fantasy Rhino",
+    "glb": "res://assets/models/monsters/rhino.glb",
+    "height": 1.71,
+    "radius": 1.0,
+    "speed": 1.4,
+    "wander": 6.0,
+    "scale": 1.0,
+    "count": 1,
+    "yaw_offset": 0.0
+  },
+  {
+    "key": "turtle_dragon",
+    "name": "Turtle Dragon",
+    "glb": "res://assets/models/monsters/turtle_dragon.glb",
+    "height": 3.03,
+    "radius": 1.5,
+    "speed": 1.1,
+    "wander": 6.0,
+    "scale": 1.0,
+    "count": 1,
+    "yaw_offset": 0.0
+  },
+  {
+    "key": "wolf_boss",
+    "name": "Wolf Boss",
+    "glb": "res://assets/models/monsters/wolf_boss.glb",
+    "height": 3.76,
+    "radius": 1.3,
+    "speed": 2.0,
+    "wander": 7.0,
+    "scale": 1.0,
+    "count": 1,
+    "yaw_offset": -1.5708
+  },
+  {
+    "key": "catfish",
+    "name": "Catfish",
+    "glb": "res://assets/models/monsters/catfish.glb",
+    "height": 2.01,
+    "radius": 0.75,
+    "speed": 1.2,
+    "wander": 5.0,
+    "scale": 1.0,
+    "count": 1,
+    "yaw_offset": 0.0
+  },
+  {
+    "key": "watcher",
+    "name": "Watcher",
+    "glb": "res://assets/models/monsters/watcher.glb",
+    "height": 0.73,
+    "radius": 0.4,
+    "speed": 1.4,
+    "wander": 5.0,
+    "scale": 1.0,
+    "count": 2,
+    "yaw_offset": 0.0
+  },
+  {
+    "key": "ghoul",
+    "name": "Ghoul Anklegrabber",
+    "glb": "res://assets/models/monsters/ghoul.glb",
+    "height": 1.76,
+    "radius": 0.7,
+    "speed": 1.7,
+    "wander": 5.0,
+    "scale": 1.0,
+    "count": 2,
+    "yaw_offset": 0.0
+  },
+  {
+    "key": "swarm08",
+    "name": "Swarm08",
+    "glb": "res://assets/models/monsters/swarm08.glb",
+    "height": 0.58,
+    "radius": 0.45,
+    "speed": 2.0,
+    "wander": 7.0,
+    "scale": 1.0,
+    "count": 3,
+    "yaw_offset": 0.0
+  },
+  {
+    "key": "swarm09",
+    "name": "Swarm09",
+    "glb": "res://assets/models/monsters/swarm09.glb",
+    "height": 1.29,
+    "radius": 0.6,
+    "speed": 2.2,
+    "wander": 8.0,
+    "scale": 1.0,
+    "count": 2,
+    "yaw_offset": 0.0
+  },
+  {
+    "key": "arachnid",
+    "name": "Arachnid Head",
+    "glb": "res://assets/models/monsters/arachnid.glb",
+    "height": 0.45,
+    "radius": 0.3,
+    "speed": 1.1,
+    "wander": 4.0,
+    "scale": 2.0,
+    "count": 1,
+    "yaw_offset": 0.0
+  }
+]

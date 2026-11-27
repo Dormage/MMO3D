@@ -1,0 +1,153 @@
+{
+  "folder": "Steve_OF8rWAO1gC",
+  "title": "Steve",
+  "publicID": "OF8rWAO1gC",
+  "page": "https://poly.pizza/m/OF8rWAO1gC",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "bucket": "character",
+  "tris": 2632,
+  "bones": 32,
+  "files": {
+    "fbx": "Steve_OF8rWAO1gC.fbx",
+    "glb": "Steve_OF8rWAO1gC.glb",
+    "fbx_bytes": 3187148,
+    "glb_bytes": 329976
+  },
+  "animation_count": 18,
+  "clips": [
+    "Death",
+    "Duck",
+    "HitReact",
+    "Idle",
+    "Idle_Attack",
+    "Idle_Hold",
+    "Jump",
+    "Jump_Idle",
+    "Jump_Land",
+    "No",
+    "Punch",
+    "Run",
+    "Run_Attack",
+    "Run_Hold",
+    "Walk",
+    "Walk_Hold",
+    "Wave",
+    "Yes"
+  ],
+  "animations": [
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Duck",
+      "clean": "Duck"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|HitReact",
+      "clean": "HitReact"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle_Attack",
+      "clean": "Idle_Attack"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle_Hold",
+      "clean": "Idle_Hold"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump",
+      "clean": "Jump"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle",
+      "clean": "Jump_Idle"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land",
+      "clean": "Jump_Land"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|No",
+      "clean": "No"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Punch",
+      "clean": "Punch"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run_Attack",
+      "clean": "Run_Attack"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run_Hold",
+      "clean": "Run_Hold"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk_Hold",
+      "clean": "Walk_Hold"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Wave",
+      "clean": "Wave"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Yes",
+      "clean": "Yes"
+    }
+  ],
+  "required": {
+    "hit": [
+      "HitReact"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run_Attack",
+      "Run_Hold"
+    ]
+  },
+  "fbx_takes": [
+    "CharacterArmature|CharacterArmature|CharacterArmature|Death",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Duck",
+    "CharacterArmature|CharacterArmature|CharacterArmature|HitReact",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Idle",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Idle_Attack",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Idle_Hold",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land",
+    "CharacterArmature|CharacterArmature|CharacterArmature|No",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Punch",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Run",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Run_Attack",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Run_Hold",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Walk",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Walk_Hold",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Wave",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Yes"
+  ],
+  "fbx_anim_stacks": 19,
+  "fbx_curve_nodes": 1783,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

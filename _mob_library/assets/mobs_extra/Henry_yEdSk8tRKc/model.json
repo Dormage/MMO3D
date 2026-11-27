@@ -1,0 +1,127 @@
+{
+  "folder": "Henry_yEdSk8tRKc",
+  "title": "Henry",
+  "publicID": "yEdSk8tRKc",
+  "page": "https://poly.pizza/m/yEdSk8tRKc",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "bucket": "character",
+  "tris": 11062,
+  "bones": 58,
+  "files": {
+    "fbx": "Henry_yEdSk8tRKc.fbx",
+    "glb": "Henry_yEdSk8tRKc.glb",
+    "fbx_bytes": 4584636,
+    "glb_bytes": 639280
+  },
+  "animation_count": 14,
+  "clips": [
+    "Death",
+    "Duck",
+    "HitReact",
+    "Idle",
+    "Jump",
+    "Jump_Idle",
+    "Jump_Land",
+    "No",
+    "Punch",
+    "Run",
+    "Sword",
+    "Walk",
+    "Wave",
+    "Yes"
+  ],
+  "animations": [
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+      "clean": "Death"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+      "clean": "Duck"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+      "clean": "HitReact"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+      "clean": "Jump_Idle"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+      "clean": "Jump_Land"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+      "clean": "Jump"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+      "clean": "No"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+      "clean": "Punch"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+      "clean": "Sword"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+      "clean": "Wave"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes",
+      "clean": "Yes"
+    }
+  ],
+  "required": {
+    "hit": [
+      "HitReact"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run"
+    ]
+  },
+  "fbx_takes": [
+    "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+    "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+    "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes"
+  ],
+  "fbx_anim_stacks": 15,
+  "fbx_curve_nodes": 2479,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

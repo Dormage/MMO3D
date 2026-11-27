@@ -1,0 +1,112 @@
+[
+ {
+  "key": "catfish",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Mesh/Catfish_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@sturn.FBX",
+    "clip": "stunned"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Textures/Catfish_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Textures/Catfish_Normal.png"
+  },
+  "roughness": 0.58,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/catfish.glb",
+  "trim_clips": [
+   "walk"
+  ],
+  "loop_fix": true
+ },
+ {
+  "key": "wolf_boss",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Mesh/Wolfboss_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@sturn.FBX",
+    "clip": "stunned"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@attack3.FBX",
+    "clip": "attack3"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Textures/Wolfboss_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Textures/Wolfboss_Normal.png"
+  },
+  "roughness": 0.62,
+  "time_scale": 0.5,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/wolf_boss.glb",
+  "trim_clips": [
+   "walk",
+   "run"
+  ],
+  "loop_fix": true
+ }
+]

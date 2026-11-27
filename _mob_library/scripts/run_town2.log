@@ -1,0 +1,141 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+sky: cloud-sea shader active
+WARNING: RegionState: no region id 'town'
+     at: push_warning (core/variant/variant_utility.cpp:1034)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/region_state.gd:26)
+REGION_STATE regions=5 current=0(town)
+REGION_LIGHT using shared SkySun
+REGION_NAVMARKERS hidden=1
+REGION_NAVGLB res://assets/worlds/town/nav_town.glb
+REGION_CACHE hit user://region_cache/town.scn
+REGION_COLLISION GroundCollision layer=1 tris=107312
+REGION_COLLISION Solid_SM_Town_Buildings layer=2 tris=84932
+REGION_COLLISION Solid_SM_Town_Props layer=2 tris=92062
+REGION_COLLISION Solid_SM_Town_Rampart layer=2 tris=13528
+REGION_COLLISION SM_Town_Vegetation skipped (non-solid)
+REGION_HOST mounted region_town.tscn
+WEAPON_EQUIPPED slot=0 id=sword weapon=weapon_arming_sword clip=1H_Slash duration=0.95 tip=0.84
+PLAYER_IDLE_FLAT root=(-0.2647,0.3442,-0.9035) keys=232
+ATTACK_ROOT_FLAT clip=1H_Slash track=Armature/Skeleton3D:Hips keys=61 fixed=(-0.014476, -0.038188, -0.792969)
+ATTACK_ROOT_FLAT clip=2H_Slash track=Armature/Skeleton3D:Hips keys=100 fixed=(-0.00021, -0.035535, -1.032923)
+ATTACK_ROOT_FLAT clip=SwordShield track=Armature/Skeleton3D:Hips keys=66 fixed=(-0.003054, -0.020118, -0.979252)
+ATTACK_ROOT_FLAT clip=Thrust track=Armature/Skeleton3D:Hips keys=92 fixed=(0.007976, -0.023152, -0.919269)
+POP_CANDIDATES region=town count=1034 bounds=[P: (-66.20634, -17.30462, -56.70851), S: (133.3367, 44.25462, 122.0293)] step=1.80
+POPULATION region=town actors=45 candidates=1034 placement=districts anim_ok=45
+POP_ACTOR Character Enemy | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Character Soldier | walk=run run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Ninja | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Pirate Captain | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Skeleton | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Skeleton | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Soldier | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Adventurer | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Adventurer | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Animated Platformer Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Animated Wizard | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Animated Woman | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Animated Woman | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Anne | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Astronaut | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Astronaut | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Astronaut | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Astronaut | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Beach Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Big arm | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Business Man | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Casual Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Character Animated | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Character Hazmat | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Characters Matt | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Characters Sam | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Characters Shaun | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Cube Guy Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Cube Woman Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Farmer | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Henry | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Hooded Adventurer | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Hoodie Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR King | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Lis | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mako | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Punk | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Punk | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR SWAT | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Sci Fi Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Steve | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Suit | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Witch | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Worker | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Worker | walk=walk run=run idle=idle attack=attack hit=hit die=die
+REGION_WATER surfaces=0 apron=none
+REGION_SPAWN town at (1.25, 5.699038) ground=-0.002 radius=1.5
+REGION_MAP id=town meshes=5 polys~155762 bounds=[P: (-52.20635, -4.50426, -42.70851), S: (105.3367, 17.45426, 94.11855)] spawn=(1.25, -0.001617, 5.699038)
+PLAYER_SPAWN pos=(1.25, 0.004386, 5.699038) ground=-0.0016 capsule_bottom=0.0044
+PLAYER_MODEL_FIT sole=0.1044 mesh_low=-0.1765 capsule_bottom=0.0044 pivot_offset=0.0845
+CARVEFLAG carrier=Region value=false
+NAV_EDGE margin=1.00
+WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision.
+     at: generator_bake_from_source_geometry_data (modules/navigation_3d/3d/nav_mesh_generator_3d.cpp:372)
+     GDScript backtrace (most recent call first):
+         [0] _build_from_markers (res://scripts/nav_world.gd:757)
+         [1] build (res://scripts/nav_world.gd:88)
+         [2] _ready (res://scripts/game_controller.gd:129)
+NAV_MARKERS meshes=1 tris=54108 polygons=10205 bake_ms=246
+NAV_STITCH parts=110 links=12 unreached=14
+SHIPPED_INPUT node=/root/Game in_tree=true unhandled_enabled=true
+SHIPPED_NAV polygons=10205 vertices=7110 region_polys=10205 map_rid_ok=true
+PLAYER_MODEL_FIT sole=0.1044 mesh_low=-0.1765 capsule_bottom=0.0044 pivot_offset=0.0845
+SHIPPED_PLAYER pos=(1.25, 0.0044, 5.699038) in_tree=true
+SHIPPED_PATH a=(1.25, 0.102, 5.699038) b=(5.554423, 0.109116, 5.641716) points=5 length=4.50
+DEEP_ISLANDS_HIDDEN
+GAME_CAM pitch=60 dist=18.0..26.0 focus_owner=<Object#null>
+NAV_LINKS links=0 tree_obstacles=0
+ISLAND_DETAIL skipped: authored world
+POP_MOVE character_enemy_0 dist=1.27 character_enemy_0 pos=(-27.2, 0.0, 2.2) home_dist=1.27 anim=Wave floor=true
+POP_MOVE character_soldier_0 dist=2.33 character_soldier_0 pos=(-25.9, 0.0, 28.3) home_dist=2.33 anim=Wave floor=true
+POP_MOVE ninja_0 dist=0.98 ninja_0 pos=(0.2, 0.0, -25.7) home_dist=0.98 anim=idle floor=true
+POP_MOVE pirate_captain_0 dist=1.39 pirate_captain_0 pos=(30.7, 0.0, 6.2) home_dist=1.39 anim=walk floor=true
+POP_MOVE skeleton_1xzd_0 dist=0.88 skeleton_1xzd_0 pos=(-2.5, 0.0, -24.5) home_dist=0.88 anim=walk floor=true
+POP_MOVE skeleton_yq5a_0 dist=1.87 skeleton_yq5a_0 pos=(29.2, 0.0, 28.3) home_dist=1.87 anim=walk floor=true
+POP_MOVE soldier_0 dist=1.53 soldier_0 pos=(28.7, 0.0, 6.1) home_dist=1.53 anim=idle floor=true
+POP_MOVE adventurer_0 dist=1.65 adventurer_0 pos=(24.7, 0.0, -18.5) home_dist=1.65 anim=Wave floor=true
+POP_MOVE adventurer_zwf0_0 dist=1.05 adventurer_zwf0_0 pos=(1.4, 0.0, -21.0) home_dist=1.05 anim=walk floor=true
+POP_MOVE animated_platformer_character_0 dist=1.32 animated_platformer_character_0 pos=(-1.9, 0.0, -27.8) home_dist=1.32 anim=idle floor=true
+POP_MOVE animated_wizard_0 dist=2.47 animated_wizard_0 pos=(-3.0, 0.0, 31.4) home_dist=2.47 anim=idle floor=true
+POP_MOVE animated_woman_0 dist=1.18 animated_woman_0 pos=(-25.2, 0.0, 29.7) home_dist=1.27 anim=idle floor=true
+POP_MOVE animated_woman_qj2g_0 dist=0.47 animated_woman_qj2g_0 pos=(-25.5, 0.0, 5.0) home_dist=0.47 anim=walk floor=true
+POP_MOVE anne_0 dist=2.87 anne_0 pos=(2.1, 0.0, 7.9) home_dist=2.87 anim=walk floor=true
+POP_MOVE astronaut_0 dist=1.83 astronaut_0 pos=(31.3, 0.0, 3.2) home_dist=2.21 anim=idle floor=true
+POP_MOVE astronaut_3hc2_0 dist=0.46 astronaut_3hc2_0 pos=(24.9, 0.0, -19.8) home_dist=0.46 anim=walk floor=true
+POP_MOVE astronaut_oges_0 dist=1.43 astronaut_oges_0 pos=(33.9, 0.0, 8.8) home_dist=1.88 anim=idle floor=true
+POP_MOVE astronaut_zbtp_0 dist=2.21 astronaut_zbtp_0 pos=(28.8, 0.0, 25.1) home_dist=2.53 anim=idle floor=true
+POP_MOVE beach_character_0 dist=1.97 beach_character_0 pos=(-4.4, 0.0, 34.4) home_dist=1.97 anim=walk floor=true
+POP_MOVE big_arm_0 dist=1.98 big_arm_0 pos=(-31.1, 0.0, -1.4) home_dist=1.98 anim=walk floor=true
+POP_MOVE business_man_0 dist=2.16 business_man_0 pos=(5.3, 0.0, -19.7) home_dist=2.16 anim=walk floor=true
+POP_MOVE casual_character_0 dist=1.62 casual_character_0 pos=(27.2, 0.0, 31.7) home_dist=1.62 anim=walk floor=true
+POP_MOVE character_animated_0 dist=3.50 character_animated_0 pos=(32.5, 0.0, 7.4) home_dist=3.55 anim=idle floor=true
+POP_MOVE character_hazmat_0 dist=1.27 character_hazmat_0 pos=(-1.9, 0.0, 6.5) home_dist=1.27 anim=idle floor=true
+POP_MOVE characters_matt_0 dist=0.38 characters_matt_0 pos=(-25.5, 0.0, 1.6) home_dist=0.38 anim=walk floor=true
+POP_MOVE characters_sam_0 dist=2.85 characters_sam_0 pos=(-27.2, 0.0, 27.9) home_dist=3.19 anim=walk floor=true
+POP_MOVE characters_shaun_0 dist=0.96 characters_shaun_0 pos=(30.1, 0.0, 27.6) home_dist=0.96 anim=walk floor=true
+POP_MOVE cube_guy_character_0 dist=1.25 cube_guy_character_0 pos=(-21.6, 0.0, 27.5) home_dist=1.25 anim=idle floor=true
+POP_MOVE cube_woman_character_0 dist=1.20 cube_woman_character_0 pos=(-5.1, 0.0, -24.5) home_dist=1.20 anim=walk floor=true
+POP_MOVE farmer_0 dist=0.88 farmer_0 pos=(25.2, 0.0, -16.9) home_dist=0.88 anim=walk floor=true
+POP_MOVE henry_0 dist=0.57 henry_0 pos=(-3.8, 0.0, 32.4) home_dist=0.57 anim=idle floor=true
+POP_MOVE hooded_adventurer_0 dist=1.53 hooded_adventurer_0 pos=(-24.5, 0.0, 28.9) home_dist=1.53 anim=Wave floor=true
+POP_MOVE hoodie_character_0 dist=1.65 hoodie_character_0 pos=(-2.2, 0.0, 36.9) home_dist=1.65 anim=walk floor=true
+POP_MOVE king_0 dist=1.17 king_0 pos=(-2.5, 0.0, 4.0) home_dist=1.17 anim=idle floor=true
+POP_MOVE lis_0 dist=1.02 lis_0 pos=(3.0, 0.0, 6.0) home_dist=1.02 anim=idle floor=true
+POP_MOVE mako_0 dist=2.94 mako_0 pos=(-36.9, 0.0, 3.0) home_dist=2.94 anim=walk floor=true
+POP_MOVE punk_0 dist=1.11 punk_0 pos=(23.6, 0.0, 22.5) home_dist=1.11 anim=walk floor=true
+POP_MOVE punk_djxo_0 dist=1.38 punk_djxo_0 pos=(25.1, 0.0, -21.1) home_dist=1.38 anim=idle floor=true
+POP_MOVE swat_0 dist=2.47 swat_0 pos=(26.6, 0.0, 10.7) home_dist=2.47 anim=Wave floor=true
+POP_MOVE sci_fi_character_0 dist=1.25 sci_fi_character_0 pos=(4.6, 0.0, 6.4) home_dist=1.25 anim=walk floor=true
+POP_MOVE steve_0 dist=1.14 steve_0 pos=(5.4, 0.0, 31.9) home_dist=1.14 anim=idle floor=true
+POP_MOVE suit_0 dist=0.45 suit_0 pos=(27.6, 0.0, -16.3) home_dist=0.45 anim=walk floor=true
+POP_MOVE witch_0 dist=2.63 witch_0 pos=(-5.0, 0.0, 38.3) home_dist=2.63 anim=walk floor=true
+POP_MOVE worker_0 dist=1.57 worker_0 pos=(-22.5, 0.0, 3.5) home_dist=1.57 anim=Wave floor=true
+POP_MOVE worker_yg2b_0 dist=1.04 worker_yg2b_0 pos=(1.5, 0.0, 9.8) home_dist=1.04 anim=idle floor=true
+POP_CHECK region=town actors=45 moved=45 anim_ok=45

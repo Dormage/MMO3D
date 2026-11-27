@@ -1,0 +1,2273 @@
+[
+ {
+  "key": "catfish",
+  "name": "Catfish",
+  "publisher": "HATOGAME",
+  "package": "01Monster_Catfish_",
+  "mesh_file": "01Monster_Catfish_/Assets/Hatogame_new/Catfish/Mesh/Catfish_skin.FBX",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "Catfish@attack1.FBX",
+   "Catfish@attack2.FBX",
+   "Catfish@battleidle.FBX",
+   "Catfish@die.FBX",
+   "Catfish@hit.FBX",
+   "Catfish@idle.FBX",
+   "Catfish@run.FBX",
+   "Catfish@sturn.FBX",
+   "Catfish@walk.FBX"
+  ],
+  "unity_anim_clips": [],
+  "bones": 73,
+  "tris": 5864,
+  "height_m": 2.01,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "attack1",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     90.0
+    ],
+    "seconds": 2.97,
+    "source": "file",
+    "file": "Catfish@attack1.FBX"
+   },
+   {
+    "name": "attack2",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     90.0
+    ],
+    "seconds": 2.97,
+    "source": "file",
+    "file": "Catfish@attack2.FBX"
+   },
+   {
+    "name": "battleidle",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     111.0
+    ],
+    "seconds": 3.67,
+    "source": "file",
+    "file": "Catfish@battleidle.FBX"
+   },
+   {
+    "name": "die",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     126.0
+    ],
+    "seconds": 4.17,
+    "source": "file",
+    "file": "Catfish@die.FBX"
+   },
+   {
+    "name": "hit",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     76.0
+    ],
+    "seconds": 2.5,
+    "source": "file",
+    "file": "Catfish@hit.FBX"
+   },
+   {
+    "name": "idle",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     -49.0,
+     251.0
+    ],
+    "seconds": 10.0,
+    "source": "file",
+    "file": "Catfish@idle.FBX"
+   },
+   {
+    "name": "run",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     99.0
+    ],
+    "seconds": 3.27,
+    "source": "file",
+    "file": "Catfish@run.FBX"
+   },
+   {
+    "name": "sturn",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     101.0
+    ],
+    "seconds": 3.33,
+    "source": "file",
+    "file": "Catfish@sturn.FBX"
+   },
+   {
+    "name": "walk",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     89.0
+    ],
+    "seconds": 2.93,
+    "source": "file",
+    "file": "Catfish@walk.FBX"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "run",
+    "walk"
+   ],
+   "run": [
+    "run"
+   ],
+   "attack": [
+    "attack1",
+    "attack2"
+   ],
+   "hit": [
+    "hit"
+   ],
+   "die": [
+    "die"
+   ],
+   "idle": [
+    "battleidle",
+    "idle"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 1.896,
+  "depth_m": 2.0
+ },
+ {
+  "key": "watcher",
+  "name": "Watcher",
+  "publisher": "HATOGAME",
+  "package": "01Monster_Watcher_",
+  "mesh_file": "01Monster_Watcher_/Assets/Hatogame_new/Watcher/Mesh/Watcher_skin.FBX",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "Watcher@attack1.FBX",
+   "Watcher@attack2.FBX",
+   "Watcher@battleidle.FBX",
+   "Watcher@die.FBX",
+   "Watcher@hit.FBX",
+   "Watcher@idle.FBX",
+   "Watcher@run.FBX",
+   "Watcher@sturn.FBX",
+   "Watcher@walk.FBX"
+  ],
+  "unity_anim_clips": [],
+  "bones": 11,
+  "tris": 3508,
+  "height_m": 0.73,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "attack1",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     98.5
+    ],
+    "seconds": 3.25,
+    "source": "file",
+    "file": "Watcher@attack1.FBX"
+   },
+   {
+    "name": "attack2",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     96.0
+    ],
+    "seconds": 3.17,
+    "source": "file",
+    "file": "Watcher@attack2.FBX"
+   },
+   {
+    "name": "battleidle",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     26.0
+    ],
+    "seconds": 0.83,
+    "source": "file",
+    "file": "Watcher@battleidle.FBX"
+   },
+   {
+    "name": "die",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     123.5
+    ],
+    "seconds": 4.08,
+    "source": "file",
+    "file": "Watcher@die.FBX"
+   },
+   {
+    "name": "hit",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     26.0
+    ],
+    "seconds": 0.83,
+    "source": "file",
+    "file": "Watcher@hit.FBX"
+   },
+   {
+    "name": "idle",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     151.0
+    ],
+    "seconds": 5.0,
+    "source": "file",
+    "file": "Watcher@idle.FBX"
+   },
+   {
+    "name": "run",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     121.0
+    ],
+    "seconds": 4.0,
+    "source": "file",
+    "file": "Watcher@run.FBX"
+   },
+   {
+    "name": "sturn",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     201.0
+    ],
+    "seconds": 6.67,
+    "source": "file",
+    "file": "Watcher@sturn.FBX"
+   },
+   {
+    "name": "walk",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     163.5
+    ],
+    "seconds": 5.42,
+    "source": "file",
+    "file": "Watcher@walk.FBX"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "run",
+    "walk"
+   ],
+   "run": [
+    "run"
+   ],
+   "attack": [
+    "attack1",
+    "attack2"
+   ],
+   "hit": [
+    "hit"
+   ],
+   "die": [
+    "die"
+   ],
+   "idle": [
+    "battleidle",
+    "idle"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 0.616,
+  "depth_m": 1.088
+ },
+ {
+  "key": "wolf",
+  "name": "Wolf Boss",
+  "publisher": "HATOGAME",
+  "package": "01Monster_Wolf_Boss_",
+  "mesh_file": "01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Mesh/Wolfboss_skin.FBX",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "Wolfboss@attack1.FBX",
+   "Wolfboss@attack2.FBX",
+   "Wolfboss@attack3.FBX",
+   "Wolfboss@battleidle.FBX",
+   "Wolfboss@die.FBX",
+   "Wolfboss@hit.FBX",
+   "Wolfboss@idle.FBX",
+   "Wolfboss@run.FBX",
+   "Wolfboss@sturn.FBX",
+   "Wolfboss@walk.FBX"
+  ],
+  "unity_anim_clips": [],
+  "bones": 67,
+  "tris": 4120,
+  "height_m": 3.758,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "attack1",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     -4.0,
+     452.0
+    ],
+    "seconds": 15.2,
+    "source": "file",
+    "file": "Wolfboss@attack1.FBX"
+   },
+   {
+    "name": "attack2",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     -4.0,
+     537.5
+    ],
+    "seconds": 18.05,
+    "source": "file",
+    "file": "Wolfboss@attack2.FBX"
+   },
+   {
+    "name": "attack3",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     -4.0,
+     752.5
+    ],
+    "seconds": 25.22,
+    "source": "file",
+    "file": "Wolfboss@attack3.FBX"
+   },
+   {
+    "name": "battleidle",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     -99.0,
+     352.0
+    ],
+    "seconds": 15.03,
+    "source": "file",
+    "file": "Wolfboss@battleidle.FBX"
+   },
+   {
+    "name": "die",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     191.0
+    ],
+    "seconds": 6.33,
+    "source": "file",
+    "file": "Wolfboss@die.FBX"
+   },
+   {
+    "name": "hit",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     0.0,
+     352.0
+    ],
+    "seconds": 11.73,
+    "source": "file",
+    "file": "Wolfboss@hit.FBX"
+   },
+   {
+    "name": "idle",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     119.0,
+     1133.5
+    ],
+    "seconds": 33.82,
+    "source": "file",
+    "file": "Wolfboss@idle.FBX"
+   },
+   {
+    "name": "run",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     0.0,
+     100.0
+    ],
+    "seconds": 3.33,
+    "source": "file",
+    "file": "Wolfboss@run.FBX"
+   },
+   {
+    "name": "sturn",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     0.0,
+     92.0
+    ],
+    "seconds": 3.07,
+    "source": "file",
+    "file": "Wolfboss@sturn.FBX"
+   },
+   {
+    "name": "walk",
+    "raw": "Bip01|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     226.5
+    ],
+    "seconds": 7.52,
+    "source": "file",
+    "file": "Wolfboss@walk.FBX"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "run",
+    "walk"
+   ],
+   "run": [
+    "run"
+   ],
+   "attack": [
+    "attack1",
+    "attack2",
+    "attack3"
+   ],
+   "hit": [
+    "hit"
+   ],
+   "die": [
+    "die"
+   ],
+   "idle": [
+    "battleidle",
+    "idle"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 4.067,
+  "depth_m": 11.869
+ },
+ {
+  "key": "rhino",
+  "name": "Fantasy Rhino",
+  "publisher": "Maksim Bugrimov",
+  "package": "Fantasy_Rhino_",
+  "mesh_file": "Fantasy_Rhino_/Assets/Rhino/Mesh/Rino_mesh.FBX",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "Rhino@Attack.FBX",
+   "Rhino@Dead.FBX",
+   "Rhino@Eats.FBX",
+   "Rhino@Get_Hit.FBX",
+   "Rhino@Idle.FBX",
+   "Rhino@Run.FBX",
+   "Rhino@Walk.FBX",
+   "Rhino@shout.FBX"
+  ],
+  "unity_anim_clips": [],
+  "bones": 35,
+  "tris": 4300,
+  "height_m": 1.707,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "Attack",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     38.0
+    ],
+    "seconds": 1.23,
+    "source": "file",
+    "file": "Rhino@Attack.FBX"
+   },
+   {
+    "name": "Dead",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     51.0
+    ],
+    "seconds": 1.67,
+    "source": "file",
+    "file": "Rhino@Dead.FBX"
+   },
+   {
+    "name": "Eats",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     321.0
+    ],
+    "seconds": 10.67,
+    "source": "file",
+    "file": "Rhino@Eats.FBX"
+   },
+   {
+    "name": "Get_Hit",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Rhino@Get_Hit.FBX"
+   },
+   {
+    "name": "Idle",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     241.0
+    ],
+    "seconds": 8.0,
+    "source": "file",
+    "file": "Rhino@Idle.FBX"
+   },
+   {
+    "name": "Run",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Rhino@Run.FBX"
+   },
+   {
+    "name": "Walk",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     51.0
+    ],
+    "seconds": 1.67,
+    "source": "file",
+    "file": "Rhino@Walk.FBX"
+   },
+   {
+    "name": "shout",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     141.0
+    ],
+    "seconds": 4.67,
+    "source": "file",
+    "file": "Rhino@shout.FBX"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "Run",
+    "Walk"
+   ],
+   "run": [
+    "Run"
+   ],
+   "attack": [
+    "Attack"
+   ],
+   "hit": [
+    "Get_Hit"
+   ],
+   "die": [
+    "Dead"
+   ],
+   "idle": [
+    "Idle"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 1.047,
+  "depth_m": 2.633
+ },
+ {
+  "key": "turtle",
+  "name": "Turtle Dragon",
+  "publisher": "hyun",
+  "package": "Season2TurtleDragon_",
+  "mesh_file": "Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Mesh/turtle_dragon.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "turtle_dragon_Attack03.fbx",
+   "turtle_dragon_Die.fbx",
+   "turtle_dragon_Hit.fbx",
+   "turtle_dragon_Idle.fbx",
+   "turtle_dragon_Run.fbx",
+   "turtle_dragon_Walk.fbx"
+  ],
+  "unity_anim_clips": [],
+  "bones": 77,
+  "tris": 31658,
+  "height_m": 3.03,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "Attack03",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     71.0
+    ],
+    "seconds": 2.33,
+    "source": "file",
+    "file": "turtle_dragon_Attack03.fbx"
+   },
+   {
+    "name": "Die",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     91.0
+    ],
+    "seconds": 3.0,
+    "source": "file",
+    "file": "turtle_dragon_Die.fbx"
+   },
+   {
+    "name": "Hit",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     33.0
+    ],
+    "seconds": 1.07,
+    "source": "file",
+    "file": "turtle_dragon_Hit.fbx"
+   },
+   {
+    "name": "Idle",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     61.0
+    ],
+    "seconds": 2.0,
+    "source": "file",
+    "file": "turtle_dragon_Idle.fbx"
+   },
+   {
+    "name": "Run",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     25.0
+    ],
+    "seconds": 0.8,
+    "source": "file",
+    "file": "turtle_dragon_Run.fbx"
+   },
+   {
+    "name": "Walk",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     33.0
+    ],
+    "seconds": 1.07,
+    "source": "file",
+    "file": "turtle_dragon_Walk.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "Run",
+    "Walk"
+   ],
+   "run": [
+    "Run"
+   ],
+   "attack": [
+    "Attack03"
+   ],
+   "hit": [
+    "Hit"
+   ],
+   "die": [
+    "Die"
+   ],
+   "idle": [
+    "Idle"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 3.869,
+  "depth_m": 4.497
+ },
+ {
+  "key": "swarm08",
+  "name": "Swarm08 (Minion)",
+  "publisher": "Dungeon Mason",
+  "package": "Monster_Minion_Survivor_PBR_Polyart_",
+  "mesh_file": "Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Mesh/Character/Swarm08.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "Swarm08_Attack.fbx",
+   "Swarm08_Die.fbx",
+   "Swarm08_GetHit.fbx",
+   "Swarm08_Idle.fbx",
+   "Swarm08_MoveBWD.fbx",
+   "Swarm08_MoveFWD.fbx",
+   "Swarm08_MoveLFT.fbx",
+   "Swarm08_MoveRGT.fbx"
+  ],
+  "unity_anim_clips": [],
+  "bones": 16,
+  "tris": 1531,
+  "height_m": 0.583,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "Attack",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     17.0
+    ],
+    "seconds": 0.53,
+    "source": "file",
+    "file": "Swarm08_Attack.fbx"
+   },
+   {
+    "name": "Die",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     20.0
+    ],
+    "seconds": 0.63,
+    "source": "file",
+    "file": "Swarm08_Die.fbx"
+   },
+   {
+    "name": "GetHit",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     13.0
+    ],
+    "seconds": 0.4,
+    "source": "file",
+    "file": "Swarm08_GetHit.fbx"
+   },
+   {
+    "name": "Idle",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm08_Idle.fbx"
+   },
+   {
+    "name": "MoveBWD",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm08_MoveBWD.fbx"
+   },
+   {
+    "name": "MoveFWD",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm08_MoveFWD.fbx"
+   },
+   {
+    "name": "MoveLFT",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm08_MoveLFT.fbx"
+   },
+   {
+    "name": "MoveRGT",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm08_MoveRGT.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "MoveBWD",
+    "MoveFWD"
+   ],
+   "run": [],
+   "attack": [
+    "Attack"
+   ],
+   "hit": [
+    "GetHit"
+   ],
+   "die": [
+    "Die"
+   ],
+   "idle": [
+    "Idle"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 1.048,
+  "depth_m": 1.357
+ },
+ {
+  "key": "swarm09",
+  "name": "Swarm09 (Minion)",
+  "publisher": "Dungeon Mason",
+  "package": "Monster_Minion_Survivor_PBR_Polyart_",
+  "mesh_file": "Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Mesh/Character/Swarm09.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "Swarm09_Attack.fbx",
+   "Swarm09_Die.fbx",
+   "Swarm09_GetHit.fbx",
+   "Swarm09_Idle.fbx",
+   "Swarm09_MoveBWD.fbx",
+   "Swarm09_MoveFWD.fbx",
+   "Swarm09_MoveLFT.fbx",
+   "Swarm09_MoveRGT.fbx"
+  ],
+  "unity_anim_clips": [],
+  "bones": 12,
+  "tris": 1138,
+  "height_m": 1.293,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "Attack",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     17.0
+    ],
+    "seconds": 0.53,
+    "source": "file",
+    "file": "Swarm09_Attack.fbx"
+   },
+   {
+    "name": "Die",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     20.0
+    ],
+    "seconds": 0.63,
+    "source": "file",
+    "file": "Swarm09_Die.fbx"
+   },
+   {
+    "name": "GetHit",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     13.0
+    ],
+    "seconds": 0.4,
+    "source": "file",
+    "file": "Swarm09_GetHit.fbx"
+   },
+   {
+    "name": "Idle",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm09_Idle.fbx"
+   },
+   {
+    "name": "MoveBWD",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm09_MoveBWD.fbx"
+   },
+   {
+    "name": "MoveFWD",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm09_MoveFWD.fbx"
+   },
+   {
+    "name": "MoveLFT",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm09_MoveLFT.fbx"
+   },
+   {
+    "name": "MoveRGT",
+    "raw": "Armature|Take 001|BaseLayer",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "file",
+    "file": "Swarm09_MoveRGT.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "MoveBWD",
+    "MoveFWD"
+   ],
+   "run": [],
+   "attack": [
+    "Attack"
+   ],
+   "hit": [
+    "GetHit"
+   ],
+   "die": [
+    "Die"
+   ],
+   "idle": [
+    "Idle"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 0.888,
+  "depth_m": 1.16
+ },
+ {
+  "key": "monster02",
+  "name": "Monster02",
+  "publisher": "PixeliusVita",
+  "package": "Fantasy_Monster_3D_Model_02_-_Game_Ready_-_PixeliusVita_",
+  "mesh_file": "Fantasy_Monster_3D_Model_02_-_Game_Ready_-_PixeliusVita_/Assets/Stylized3DMonster/Monster02/Monster02_AllAnim.fbx",
+  "mesh_includes_anims": true,
+  "anim_fbx": [],
+  "unity_anim_clips": [
+   "Monster02_Attack01.anim",
+   "Monster02_Attack02.anim",
+   "Monster02_Attack03.anim",
+   "Monster02_Die.anim",
+   "Monster02_GetHit.anim",
+   "Monster02_Idle.anim",
+   "Monster02_Idle_v02.anim",
+   "Monster02_Run.anim",
+   "Monster02_Shoot.anim",
+   "Monster02_Stunned.anim",
+   "Monster02_Walk.anim"
+  ],
+  "bones": 52,
+  "tris": 5768,
+  "height_m": 1.925,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "Monster02_Attack01",
+    "raw": "root|Monster02_Attack01",
+    "frames": [
+     1.0,
+     61.0
+    ],
+    "seconds": 2.0,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Attack02",
+    "raw": "root|Monster02_Attack02",
+    "frames": [
+     1.0,
+     61.0
+    ],
+    "seconds": 2.0,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Attack03",
+    "raw": "root|Monster02_Attack03",
+    "frames": [
+     1.0,
+     71.0
+    ],
+    "seconds": 2.33,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Die",
+    "raw": "root|Monster02_Die",
+    "frames": [
+     1.0,
+     31.0
+    ],
+    "seconds": 1.0,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_GetHit",
+    "raw": "root|Monster02_GetHit",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Idle",
+    "raw": "root|Monster02_Idle",
+    "frames": [
+     1.0,
+     90.0
+    ],
+    "seconds": 2.97,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Idle_v02",
+    "raw": "root|Monster02_Idle_v02",
+    "frames": [
+     1.0,
+     181.0
+    ],
+    "seconds": 6.0,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Run",
+    "raw": "root|Monster02_Run",
+    "frames": [
+     1.0,
+     21.0
+    ],
+    "seconds": 0.67,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Shoot",
+    "raw": "root|Monster02_Shoot",
+    "frames": [
+     1.0,
+     71.0
+    ],
+    "seconds": 2.33,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Stunned",
+    "raw": "root|Monster02_Stunned",
+    "frames": [
+     1.0,
+     90.0
+    ],
+    "seconds": 2.97,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   },
+   {
+    "name": "Monster02_Walk",
+    "raw": "root|Monster02_Walk",
+    "frames": [
+     1.0,
+     41.0
+    ],
+    "seconds": 1.33,
+    "source": "embedded",
+    "file": "Monster02_AllAnim.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "Monster02_Run",
+    "Monster02_Walk"
+   ],
+   "run": [
+    "Monster02_Run"
+   ],
+   "attack": [
+    "Monster02_Attack01",
+    "Monster02_Attack02",
+    "Monster02_Attack03",
+    "Monster02_Shoot"
+   ],
+   "hit": [
+    "Monster02_GetHit"
+   ],
+   "die": [
+    "Monster02_Die"
+   ],
+   "idle": [
+    "Monster02_Idle",
+    "Monster02_Idle_v02"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 0.99,
+  "depth_m": 1.447
+ },
+ {
+  "key": "ghoul",
+  "name": "Ghoul Anklegrabber",
+  "publisher": "SKULLVERTEX",
+  "package": "Ghoul_Anklegrabber_",
+  "mesh_file": "Ghoul_Anklegrabber_/Assets/Ghoul/Assets/Meshes/AnkleGrabber.fbx",
+  "mesh_includes_anims": true,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 182,
+  "tris": 17959,
+  "height_m": 1.764,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "AngryReaction",
+    "raw": "rig|rig|AngryReaction",
+    "frames": [
+     1.0,
+     94.09300231933594
+    ],
+    "seconds": 3.1,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "AnkleBite",
+    "raw": "rig|rig|AnkleBite",
+    "frames": [
+     1.0,
+     185.1840057373047
+    ],
+    "seconds": 6.14,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "CrochBite",
+    "raw": "rig|rig|CrochBite",
+    "frames": [
+     1.0,
+     140.13900756835938
+    ],
+    "seconds": 4.64,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "Dies",
+    "raw": "rig|rig|Dies",
+    "frames": [
+     1.0,
+     96.09500122070312
+    ],
+    "seconds": 3.17,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "Hit",
+    "raw": "rig|rig|Hit",
+    "frames": [
+     1.0,
+     99.09800720214844
+    ],
+    "seconds": 3.27,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "HushLitteBaby",
+    "raw": "rig|rig|HushLitteBaby",
+    "frames": [
+     1.0,
+     200.19900512695312
+    ],
+    "seconds": 6.64,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "IdleAlert",
+    "raw": "rig|rig|IdleAlert",
+    "frames": [
+     1.0,
+     81.08000183105469
+    ],
+    "seconds": 2.67,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "IdleOne",
+    "raw": "rig|rig|IdleOne",
+    "frames": [
+     1.0,
+     81.08000183105469
+    ],
+    "seconds": 2.67,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "Pose",
+    "raw": "rig|rig|Pose",
+    "frames": [
+     1.0,
+     2.000999927520752
+    ],
+    "seconds": 0.03,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "Run",
+    "raw": "rig|rig|Run",
+    "frames": [
+     1.0,
+     41.040000915527344
+    ],
+    "seconds": 1.33,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   },
+   {
+    "name": "Sleeps",
+    "raw": "rig|rig|Sleeps",
+    "frames": [
+     1.0,
+     81.08000183105469
+    ],
+    "seconds": 2.67,
+    "source": "embedded",
+    "file": "AnkleGrabber.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "Run"
+   ],
+   "run": [
+    "Run"
+   ],
+   "attack": [
+    "AnkleBite",
+    "CrochBite"
+   ],
+   "hit": [
+    "Hit"
+   ],
+   "die": [
+    "Dies"
+   ],
+   "idle": [
+    "IdleAlert",
+    "IdleOne"
+   ]
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 2.483,
+  "depth_m": 5.469
+ },
+ {
+  "key": "creep",
+  "name": "Creep Horror Creature",
+  "publisher": "AC Game Assets",
+  "package": "Creep_Horror_Creature_",
+  "mesh_file": "Creep_Horror_Creature_/Assets/Creep Horror Creature/Meshes/Creep_mesh.fbx",
+  "mesh_includes_anims": true,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 55,
+  "tris": 15852,
+  "height_m": 5.551,
+  "materials": 0,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "A_Pose",
+    "raw": "Creep|Creep|A_Pose",
+    "frames": [
+     1.0,
+     2.0
+    ],
+    "seconds": 0.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Bite_Action",
+    "raw": "Creep|Creep|Bite_Action",
+    "frames": [
+     1.0,
+     121.0
+    ],
+    "seconds": 4.0,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Crouch_Action",
+    "raw": "Creep|Creep|Crouch_Action",
+    "frames": [
+     1.0,
+     122.0
+    ],
+    "seconds": 4.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Crouch_Pose",
+    "raw": "Creep|Creep|Crouch_Pose",
+    "frames": [
+     1.0,
+     2.0
+    ],
+    "seconds": 0.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Death_Action",
+    "raw": "Creep|Creep|Death_Action",
+    "frames": [
+     1.0,
+     61.0
+    ],
+    "seconds": 2.0,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Eating_Action",
+    "raw": "Creep|Creep|Eating_Action",
+    "frames": [
+     1.0,
+     122.0
+    ],
+    "seconds": 4.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Idle1_Action",
+    "raw": "Creep|Creep|Idle1_Action",
+    "frames": [
+     1.0,
+     122.0
+    ],
+    "seconds": 4.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Idle2_Action",
+    "raw": "Creep|Creep|Idle2_Action",
+    "frames": [
+     1.0,
+     122.0
+    ],
+    "seconds": 4.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Idle_Pose",
+    "raw": "Creep|Creep|Idle_Pose",
+    "frames": [
+     1.0,
+     2.0
+    ],
+    "seconds": 0.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "JumpIn_Action",
+    "raw": "Creep|Creep|JumpIn_Action",
+    "frames": [
+     1.0,
+     33.0
+    ],
+    "seconds": 1.07,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "JumpOut_Action",
+    "raw": "Creep|Creep|JumpOut_Action",
+    "frames": [
+     1.0,
+     33.0
+    ],
+    "seconds": 1.07,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Punch_Action",
+    "raw": "Creep|Creep|Punch_Action",
+    "frames": [
+     1.0,
+     121.0
+    ],
+    "seconds": 4.0,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Roar_Action",
+    "raw": "Creep|Creep|Roar_Action",
+    "frames": [
+     1.0,
+     122.0
+    ],
+    "seconds": 4.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Roar_Pose",
+    "raw": "Creep|Creep|Roar_Pose",
+    "frames": [
+     1.0,
+     2.0
+    ],
+    "seconds": 0.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Slide",
+    "raw": "Creep|Creep|Slide",
+    "frames": [
+     1.0,
+     2.0
+    ],
+    "seconds": 0.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Sniff_Action",
+    "raw": "Creep|Creep|Sniff_Action",
+    "frames": [
+     1.0,
+     122.0
+    ],
+    "seconds": 4.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Walk1_Action",
+    "raw": "Creep|Creep|Walk1_Action",
+    "frames": [
+     1.0,
+     122.0
+    ],
+    "seconds": 4.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   },
+   {
+    "name": "Walk2_Action",
+    "raw": "Creep|Creep|Walk2_Action",
+    "frames": [
+     1.0,
+     122.0
+    ],
+    "seconds": 4.03,
+    "source": "embedded",
+    "file": "Creep_mesh.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "Walk1_Action",
+    "Walk2_Action"
+   ],
+   "run": [],
+   "attack": [
+    "Bite_Action",
+    "Punch_Action",
+    "Roar_Action",
+    "Roar_Pose"
+   ],
+   "hit": [],
+   "die": [
+    "Death_Action"
+   ],
+   "idle": [
+    "Idle1_Action",
+    "Idle2_Action",
+    "Idle_Pose"
+   ]
+  },
+  "missing": [
+   "hit"
+  ],
+  "status": "PARTIAL",
+  "width_m": 4.854,
+  "depth_m": 3.131
+ },
+ {
+  "key": "foe",
+  "name": "Foe Creature",
+  "publisher": "Nomadic UV",
+  "package": "Foe_Creature_",
+  "mesh_file": "Foe_Creature_/Assets/My_Assets/Nomadic_UV/Foe_Creature/Mesh/Foe_creature.fbx",
+  "mesh_includes_anims": true,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 30,
+  "tris": 7316,
+  "height_m": 1.867,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "Attack",
+    "raw": "Game_Rig|Attack.001",
+    "frames": [
+     1.0,
+     121.0
+    ],
+    "seconds": 4.0,
+    "source": "embedded",
+    "file": "Foe_creature.fbx"
+   },
+   {
+    "name": "Idle",
+    "raw": "Game_Rig|Idle.002",
+    "frames": [
+     1.0,
+     121.0
+    ],
+    "seconds": 4.0,
+    "source": "embedded",
+    "file": "Foe_creature.fbx"
+   },
+   {
+    "name": "Run",
+    "raw": "Game_Rig|Run.002",
+    "frames": [
+     1.0,
+     25.0
+    ],
+    "seconds": 0.8,
+    "source": "embedded",
+    "file": "Foe_creature.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "Run"
+   ],
+   "run": [
+    "Run"
+   ],
+   "attack": [
+    "Attack"
+   ],
+   "hit": [],
+   "die": [],
+   "idle": [
+    "Idle"
+   ]
+  },
+  "missing": [
+   "hit",
+   "die"
+  ],
+  "status": "PARTIAL",
+  "width_m": 2.226,
+  "depth_m": 1.501
+ },
+ {
+  "key": "bulldog",
+  "name": "Devil Bulldog (Lite)",
+  "publisher": "Deepnest Studio",
+  "package": "Stylized_Devil_Bulldog-_Lite_Version_",
+  "mesh_file": "Stylized_Devil_Bulldog-_Lite_Version_/Assets/DeepNest/Devil_Bulldog_Lite/Models/DevilBulldog.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "DevilBulldog@IdleBreath.fbx",
+   "DevilBulldog@IdleSnuff.fbx",
+   "DevilBulldog@Roar.fbx"
+  ],
+  "unity_anim_clips": [],
+  "bones": 127,
+  "tris": 18240,
+  "height_m": 1.668,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "IdleBreath",
+    "raw": "Armature|IdleBreath|BaseLayer",
+    "frames": [
+     2.0,
+     61.0
+    ],
+    "seconds": 1.97,
+    "source": "file",
+    "file": "DevilBulldog@IdleBreath.fbx"
+   },
+   {
+    "name": "IdleSnuff",
+    "raw": "Armature|IdleSnuff|BaseLayer",
+    "frames": [
+     2.0,
+     121.0
+    ],
+    "seconds": 3.97,
+    "source": "file",
+    "file": "DevilBulldog@IdleSnuff.fbx"
+   },
+   {
+    "name": "Roar",
+    "raw": "Armature|Roar|BaseLayer",
+    "frames": [
+     2.0,
+     81.0
+    ],
+    "seconds": 2.63,
+    "source": "file",
+    "file": "DevilBulldog@Roar.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [
+    "Roar"
+   ],
+   "hit": [],
+   "die": [],
+   "idle": [
+    "IdleBreath",
+    "IdleSnuff"
+   ]
+  },
+  "missing": [
+   "walk",
+   "hit",
+   "die"
+  ],
+  "status": "PARTIAL",
+  "width_m": 2.234,
+  "depth_m": 2.859
+ },
+ {
+  "key": "monster38",
+  "name": "Monster38",
+  "publisher": "PixeliusVita",
+  "package": "Fantasy_Monster_Evolution_Pack_37-3839_Game_Ready_Creatures_PixeliusVita_",
+  "mesh_file": "Fantasy_Monster_Evolution_Pack_37-3839_Game_Ready_Creatures_PixeliusVita_/Assets/Stylized3DMonster/Monster38/Monster38.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [
+   "Monster38_Attack01.anim",
+   "Monster38_Attack02.anim",
+   "Monster38_Attack03.anim",
+   "Monster38_Die01.anim",
+   "Monster38_Die02.anim",
+   "Monster38_Die03.anim",
+   "Monster38_Idle01.anim",
+   "Monster38_Idle02.anim",
+   "Monster38_Idle03.anim",
+   "Monster38_Run.anim",
+   "Monster38_Walk.anim"
+  ],
+  "bones": 60,
+  "tris": 2752,
+  "height_m": 1.708,
+  "materials": 0,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "PARTIAL",
+  "width_m": 1.47,
+  "depth_m": 0.802
+ },
+ {
+  "key": "monster37",
+  "name": "Monster37",
+  "publisher": "PixeliusVita",
+  "package": "Fantasy_Monster_Evolution_Pack_37-3839_Game_Ready_Creatures_PixeliusVita_",
+  "mesh_file": "Fantasy_Monster_Evolution_Pack_37-3839_Game_Ready_Creatures_PixeliusVita_/Assets/Stylized3DMonster/Monster37/Monster37.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 60,
+  "tris": 1860,
+  "height_m": 1.437,
+  "materials": 0,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "MODEL_ONLY",
+  "width_m": 1.335,
+  "depth_m": 0.763
+ },
+ {
+  "key": "monster39",
+  "name": "Monster39",
+  "publisher": "PixeliusVita",
+  "package": "Fantasy_Monster_Evolution_Pack_37-3839_Game_Ready_Creatures_PixeliusVita_",
+  "mesh_file": "Fantasy_Monster_Evolution_Pack_37-3839_Game_Ready_Creatures_PixeliusVita_/Assets/Stylized3DMonster/Monster39/Monster39.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 60,
+  "tris": 6466,
+  "height_m": 1.589,
+  "materials": 0,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "MODEL_ONLY",
+  "width_m": 1.768,
+  "depth_m": 0.599
+ },
+ {
+  "key": "monster40",
+  "name": "Monster40",
+  "publisher": "PixeliusVita",
+  "package": "Fantasy_Monster_Evolution_Pack_40-4142_Game_Ready_Creatures_PixeliusVita_",
+  "mesh_file": "Fantasy_Monster_Evolution_Pack_40-4142_Game_Ready_Creatures_PixeliusVita_/Assets/Stylized3DMonster/Monster40/Monster40.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 60,
+  "tris": 3138,
+  "height_m": 1.518,
+  "materials": 0,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "MODEL_ONLY",
+  "width_m": 1.666,
+  "depth_m": 0.854
+ },
+ {
+  "key": "monster41",
+  "name": "Monster41",
+  "publisher": "PixeliusVita",
+  "package": "Fantasy_Monster_Evolution_Pack_40-4142_Game_Ready_Creatures_PixeliusVita_",
+  "mesh_file": "Fantasy_Monster_Evolution_Pack_40-4142_Game_Ready_Creatures_PixeliusVita_/Assets/Stylized3DMonster/Monster41/Monster41.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 60,
+  "tris": 6586,
+  "height_m": 1.422,
+  "materials": 0,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "MODEL_ONLY",
+  "width_m": 1.741,
+  "depth_m": 0.682
+ },
+ {
+  "key": "monster42",
+  "name": "Monster42",
+  "publisher": "PixeliusVita",
+  "package": "Fantasy_Monster_Evolution_Pack_40-4142_Game_Ready_Creatures_PixeliusVita_",
+  "mesh_file": "Fantasy_Monster_Evolution_Pack_40-4142_Game_Ready_Creatures_PixeliusVita_/Assets/Stylized3DMonster/Monster42/Monster42.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 60,
+  "tris": 9954,
+  "height_m": 1.588,
+  "materials": 2,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "MODEL_ONLY",
+  "width_m": 1.823,
+  "depth_m": 0.682
+ },
+ {
+  "key": "mt01",
+  "name": "Mini Monster MT01",
+  "publisher": "PixeliusVita",
+  "package": "FreeTrial_Pack_2_Mini_Monster_Rigged_PixeliusVita_",
+  "mesh_file": "FreeTrial_Pack_2_Mini_Monster_Rigged_PixeliusVita_/Assets/Stylized3DMonster/ProjectMini/MT01/MT01.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 53,
+  "tris": 6185,
+  "height_m": 0.704,
+  "materials": 0,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "MODEL_ONLY",
+  "width_m": 0.449,
+  "depth_m": 0.374
+ },
+ {
+  "key": "mt02",
+  "name": "Mini Monster MT02",
+  "publisher": "PixeliusVita",
+  "package": "FreeTrial_Pack_2_Mini_Monster_Rigged_PixeliusVita_",
+  "mesh_file": "FreeTrial_Pack_2_Mini_Monster_Rigged_PixeliusVita_/Assets/Stylized3DMonster/ProjectMini/MT02/MT02.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 62,
+  "tris": 4074,
+  "height_m": 1.876,
+  "materials": 0,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "MODEL_ONLY",
+  "width_m": 0.928,
+  "depth_m": 0.981
+ },
+ {
+  "key": "oresdragon",
+  "name": "Ores Dragon",
+  "publisher": "AlexandruD",
+  "package": "Character_OresDragon_",
+  "mesh_file": "Character_OresDragon_/Assets/Character OresDragon/meshes/OresDragonLow2.fbx",
+  "mesh_includes_anims": true,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 211,
+  "tris": 40221,
+  "height_m": 0.932,
+  "materials": 1,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "basic_animation",
+    "raw": "metarig|metarig|basic_animation",
+    "frames": [
+     1.0,
+     174.0
+    ],
+    "seconds": 5.77,
+    "source": "embedded",
+    "file": "OresDragonLow2.fbx"
+   },
+   {
+    "name": "metarig",
+    "raw": "metarig|metarig|metarig|metarig",
+    "frames": [
+     1.0,
+     1.0
+    ],
+    "seconds": 0.0,
+    "source": "embedded",
+    "file": "OresDragonLow2.fbx"
+   },
+   {
+    "name": "metarig",
+    "raw": "metarig|metarig|metarig|metarig|metarig",
+    "frames": [
+     1.0,
+     156.0
+    ],
+    "seconds": 5.17,
+    "source": "embedded",
+    "file": "OresDragonLow2.fbx"
+   },
+   {
+    "name": "metarigAction",
+    "raw": "metarig|metarig|metarig|metarig|metarigAction",
+    "frames": [
+     1.0,
+     156.0
+    ],
+    "seconds": 5.17,
+    "source": "embedded",
+    "file": "OresDragonLow2.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "PARTIAL",
+  "width_m": 1.108,
+  "depth_m": 1.627
+ },
+ {
+  "key": "fantasy",
+  "name": "Fantasy Character (Zimni)",
+  "publisher": "Zimni",
+  "package": "Fantasy_character_",
+  "mesh_file": "Fantasy_character_/Assets/Zimni/Fantasy character/mesh/Fantasy_character.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [],
+  "unity_anim_clips": [],
+  "bones": 97,
+  "tris": 23072,
+  "height_m": 1.895,
+  "materials": 3,
+  "skinned": true,
+  "clips": [],
+  "coverage": {
+   "walk": [],
+   "run": [],
+   "attack": [],
+   "hit": [],
+   "die": [],
+   "idle": []
+  },
+  "missing": [
+   "walk",
+   "attack",
+   "hit",
+   "die"
+  ],
+  "status": "MODEL_ONLY",
+  "width_m": 1.613,
+  "depth_m": 0.514
+ },
+ {
+  "key": "arachnid",
+  "name": "Arachnid Alien Head",
+  "publisher": "StockLancer",
+  "package": "Arachnid-Alien_Head_Lite_",
+  "mesh_file": "Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Mesh/SKM_ArachnidAlienHead_Lite.fbx",
+  "mesh_includes_anims": false,
+  "anim_fbx": [
+   "AS_ArachnicAlienHead_Attack4_Lite.fbx",
+   "AS_ArachnicAlienHead_BasicJump_Lite.fbx",
+   "AS_ArachnicAlienHead_Dead_Lite.fbx",
+   "AS_ArachnicAlienHead_TakeHit_Lite.fbx",
+   "AS_ArachnicAlienHead_WalkBW _Lite.fbx",
+   "AS_ArachnicAlienHead_WalkFW4_Lite.fbx",
+   "AS_ArachnicAlienHead_WalkFW_Lite.fbx",
+   "AS_ArachnicAlienHead_WalkL_Lite.fbx",
+   "AS_ArachnicAlienHead_WalkR_Lite.fbx"
+  ],
+  "unity_anim_clips": [],
+  "bones": 36,
+  "tris": 27566,
+  "height_m": 0.45,
+  "materials": 4,
+  "skinned": true,
+  "clips": [
+   {
+    "name": "Attack4",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     41.0
+    ],
+    "seconds": 1.33,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_Attack4_Lite.fbx"
+   },
+   {
+    "name": "BasicJump",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     46.0
+    ],
+    "seconds": 1.5,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_BasicJump_Lite.fbx"
+   },
+   {
+    "name": "Dead",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     76.0
+    ],
+    "seconds": 2.5,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_Dead_Lite.fbx"
+   },
+   {
+    "name": "TakeHit",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     31.0
+    ],
+    "seconds": 1.0,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_TakeHit_Lite.fbx"
+   },
+   {
+    "name": "WalkBW",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     31.0
+    ],
+    "seconds": 1.0,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_WalkBW _Lite.fbx"
+   },
+   {
+    "name": "WalkFW4",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     31.0
+    ],
+    "seconds": 1.0,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_WalkFW4_Lite.fbx"
+   },
+   {
+    "name": "WalkFW",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     31.0
+    ],
+    "seconds": 1.0,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_WalkFW_Lite.fbx"
+   },
+   {
+    "name": "WalkL",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     31.0
+    ],
+    "seconds": 1.0,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_WalkL_Lite.fbx"
+   },
+   {
+    "name": "WalkR",
+    "raw": "Armature|CINEMA_4D_Main|Layer0",
+    "frames": [
+     1.0,
+     31.0
+    ],
+    "seconds": 1.0,
+    "source": "file",
+    "file": "AS_ArachnicAlienHead_WalkR_Lite.fbx"
+   }
+  ],
+  "coverage": {
+   "walk": [
+    "WalkBW ",
+    "WalkFW4",
+    "WalkFW",
+    "WalkL",
+    "WalkR"
+   ],
+   "run": [],
+   "attack": [
+    "Attack4"
+   ],
+   "hit": [
+    "TakeHit"
+   ],
+   "die": [
+    "Dead"
+   ],
+   "idle": []
+  },
+  "missing": [],
+  "status": "READY",
+  "width_m": 0.714,
+  "depth_m": 0.714
+ }
+]

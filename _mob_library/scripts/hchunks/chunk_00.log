@@ -1,0 +1,22 @@
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:25:31 | INFO: Data are loaded, start creating Blender stuff
+01:25:31 | INFO: Blender create Mesh node Revolver
+01:25:31 | INFO: Blender create Mesh node Sniper
+01:25:31 | INFO: Blender create Mesh node Revolver_Small
+01:25:31 | INFO: Blender create Mesh node Pistol
+01:25:31 | INFO: Blender create Mesh node SMG
+01:25:31 | INFO: Blender create Mesh node GrenadeLauncher
+01:25:31 | INFO: Blender create Mesh node ShortCannon
+01:25:31 | INFO: Blender create Mesh node Shotgun
+01:25:31 | INFO: Blender create Mesh node Sniper_2
+01:25:31 | INFO: Blender create Mesh node RocketLauncher
+01:25:31 | INFO: Blender create Mesh node AK
+01:25:31 | INFO: Blender create Mesh node Shovel
+01:25:31 | INFO: Blender create Mesh node Knife_2
+01:25:31 | INFO: Blender create Mesh node Knife_1
+01:25:31 | INFO: Blender create Mesh node Character_Enemy_Head
+01:25:31 | INFO: Blender create Mesh node Character_Enemy
+01:25:31 | INFO: glTF import finished in 0.15s
+/home/dormage/code/MMO3D2/_mob_library/scripts/render_thumbs.py:75: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:18)

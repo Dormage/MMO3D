@@ -1,0 +1,180 @@
+{
+  "folder": "Character_Animated_DgOCW9ZCRJ",
+  "title": "Character Animated",
+  "publicID": "DgOCW9ZCRJ",
+  "page": "https://poly.pizza/m/DgOCW9ZCRJ",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "bucket": "character",
+  "tris": 6050,
+  "bones": 31,
+  "files": {
+    "fbx": "Character_Animated_DgOCW9ZCRJ.fbx",
+    "glb": "Character_Animated_DgOCW9ZCRJ.glb",
+    "fbx_bytes": 4255116,
+    "glb_bytes": 660208
+  },
+  "animation_count": 24,
+  "clips": [
+    "Attacking_Idle",
+    "Dagger_Attack",
+    "Dagger_Attack2",
+    "Death",
+    "Idle",
+    "PickUp",
+    "Punch",
+    "RecieveHit",
+    "RecieveHit_Attacking",
+    "Roll",
+    "Run",
+    "Walk"
+  ],
+  "animations": [
+    {
+      "name": "Attacking_Idle",
+      "clean": "Attacking_Idle"
+    },
+    {
+      "name": "Dagger_Attack",
+      "clean": "Dagger_Attack"
+    },
+    {
+      "name": "Dagger_Attack2",
+      "clean": "Dagger_Attack2"
+    },
+    {
+      "name": "Death",
+      "clean": "Death"
+    },
+    {
+      "name": "PickUp",
+      "clean": "PickUp"
+    },
+    {
+      "name": "Punch",
+      "clean": "Punch"
+    },
+    {
+      "name": "RecieveHit",
+      "clean": "RecieveHit"
+    },
+    {
+      "name": "RecieveHit_Attacking",
+      "clean": "RecieveHit_Attacking"
+    },
+    {
+      "name": "Roll",
+      "clean": "Roll"
+    },
+    {
+      "name": "Run",
+      "clean": "Run"
+    },
+    {
+      "name": "Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "CharacterArmature|Attacking_Idle",
+      "clean": "Attacking_Idle"
+    },
+    {
+      "name": "CharacterArmature|Dagger_Attack",
+      "clean": "Dagger_Attack"
+    },
+    {
+      "name": "CharacterArmature|Dagger_Attack2",
+      "clean": "Dagger_Attack2"
+    },
+    {
+      "name": "CharacterArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "CharacterArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "CharacterArmature|PickUp",
+      "clean": "PickUp"
+    },
+    {
+      "name": "CharacterArmature|Punch",
+      "clean": "Punch"
+    },
+    {
+      "name": "CharacterArmature|RecieveHit",
+      "clean": "RecieveHit"
+    },
+    {
+      "name": "CharacterArmature|RecieveHit_Attacking",
+      "clean": "RecieveHit_Attacking"
+    },
+    {
+      "name": "CharacterArmature|Roll",
+      "clean": "Roll"
+    },
+    {
+      "name": "CharacterArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "CharacterArmature|Walk",
+      "clean": "Walk"
+    }
+  ],
+  "required": {
+    "hit": [
+      "RecieveHit",
+      "RecieveHit_Attacking",
+      "RecieveHit",
+      "RecieveHit_Attacking"
+    ],
+    "death": [
+      "Death",
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run"
+    ]
+  },
+  "fbx_takes": [
+    "Attacking_Idle",
+    "CharacterArmature|Attacking_Idle",
+    "CharacterArmature|Dagger_Attack",
+    "CharacterArmature|Dagger_Attack2",
+    "CharacterArmature|Death",
+    "CharacterArmature|Idle",
+    "CharacterArmature|PickUp",
+    "CharacterArmature|Punch",
+    "CharacterArmature|RecieveHit",
+    "CharacterArmature|RecieveHit_Attacking",
+    "CharacterArmature|Roll",
+    "CharacterArmature|Run",
+    "CharacterArmature|Walk",
+    "Dagger_Attack",
+    "Dagger_Attack2",
+    "Death",
+    "Idle",
+    "PickUp",
+    "Punch",
+    "RecieveHit",
+    "RecieveHit_Attacking",
+    "Roll",
+    "Run",
+    "Walk"
+  ],
+  "fbx_anim_stacks": 25,
+  "fbx_curve_nodes": 2341,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

@@ -1,0 +1,16 @@
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:30:44 | INFO: Data are loaded, start creating Blender stuff
+01:30:44 | INFO: Blender create Mesh node Pistol
+01:30:44 | INFO: Blender create Mesh node SciFi_Body
+01:30:44 | INFO: Blender create Mesh node SciFi_Feet
+01:30:44 | INFO: Blender create Mesh node SciFi_Head
+01:30:44 | INFO: Blender create Mesh node SciFi_Legs
+01:30:44 | INFO: glTF import finished in 0.22s
+/home/dormage/code/MMO3D2/_mob_library/scripts/render_thumbs.py:75: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:18)
+00:15.331  render           | Saved: '_mob_library/renders_humanoids/sci_fi_character.png'
+@@THUMB sci_fi_character
+@@DONE
+
+Blender quit

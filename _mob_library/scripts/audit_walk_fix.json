@@ -1,0 +1,163 @@
+[
+ {
+  "key": "Pirate_Captain_sN18LyyHAU",
+  "action": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|Char",
+  "frame": 12.0,
+  "bounds_walk": {
+   "min": [
+    -0.5419,
+    -0.7165,
+    -0.0072
+   ],
+   "max": [
+    0.9178,
+    0.6526,
+    1.6479
+   ],
+   "size": [
+    1.4597,
+    1.3691,
+    1.6552
+   ],
+   "verts": 7511
+  }
+ },
+ {
+  "key": "Skeleton_1XZD9GK6Kj",
+  "action": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|Char",
+  "frame": 12.0,
+  "bounds_walk": {
+   "min": [
+    -0.5463,
+    -0.7086,
+    -0.0249
+   ],
+   "max": [
+    0.5262,
+    0.4431,
+    0.9651
+   ],
+   "size": [
+    1.0725,
+    1.1517,
+    0.9901
+   ],
+   "verts": 7325
+  }
+ },
+ {
+  "key": "Skeleton_yq5ATpujSt",
+  "action": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|Char",
+  "frame": 12.0,
+  "bounds_walk": {
+   "min": [
+    -0.5463,
+    -0.9193,
+    -0.0249
+   ],
+   "max": [
+    0.5262,
+    0.4431,
+    1.396
+   ],
+   "size": [
+    1.0725,
+    1.3625,
+    1.421
+   ],
+   "verts": 9143
+  }
+ },
+ {
+  "key": "Anne_tZYaOQ4l94",
+  "action": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|Char",
+  "frame": 12.0,
+  "bounds_walk": {
+   "min": [
+    -0.5511,
+    -0.6901,
+    -0.0277
+   ],
+   "max": [
+    0.5498,
+    0.5469,
+    1.531
+   ],
+   "size": [
+    1.1009,
+    1.237,
+    1.5587
+   ],
+   "verts": 7902
+  }
+ },
+ {
+  "key": "Henry_yEdSk8tRKc",
+  "action": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|Char",
+  "frame": 12.0,
+  "bounds_walk": {
+   "min": [
+    -0.5511,
+    -0.8217,
+    -0.0113
+   ],
+   "max": [
+    0.5498,
+    0.5125,
+    1.4676
+   ],
+   "size": [
+    1.1009,
+    1.3343,
+    1.4789
+   ],
+   "verts": 7000
+  }
+ },
+ {
+  "key": "Mako_2urczqZ9Xf",
+  "action": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|Char",
+  "frame": 12.0,
+  "bounds_walk": {
+   "min": [
+    -0.6972,
+    -0.9201,
+    -0.0113
+   ],
+   "max": [
+    0.6848,
+    0.4496,
+    1.4888
+   ],
+   "size": [
+    1.382,
+    1.3697,
+    1.5001
+   ],
+   "verts": 11019
+  }
+ },
+ {
+  "key": "Sharky_iPV5YmAoIv",
+  "action": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|Char",
+  "frame": 12.0,
+  "bounds_walk": {
+   "min": [
+    -0.5511,
+    -0.8904,
+    -0.0113
+   ],
+   "max": [
+    0.5498,
+    0.5821,
+    1.4629
+   ],
+   "size": [
+    1.1009,
+    1.4725,
+    1.4742
+   ],
+   "verts": 8330
+  }
+ }
+]

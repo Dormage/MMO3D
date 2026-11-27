@@ -1,0 +1,100 @@
+{
+ "sN18LyyHAU": {
+  "title": "Pirate Captain",
+  "s3id": "c814c745-1cf5-4d92-bd85-200c66eb7843",
+  "animated": true,
+  "type": "FBX",
+  "licence": "CC0 1.0",
+  "tris": 10576,
+  "creator": "Quaternius",
+  "tags": [
+   "Baby",
+   "Person",
+   "Face",
+   "Head",
+   "Pirate"
+  ],
+  "animations": [
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Death|CharacterArmature|Dea",
+    "channels": 18
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Duck|CharacterArmature|Duck",
+    "channels": 14
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|HitReact|CharacterArmature|",
+    "channels": 12
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle|CharacterArmature|Idle",
+    "channels": 14
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle|CharacterArmature",
+    "channels": 14
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land|CharacterArmature",
+    "channels": 14
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump|CharacterArmature|Jump",
+    "channels": 14
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|No|CharacterArmature|No",
+    "channels": 20
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Punch|CharacterArmature|Pun",
+    "channels": 21
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run|CharacterArmature|Run",
+    "channels": 25
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sword|CharacterArmature|Swo",
+    "channels": 18
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk|CharacterArmature|Walk",
+    "channels": 22
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Wave|CharacterArmature|Wave",
+    "channels": 23
+   },
+   {
+    "name": "CharacterArmature|CharacterArmature|CharacterArmature|Yes|CharacterArmature|Yes",
+    "channels": 12
+   }
+  ],
+  "skins": 2,
+  "images": 1,
+  "nodes": 62,
+  "materials": 2
+ },
+ "KiNAaBa4cK": {
+  "title": "Worm",
+  "s3id": "0d4fc83b-f3e5-42c9-a69d-90ebfef458f4",
+  "animated": false,
+  "type": "FBX",
+  "licence": "CC0 1.0",
+  "tris": 240,
+  "creator": "Quaternius",
+  "tags": [
+   "Nature",
+   "Outdoors",
+   "Water",
+   "Bait"
+  ],
+  "animations": [],
+  "skins": 0,
+  "images": 0,
+  "nodes": 2,
+  "materials": 2
+ }
+}

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/region_map.gd" id="1_region"]
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_region")
+region_id = "town"
+display_name = "Walled Town"
+glb_path = "res://assets/worlds/town/town_godot.glb"
+ground_meshes = PackedStringArray("SM_Town_Ground")
+solid_meshes = PackedStringArray("SM_Town_Buildings", "SM_Town_Props", "SM_Town_Rampart")
+spawn_center = Vector2(0.5, 4.4)
+spawn_search_radius = 50.0
+nav_carve_solids = false

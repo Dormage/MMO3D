@@ -1,0 +1,182 @@
+[
+ {
+  "key": "character_enemy",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/character_enemy.glb"
+ },
+ {
+  "key": "character_soldier",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/character_soldier.glb"
+ },
+ {
+  "key": "ninja",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/ninja.glb"
+ },
+ {
+  "key": "pirate_captain",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/pirate_captain.glb"
+ },
+ {
+  "key": "skeleton_1xzd",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/skeleton_1xzd.glb"
+ },
+ {
+  "key": "skeleton_yq5a",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/skeleton_yq5a.glb"
+ },
+ {
+  "key": "soldier",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/soldier.glb"
+ },
+ {
+  "key": "adventurer",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/adventurer.glb"
+ },
+ {
+  "key": "adventurer_zwf0",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/adventurer_zwf0.glb"
+ },
+ {
+  "key": "animated_platformer_character",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/animated_platformer_character.glb"
+ },
+ {
+  "key": "animated_wizard",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/animated_wizard.glb"
+ },
+ {
+  "key": "animated_woman",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/animated_woman.glb"
+ },
+ {
+  "key": "animated_woman_qj2g",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/animated_woman_qj2g.glb"
+ },
+ {
+  "key": "anne",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/anne.glb"
+ },
+ {
+  "key": "astronaut",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/astronaut.glb"
+ },
+ {
+  "key": "astronaut_3hc2",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/astronaut_3hc2.glb"
+ },
+ {
+  "key": "astronaut_oges",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/astronaut_oges.glb"
+ },
+ {
+  "key": "astronaut_zbtp",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/astronaut_zbtp.glb"
+ },
+ {
+  "key": "beach_character",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/beach_character.glb"
+ },
+ {
+  "key": "big_arm",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/big_arm.glb"
+ },
+ {
+  "key": "business_man",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/business_man.glb"
+ },
+ {
+  "key": "casual_character",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/casual_character.glb"
+ },
+ {
+  "key": "character_animated",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/character_animated.glb"
+ },
+ {
+  "key": "character_hazmat",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/character_hazmat.glb"
+ },
+ {
+  "key": "characters_matt",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/characters_matt.glb"
+ },
+ {
+  "key": "characters_sam",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/characters_sam.glb"
+ },
+ {
+  "key": "characters_shaun",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/characters_shaun.glb"
+ },
+ {
+  "key": "cube_guy_character",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/cube_guy_character.glb"
+ },
+ {
+  "key": "cube_woman_character",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/cube_woman_character.glb"
+ },
+ {
+  "key": "farmer",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/farmer.glb"
+ },
+ {
+  "key": "henry",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/henry.glb"
+ },
+ {
+  "key": "hooded_adventurer",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/hooded_adventurer.glb"
+ },
+ {
+  "key": "hoodie_character",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/hoodie_character.glb"
+ },
+ {
+  "key": "king",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/king.glb"
+ },
+ {
+  "key": "lis",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/lis.glb"
+ },
+ {
+  "key": "mako",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/mako.glb"
+ },
+ {
+  "key": "punk",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/punk.glb"
+ },
+ {
+  "key": "punk_djxo",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/punk_djxo.glb"
+ },
+ {
+  "key": "swat",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/swat.glb"
+ },
+ {
+  "key": "sci_fi_character",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/sci_fi_character.glb"
+ },
+ {
+  "key": "steve",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/steve.glb"
+ },
+ {
+  "key": "suit",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/suit.glb"
+ },
+ {
+  "key": "witch",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/witch.glb"
+ },
+ {
+  "key": "worker",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/worker.glb"
+ },
+ {
+  "key": "worker_yg2b",
+  "file": "/home/dormage/code/MMO3D2/assets/models/mob_humanoids/worker_yg2b.glb"
+ }
+]

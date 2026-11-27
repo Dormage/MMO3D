@@ -1,0 +1,153 @@
+{
+  "folder": "Astronaut_0D54W8yfrA",
+  "title": "Astronaut",
+  "publicID": "0D54W8yfrA",
+  "page": "https://poly.pizza/m/0D54W8yfrA",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "bucket": "character",
+  "tris": 8606,
+  "bones": 43,
+  "files": {
+    "fbx": "Astronaut_0D54W8yfrA.fbx",
+    "glb": "Astronaut_0D54W8yfrA.glb",
+    "fbx_bytes": 4397932,
+    "glb_bytes": 733432
+  },
+  "animation_count": 18,
+  "clips": [
+    "Death",
+    "Duck",
+    "HitReact",
+    "Idle",
+    "Idle_Gun",
+    "Jump",
+    "Jump_Idle",
+    "Jump_Land",
+    "No",
+    "Punch",
+    "Run",
+    "Run_Gun",
+    "Run_Gun_Shoot",
+    "Walk",
+    "Walk_Gun",
+    "Wave",
+    "Weapon",
+    "Yes"
+  ],
+  "animations": [
+    {
+      "name": "CharacterArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "CharacterArmature|Duck",
+      "clean": "Duck"
+    },
+    {
+      "name": "CharacterArmature|HitReact",
+      "clean": "HitReact"
+    },
+    {
+      "name": "CharacterArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "CharacterArmature|Idle_Gun",
+      "clean": "Idle_Gun"
+    },
+    {
+      "name": "CharacterArmature|Jump",
+      "clean": "Jump"
+    },
+    {
+      "name": "CharacterArmature|Jump_Idle",
+      "clean": "Jump_Idle"
+    },
+    {
+      "name": "CharacterArmature|Jump_Land",
+      "clean": "Jump_Land"
+    },
+    {
+      "name": "CharacterArmature|No",
+      "clean": "No"
+    },
+    {
+      "name": "CharacterArmature|Punch",
+      "clean": "Punch"
+    },
+    {
+      "name": "CharacterArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "CharacterArmature|Run_Gun",
+      "clean": "Run_Gun"
+    },
+    {
+      "name": "CharacterArmature|Run_Gun_Shoot",
+      "clean": "Run_Gun_Shoot"
+    },
+    {
+      "name": "CharacterArmature|Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "CharacterArmature|Walk_Gun",
+      "clean": "Walk_Gun"
+    },
+    {
+      "name": "CharacterArmature|Wave",
+      "clean": "Wave"
+    },
+    {
+      "name": "CharacterArmature|Weapon",
+      "clean": "Weapon"
+    },
+    {
+      "name": "CharacterArmature|Yes",
+      "clean": "Yes"
+    }
+  ],
+  "required": {
+    "hit": [
+      "HitReact"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run_Gun",
+      "Run_Gun_Shoot"
+    ]
+  },
+  "fbx_takes": [
+    "CharacterArmature|Death",
+    "CharacterArmature|Duck",
+    "CharacterArmature|HitReact",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Idle_Gun",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Run",
+    "CharacterArmature|Run_Gun",
+    "CharacterArmature|Run_Gun_Shoot",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Walk_Gun",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+  ],
+  "fbx_anim_stacks": 19,
+  "fbx_curve_nodes": 2377,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "folder": "Characters_Pug_xvcUwuKl4c",
+  "title": "Characters Pug",
+  "publicID": "xvcUwuKl4c",
+  "page": "https://poly.pizza/m/xvcUwuKl4c",
+  "creator": "Quaternius",
+  "licence": "CC-BY 3.0",
+  "bucket": "animal",
+  "tris": 3603,
+  "bones": 36,
+  "files": {
+    "fbx": "Characters_Pug_xvcUwuKl4c.fbx",
+    "glb": "Characters_Pug_xvcUwuKl4c.glb",
+    "fbx_bytes": 2476508,
+    "glb_bytes": 460496
+  },
+  "animation_count": 11,
+  "clips": [
+    "Attack",
+    "Death",
+    "Eating",
+    "Idle",
+    "Idle_2",
+    "Idle_2_HeadLow",
+    "Idle_HitReact_Left",
+    "Idle_HitReact_Right",
+    "Run",
+    "Run_Jump",
+    "Walk"
+  ],
+  "animations": [
+    {
+      "name": "AnimalArmature|Attack",
+      "clean": "Attack"
+    },
+    {
+      "name": "AnimalArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "AnimalArmature|Eating",
+      "clean": "Eating"
+    },
+    {
+      "name": "AnimalArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "AnimalArmature|Idle_2",
+      "clean": "Idle_2"
+    },
+    {
+      "name": "AnimalArmature|Idle_2_HeadLow",
+      "clean": "Idle_2_HeadLow"
+    },
+    {
+      "name": "AnimalArmature|Idle_HitReact_Left",
+      "clean": "Idle_HitReact_Left"
+    },
+    {
+      "name": "AnimalArmature|Idle_HitReact_Right",
+      "clean": "Idle_HitReact_Right"
+    },
+    {
+      "name": "AnimalArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "AnimalArmature|Run_Jump",
+      "clean": "Run_Jump"
+    },
+    {
+      "name": "AnimalArmature|Walk",
+      "clean": "Walk"
+    }
+  ],
+  "required": {
+    "hit": [
+      "Idle_HitReact_Left",
+      "Idle_HitReact_Right"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run_Jump"
+    ]
+  },
+  "fbx_takes": [
+    "AnimalArmature|Attack",
+    "AnimalArmature|Death",
+    "AnimalArmature|Eating",
+    "AnimalArmature|Idle",
+    "AnimalArmature|Idle_2",
+    "AnimalArmature|Idle_2_HeadLow",
+    "AnimalArmature|Idle_HitReact_Left",
+    "AnimalArmature|Idle_HitReact_Right",
+    "AnimalArmature|Run",
+    "AnimalArmature|Run_Jump",
+    "AnimalArmature|Walk"
+  ],
+  "fbx_anim_stacks": 12,
+  "fbx_curve_nodes": 1222,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

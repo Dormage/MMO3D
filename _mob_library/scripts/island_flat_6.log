@@ -1,0 +1,156 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+sky: cloud-sea shader active
+REGION_STATE regions=5 current=1(island)
+REGION_LIGHT using shared SkySun
+REGION_CACHE hit user://region_cache/island.scn
+REGION_DECKS boxes=4200
+REGION_COLLISION GroundCollision layer=1 tris=157202
+REGION_DECK_STRIP faces=23
+REGION_DECK_STRIP faces=3
+REGION_DECK_STRIP faces=46
+REGION_DECK_STRIP faces=448
+REGION_DECK_STRIP faces=1
+REGION_DECK_STRIP faces=2
+REGION_DECK_STRIP faces=24
+REGION_DECK_STRIP faces=8
+REGION_DECK_STRIP faces=192
+REGION_DECK_STRIP faces=1000
+REGION_DECK_STRIP faces=240
+REGION_COLLISION Solid_SM_Town_Buildings layer=2 tris=14517
+REGION_COLLISION Walkable_SM_Town_Buildings layer=1 tris=2924
+REGION_DECK_STRIP faces=204
+REGION_DECK_STRIP faces=121
+REGION_DECK_STRIP faces=389
+REGION_DECK_STRIP faces=1477
+REGION_DECK_STRIP faces=64
+REGION_DECK_STRIP faces=20
+REGION_DECK_STRIP faces=142
+REGION_DECK_STRIP faces=44
+REGION_DECK_STRIP faces=238
+REGION_DECK_STRIP faces=13
+REGION_DECK_STRIP faces=20
+REGION_DECK_STRIP faces=360
+REGION_DECK_STRIP faces=1632
+REGION_DECK_STRIP faces=22
+REGION_DECK_STRIP faces=113
+REGION_DECK_STRIP faces=24
+REGION_DECK_STRIP faces=24
+REGION_DECK_STRIP faces=5
+REGION_COLLISION Solid_SM_Town_Props layer=2 tris=44268
+REGION_COLLISION Walkable_SM_Town_Props layer=1 tris=1300
+REGION_DECOR SM_Town_Props no collision on ["M_cream.002", "M_mushcap.002"]
+REGION_DECK_STRIP faces=315
+REGION_DECK_STRIP faces=360
+REGION_DECK_STRIP faces=1632
+REGION_COLLISION Solid_SM_Town_Rampart layer=2 tris=8021
+REGION_COLLISION Walkable_SM_Town_Rampart layer=1 tris=6044
+REGION_COLLISION SM_Town_Vegetation skipped (non-solid)
+REGION_COLLISION SM_Town_Water skipped (non-solid)
+REGION_COLLISION Walkable_Bridge_SM_Town_Props layer=1 tris=349
+REGION_COLLISION Walkable_Bridge_SM_Town_Rampart layer=1 tris=348
+REGION_BRIDGE_COLLISION bodies=2
+REGION_HOST mounted region_island.tscn
+WEAPON_EQUIPPED slot=0 id=sword weapon=weapon_arming_sword clip=1H_Slash duration=0.95 tip=0.84
+PLAYER_IDLE_FLAT root=(-0.2647,0.3442,-0.9035) keys=232
+ATTACK_ROOT_FLAT clip=1H_Slash track=Armature/Skeleton3D:Hips keys=61 fixed=(-0.014476, -0.038188, -0.792969)
+ATTACK_ROOT_FLAT clip=2H_Slash track=Armature/Skeleton3D:Hips keys=100 fixed=(-0.00021, -0.035535, -1.032923)
+ATTACK_ROOT_FLAT clip=SwordShield track=Armature/Skeleton3D:Hips keys=66 fixed=(-0.003054, -0.020118, -0.979252)
+ATTACK_ROOT_FLAT clip=Thrust track=Armature/Skeleton3D:Hips keys=92 fixed=(0.007976, -0.023152, -0.919269)
+POP_CANDIDATES region=island count=1506 bounds=[P: (-48.95597, -4.35, -48.88682), S: (97.67596, 8.396406, 97.60683)] step=2.00
+POPULATION region=island actors=25 candidates=1506 placement=scatter anim_ok=25
+POP_ACTOR Alien | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Blue Demon | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Bunny | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Cactoro | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Demon | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Demon | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Dino | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Enemy Large | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Goblin | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Monkroose | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mushroom King | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Orc | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Skeleton | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Yeti | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Yeti | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Zombie | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Zombie | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Zombie | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Giant | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mech | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mech | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mech | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mech | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Sharky | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Zombie | walk=walk run=run idle=idle attack=attack hit=hit die=die
+REGION_WATER surfaces=1 plane_tris=9954 verts=5120 cells=4977 extent=78x98m spread=30
+REGION_SPAWN island at (0.0, 0.0) ground=0.000 radius=0.0
+REGION_MAP id=island meshes=6 polys~944459 bounds=[P: (-56.99302, -499.8719, -69.07146), S: (148.6451, 511.8293, 130.0184)] spawn=(0.0, 0.0, 0.0)
+PLAYER_SPAWN pos=(0.0, 0.006, 0.0) ground=0.0000 capsule_bottom=0.0060
+PLAYER_MODEL_FIT sole=0.1060 mesh_low=-0.1749 capsule_bottom=0.0060 pivot_offset=0.0845
+CARVEFLAG carrier=Region value=true
+WATER_LEVEL -0.15 from Region
+NAV_EDGE margin=1.00
+NAV_CUTOUTS rects=0 trunk_circles=0
+NAV_SOLIDS cells=2865 faces_marked=2865 faces_skipped_band=70
+NAV_WALKABLE surfaces faces=3704
+ERROR: Condition "array_len == 0" is true. Returning: ERR_INVALID_DATA
+   at: mesh_create_surface_data_from_arrays (servers/rendering/rendering_server.cpp:1207)
+   GDScript backtrace (most recent call first):
+       [0] _add_bridge_mesh (res://scripts/nav_world.gd:424)
+       [1] build (res://scripts/nav_world.gd:188)
+       [2] _ready (res://scripts/game_controller.gd:129)
+ERROR: Condition "err != OK" is true.
+   at: add_surface_from_arrays (scene/resources/mesh.cpp:1825)
+   GDScript backtrace (most recent call first):
+       [0] _add_bridge_mesh (res://scripts/nav_world.gd:424)
+       [1] build (res://scripts/nav_world.gd:188)
+       [2] _ready (res://scripts/game_controller.gd:129)
+NAV_BRIDGES decks=0 verts=0
+NAV_WATERMASK cells=590 (from region)
+NAV_WATERMASK blocked=14/14 bridgesegs=0
+NAV_CACHE hit polygons=2012 vertices=1730
+NAV_STITCH parts=64 links=54 unreached=0
+SHIPPED_INPUT node=/root/Game in_tree=true unhandled_enabled=true
+SHIPPED_NAV polygons=2012 vertices=1730 region_polys=2012 map_rid_ok=true
+WARNING: Navigation region synchronization had 3 edge error(s).
+More than 2 edges tried to occupy the same map rasterization space.
+This causes a logical error in the navigation mesh geometry and is commonly caused by overlap or too densely placed edges.
+Consider baking with a higher 'cell_size', greater geometry margin, and less detailed bake objects to cause fewer edges.
+Consider lowering the 'navigation/3d/merge_rasterizer_cell_scale' in the project settings.
+This warning can be toggled under 'navigation/3d/warnings/navmesh_edge_merge_errors' in the project settings.
+     at: _build_step_find_edge_connection_pairs (modules/navigation_3d/3d/nav_region_builder_3d.cpp:221)
+PLAYER_MODEL_FIT sole=0.1060 mesh_low=-0.1749 capsule_bottom=0.0060 pivot_offset=0.0845
+SHIPPED_PLAYER pos=(0.0, 0.006, 0.0) in_tree=true
+SHIPPED_PATH a=(0.0, 0.14016, 0.0) b=(5.0, 0.14016, 0.0) points=4 length=5.00
+DEEP_ISLANDS_HIDDEN
+GAME_CAM pitch=60 dist=18.0..26.0 focus_owner=<Object#null>
+NAV_LINKS links=0 tree_obstacles=0
+ISLAND_DETAIL skipped: authored world
+POP_MOVE alien_0 dist=5.30 alien_0 pos=(-39.9, 0.0, 19.0) home_dist=5.27 anim=idle floor=true
+POP_MOVE blue_demon_0 dist=5.42 blue_demon_0 pos=(4.9, 0.0, -33.5) home_dist=5.42 anim=idle floor=true
+POP_MOVE bunny_0 dist=5.03 bunny_0 pos=(-1.2, 0.0, -37.0) home_dist=5.03 anim=walk floor=true
+POP_MOVE cactoro_0 dist=2.99 cactoro_0 pos=(39.2, 0.0, 7.4) home_dist=2.99 anim=walk floor=true
+POP_MOVE demon_0 dist=4.66 demon_0 pos=(17.1, 0.0, -7.2) home_dist=4.78 anim=walk floor=true
+POP_MOVE demon_lnfi_0 dist=4.68 demon_lnfi_0 pos=(24.4, 0.0, 47.1) home_dist=4.68 anim=idle floor=true
+POP_MOVE dino_0 dist=4.42 dino_0 pos=(6.0, 0.0, 11.9) home_dist=4.42 anim=idle floor=true
+POP_MOVE enemy_large_0 dist=2.97 enemy_large_0 pos=(-36.4, 0.0, 27.8) home_dist=2.97 anim=walk floor=true
+POP_MOVE goblin_0 dist=3.43 goblin_0 pos=(10.1, 0.0, 32.6) home_dist=4.01 anim=walk floor=true
+POP_MOVE monkroose_0 dist=3.18 monkroose_0 pos=(5.5, 0.0, 22.9) home_dist=3.18 anim=walk floor=true
+POP_MOVE mushroom_king_0 dist=3.54 mushroom_king_0 pos=(-24.6, 0.0, 23.0) home_dist=3.54 anim=walk floor=true
+POP_MOVE orc_0 dist=4.51 orc_0 pos=(2.6, 0.0, 43.0) home_dist=4.51 anim=idle floor=true
+POP_MOVE skeleton_0 dist=2.09 skeleton_0 pos=(28.1, 0.0, -17.8) home_dist=2.09 anim=idle floor=true
+POP_MOVE yeti_0 dist=2.33 yeti_0 pos=(-18.7, 4.0, -27.7) home_dist=2.33 anim=walk floor=true
+POP_MOVE yeti_xtmy_0 dist=2.42 yeti_xtmy_0 pos=(11.3, 0.0, -43.6) home_dist=2.42 anim=idle floor=true
+POP_MOVE zombie_0 dist=5.65 zombie_0 pos=(36.6, 0.0, -15.5) home_dist=5.65 anim=idle floor=true
+POP_MOVE zombie_jobv_0 dist=5.26 zombie_jobv_0 pos=(-41.3, 0.0, 32.6) home_dist=5.26 anim=walk floor=true
+POP_MOVE zombie_vlxj_0 dist=3.55 zombie_vlxj_0 pos=(-42.9, 0.0, 34.7) home_dist=3.91 anim=idle floor=true
+POP_MOVE giant_0 dist=6.29 giant_0 pos=(23.8, 2.0, -37.4) home_dist=6.29 anim=idle floor=true
+POP_MOVE mech_0 dist=2.47 mech_0 pos=(21.2, 0.0, -20.2) home_dist=2.47 anim=walk floor=true
+POP_MOVE mech_d5ww_0 dist=6.82 mech_d5ww_0 pos=(-34.8, 4.0, -44.1) home_dist=6.82 anim=idle floor=true
+POP_MOVE mech_o3ps_0 dist=1.69 mech_o3ps_0 pos=(-42.5, 0.0, 9.0) home_dist=1.69 anim=walk floor=true
+POP_MOVE mech_tls9_0 dist=3.20 mech_tls9_0 pos=(6.9, 0.0, 16.8) home_dist=3.20 anim=idle floor=true
+POP_MOVE sharky_0 dist=3.90 sharky_0 pos=(-44.6, 0.0, -2.3) home_dist=3.90 anim=idle floor=true
+POP_MOVE zombie_xqez_0 dist=4.06 zombie_xqez_0 pos=(6.0, 0.0, -12.6) home_dist=4.06 anim=idle floor=true
+POP_CHECK region=island actors=25 moved=25 anim_ok=25

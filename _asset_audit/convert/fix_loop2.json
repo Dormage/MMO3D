@@ -1,0 +1,152 @@
+[
+ {
+  "key": "catfish",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Mesh/Catfish_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@sturn.FBX",
+    "clip": "stunned"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Textures/Catfish_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Textures/Catfish_Normal.png"
+  },
+  "roughness": 0.58,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/catfish.glb",
+  "loop_fix": true,
+  "loop_blend": 0.35
+ },
+ {
+  "key": "watcher",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Mesh/Watcher_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@sturn.FBX",
+    "clip": "stunned"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Textures/Watcher_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Textures/Watcher_Normal.png"
+  },
+  "roughness": 0.55,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/watcher.glb",
+  "loop_fix": true,
+  "loop_blend": 0.35
+ },
+ {
+  "key": "arachnid",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Mesh/SKM_ArachnidAlienHead_Lite.fbx",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkFW_Lite.fbx",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkFW4_Lite.fbx",
+    "clip": "walk2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkBW _Lite.fbx",
+    "clip": "walk_back"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkL_Lite.fbx",
+    "clip": "walk_left"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkR_Lite.fbx",
+    "clip": "walk_right"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_Attack4_Lite.fbx",
+    "clip": "attack"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_TakeHit_Lite.fbx",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_Dead_Lite.fbx",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_BasicJump_Lite.fbx",
+    "clip": "jump"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Textures/T_ArachnidHead_Lite1K_BC_Dirt.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Textures/T_ArachnidHead_Lite1K_N.png"
+  },
+  "roughness": 0.55,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/arachnid.glb",
+  "loop_fix": true,
+  "loop_blend": 0.35
+ }
+]

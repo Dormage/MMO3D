@@ -1,0 +1,121 @@
+{
+  "folder": "Zombie_xqEzosAVYX",
+  "title": "Zombie",
+  "publicID": "xqEzosAVYX",
+  "page": "https://poly.pizza/m/xqEzosAVYX",
+  "creator": "bachosoftdesign",
+  "licence": "CC-BY 3.0",
+  "bucket": "mob",
+  "tris": 2157,
+  "bones": 49,
+  "files": {
+    "fbx": "Zombie_xqEzosAVYX.fbx",
+    "glb": "Zombie_xqEzosAVYX.glb",
+    "fbx_bytes": 4788508,
+    "glb_bytes": 2162724
+  },
+  "animation_count": 13,
+  "clips": [
+    "Attack",
+    "Bite_ground",
+    "Crawl",
+    "Die",
+    "Die2",
+    "Headbutt",
+    "Hit_reaction",
+    "Idle",
+    "Running_Crawl",
+    "Scream",
+    "T-Pose",
+    "Walk",
+    "Walk2"
+  ],
+  "animations": [
+    {
+      "name": "Armature|Attack",
+      "clean": "Attack"
+    },
+    {
+      "name": "Armature|Bite_ground",
+      "clean": "Bite_ground"
+    },
+    {
+      "name": "Armature|Crawl",
+      "clean": "Crawl"
+    },
+    {
+      "name": "Armature|Die",
+      "clean": "Die"
+    },
+    {
+      "name": "Armature|Die2",
+      "clean": "Die2"
+    },
+    {
+      "name": "Armature|Headbutt",
+      "clean": "Headbutt"
+    },
+    {
+      "name": "Armature|Hit_reaction",
+      "clean": "Hit_reaction"
+    },
+    {
+      "name": "Armature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "Armature|Running_Crawl",
+      "clean": "Running_Crawl"
+    },
+    {
+      "name": "Armature|Scream",
+      "clean": "Scream"
+    },
+    {
+      "name": "Armature|T-Pose",
+      "clean": "T-Pose"
+    },
+    {
+      "name": "Armature|Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "Armature|Walk2",
+      "clean": "Walk2"
+    }
+  ],
+  "required": {
+    "hit": [
+      "Hit_reaction"
+    ],
+    "death": [
+      "Die"
+    ],
+    "run": [
+      "Running_Crawl"
+    ]
+  },
+  "fbx_takes": [
+    "Armature|Attack",
+    "Armature|Bite_ground",
+    "Armature|Crawl",
+    "Armature|Die",
+    "Armature|Die2",
+    "Armature|Headbutt",
+    "Armature|Hit_reaction",
+    "Armature|Idle",
+    "Armature|Running_Crawl",
+    "Armature|Scream",
+    "Armature|T-Pose",
+    "Armature|Walk",
+    "Armature|Walk2"
+  ],
+  "fbx_anim_stacks": 14,
+  "fbx_curve_nodes": 1951,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/region_map.gd" id="1_region"]
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_region")
+region_id = "wetlands"
+display_name = "Living Wetlands"
+glb_path = "res://assets/worlds/wetlands/living_wetlands.glb"
+ground_meshes = PackedStringArray("SM_Ground")
+solid_meshes = PackedStringArray("SM_Sluice", "SM_Props")
+walkable_meshes = PackedStringArray("SM_Bridges")
+spawn_center = Vector2(0, 0)
+spawn_search_radius = 40.0
+nav_carve_solids = false
+hide_meshes = PackedStringArray("SM_ScaleReference")
+max_face_meshes = PackedStringArray("SM_Vegetation", "SM_Props")
+max_face_edge = 3.5
+water_extend_enabled = true
+water_extend_scale = 2.0
+water_extend_cells = 160
+water_color = Color(0.14, 0.32, 0.26, 1)
+water_wall_enabled = true
+water_wall_height = 1.15
+ground_detail_texture = "res://assets/worlds/wetlands/textures/terrain_detail.png"
+ground_detail_scale = 0.35

@@ -1,0 +1,96 @@
+[
+ {
+  "key": "rhino",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/Mesh/Rino_mesh.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Attack.FBX",
+    "clip": "attack"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Get_Hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Dead.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Eats.FBX",
+    "clip": "eat"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@shout.FBX",
+    "clip": "shout"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/Texture/Rhinoceros_Albedo.tga",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/Texture/Rhinoceros_normals.tga",
+   "emissive": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/Texture/Rhinoceros_Emissive.tga"
+  },
+  "roughness": 0.6,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/rhino.glb",
+  "drop_meshes": [
+   "Eyes",
+   "Teeth_up",
+   "Teeth_down",
+   "Object001",
+   "Object002",
+   "Object003",
+   "Character001"
+  ]
+ },
+ {
+  "key": "turtle_dragon",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Mesh/turtle_dragon.fbx",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Walk.fbx",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Run.fbx",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Idle.fbx",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Attack03.fbx",
+    "clip": "attack"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Hit.fbx",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Die.fbx",
+    "clip": "die"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Texture/TurtleDragon_Alb.tga",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Texture/TurtleDragon_N.tga"
+  },
+  "roughness": 0.55,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/turtle_dragon.glb",
+  "drop_meshes": [
+   "lod1",
+   "lod2"
+  ]
+ }
+]

@@ -1,0 +1,147 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+sky: cloud-sea shader active
+REGION_STATE regions=4 current=2(graveyard)
+REGION_LIGHT using shared SkySun
+REGION_MATTEX fixed=0 []
+REGION_OUTLIER dropped_tris=1848 meshes=2 limit=1000
+REGION_HIDE surfaces=4 patterns=["platformgrass", "drygrass"]
+REGION_SNAP pieces=177535 surfaces=2
+REGION_WATERX surfaces=2 level=-0.50 size=399x513 centre=(17.9,0.8)
+REGION_GLOW pieces=0 lights=0
+REGION_BRIDGE surfaces=0
+REGION_CRYSTAL surfaces=2 centre=(10.04098, 2.938271, -14.47846)
+REGION_WIND surfaces=0 textured=0 clear_pts=[]
+REGION_COLLISION GroundCollision layer=1 tris=377629
+REGION_COLLISION Solid_SM_Buildings layer=2 tris=103892
+REGION_COLLISION Walkable_SM_Buildings layer=1 tris=30100
+REGION_WALKABLE SM_Buildings as ground: ["M_StoneLight"]
+REGION_COLLISION SM_Props skipped (non-solid)
+REGION_COLLISION SM_Vegetation skipped (non-solid)
+REGION_COLLISION SM_Water skipped (non-solid)
+REGION_HOST mounted region_graveyard.tscn
+WEAPON_EQUIPPED slot=0 id=sword weapon=weapon_arming_sword clip=1H_Slash duration=0.95 tip=0.84
+PLAYER_IDLE_FLAT root=(-0.2647,0.3442,-0.9035) keys=232
+ATTACK_ROOT_FLAT clip=1H_Slash track=Armature/Skeleton3D:Hips keys=61 fixed=(-0.014476, -0.038188, -0.792969)
+ATTACK_ROOT_FLAT clip=2H_Slash track=Armature/Skeleton3D:Hips keys=100 fixed=(-0.00021, -0.035535, -1.032923)
+ATTACK_ROOT_FLAT clip=SwordShield track=Armature/Skeleton3D:Hips keys=66 fixed=(-0.003054, -0.020118, -0.979252)
+ATTACK_ROOT_FLAT clip=Thrust track=Armature/Skeleton3D:Hips keys=92 fixed=(0.007976, -0.023152, -0.919269)
+MONSTERS spawned=15 centre=(0.0, 0.22467, 0.0) monster02_0@walk/idle, rhino_0@walk/idle, turtle_dragon_0@walk/idle, wolf_boss_0@walk/idle, catfish_0@walk/idle, watcher_0@walk/idle, watcher_1@walk/idle, ghoul_0@walk/idle, ghoul_1@walk/idle, swarm08_0@walk/idle, swarm08_1@walk/idle, swarm08_2@walk/idle, swarm09_0@walk/idle, swarm09_1@walk/idle, arachnid_0@walk/-
+REGION_WATER surfaces=0 apron=none
+REGION_SPAWN graveyard at (0.0, 0.0) ground=0.225 radius=0.0
+REGION_MAP id=graveyard meshes=5 polys~3121549 bounds=[P: (-360.0, -2.61, -360.0), S: (720.0, 28.8252, 720.0)] spawn=(0.0, 0.22467, 0.0)
+PLAYER_SPAWN pos=(0.0, 0.230606, 0.0) ground=0.2246 capsule_bottom=0.2306
+PLAYER_MODEL_FIT sole=0.3306 mesh_low=0.1989 capsule_bottom=0.2306 pivot_offset=0.2337
+PLAYER_MODEL_FIT sole=0.3306 mesh_low=0.1989 capsule_bottom=0.2306 pivot_offset=0.2337
+CARVEFLAG carrier=Region value=false
+NAV_CUTOUTS rects=0 trunk_circles=0
+NAV_WALKABLE surfaces faces=10107
+ERROR: Condition "array_len == 0" is true. Returning: ERR_INVALID_DATA
+   at: mesh_create_surface_data_from_arrays (servers/rendering/rendering_server.cpp:1207)
+   GDScript backtrace (most recent call first):
+       [0] _add_bridge_mesh (res://scripts/nav_world.gd:354)
+       [1] build (res://scripts/nav_world.gd:127)
+       [2] _ready (res://scripts/game_controller.gd:111)
+ERROR: Condition "err != OK" is true.
+   at: add_surface_from_arrays (scene/resources/mesh.cpp:1825)
+   GDScript backtrace (most recent call first):
+       [0] _add_bridge_mesh (res://scripts/nav_world.gd:354)
+       [1] build (res://scripts/nav_world.gd:127)
+       [2] _ready (res://scripts/game_controller.gd:111)
+NAV_BRIDGES decks=0 verts=0
+WARNING: Property agent_max_climb is floored to cell_height voxel units and loses precision.
+   at: generator_bake_from_source_geometry_data (modules/navigation_3d/3d/nav_mesh_generator_3d.cpp:369)
+   GDScript backtrace (most recent call first):
+       [0] build (res://scripts/nav_world.gd:146)
+       [1] _ready (res://scripts/game_controller.gd:111)
+WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision.
+   at: generator_bake_from_source_geometry_data (modules/navigation_3d/3d/nav_mesh_generator_3d.cpp:372)
+   GDScript backtrace (most recent call first):
+       [0] build (res://scripts/nav_world.gd:146)
+       [1] _ready (res://scripts/game_controller.gd:111)
+NAV_FILTER slope=13168 blocked=201362 low=0
+NAV_BAKE source_tris=161077 bake_ms=11676 polygons=4215 vertices=2416 approx_cells=414964 cell=0.25
+SHIPPED_INPUT node=/root/Game in_tree=true unhandled_enabled=true
+SHIPPED_NAV polygons=4215 vertices=2416 region_polys=4215 map_rid_ok=true
+WARNING: Navigation region synchronization had 9 edge error(s).
+More than 2 edges tried to occupy the same map rasterization space.
+This causes a logical error in the navigation mesh geometry and is commonly caused by overlap or too densely placed edges.
+Consider baking with a higher 'cell_size', greater geometry margin, and less detailed bake objects to cause fewer edges.
+Consider lowering the 'navigation/3d/merge_rasterizer_cell_scale' in the project settings.
+This warning can be toggled under 'navigation/3d/warnings/navmesh_edge_merge_errors' in the project settings.
+   at: _build_step_find_edge_connection_pairs (modules/navigation_3d/3d/nav_region_builder_3d.cpp:221)
+SHIPPED_PLAYER pos=(0.0, 0.230603, 0.0) in_tree=true
+SHIPPED_PATH a=(-0.000125, 0.178742, -0.00036) b=(4.999846, 0.166653, -0.000443) points=2 length=5.00
+DEEP_ISLANDS_HIDDEN
+GAME_CAM pitch=60 dist=18.0..26.0 focus_owner=<Object#null>
+NAV_LINKS links=0 tree_obstacles=0
+ISLAND_DETAIL skipped: authored world
+TRACE monster02_0 clip=idle t=0.50/3.00 loop=1 playing=true speed=1.00 pos=(15.7, 0.1, 1.3)
+TRACE wolf_boss_0 clip=idle t=0.50/18.87 loop=1 playing=true speed=1.00 pos=(-13.5, 0.0, -0.6)
+TRACE catfish_0 clip=idle t=0.50/10.00 loop=1 playing=true speed=1.00 pos=(-4.8, 0.1, -12.3)
+TRACE monster02_0 clip=idle t=1.00/3.00 loop=1 playing=true speed=1.00 pos=(15.7, 0.1, 1.3)
+TRACE wolf_boss_0 clip=idle t=1.00/18.87 loop=1 playing=true speed=1.00 pos=(-13.5, 0.0, -0.6)
+TRACE catfish_0 clip=idle t=1.00/10.00 loop=1 playing=true speed=1.00 pos=(-4.8, 0.1, -12.3)
+TRACE monster02_0 clip=idle t=1.50/3.00 loop=1 playing=true speed=1.00 pos=(15.7, 0.1, 1.3)
+TRACE wolf_boss_0 clip=idle t=1.50/18.87 loop=1 playing=true speed=1.00 pos=(-13.5, 0.0, -0.6)
+TRACE catfish_0 clip=idle t=1.50/10.00 loop=1 playing=true speed=1.00 pos=(-4.8, 0.1, -12.3)
+TRACE monster02_0 clip=idle t=2.00/3.00 loop=1 playing=true speed=1.00 pos=(15.7, 0.1, 1.3)
+TRACE wolf_boss_0 clip=idle t=2.00/18.87 loop=1 playing=true speed=1.00 pos=(-13.5, 0.0, -0.6)
+TRACE catfish_0 clip=idle t=2.00/10.00 loop=1 playing=true speed=1.00 pos=(-4.8, 0.1, -12.3)
+TRACE monster02_0 clip=walk t=0.45/1.37 loop=1 playing=true speed=1.00 pos=(15.5, 0.1, 2.1)
+TRACE wolf_boss_0 clip=idle t=2.50/18.87 loop=1 playing=true speed=1.00 pos=(-13.5, 0.0, -0.6)
+TRACE catfish_0 clip=walk t=0.45/1.27 loop=1 playing=true speed=1.00 pos=(-4.3, 0.1, -12.1)
+TRACE monster02_0 clip=walk t=0.95/1.37 loop=1 playing=true speed=1.00 pos=(15.2, 0.1, 2.9)
+TRACE wolf_boss_0 clip=walk t=0.45/1.17 loop=1 playing=true speed=1.00 pos=(-14.2, 0.0, -1.2)
+TRACE catfish_0 clip=walk t=0.95/1.27 loop=1 playing=true speed=1.00 pos=(-3.8, 0.1, -11.8)
+TRACE monster02_0 clip=walk t=0.08/1.37 loop=1 playing=true speed=1.00 pos=(14.9, 0.1, 3.7)
+TRACE wolf_boss_0 clip=walk t=0.95/1.17 loop=1 playing=true speed=1.00 pos=(-15.0, 0.0, -1.9)
+TRACE catfish_0 clip=walk t=0.18/1.27 loop=1 playing=true speed=1.00 pos=(-3.2, 0.1, -11.5)
+TRACE monster02_0 clip=walk t=0.58/1.37 loop=1 playing=true speed=1.00 pos=(14.6, 0.1, 4.6)
+TRACE wolf_boss_0 clip=walk t=0.28/1.17 loop=1 playing=true speed=1.00 pos=(-15.7, 0.0, -2.5)
+TRACE catfish_0 clip=walk t=0.68/1.27 loop=1 playing=true speed=1.00 pos=(-2.7, 0.1, -11.2)
+TRACE monster02_0 clip=idle t=0.35/3.00 loop=1 playing=true speed=1.00 pos=(14.6, 0.1, 4.8)
+TRACE wolf_boss_0 clip=idle t=0.40/18.87 loop=1 playing=true speed=1.00 pos=(-15.9, 0.0, -2.6)
+TRACE catfish_0 clip=walk t=1.18/1.27 loop=1 playing=true speed=1.00 pos=(-2.2, 0.1, -10.9)
+TRACE monster02_0 clip=idle t=0.85/3.00 loop=1 playing=true speed=1.00 pos=(14.6, 0.1, 4.8)
+TRACE wolf_boss_0 clip=idle t=0.90/18.87 loop=1 playing=true speed=1.00 pos=(-15.9, 0.0, -2.6)
+TRACE catfish_0 clip=walk t=0.42/1.27 loop=1 playing=true speed=1.00 pos=(-1.7, 0.1, -10.6)
+TRACE monster02_0 clip=idle t=1.35/3.00 loop=1 playing=true speed=1.00 pos=(14.6, 0.1, 4.8)
+TRACE wolf_boss_0 clip=idle t=1.40/18.87 loop=1 playing=true speed=1.00 pos=(-15.9, 0.0, -2.6)
+TRACE catfish_0 clip=walk t=0.92/1.27 loop=1 playing=true speed=1.00 pos=(-1.1, 0.1, -10.3)
+TRACE monster02_0 clip=idle t=1.85/3.00 loop=1 playing=true speed=1.00 pos=(14.6, 0.1, 4.8)
+TRACE wolf_boss_0 clip=idle t=1.90/18.87 loop=1 playing=true speed=1.00 pos=(-15.9, 0.0, -2.6)
+TRACE catfish_0 clip=idle t=0.33/10.00 loop=1 playing=true speed=1.00 pos=(-1.0, 0.1, -10.2)
+TRACE monster02_0 clip=walk t=0.23/1.37 loop=1 playing=true speed=1.00 pos=(14.2, 0.1, 4.5)
+TRACE wolf_boss_0 clip=idle t=2.40/18.87 loop=1 playing=true speed=1.00 pos=(-15.9, 0.0, -2.6)
+TRACE catfish_0 clip=idle t=0.83/10.00 loop=1 playing=true speed=1.00 pos=(-1.0, 0.1, -10.2)
+TRACE monster02_0 clip=walk t=0.73/1.37 loop=1 playing=true speed=1.00 pos=(13.5, 0.1, 3.9)
+TRACE wolf_boss_0 clip=walk t=0.42/1.17 loop=1 playing=true speed=1.00 pos=(-15.1, 0.0, -3.1)
+TRACE catfish_0 clip=walk t=0.03/1.27 loop=1 playing=true speed=1.00 pos=(-1.0, 0.1, -10.2)
+TRACE monster02_0 clip=walk t=1.23/1.37 loop=1 playing=true speed=1.00 pos=(12.9, 0.1, 3.4)
+TRACE wolf_boss_0 clip=walk t=0.92/1.17 loop=1 playing=true speed=1.00 pos=(-14.3, -0.1, -3.6)
+TRACE catfish_0 clip=walk t=0.53/1.27 loop=1 playing=true speed=1.00 pos=(-1.6, 0.1, -10.2)
+TRACE monster02_0 clip=walk t=0.37/1.37 loop=1 playing=true speed=1.00 pos=(12.2, 0.1, 2.8)
+TRACE wolf_boss_0 clip=walk t=0.25/1.17 loop=1 playing=true speed=1.00 pos=(-13.5, 0.0, -4.2)
+TRACE catfish_0 clip=walk t=1.03/1.27 loop=1 playing=true speed=1.00 pos=(-2.2, 0.1, -10.1)
+TRACE monster02_0 clip=walk t=0.87/1.37 loop=1 playing=true speed=1.00 pos=(11.5, 0.1, 2.3)
+TRACE wolf_boss_0 clip=idle t=0.28/18.87 loop=1 playing=true speed=1.00 pos=(-13.1, 0.0, -4.4)
+TRACE catfish_0 clip=walk t=0.27/1.27 loop=1 playing=true speed=1.00 pos=(-2.8, 0.1, -10.1)
+TRACE monster02_0 clip=idle t=0.40/3.00 loop=1 playing=true speed=1.00 pos=(11.4, 0.1, 2.2)
+TRACE wolf_boss_0 clip=idle t=0.78/18.87 loop=1 playing=true speed=1.00 pos=(-13.1, 0.0, -4.4)
+TRACE catfish_0 clip=walk t=0.77/1.27 loop=1 playing=true speed=1.00 pos=(-3.4, 0.1, -10.0)
+TRACE monster02_0 clip=idle t=0.90/3.00 loop=1 playing=true speed=1.00 pos=(11.4, 0.1, 2.2)
+TRACE wolf_boss_0 clip=idle t=1.28/18.87 loop=1 playing=true speed=1.00 pos=(-13.1, 0.0, -4.4)
+TRACE catfish_0 clip=walk t=0.00/1.27 loop=1 playing=true speed=1.00 pos=(-4.0, 0.1, -10.0)
+TRACE monster02_0 clip=idle t=1.40/3.00 loop=1 playing=true speed=1.00 pos=(11.4, 0.1, 2.2)
+TRACE wolf_boss_0 clip=walk t=0.05/1.17 loop=1 playing=true speed=1.00 pos=(-13.2, 0.0, -4.3)
+TRACE catfish_0 clip=walk t=0.50/1.27 loop=1 playing=true speed=1.00 pos=(-4.6, 0.2, -9.900001)
+TRACE monster02_0 clip=walk t=0.12/1.37 loop=1 playing=true speed=1.00 pos=(11.5, 0.1, 2.0)
+TRACE wolf_boss_0 clip=walk t=0.55/1.17 loop=1 playing=true speed=1.00 pos=(-13.7, 0.0, -3.4)
+TRACE catfish_0 clip=walk t=1.00/1.27 loop=1 playing=true speed=1.00 pos=(-5.2, 0.2, -9.900001)
+TRACE monster02_0 clip=walk t=0.62/1.37 loop=1 playing=true speed=1.00 pos=(12.0, 0.1, 1.2)
+TRACE wolf_boss_0 clip=walk t=1.05/1.17 loop=1 playing=true speed=1.00 pos=(-14.2, 0.0, -2.6)
+TRACE catfish_0 clip=walk t=0.23/1.27 loop=1 playing=true speed=1.00 pos=(-5.8, 0.2, -9.900001)
+TRACE monster02_0 clip=walk t=1.12/1.37 loop=1 playing=true speed=1.00 pos=(12.5, 0.1, 0.5)
+TRACE wolf_boss_0 clip=walk t=0.38/1.17 loop=1 playing=true speed=1.00 pos=(-14.7, 0.0, -1.7)
+TRACE catfish_0 clip=walk t=0.73/1.27 loop=1 playing=true speed=1.00 pos=(-6.4, 0.2, -9.8)

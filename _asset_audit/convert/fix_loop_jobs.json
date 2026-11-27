@@ -1,0 +1,126 @@
+[
+ {
+  "key": "monster02",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Monster_3D_Model_02_-_Game_Ready_-_PixeliusVita_/Assets/Stylized3DMonster/Monster02/Monster02_AllAnim.fbx",
+  "anims": [],
+  "clip_map": {
+   "Monster02_Walk": "walk",
+   "Monster02_Run": "run",
+   "Monster02_Idle": "idle",
+   "Monster02_Idle_v02": "idle2",
+   "Monster02_Attack01": "attack1",
+   "Monster02_Attack02": "attack2",
+   "Monster02_Attack03": "attack3",
+   "Monster02_Shoot": "shoot",
+   "Monster02_GetHit": "hit",
+   "Monster02_Die": "die",
+   "Monster02_Stunned": "stunned"
+  },
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Monster_3D_Model_02_-_Game_Ready_-_PixeliusVita_/Assets/Stylized3DMonster/Monster02/Shader_Texture/Texture/Monster02_Color01.png"
+  },
+  "roughness": 0.72,
+  "strip_root": true,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/monster02.glb"
+ },
+ {
+  "key": "catfish",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Mesh/Catfish_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@sturn.FBX",
+    "clip": "stunned"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Textures/Catfish_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Textures/Catfish_Normal.png"
+  },
+  "roughness": 0.58,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/catfish.glb",
+  "loop_fix": true,
+  "loop_blend": 0.35
+ },
+ {
+  "key": "watcher",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Mesh/Watcher_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@sturn.FBX",
+    "clip": "stunned"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Textures/Watcher_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Textures/Watcher_Normal.png"
+  },
+  "roughness": 0.55,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/watcher.glb",
+  "loop_fix": true,
+  "loop_blend": 0.35
+ }
+]

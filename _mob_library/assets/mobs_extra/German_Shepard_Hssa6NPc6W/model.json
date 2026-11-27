@@ -1,0 +1,171 @@
+{
+  "folder": "German_Shepard_Hssa6NPc6W",
+  "title": "German Shepard",
+  "publicID": "Hssa6NPc6W",
+  "page": "https://poly.pizza/m/Hssa6NPc6W",
+  "creator": "Quaternius",
+  "licence": "CC-BY 3.0",
+  "bucket": "animal",
+  "tris": 4898,
+  "bones": 50,
+  "files": {
+    "fbx": "German_Shepard_Hssa6NPc6W.fbx",
+    "glb": "German_Shepard_Hssa6NPc6W.glb",
+    "fbx_bytes": 6262556,
+    "glb_bytes": 914220
+  },
+  "animation_count": 22,
+  "clips": [
+    "Attack",
+    "Death",
+    "Eating",
+    "HitReact_Left",
+    "HitReact_Right",
+    "Idle",
+    "Idle_2",
+    "Idle_2_HeadLow",
+    "Run",
+    "Run_Jump",
+    "Walk"
+  ],
+  "animations": [
+    {
+      "name": "Attack",
+      "clean": "Attack"
+    },
+    {
+      "name": "Death",
+      "clean": "Death"
+    },
+    {
+      "name": "Eating",
+      "clean": "Eating"
+    },
+    {
+      "name": "Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "Idle_2",
+      "clean": "Idle_2"
+    },
+    {
+      "name": "Idle_2_HeadLow",
+      "clean": "Idle_2_HeadLow"
+    },
+    {
+      "name": "Run",
+      "clean": "Run"
+    },
+    {
+      "name": "Run_Jump",
+      "clean": "Run_Jump"
+    },
+    {
+      "name": "Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "HitReact_Right",
+      "clean": "HitReact_Right"
+    },
+    {
+      "name": "HitReact_Left",
+      "clean": "HitReact_Left"
+    },
+    {
+      "name": "AnimalArmature|Attack",
+      "clean": "Attack"
+    },
+    {
+      "name": "AnimalArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "AnimalArmature|Eating",
+      "clean": "Eating"
+    },
+    {
+      "name": "AnimalArmature|HitReact_Left",
+      "clean": "HitReact_Left"
+    },
+    {
+      "name": "AnimalArmature|HitReact_Right",
+      "clean": "HitReact_Right"
+    },
+    {
+      "name": "AnimalArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "AnimalArmature|Idle_2",
+      "clean": "Idle_2"
+    },
+    {
+      "name": "AnimalArmature|Idle_2_HeadLow",
+      "clean": "Idle_2_HeadLow"
+    },
+    {
+      "name": "AnimalArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "AnimalArmature|Run_Jump",
+      "clean": "Run_Jump"
+    },
+    {
+      "name": "AnimalArmature|Walk",
+      "clean": "Walk"
+    }
+  ],
+  "required": {
+    "hit": [
+      "HitReact_Right",
+      "HitReact_Left",
+      "HitReact_Left",
+      "HitReact_Right"
+    ],
+    "death": [
+      "Death",
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run_Jump",
+      "Run",
+      "Run_Jump"
+    ]
+  },
+  "fbx_takes": [
+    "AnimalArmature|Attack",
+    "AnimalArmature|Death",
+    "AnimalArmature|Eating",
+    "AnimalArmature|HitReact_Left",
+    "AnimalArmature|HitReact_Right",
+    "AnimalArmature|Idle",
+    "AnimalArmature|Idle_2",
+    "AnimalArmature|Idle_2_HeadLow",
+    "AnimalArmature|Run",
+    "AnimalArmature|Run_Jump",
+    "AnimalArmature|Walk",
+    "Attack",
+    "Death",
+    "Eating",
+    "HitReact_Left",
+    "HitReact_Right",
+    "Idle",
+    "Idle_2",
+    "Idle_2_HeadLow",
+    "Run",
+    "Run_Jump",
+    "Walk"
+  ],
+  "fbx_anim_stacks": 23,
+  "fbx_curve_nodes": 3367,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

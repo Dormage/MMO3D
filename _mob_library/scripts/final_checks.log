@@ -1,0 +1,15 @@
+=== island
+exit:0
+POP_CANDIDATES region=island count=1506 bounds=[P: (-48.95597, -4.35, -48.88682), S: (97.67596, 8.396406, 97.60683)] step=2.00
+POPULATION region=island actors=25 candidates=1506 placement=scatter anim_ok=25
+POP_CHECK region=island actors=25 moved=25 anim_ok=25
+=== town
+exit:0
+POP_CANDIDATES region=town count=1036 bounds=[P: (-49.38971, 0.001312, -39.78477), S: (99.8607, 7.448688, 88.66859)] step=1.80
+POPULATION region=town actors=45 candidates=1036 placement=districts anim_ok=45
+POP_CHECK region=town actors=45 moved=45 anim_ok=45
+=== desert
+exit:0
+POP_CANDIDATES region=desert count=1256 bounds=[P: (-50.04437, -1.85, -50.17487), S: (99.96451, 16.78, 103.3749)] step=1.80
+POPULATION region=desert actors=45 candidates=1256 placement=districts anim_ok=45
+POP_CHECK region=desert actors=45 moved=45 anim_ok=45

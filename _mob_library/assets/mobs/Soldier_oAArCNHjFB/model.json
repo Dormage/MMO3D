@@ -1,0 +1,265 @@
+{
+  "folder": "Soldier_oAArCNHjFB",
+  "title": "Soldier",
+  "publicID": "oAArCNHjFB",
+  "page": "https://poly.pizza/m/oAArCNHjFB",
+  "creator": "Quaternius",
+  "licence": "CC-BY 3.0",
+  "pack": "catalog scan",
+  "tris": 7900,
+  "bones": 62,
+  "materials": 6,
+  "files": {
+    "fbx": "Soldier_oAArCNHjFB.fbx",
+    "glb": "Soldier_oAArCNHjFB.glb",
+    "fbx_bytes": 8158044,
+    "glb_bytes": 1703996
+  },
+  "animation_count": 24,
+  "animations": [
+    {
+      "name": "CharacterArmature|Death",
+      "clean": "Death",
+      "channels": 24
+    },
+    {
+      "name": "CharacterArmature|Gun_Shoot",
+      "clean": "Gun_Shoot",
+      "channels": 29
+    },
+    {
+      "name": "CharacterArmature|HitRecieve",
+      "clean": "HitRecieve",
+      "channels": 12
+    },
+    {
+      "name": "CharacterArmature|HitRecieve_2",
+      "clean": "HitRecieve_2",
+      "channels": 12
+    },
+    {
+      "name": "CharacterArmature|Idle",
+      "clean": "Idle",
+      "channels": 21
+    },
+    {
+      "name": "CharacterArmature|Idle_Gun",
+      "clean": "Idle_Gun",
+      "channels": 34
+    },
+    {
+      "name": "CharacterArmature|Idle_Gun_Pointing",
+      "clean": "Idle_Gun_Pointing",
+      "channels": 34
+    },
+    {
+      "name": "CharacterArmature|Idle_Gun_Shoot",
+      "clean": "Idle_Gun_Shoot",
+      "channels": 37
+    },
+    {
+      "name": "CharacterArmature|Idle_Neutral",
+      "clean": "Idle_Neutral",
+      "channels": 22
+    },
+    {
+      "name": "CharacterArmature|Idle_Sword",
+      "clean": "Idle_Sword",
+      "channels": 34
+    },
+    {
+      "name": "CharacterArmature|Interact",
+      "clean": "Interact",
+      "channels": 15
+    },
+    {
+      "name": "CharacterArmature|Kick_Left",
+      "clean": "Kick_Left",
+      "channels": 54
+    },
+    {
+      "name": "CharacterArmature|Kick_Right",
+      "clean": "Kick_Right",
+      "channels": 54
+    },
+    {
+      "name": "CharacterArmature|Punch_Left",
+      "clean": "Punch_Left",
+      "channels": 55
+    },
+    {
+      "name": "CharacterArmature|Punch_Right",
+      "clean": "Punch_Right",
+      "channels": 55
+    },
+    {
+      "name": "CharacterArmature|Roll",
+      "clean": "Roll",
+      "channels": 57
+    },
+    {
+      "name": "CharacterArmature|Run",
+      "clean": "Run",
+      "channels": 53
+    },
+    {
+      "name": "CharacterArmature|Run_Back",
+      "clean": "Run_Back",
+      "channels": 53
+    },
+    {
+      "name": "CharacterArmature|Run_Left",
+      "clean": "Run_Left",
+      "channels": 55
+    },
+    {
+      "name": "CharacterArmature|Run_Right",
+      "clean": "Run_Right",
+      "channels": 55
+    },
+    {
+      "name": "CharacterArmature|Run_Shoot",
+      "clean": "Run_Shoot",
+      "channels": 53
+    },
+    {
+      "name": "CharacterArmature|Sword_Slash",
+      "clean": "Sword_Slash",
+      "channels": 34
+    },
+    {
+      "name": "CharacterArmature|Walk",
+      "clean": "Walk",
+      "channels": 29
+    },
+    {
+      "name": "CharacterArmature|Wave",
+      "clean": "Wave",
+      "channels": 22
+    }
+  ],
+  "required": {
+    "hit": [
+      "CharacterArmature|HitRecieve",
+      "CharacterArmature|HitRecieve_2"
+    ],
+    "death": [
+      "CharacterArmature|Death"
+    ],
+    "run": [
+      "CharacterArmature|Run",
+      "CharacterArmature|Run_Back",
+      "CharacterArmature|Run_Left",
+      "CharacterArmature|Run_Right",
+      "CharacterArmature|Run_Shoot"
+    ]
+  },
+  "required_clean": {
+    "hit": [
+      "HitRecieve",
+      "HitRecieve_2"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run_Back",
+      "Run_Left",
+      "Run_Right",
+      "Run_Shoot"
+    ]
+  },
+  "fbx_anim_stacks": 25,
+  "fbx_curve_nodes": 4537,
+  "fbx_takes": [
+    "CharacterArmature|Death",
+    "CharacterArmature|Gun_Shoot",
+    "CharacterArmature|HitRecieve",
+    "CharacterArmature|HitRecieve_2",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Idle_Gun",
+    "CharacterArmature|Idle_Gun_Pointing",
+    "CharacterArmature|Idle_Gun_Shoot",
+    "CharacterArmature|Idle_Neutral",
+    "CharacterArmature|Idle_Sword",
+    "CharacterArmature|Interact",
+    "CharacterArmature|Kick_Left",
+    "CharacterArmature|Kick_Right",
+    "CharacterArmature|Punch_Left",
+    "CharacterArmature|Punch_Right",
+    "CharacterArmature|Roll",
+    "CharacterArmature|Run",
+    "CharacterArmature|Run_Back",
+    "CharacterArmature|Run_Left",
+    "CharacterArmature|Run_Right",
+    "CharacterArmature|Run_Shoot",
+    "CharacterArmature|Sword_Slash",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave"
+  ],
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "animations_present": true,
+    "all_animations_have_channels": true,
+    "fbx_has_animation": true
+  },
+  "fbx_take_strings": 24,
+  "fbx_clips": [
+    "Death",
+    "Gun_Shoot",
+    "HitRecieve",
+    "HitRecieve_2",
+    "Idle",
+    "Idle_Gun",
+    "Idle_Gun_Pointing",
+    "Idle_Gun_Shoot",
+    "Idle_Neutral",
+    "Idle_Sword",
+    "Interact",
+    "Kick_Left",
+    "Kick_Right",
+    "Punch_Left",
+    "Punch_Right",
+    "Roll",
+    "Run",
+    "Run_Back",
+    "Run_Left",
+    "Run_Right",
+    "Run_Shoot",
+    "Sword_Slash",
+    "Walk",
+    "Wave"
+  ],
+  "glb_clips": [
+    "Death",
+    "Gun_Shoot",
+    "HitRecieve",
+    "HitRecieve_2",
+    "Idle",
+    "Idle_Gun",
+    "Idle_Gun_Pointing",
+    "Idle_Gun_Shoot",
+    "Idle_Neutral",
+    "Idle_Sword",
+    "Interact",
+    "Kick_Left",
+    "Kick_Right",
+    "Punch_Left",
+    "Punch_Right",
+    "Roll",
+    "Run",
+    "Run_Back",
+    "Run_Left",
+    "Run_Right",
+    "Run_Shoot",
+    "Sword_Slash",
+    "Walk",
+    "Wave"
+  ],
+  "clip_parity": {
+    "only_in_glb": [],
+    "only_in_fbx": []
+  }
+}

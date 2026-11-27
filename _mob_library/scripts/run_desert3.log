@@ -1,0 +1,130 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+sky: cloud-sea shader active
+REGION_STATE regions=5 current=4(desert)
+REGION_LIGHT using shared SkySun
+REGION_NAVMARKERS hidden=1
+REGION_NAVGLB res://assets/worlds/desert_town/nav_desert.glb
+REGION_CACHE hit user://region_cache/desert.scn
+REGION_COLLISION GroundCollision layer=1 tris=4640
+REGION_COLLISION GroundCollision1 layer=1 tris=100352
+REGION_COLLISION Walkable_SM_bld_00_tavern layer=1 tris=932
+REGION_COLLISION Solid_SM_bld_00_tavern layer=2 tris=3802
+REGION_COLLISION Walkable_SM_bld_01_tavern layer=1 tris=1088
+REGION_COLLISION Solid_SM_bld_01_tavern layer=2 tris=3856
+REGION_COLLISION Walkable_SM_bld_02_tavern layer=1 tris=956
+REGION_COLLISION Solid_SM_bld_02_tavern layer=2 tris=3776
+REGION_COLLISION Walkable_SM_bld_03_north_c layer=1 tris=916
+REGION_COLLISION Solid_SM_bld_03_north_c layer=2 tris=4015
+REGION_DECOR SM_bld_03_north_c no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_04_north_c layer=1 tris=716
+REGION_COLLISION Solid_SM_bld_04_north_c layer=2 tris=3955
+REGION_COLLISION Walkable_SM_bld_05_north_c layer=1 tris=852
+REGION_COLLISION Solid_SM_bld_05_north_c layer=2 tris=3050
+REGION_COLLISION Walkable_SM_bld_06_north_e layer=1 tris=1040
+REGION_COLLISION Solid_SM_bld_06_north_e layer=2 tris=3920
+REGION_COLLISION Walkable_SM_bld_07_north_e layer=1 tris=776
+REGION_COLLISION Solid_SM_bld_07_north_e layer=2 tris=2920
+REGION_COLLISION Walkable_SM_bld_08_north_e layer=1 tris=740
+REGION_COLLISION Solid_SM_bld_08_north_e layer=2 tris=3913
+REGION_DECOR SM_bld_08_north_e no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_09_north_e layer=1 tris=1028
+REGION_COLLISION Solid_SM_bld_09_north_e layer=2 tris=3800
+REGION_DECOR SM_bld_09_north_e no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_10_west_m layer=1 tris=500
+REGION_COLLISION Solid_SM_bld_10_west_m layer=2 tris=2308
+REGION_COLLISION Walkable_SM_bld_11_west_m layer=1 tris=884
+REGION_COLLISION Solid_SM_bld_11_west_m layer=2 tris=3998
+REGION_DECOR SM_bld_11_west_m no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_12_west_s layer=1 tris=740
+REGION_COLLISION Solid_SM_bld_12_west_s layer=2 tris=3561
+REGION_COLLISION Walkable_SM_bld_13_west_s layer=1 tris=816
+REGION_COLLISION Solid_SM_bld_13_west_s layer=2 tris=3074
+REGION_DECOR SM_bld_13_west_s no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_14_west_s layer=1 tris=632
+REGION_COLLISION Solid_SM_bld_14_west_s layer=2 tris=2456
+REGION_COLLISION Walkable_SM_bld_15_west_sw layer=1 tris=500
+REGION_COLLISION Solid_SM_bld_15_west_sw layer=2 tris=2887
+REGION_DECOR SM_bld_15_west_sw no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_16_west_sw layer=1 tris=476
+REGION_COLLISION Solid_SM_bld_16_west_sw layer=2 tris=2052
+REGION_COLLISION Walkable_SM_bld_17_east_n layer=1 tris=688
+REGION_COLLISION Solid_SM_bld_17_east_n layer=2 tris=3377
+REGION_DECOR SM_bld_17_east_n no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_18_east_n layer=1 tris=580
+REGION_COLLISION Solid_SM_bld_18_east_n layer=2 tris=2626
+REGION_COLLISION Walkable_SM_bld_19_east_m layer=1 tris=956
+REGION_COLLISION Solid_SM_bld_19_east_m layer=2 tris=3242
+REGION_COLLISION Walkable_SM_bld_20_east_m layer=1 tris=760
+REGION_COLLISION Solid_SM_bld_20_east_m layer=2 tris=3793
+REGION_DECOR SM_bld_20_east_m no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_21_east_se layer=1 tris=476
+REGION_COLLISION Solid_SM_bld_21_east_se layer=2 tris=3507
+REGION_DECOR SM_bld_21_east_se no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_22_east_se layer=1 tris=748
+REGION_COLLISION Solid_SM_bld_22_east_se layer=2 tris=3551
+REGION_DECOR SM_bld_22_east_se no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_23_south_w layer=1 tris=464
+REGION_COLLISION Solid_SM_bld_23_south_w layer=2 tris=2200
+REGION_COLLISION Walkable_SM_bld_24_south_w layer=1 tris=464
+REGION_COLLISION Solid_SM_bld_24_south_w layer=2 tris=2168
+REGION_COLLISION Walkable_SM_bld_25_south_w layer=1 tris=964
+REGION_COLLISION Solid_SM_bld_25_south_w layer=2 tris=3566
+REGION_COLLISION Walkable_SM_bld_26_south_w layer=1 tris=504
+REGION_COLLISION Solid_SM_bld_26_south_w layer=2 tris=1782
+REGION_COLLISION Walkable_SM_bld_27_south_e layer=1 tris=560
+REGION_COLLISION Solid_SM_bld_27_south_e layer=2 tris=2416
+REGION_COLLISION Walkable_SM_bld_28_south_e layer=1 tris=1036
+REGION_COLLISION Solid_SM_bld_28_south_e layer=2 tris=3374
+REGION_COLLISION Walkable_SM_bld_29_south_e layer=1 tris=388
+REGION_COLLISION Solid_SM_bld_29_south_e layer=2 tris=2258
+REGION_COLLISION Walkable_SM_bld_30_south_e layer=1 tris=352
+REGION_COLLISION Solid_SM_bld_30_south_e layer=2 tris=1970
+REGION_COLLISION Walkable_SM_bld_31_shop_w layer=1 tris=656
+REGION_COLLISION Solid_SM_bld_31_shop_w layer=2 tris=3595
+REGION_COLLISION Walkable_SM_bld_32_shop_e layer=1 tris=612
+REGION_COLLISION Solid_SM_bld_32_shop_e layer=2 tris=2414
+REGION_COLLISION Walkable_SM_bld_33_north_n2 layer=1 tris=996
+REGION_COLLISION Solid_SM_bld_33_north_n2 layer=2 tris=3951
+REGION_DECOR SM_bld_33_north_n2 no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_34_north_ne layer=1 tris=928
+REGION_COLLISION Solid_SM_bld_34_north_ne layer=2 tris=3465
+REGION_COLLISION Walkable_SM_bld_35_north_ne layer=1 tris=1204
+REGION_COLLISION Solid_SM_bld_35_north_ne layer=2 tris=4565
+REGION_COLLISION Walkable_SM_bld_36_mid_w layer=1 tris=740
+REGION_COLLISION Solid_SM_bld_36_mid_w layer=2 tris=3553
+REGION_COLLISION Walkable_SM_bld_37_mid_sw layer=1 tris=488
+REGION_COLLISION Solid_SM_bld_37_mid_sw layer=2 tris=2028
+REGION_COLLISION Walkable_SM_bld_38_mid_se layer=1 tris=524
+REGION_COLLISION Solid_SM_bld_38_mid_se layer=2 tris=2775
+REGION_COLLISION Walkable_SM_bld_39_shed_n layer=1 tris=428
+REGION_COLLISION Solid_SM_bld_39_shed_n layer=2 tris=2591
+REGION_COLLISION Walkable_SM_bld_40_shed_w layer=1 tris=452
+REGION_COLLISION Solid_SM_bld_40_shed_w layer=2 tris=3025
+REGION_COLLISION Walkable_SM_bld_41_shed_e layer=1 tris=356
+REGION_COLLISION Solid_SM_bld_41_shed_e layer=2 tris=2727
+REGION_DECOR SM_bld_41_shed_e no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_42_shed_s layer=1 tris=380
+REGION_COLLISION Solid_SM_bld_42_shed_s layer=2 tris=2473
+REGION_DECOR SM_bld_42_shed_s no collision on ["M_cloth_cream"]
+REGION_COLLISION Solid_SM_gate_stair layer=2 tris=1304
+REGION_COLLISION Walkable_SM_gate_stair layer=1 tris=2962
+REGION_COLLISION Walkable_SM_landmark_pavilion layer=1 tris=3740
+REGION_COLLISION Solid_SM_landmark_pavilion layer=2 tris=16693
+REGION_DECOR SM_landmark_pavilion no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_landmark_south layer=1 tris=2024
+REGION_COLLISION Solid_SM_landmark_south layer=2 tris=8661
+REGION_COLLISION Solid_SM_rampart layer=2 tris=33928
+REGION_COLLISION Walkable_SM_rampart layer=1 tris=19210
+REGION_DECOR SM_rampart no collision on ["M_cloth_cream"]
+REGION_COLLISION SM_flora_desert skipped (non-solid)
+REGION_COLLISION SM_palms_town skipped (non-solid)
+REGION_COLLISION SM_props_market skipped (non-solid)
+REGION_COLLISION SM_shrubs_town skipped (non-solid)
+REGION_HOST mounted region_desert.tscn
+WEAPON_EQUIPPED slot=0 id=sword weapon=weapon_arming_sword clip=1H_Slash duration=0.95 tip=0.84
+PLAYER_IDLE_FLAT root=(-0.2647,0.3442,-0.9035) keys=232
+ATTACK_ROOT_FLAT clip=1H_Slash track=Armature/Skeleton3D:Hips keys=61 fixed=(-0.014476, -0.038188, -0.792969)
+ATTACK_ROOT_FLAT clip=2H_Slash track=Armature/Skeleton3D:Hips keys=100 fixed=(-0.00021, -0.035535, -1.032923)
+ATTACK_ROOT_FLAT clip=SwordShield track=Armature/Skeleton3D:Hips keys=66 fixed=(-0.003054, -0.020118, -0.979252)
+ATTACK_ROOT_FLAT clip=Thrust track=Armature/Skeleton3D:Hips keys=92 fixed=(0.007976, -0.023152, -0.919269)

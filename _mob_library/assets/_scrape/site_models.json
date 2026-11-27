@@ -1,0 +1,3060 @@
+[
+ {
+  "publicID": "xqEzosAVYX",
+  "title": "Zombie",
+  "creator": "bachosoftdesign",
+  "licence": "CC-BY 3.0",
+  "query": "monster",
+  "page": "https://poly.pizza/m/xqEzosAVYX",
+  "s3id": "8181fd4f-facb-4b10-83c3-43852fd69376",
+  "animated": true,
+  "tris_model": 2157,
+  "tags": [
+   "Zombie",
+   "Monster",
+   "Undead",
+   "Enemy"
+  ],
+  "animations": [
+   "Armature|Attack",
+   "Armature|Bite_ground",
+   "Armature|Crawl",
+   "Armature|Die",
+   "Armature|Die2",
+   "Armature|Headbutt",
+   "Armature|Hit_reaction",
+   "Armature|Idle",
+   "Armature|Running_Crawl",
+   "Armature|Scream",
+   "Armature|T-Pose",
+   "Armature|Walk",
+   "Armature|Walk2"
+  ],
+  "tris": 2157,
+  "skins": 1,
+  "bones": 49,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/xqEzosAVYX.glb"
+ },
+ {
+  "publicID": "6O6XUMssAW",
+  "title": "Slime Enemy",
+  "creator": "Charlie",
+  "licence": "CC-BY 3.0",
+  "query": "monster",
+  "page": "https://poly.pizza/m/6O6XUMssAW",
+  "s3id": "d0bb28aa-deb9-4c66-a7b6-de1461137cf6",
+  "animated": true,
+  "tris_model": 2340,
+  "tags": [
+   "slime",
+   "enemy",
+   "monster"
+  ],
+  "animations": [
+   "moving",
+   "hit",
+   "idle",
+   "attack",
+   "death",
+   "attack_ranged"
+  ],
+  "tris": 2340,
+  "skins": 1,
+  "bones": 83,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/6O6XUMssAW.glb"
+ },
+ {
+  "publicID": "BldaiPtyJa",
+  "title": "Giant",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "monster",
+  "page": "https://poly.pizza/m/BldaiPtyJa",
+  "s3id": "260aff73-1409-4a45-9746-b078229d8cf3",
+  "animated": true,
+  "tris_model": 3812,
+  "tags": [
+   "Monster"
+  ],
+  "animations": [
+   "EnemyArmature|EnemyArmature|EnemyArmature|Attack",
+   "EnemyArmature|EnemyArmature|EnemyArmature|Death",
+   "EnemyArmature|EnemyArmature|EnemyArmature|HitRecieve",
+   "EnemyArmature|EnemyArmature|EnemyArmature|Idle",
+   "EnemyArmature|EnemyArmature|EnemyArmature|Jump",
+   "EnemyArmature|EnemyArmature|EnemyArmature|Run",
+   "EnemyArmature|EnemyArmature|EnemyArmature|Walk"
+  ],
+  "tris": 3812,
+  "skins": 1,
+  "bones": 12,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/BldaiPtyJa.glb"
+ },
+ {
+  "publicID": "KaVJET0WHx",
+  "title": "Big arm",
+  "creator": "Quaternius",
+  "licence": "CC-BY 3.0",
+  "query": "monster",
+  "page": "https://poly.pizza/m/KaVJET0WHx",
+  "s3id": "02774147-cf49-4915-a70f-81ac5a8d625b",
+  "animated": true,
+  "tris_model": 5670,
+  "tags": [
+   "Monster",
+   "Creature",
+   "Fantasy"
+  ],
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Run_Arms",
+   "CharacterArmature|Run_Attack",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 5670,
+  "skins": 1,
+  "bones": 45,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/KaVJET0WHx.glb"
+ },
+ {
+  "publicID": "SW5h0gbCtq",
+  "title": "Slime Enemy",
+  "creator": "J-Toastie",
+  "licence": "CC-BY 3.0",
+  "query": "monster",
+  "page": "https://poly.pizza/m/SW5h0gbCtq",
+  "s3id": "f383ba4c-5096-4bb2-90a9-30617e45140e",
+  "animated": true,
+  "tris_model": 956,
+  "tags": [
+   "Slime",
+   "Monster"
+  ],
+  "animations": [
+   "Slime|Death",
+   "Slime|Hop"
+  ],
+  "tris": 956,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/SW5h0gbCtq.glb"
+ },
+ {
+  "publicID": "IE7rk47BHn",
+  "title": "Character_Man",
+  "creator": "prathm",
+  "licence": "CC0 1.0",
+  "query": "monster",
+  "page": "https://poly.pizza/m/IE7rk47BHn",
+  "s3id": "8da32ddd-f783-49d5-96ff-aad07a598f7e",
+  "animated": true,
+  "tris_model": 896,
+  "tags": [
+   "man",
+   "human",
+   "character"
+  ],
+  "animations": [
+   "mixamo.com"
+  ],
+  "tris": 896,
+  "skins": 1,
+  "bones": 28,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/IE7rk47BHn.glb"
+ },
+ {
+  "publicID": "kYEhGbVpvj",
+  "title": "Slime Enemy",
+  "creator": "Charlie",
+  "licence": "CC-BY 3.0",
+  "query": "monster",
+  "page": "https://poly.pizza/m/kYEhGbVpvj",
+  "s3id": "76bc433e-3a73-4101-8990-37af46079e2e",
+  "animated": true,
+  "tris_model": 2234,
+  "tags": [
+   "slime",
+   "enemy",
+   "monster"
+  ],
+  "animations": [
+   "idle",
+   "moving",
+   "attack",
+   "hit",
+   "death",
+   "attack_ranged"
+  ],
+  "tris": 2234,
+  "skins": 1,
+  "bones": 69,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/kYEhGbVpvj.glb"
+ },
+ {
+  "publicID": "zGOWefrMDQ",
+  "title": "Crypto Bro",
+  "creator": "J-Toastie",
+  "licence": "CC-BY 3.0",
+  "query": "creature",
+  "page": "https://poly.pizza/m/zGOWefrMDQ",
+  "s3id": "259b2b72-ea68-49d6-835e-dd4e9de3ed4b",
+  "animated": true,
+  "tris_model": 4366,
+  "tags": [
+   "Crypto",
+   "Human",
+   "Citizen",
+   "CUTES"
+  ],
+  "animations": [
+   "Armature|Grounded",
+   "Armature|Idle",
+   "Armature|Jump",
+   "Armature|Sprint",
+   "Armature|Walk"
+  ],
+  "tris": 4888,
+  "skins": 2,
+  "bones": 27,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/zGOWefrMDQ.glb"
+ },
+ {
+  "publicID": "7Jh8vsARfN",
+  "title": "Blobfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "creature",
+  "page": "https://poly.pizza/m/7Jh8vsARfN",
+  "s3id": "75913946-d67e-469c-8a8b-014ae27ff8fb",
+  "animated": true,
+  "tris_model": 1316,
+  "tags": [
+   "Animal",
+   "Sea Life",
+   "Tortoise",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1316,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/7Jh8vsARfN.glb"
+ },
+ {
+  "publicID": "0aUuwRU68p",
+  "title": "Hunched Shadow Man",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "creature",
+  "page": "https://poly.pizza/m/0aUuwRU68p",
+  "s3id": "56c690c4-12da-4a14-8d2f-353dacf05f13",
+  "animated": true,
+  "tris_model": 1124,
+  "tags": [
+   "Shadow",
+   "Creature",
+   "Humanoid"
+  ],
+  "animations": [
+   "shdw2_emergeB"
+  ],
+  "tris": 1124,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/0aUuwRU68p.glb"
+ },
+ {
+  "publicID": "oI4lR4mby5",
+  "title": "Rising Shadow Man",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "creature",
+  "page": "https://poly.pizza/m/oI4lR4mby5",
+  "s3id": "7c95a8e4-6e86-4400-a878-60ae5bb9fbed",
+  "animated": true,
+  "tris_model": 1160,
+  "tags": [
+   "Shadow",
+   "Humanoid",
+   "Creepy"
+  ],
+  "animations": [
+   "shdw5_riseWalkA_walk"
+  ],
+  "tris": 1160,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/oI4lR4mby5.glb"
+ },
+ {
+  "publicID": "hqvlYnTeQX",
+  "title": "Tar Buffalo",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "creature",
+  "page": "https://poly.pizza/m/hqvlYnTeQX",
+  "s3id": "11ca75f6-4498-4b9d-9eb5-feea401ffe51",
+  "animated": true,
+  "tris_model": 2219,
+  "tags": [
+   "Buffalo",
+   "Creature",
+   "Spider"
+  ],
+  "animations": [
+   "tarbuffaloA_runA"
+  ],
+  "tris": 2219,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/hqvlYnTeQX.glb"
+ },
+ {
+  "publicID": "WJiiE1qmRU",
+  "title": "low poly survival character",
+  "creator": "Daren",
+  "licence": "CC-BY 3.0",
+  "query": "zombie",
+  "page": "https://poly.pizza/m/WJiiE1qmRU",
+  "s3id": "372a8a6b-f075-4049-8443-d920625ce7fc",
+  "animated": true,
+  "tris_model": 7310,
+  "tags": [
+   "bag",
+   "case",
+   "survival",
+   "apocolypse"
+  ],
+  "animations": [
+   "mixamo.com"
+  ],
+  "tris": 7310,
+  "skins": 1,
+  "bones": 52,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/WJiiE1qmRU.glb"
+ },
+ {
+  "publicID": "o2hmb3XyRE",
+  "title": "bone",
+  "creator": "khiem012156",
+  "licence": "CC-BY 3.0",
+  "query": "skeleton",
+  "page": "https://poly.pizza/m/o2hmb3XyRE",
+  "s3id": "01b7fde4-1473-44ca-a31a-e2bbadd41e75",
+  "animated": true,
+  "tris_model": 273,
+  "tags": [
+   "bone"
+  ],
+  "animations": [],
+  "tris": 273,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/o2hmb3XyRE.glb"
+ },
+ {
+  "publicID": "kttbFvCl2C",
+  "title": "Animated Wizard",
+  "creator": "Quaternius",
+  "licence": "CC-BY 3.0",
+  "query": "goblin",
+  "page": "https://poly.pizza/m/kttbFvCl2C",
+  "s3id": "7e77cc7a-eff9-4ebd-90a6-7728c265b092",
+  "animated": true,
+  "tris_model": 2527,
+  "tags": [
+   "magic",
+   "wizard",
+   "RPG"
+  ],
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Idle_Attacking",
+   "CharacterArmature|Idle_Weapon",
+   "CharacterArmature|PickUp",
+   "CharacterArmature|Punch",
+   "CharacterArmature|RecieveHit",
+   "CharacterArmature|RecieveHit_2",
+   "CharacterArmature|Roll",
+   "CharacterArmature|Run",
+   "CharacterArmature|Run_Weapon",
+   "CharacterArmature|Spell1",
+   "CharacterArmature|Spell2",
+   "CharacterArmature|Staff_Attack",
+   "CharacterArmature|Walk"
+  ],
+  "tris": 5369,
+  "skins": 1,
+  "bones": 32,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/kttbFvCl2C.glb"
+ },
+ {
+  "publicID": "JQrBevTzgD",
+  "title": "Goblin Shark",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "goblin",
+  "page": "https://poly.pizza/m/JQrBevTzgD",
+  "s3id": "35cd5001-e9d9-4057-b4b0-361b5b3500ab",
+  "animated": true,
+  "tris_model": 1270,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1270,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/JQrBevTzgD.glb"
+ },
+ {
+  "publicID": "Z7imf6O9k9",
+  "title": "Witch",
+  "creator": "antoine1germ",
+  "licence": "CC-BY 3.0",
+  "query": "demon",
+  "page": "https://poly.pizza/m/Z7imf6O9k9",
+  "s3id": "fb39b25f-3824-43ff-baaf-1210ce66c49c",
+  "animated": true,
+  "tris_model": 1559,
+  "tags": [
+   "witch",
+   "witchcraft",
+   "cute"
+  ],
+  "animations": [
+   "Armature.001|Armature.001Action"
+  ],
+  "tris": 1559,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/Z7imf6O9k9.glb"
+ },
+ {
+  "publicID": "D5wW2jDO42",
+  "title": "Mech",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "robot",
+  "page": "https://poly.pizza/m/D5wW2jDO42",
+  "s3id": "750173d2-53aa-4318-95dc-5f8e6d2dcad2",
+  "animated": true,
+  "tris_model": 4008,
+  "tags": [
+   "Bulldozer",
+   "Machine",
+   "Robot",
+   "Fox"
+  ],
+  "animations": [
+   "RobotArmature|Dance",
+   "RobotArmature|Death",
+   "RobotArmature|Hello",
+   "RobotArmature|HitRecieve_1",
+   "RobotArmature|HitRecieve_2",
+   "RobotArmature|Idle",
+   "RobotArmature|Jump",
+   "RobotArmature|Jump_Landing",
+   "RobotArmature|Jump_NoHeight",
+   "RobotArmature|Kick",
+   "RobotArmature|No",
+   "RobotArmature|Pickup",
+   "RobotArmature|Run",
+   "RobotArmature|Shoot_Big",
+   "RobotArmature|Shoot_Small",
+   "RobotArmature|Walk",
+   "RobotArmature|Yes"
+  ],
+  "tris": 4008,
+  "skins": 1,
+  "bones": 13,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/D5wW2jDO42.glb"
+ },
+ {
+  "publicID": "z3TSQYx1Kn",
+  "title": "Character Hazmat",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "robot",
+  "page": "https://poly.pizza/m/z3TSQYx1Kn",
+  "s3id": "484450a4-b76c-4e76-95d2-352337bb41e8",
+  "animated": true,
+  "tris_model": 12118,
+  "tags": [
+   "Robot",
+   "Motorcycle",
+   "Vehicle"
+  ],
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Idle_Shoot",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Run_Gun",
+   "CharacterArmature|Run_Shoot",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Walk_Shoot",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 20346,
+  "skins": 2,
+  "bones": 43,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/z3TSQYx1Kn.glb"
+ },
+ {
+  "publicID": "o3Ps8z8ByP",
+  "title": "Mech",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "robot",
+  "page": "https://poly.pizza/m/o3Ps8z8ByP",
+  "s3id": "a242e73b-6a40-4bd9-bfa9-ed1d8e49ea21",
+  "animated": true,
+  "tris_model": 5846,
+  "tags": [
+   "Robot",
+   "Bulldozer",
+   "Machine",
+   "Frog"
+  ],
+  "animations": [
+   "RobotArmature|Dance",
+   "RobotArmature|Death",
+   "RobotArmature|Hello",
+   "RobotArmature|HitRecieve_1",
+   "RobotArmature|HitRecieve_2",
+   "RobotArmature|Idle",
+   "RobotArmature|Jump",
+   "RobotArmature|Jump_Landing",
+   "RobotArmature|Jump_NoHeight",
+   "RobotArmature|Kick",
+   "RobotArmature|No",
+   "RobotArmature|Pickup",
+   "RobotArmature|Run",
+   "RobotArmature|Shoot_Big",
+   "RobotArmature|Shoot_Small",
+   "RobotArmature|Walk",
+   "RobotArmature|Yes"
+  ],
+  "tris": 5846,
+  "skins": 1,
+  "bones": 13,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/o3Ps8z8ByP.glb"
+ },
+ {
+  "publicID": "mWLnPxLY6X",
+  "title": "Machine Man",
+  "creator": "Vaporworks",
+  "licence": "CC-BY 3.0",
+  "query": "robot",
+  "page": "https://poly.pizza/m/mWLnPxLY6X",
+  "s3id": "8eebf68c-02eb-4b69-9633-36fdfb99ede0",
+  "animated": true,
+  "tris_model": 2248,
+  "tags": [
+   "Robot"
+  ],
+  "animations": [
+   "Armature|ArmatureAction"
+  ],
+  "tris": 3222,
+  "skins": 1,
+  "bones": 15,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/mWLnPxLY6X.glb"
+ },
+ {
+  "publicID": "4UvIHxnoSR",
+  "title": "Mech",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "robot",
+  "page": "https://poly.pizza/m/4UvIHxnoSR",
+  "s3id": "dab7180d-5393-4cb1-aa8f-b56154b0d724",
+  "animated": true,
+  "tris_model": 6756,
+  "tags": [
+   "Bulldozer",
+   "Machine",
+   "Robot"
+  ],
+  "animations": [
+   "RobotArmature|Dance",
+   "RobotArmature|Death",
+   "RobotArmature|Hello",
+   "RobotArmature|HitRecieve_1",
+   "RobotArmature|HitRecieve_2",
+   "RobotArmature|Idle",
+   "RobotArmature|Jump",
+   "RobotArmature|Jump_Landing",
+   "RobotArmature|Jump_NoHeight",
+   "RobotArmature|Kick",
+   "RobotArmature|No",
+   "RobotArmature|Pickup",
+   "RobotArmature|Run",
+   "RobotArmature|Shoot_Big",
+   "RobotArmature|Shoot_Small",
+   "RobotArmature|Walk",
+   "RobotArmature|Yes"
+  ],
+  "tris": 6756,
+  "skins": 1,
+  "bones": 13,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/4UvIHxnoSR.glb"
+ },
+ {
+  "publicID": "tLs9mFVCSU",
+  "title": "Mech",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "robot",
+  "page": "https://poly.pizza/m/tLs9mFVCSU",
+  "s3id": "6f884100-f3e8-4302-b74a-10965c14956a",
+  "animated": true,
+  "tris_model": 4086,
+  "tags": [
+   "Robot",
+   "Bulldozer",
+   "Machine",
+   "Flamingo"
+  ],
+  "animations": [
+   "RobotArmature|Dance",
+   "RobotArmature|Death",
+   "RobotArmature|Hello",
+   "RobotArmature|HitRecieve_1",
+   "RobotArmature|HitRecieve_2",
+   "RobotArmature|Idle",
+   "RobotArmature|Jump",
+   "RobotArmature|Jump_Landing",
+   "RobotArmature|Jump_NoHeight",
+   "RobotArmature|Kick",
+   "RobotArmature|No",
+   "RobotArmature|Pickup",
+   "RobotArmature|Run",
+   "RobotArmature|Shoot_Big",
+   "RobotArmature|Shoot_Small",
+   "RobotArmature|Walk",
+   "RobotArmature|Yes"
+  ],
+  "tris": 4086,
+  "skins": 1,
+  "bones": 13,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/tLs9mFVCSU.glb"
+ },
+ {
+  "publicID": "VBvzjFIYws",
+  "title": "Dragon",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "dragon",
+  "page": "https://poly.pizza/m/VBvzjFIYws",
+  "s3id": "9714f533-5d2d-4cfd-b8f1-c8dfff64a672",
+  "animated": true,
+  "tris_model": 1088,
+  "tags": [
+   "Dragon"
+  ],
+  "animations": [
+   "DragonArmature|Dragon_Attack",
+   "DragonArmature|Dragon_Attack2",
+   "DragonArmature|Dragon_Death",
+   "DragonArmature|Dragon_Flying",
+   "DragonArmature|Dragon_Hit"
+  ],
+  "tris": 1344,
+  "skins": 1,
+  "bones": 27,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": true,
+   "swim": false
+  },
+  "locomotion": "fly",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/VBvzjFIYws.glb"
+ },
+ {
+  "publicID": "a8PIIYwF7r",
+  "title": "Bull",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "beast",
+  "page": "https://poly.pizza/m/a8PIIYwF7r",
+  "s3id": "5704ef69-2c27-4de8-a942-70a29458af21",
+  "animated": true,
+  "tris_model": 2064,
+  "tags": [
+   "Bull",
+   "Animal",
+   "Cow"
+  ],
+  "animations": [
+   "Attack_Headbutt",
+   "Attack_Kick",
+   "Death",
+   "Eating",
+   "Gallop",
+   "Gallop_Jump",
+   "Idle_HitReact_Left",
+   "Idle_HitReact_Right",
+   "Jump_toIdle",
+   "Walk",
+   "Idle_Headlow",
+   "Idle_2",
+   "Idle",
+   "AnimalArmature|Attack_Headbutt",
+   "AnimalArmature|Attack_Kick",
+   "AnimalArmature|Death",
+   "AnimalArmature|Eating",
+   "AnimalArmature|Gallop",
+   "AnimalArmature|Gallop_Jump",
+   "AnimalArmature|Idle",
+   "AnimalArmature|Idle_2",
+   "AnimalArmature|Idle_Headlow",
+   "AnimalArmature|Idle_HitReact_Left",
+   "AnimalArmature|Jump_toIdle",
+   "AnimalArmature|Walk"
+  ],
+  "tris": 2418,
+  "skins": 1,
+  "bones": 42,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/a8PIIYwF7r.glb"
+ },
+ {
+  "publicID": "5YUViJK0lc",
+  "title": "Black Widow Spider",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "spider",
+  "page": "https://poly.pizza/m/5YUViJK0lc",
+  "s3id": "4dcd979d-b913-4149-830c-41aafc717f08",
+  "animated": true,
+  "tris_model": 978,
+  "tags": [
+   "Spider",
+   "Arachnid"
+  ],
+  "animations": [
+   "blackWidow_walkA"
+  ],
+  "tris": 978,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/5YUViJK0lc.glb"
+ },
+ {
+  "publicID": "3Yjp5vVR8L",
+  "title": "Centipede",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "spider",
+  "page": "https://poly.pizza/m/3Yjp5vVR8L",
+  "s3id": "494e5d27-09f5-4d67-8afb-ec16103bfe8c",
+  "animated": true,
+  "tris_model": 498,
+  "tags": [
+   "Insect",
+   "Centipede",
+   "Spiky"
+  ],
+  "animations": [
+   "centipede_walkA"
+  ],
+  "tris": 498,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/3Yjp5vVR8L.glb"
+ },
+ {
+  "publicID": "KNyBkzAocc",
+  "title": "Black Scorpion",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "spider",
+  "page": "https://poly.pizza/m/KNyBkzAocc",
+  "s3id": "58c55971-c738-4149-98f5-0a50ae0b1be1",
+  "animated": true,
+  "tris_model": 978,
+  "tags": [
+   "Scorpion",
+   "Black",
+   "Insect"
+  ],
+  "animations": [
+   "scorpSkitter_A"
+  ],
+  "tris": 978,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/KNyBkzAocc.glb"
+ },
+ {
+  "publicID": "4k2s68UrSg",
+  "title": "Black Lion Fish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/4k2s68UrSg",
+  "s3id": "2e9e3dec-41df-43b7-a35a-daed0d5e6baa",
+  "animated": true,
+  "tris_model": 1974,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1974,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/4k2s68UrSg.glb"
+ },
+ {
+  "publicID": "X5EjEA6fMF",
+  "title": "Flatfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/X5EjEA6fMF",
+  "s3id": "57b1100f-2b41-4154-b0b2-704bd7186b16",
+  "animated": true,
+  "tris_model": 1638,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1638,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/X5EjEA6fMF.glb"
+ },
+ {
+  "publicID": "ExfO0SGWmf",
+  "title": "Flower Horn",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/ExfO0SGWmf",
+  "s3id": "cccd0630-598c-4620-aa57-b2f41bf91235",
+  "animated": true,
+  "tris_model": 1490,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1490,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/ExfO0SGWmf.glb"
+ },
+ {
+  "publicID": "MRjSlwCjHM",
+  "title": "Anglerfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/MRjSlwCjHM",
+  "s3id": "0c4802f0-32f9-4a2a-90a5-56b94c33e37e",
+  "animated": true,
+  "tris_model": 1830,
+  "tags": [
+   "Animal",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1870,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/MRjSlwCjHM.glb"
+ },
+ {
+  "publicID": "sZR8AMLMz5",
+  "title": "Shark",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/sZR8AMLMz5",
+  "s3id": "fdcb48e0-c02a-431d-a648-6a3b11e54f82",
+  "animated": true,
+  "tris_model": 1310,
+  "tags": [
+   "Fish",
+   "Animal",
+   "Sea Life"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1310,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/sZR8AMLMz5.glb"
+ },
+ {
+  "publicID": "czsz9Baw86",
+  "title": "Lionfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/czsz9Baw86",
+  "s3id": "1d592042-991a-4469-aa45-8dc78f701cf3",
+  "animated": true,
+  "tris_model": 1938,
+  "tags": [
+   "Fish",
+   "Animal",
+   "Sea Life"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1938,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/czsz9Baw86.glb"
+ },
+ {
+  "publicID": "E8NjhhdvSU",
+  "title": "Turbot",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/E8NjhhdvSU",
+  "s3id": "ece9f066-f030-4e4b-8ceb-a5ebb7541e1e",
+  "animated": true,
+  "tris_model": 1626,
+  "tags": [
+   "Sea Life",
+   "Animal",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1626,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/E8NjhhdvSU.glb"
+ },
+ {
+  "publicID": "imxZBHZ1yS",
+  "title": "Blue Goldfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/imxZBHZ1yS",
+  "s3id": "2da5383d-4fd5-49bd-a7ea-197f654bc34d",
+  "animated": true,
+  "tris_model": 1590,
+  "tags": [
+   "Water",
+   "Fish",
+   "Animal",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1590,
+  "skins": 2,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/imxZBHZ1yS.glb"
+ },
+ {
+  "publicID": "7hMOlBjln0",
+  "title": "Swordfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/7hMOlBjln0",
+  "s3id": "4400228c-a051-4f95-9b59-1293d0754ddd",
+  "animated": true,
+  "tris_model": 1384,
+  "tags": [
+   "Sea Life",
+   "Animal",
+   "Fish",
+   "Airplane"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1384,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/7hMOlBjln0.glb"
+ },
+ {
+  "publicID": "XWl86YFtpF",
+  "title": "Fish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/XWl86YFtpF",
+  "s3id": "311a79f6-ba3e-47aa-80ce-04185fc76b2a",
+  "animated": true,
+  "tris_model": 544,
+  "tags": [
+   "Animal",
+   "Fish",
+   "Tuna",
+   "Sea Life"
+  ],
+  "animations": [
+   "Armature|Swim"
+  ],
+  "tris": 544,
+  "skins": 1,
+  "bones": 8,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/XWl86YFtpF.glb"
+ },
+ {
+  "publicID": "h6M5zlF5Yx",
+  "title": "Mandarin Fish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/h6M5zlF5Yx",
+  "s3id": "6899676e-674a-4281-9d93-ff8ba5d53d28",
+  "animated": true,
+  "tris_model": 1378,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1378,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/h6M5zlF5Yx.glb"
+ },
+ {
+  "publicID": "s2MkBeSzGy",
+  "title": "Butterfly Fish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/s2MkBeSzGy",
+  "s3id": "180f002b-9a9c-4ec8-9460-7aca6f05a6e7",
+  "animated": true,
+  "tris_model": 1374,
+  "tags": [
+   "Sea Life",
+   "Animal",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1374,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/s2MkBeSzGy.glb"
+ },
+ {
+  "publicID": "F7bCnF1BFf",
+  "title": "Piranha",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/F7bCnF1BFf",
+  "s3id": "400a5d85-02c8-4178-8c91-ed7e25722477",
+  "animated": true,
+  "tris_model": 1676,
+  "tags": [
+   "Fish",
+   "Underwater",
+   "Teeth"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1676,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/F7bCnF1BFf.glb"
+ },
+ {
+  "publicID": "UpDxLf8yue",
+  "title": "Sunfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/UpDxLf8yue",
+  "s3id": "b8176c6b-4ba0-4eaa-9aa0-836bfaa04c56",
+  "animated": true,
+  "tris_model": 1430,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1430,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/UpDxLf8yue.glb"
+ },
+ {
+  "publicID": "769fHo3eEB",
+  "title": "Clownfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/769fHo3eEB",
+  "s3id": "f28280ed-888d-4d9b-9d13-af2baf36b749",
+  "animated": true,
+  "tris_model": 1530,
+  "tags": [
+   "Outdoors",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1530,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/769fHo3eEB.glb"
+ },
+ {
+  "publicID": "VMJluStc59",
+  "title": "Cowfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/VMJluStc59",
+  "s3id": "d4a8d818-d508-446b-ad9c-11e24aec0b6b",
+  "animated": true,
+  "tris_model": 1390,
+  "tags": [
+   "Animal",
+   "Sea Life",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1390,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/VMJluStc59.glb"
+ },
+ {
+  "publicID": "iawvpwugzX",
+  "title": "Humphead",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/iawvpwugzX",
+  "s3id": "ad753166-5036-4943-9f48-fc69c1e2b587",
+  "animated": true,
+  "tris_model": 1410,
+  "tags": [
+   "Animal",
+   "Sea Life",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1410,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/iawvpwugzX.glb"
+ },
+ {
+  "publicID": "mtd9QK5yCe",
+  "title": "Armored Catfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/mtd9QK5yCe",
+  "s3id": "d42c2675-dba1-4d73-8a66-f924bb3bdbbf",
+  "animated": true,
+  "tris_model": 1466,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1466,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/mtd9QK5yCe.glb"
+ },
+ {
+  "publicID": "YyZyVhg2Jq",
+  "title": "Cardinal Fish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/YyZyVhg2Jq",
+  "s3id": "635431b0-7855-4f60-bd33-e79ade18ee6a",
+  "animated": true,
+  "tris_model": 1388,
+  "tags": [
+   "Aquatic",
+   "Water",
+   "Animal",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1388,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/YyZyVhg2Jq.glb"
+ },
+ {
+  "publicID": "M0UX3rVvNX",
+  "title": "Moorish Idol",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/M0UX3rVvNX",
+  "s3id": "a1acb05a-2186-4b3c-aa03-5c4e5aab9d17",
+  "animated": true,
+  "tris_model": 1428,
+  "tags": [
+   "Fish",
+   "Underwater",
+   "Sea Creature"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1428,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/M0UX3rVvNX.glb"
+ },
+ {
+  "publicID": "Q2GNw9TRzF",
+  "title": "Coral Grouper",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/Q2GNw9TRzF",
+  "s3id": "6349bd9a-a6b8-40c9-96d6-68a33eaca4b8",
+  "animated": true,
+  "tris_model": 1588,
+  "tags": [
+   "Animal",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1588,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/Q2GNw9TRzF.glb"
+ },
+ {
+  "publicID": "D36zsP5ESu",
+  "title": "Tang",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/D36zsP5ESu",
+  "s3id": "1aba9bca-f51c-4719-8787-ce629978935c",
+  "animated": true,
+  "tris_model": 1520,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1520,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/D36zsP5ESu.glb"
+ },
+ {
+  "publicID": "TQaMo8GTJl",
+  "title": "Blue Tang",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/TQaMo8GTJl",
+  "s3id": "f282d1d7-cf41-48e0-bbdc-a9dd0472b2cf",
+  "animated": true,
+  "tris_model": 1342,
+  "tags": [
+   "Electronics",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1342,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/TQaMo8GTJl.glb"
+ },
+ {
+  "publicID": "6jO6q4uCdh",
+  "title": "Zebra Clown Fish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/6jO6q4uCdh",
+  "s3id": "06a99b8d-e99d-4090-be53-2480fa7ad7c6",
+  "animated": true,
+  "tris_model": 1530,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1530,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/6jO6q4uCdh.glb"
+ },
+ {
+  "publicID": "BR1vpIvvvv",
+  "title": "Tentacle",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/BR1vpIvvvv",
+  "s3id": "b39d86e5-e51f-4bd8-bc63-c7fc0cdea864",
+  "animated": true,
+  "tris_model": 3874,
+  "tags": [
+   "Tentacle",
+   "Sea",
+   "Octopus"
+  ],
+  "animations": [
+   "TentacleArmature|TentacleArmature|TentacleArmature|Tentacle_Attack2|TentacleArma",
+   "TentacleArmature|TentacleArmature|TentacleArmature|Tentacle_Attack|TentacleArmat",
+   "TentacleArmature|TentacleArmature|TentacleArmature|Tentacle_Idle|TentacleArmatur",
+   "TentacleArmature|TentacleArmature|TentacleArmature|Tentacle_Poke|TentacleArmatur"
+  ],
+  "tris": 3874,
+  "skins": 1,
+  "bones": 21,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/BR1vpIvvvv.glb"
+ },
+ {
+  "publicID": "qS6CgsWFAh",
+  "title": "Goldfish",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/qS6CgsWFAh",
+  "s3id": "221c59b8-3326-4a4f-9bb7-7ba99e580c3c",
+  "animated": true,
+  "tris_model": 1590,
+  "tags": [
+   "Animal",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1590,
+  "skins": 2,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/qS6CgsWFAh.glb"
+ },
+ {
+  "publicID": "1tycAcvSVW",
+  "title": "Tuna",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/1tycAcvSVW",
+  "s3id": "95b59647-7cc1-45b4-b136-3ab9e3f5b3ae",
+  "animated": true,
+  "tris_model": 1446,
+  "tags": [
+   "Fish",
+   "Animal",
+   "Sea Life"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1446,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/1tycAcvSVW.glb"
+ },
+ {
+  "publicID": "l6AhogdZHe",
+  "title": "Tetra",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/l6AhogdZHe",
+  "s3id": "ea6a2911-9a2a-475d-826b-41e6f8d5c7d7",
+  "animated": true,
+  "tris_model": 1386,
+  "tags": [
+   "Animal",
+   "Amphibian",
+   "Wildlife",
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1386,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/l6AhogdZHe.glb"
+ },
+ {
+  "publicID": "BRKfDKwPTv",
+  "title": "Red Snapper",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/BRKfDKwPTv",
+  "s3id": "05418682-2314-4b64-aa8e-fc4fcd212be8",
+  "animated": true,
+  "tris_model": 1416,
+  "tags": [
+   "Fish"
+  ],
+  "animations": [
+   "Fish_Armature|Attack",
+   "Fish_Armature|Death",
+   "Fish_Armature|Out_Of_Water",
+   "Fish_Armature|Swimming_Fast",
+   "Fish_Armature|Swimming_Impulse",
+   "Fish_Armature|Swimming_Normal"
+  ],
+  "tris": 1416,
+  "skins": 1,
+  "bones": 6,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/BRKfDKwPTv.glb"
+ },
+ {
+  "publicID": "WTM8Y4PsYT",
+  "title": "Orange Fish",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/WTM8Y4PsYT",
+  "s3id": "325ecd0c-14a9-4bc5-b231-1ea9194dba58",
+  "animated": true,
+  "tris_model": 232,
+  "tags": [
+   "Fish",
+   "Aquatic",
+   "Marine"
+  ],
+  "animations": [
+   "fishD_swimA"
+  ],
+  "tris": 232,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/WTM8Y4PsYT.glb"
+ },
+ {
+  "publicID": "2w0nZmuKwt",
+  "title": "Blue Tropical Fish",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/2w0nZmuKwt",
+  "s3id": "6d43349f-abf3-4339-976c-9f0a0765875b",
+  "animated": true,
+  "tris_model": 232,
+  "tags": [
+   "Fish",
+   "Tropical",
+   "Ocean"
+  ],
+  "animations": [
+   "fishB_swimA"
+  ],
+  "tris": 232,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/2w0nZmuKwt.glb"
+ },
+ {
+  "publicID": "6mcC1JtILg",
+  "title": "Brown Tropical Fish",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/6mcC1JtILg",
+  "s3id": "13c066ab-7a6e-4b37-8669-4153230d9d5f",
+  "animated": true,
+  "tris_model": 232,
+  "tags": [
+   "Fish",
+   "Tropical",
+   "Ocean"
+  ],
+  "animations": [
+   "fishA_swimA"
+  ],
+  "tris": 232,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/6mcC1JtILg.glb"
+ },
+ {
+  "publicID": "5a12Q95pmc",
+  "title": "Red Tropical Fish",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/5a12Q95pmc",
+  "s3id": "9bea00aa-64bd-4b48-84a5-800deb7e59f3",
+  "animated": true,
+  "tris_model": 232,
+  "tags": [
+   "Fish",
+   "Ocean",
+   "Marine"
+  ],
+  "animations": [
+   "fishC_swimA"
+  ],
+  "tris": 232,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/5a12Q95pmc.glb"
+ },
+ {
+  "publicID": "JU08e67ywl",
+  "title": "Clownfish",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "fish monster",
+  "page": "https://poly.pizza/m/JU08e67ywl",
+  "s3id": "c3c4b86e-3e3f-4e23-8eaa-70e6c30c2689",
+  "animated": true,
+  "tris_model": 232,
+  "tags": [
+   "Fish",
+   "Ocean",
+   "Marine"
+  ],
+  "animations": [
+   "fishD_swimA"
+  ],
+  "tris": 232,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": true
+  },
+  "locomotion": "swim",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/JU08e67ywl.glb"
+ },
+ {
+  "publicID": "DgOCW9ZCRJ",
+  "title": "Character Animated",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "knight enemy",
+  "page": "https://poly.pizza/m/DgOCW9ZCRJ",
+  "s3id": "1a8a9d55-9aa9-43c4-a031-d926e251d80a",
+  "animated": true,
+  "tris_model": 1246,
+  "tags": [
+   "Hero",
+   "RPG",
+   "human",
+   "man"
+  ],
+  "animations": [
+   "Attacking_Idle",
+   "Dagger_Attack",
+   "Dagger_Attack2",
+   "Death",
+   "PickUp",
+   "Punch",
+   "RecieveHit",
+   "RecieveHit_Attacking",
+   "Roll",
+   "Run",
+   "Walk",
+   "Idle",
+   "CharacterArmature|Attacking_Idle",
+   "CharacterArmature|Dagger_Attack",
+   "CharacterArmature|Dagger_Attack2",
+   "CharacterArmature|Death",
+   "CharacterArmature|Idle",
+   "CharacterArmature|PickUp",
+   "CharacterArmature|Punch",
+   "CharacterArmature|RecieveHit",
+   "CharacterArmature|RecieveHit_Attacking",
+   "CharacterArmature|Roll",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk"
+  ],
+  "tris": 6050,
+  "skins": 2,
+  "bones": 31,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/DgOCW9ZCRJ.glb"
+ },
+ {
+  "publicID": "1TnT5Xc6vq",
+  "title": "Knight",
+  "creator": "Vaporworks",
+  "licence": "CC-BY 3.0",
+  "query": "knight enemy",
+  "page": "https://poly.pizza/m/1TnT5Xc6vq",
+  "s3id": "df68fe8a-c3ba-4800-a018-59fac6f3b444",
+  "animated": true,
+  "tris_model": 131,
+  "tags": [
+   "Person",
+   "Human"
+  ],
+  "animations": [
+   "Armature|ArmatureAction"
+  ],
+  "tris": 810,
+  "skins": 3,
+  "bones": 24,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/1TnT5Xc6vq.glb"
+ },
+ {
+  "publicID": "N9mVUcsl4p",
+  "title": "Shield stand",
+  "creator": "shantoan",
+  "licence": "CC-BY 3.0",
+  "query": "guard enemy",
+  "page": "https://poly.pizza/m/N9mVUcsl4p",
+  "s3id": "0b1227d8-23d6-4df4-b4cb-d8776023c9e8",
+  "animated": true,
+  "tris_model": 108,
+  "tags": [
+   "shield stand"
+  ],
+  "animations": [],
+  "tris": 108,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/N9mVUcsl4p.glb"
+ },
+ {
+  "publicID": "7eNPB3UYWV",
+  "title": "Hazard Spike Trap",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "turret enemy",
+  "page": "https://poly.pizza/m/7eNPB3UYWV",
+  "s3id": "fecd97e6-b894-4609-b6a6-be6552014a48",
+  "animated": true,
+  "tris_model": 460,
+  "tags": [
+   "Brick",
+   "Wasp",
+   "Animal",
+   "Box"
+  ],
+  "animations": [
+   "SpikeTrap_Activate",
+   "Hazard_SpikeTrap_Armature|SpikeTrap_Activate"
+  ],
+  "tris": 460,
+  "skins": 1,
+  "bones": 2,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/7eNPB3UYWV.glb"
+ },
+ {
+  "publicID": "3N4QEuGogy",
+  "title": "Bilby",
+  "creator": "Crispy_Prawn",
+  "licence": "CC-BY 3.0",
+  "query": "rat",
+  "page": "https://poly.pizza/m/3N4QEuGogy",
+  "s3id": "14b4623a-e820-452a-b026-2760d237380f",
+  "animated": true,
+  "tris_model": 2432,
+  "tags": [
+   "Bilby ",
+   "bandicoot",
+   "long eared bandicoot",
+   "rabbit eared bandicoo",
+   "marsupial",
+   "australia",
+   "fat rat"
+  ],
+  "animations": [
+   "Armature|digging",
+   "Armature|turn right",
+   "Armature|walking",
+   "Armature|wiggle"
+  ],
+  "tris": 2474,
+  "skins": 3,
+  "bones": 37,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/3N4QEuGogy.glb"
+ },
+ {
+  "publicID": "Km89u3twcR",
+  "title": "Rabbit",
+  "creator": "Sherkiz",
+  "licence": "CC-BY 3.0",
+  "query": "rat",
+  "page": "https://poly.pizza/m/Km89u3twcR",
+  "s3id": "8a01980e-f9cd-47c2-97b0-bad9b131ef6f",
+  "animated": true,
+  "tris_model": 1560,
+  "tags": [
+   "Animal",
+   "Rabbit",
+   "Animated"
+  ],
+  "animations": [
+   "Bunny|Bunny_idle",
+   "Bunny|Bunny_walk"
+  ],
+  "tris": 1560,
+  "skins": 1,
+  "bones": 45,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/Km89u3twcR.glb"
+ },
+ {
+  "publicID": "U7zOWDh1ay",
+  "title": "Raccoon",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "rat",
+  "page": "https://poly.pizza/m/U7zOWDh1ay",
+  "s3id": "ff02adb7-0067-412e-902d-15df0d179229",
+  "animated": true,
+  "tris_model": 984,
+  "tags": [
+   "Raccoon",
+   "Animal"
+  ],
+  "animations": [
+   "raccoonRun_A"
+  ],
+  "tris": 984,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/U7zOWDh1ay.glb"
+ },
+ {
+  "publicID": "0D54W8yfrA",
+  "title": "Astronaut",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "frog",
+  "page": "https://poly.pizza/m/0D54W8yfrA",
+  "s3id": "f06659f2-e505-43df-a3db-84faec811a57",
+  "animated": true,
+  "tris_model": 8606,
+  "tags": [
+   "Amphibian",
+   "Frog",
+   "Wildlife",
+   "Frog"
+  ],
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Idle_Gun",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Run_Gun",
+   "CharacterArmature|Run_Gun_Shoot",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Walk_Gun",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 8606,
+  "skins": 1,
+  "bones": 43,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "run",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/0D54W8yfrA.glb"
+ },
+ {
+  "publicID": "n5jjqV0PXt",
+  "title": "Tree Frog",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "frog",
+  "page": "https://poly.pizza/m/n5jjqV0PXt",
+  "s3id": "adddb794-31dc-474c-a9d6-05803a9947bf",
+  "animated": true,
+  "tris_model": 984,
+  "tags": [
+   "Frog",
+   "Amphibian",
+   "Wildlife"
+  ],
+  "animations": [
+   "frogLeap_A"
+  ],
+  "tris": 984,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/n5jjqV0PXt.glb"
+ },
+ {
+  "publicID": "9S0IGsx7w2",
+  "title": "Leaping Toad",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "frog",
+  "page": "https://poly.pizza/m/9S0IGsx7w2",
+  "s3id": "4a77d625-5fd5-4a0d-9579-12653282b63f",
+  "animated": true,
+  "tris_model": 984,
+  "tags": [
+   "Toad",
+   "Amphibian",
+   "Leap"
+  ],
+  "animations": [
+   "toadLeap_A"
+  ],
+  "tris": 984,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/9S0IGsx7w2.glb"
+ },
+ {
+  "publicID": "P1gU3Qkr9r",
+  "title": "Wolf",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "wolf",
+  "page": "https://poly.pizza/m/P1gU3Qkr9r",
+  "s3id": "f1d12388-e39b-4157-b32a-646a1d089fc4",
+  "animated": true,
+  "tris_model": 1928,
+  "tags": [
+   "Wolf",
+   "Animal",
+   "Coyote",
+   "Dog"
+  ],
+  "animations": [
+   "Attack",
+   "Death",
+   "Eating",
+   "Gallop",
+   "Gallop_Jump",
+   "Idle_HitReact_Left",
+   "Idle_HitReact_Right",
+   "Jump_ToIdle",
+   "Walk",
+   "Idle_2_HeadLow",
+   "Idle_2",
+   "Idle",
+   "AnimalArmature|Attack",
+   "AnimalArmature|Death",
+   "AnimalArmature|Eating",
+   "AnimalArmature|Gallop",
+   "AnimalArmature|Gallop_Jump",
+   "AnimalArmature|Idle",
+   "AnimalArmature|Idle_2",
+   "AnimalArmature|Idle_2_HeadLow",
+   "AnimalArmature|Idle_HitReact_Left",
+   "AnimalArmature|Idle_HitReact_Right",
+   "AnimalArmature|Jump_ToIdle",
+   "AnimalArmature|Walk"
+  ],
+  "tris": 1962,
+  "skins": 1,
+  "bones": 51,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/P1gU3Qkr9r.glb"
+ },
+ {
+  "publicID": "wcWiuEqwzq",
+  "title": "Husky",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "query": "wolf",
+  "page": "https://poly.pizza/m/wcWiuEqwzq",
+  "s3id": "611d25c7-430f-4bb5-ab2c-d8f5f3cb9712",
+  "animated": true,
+  "tris_model": 1822,
+  "tags": [
+   "Wolf",
+   "Animal",
+   "Coyote",
+   "Dog"
+  ],
+  "animations": [
+   "Attack",
+   "Death",
+   "Eating",
+   "Gallop",
+   "Gallop_Jump",
+   "Idle_HitReact_Left",
+   "Idle_HitReact_Right",
+   "Jump_ToIdle",
+   "Walk",
+   "Idle_2",
+   "Idle_2_HeadLow",
+   "Idle",
+   "AnimalArmature|Attack",
+   "AnimalArmature|Death",
+   "AnimalArmature|Eating",
+   "AnimalArmature|Gallop",
+   "AnimalArmature|Gallop_Jump",
+   "AnimalArmature|Idle",
+   "AnimalArmature|Idle_2",
+   "AnimalArmature|Idle_2_HeadLow",
+   "AnimalArmature|Idle_HitReact_Left",
+   "AnimalArmature|Idle_HitReact_Right",
+   "AnimalArmature|Jump_ToIdle",
+   "AnimalArmature|Walk"
+  ],
+  "tris": 1920,
+  "skins": 1,
+  "bones": 49,
+  "valid": true,
+  "flags": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/wcWiuEqwzq.glb"
+ },
+ {
+  "publicID": "MyLvUaAaXO",
+  "title": "Running Wolf",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "wolf",
+  "page": "https://poly.pizza/m/MyLvUaAaXO",
+  "s3id": "285f1120-e9f3-44d9-aafc-8f763a36bace",
+  "animated": true,
+  "tris_model": 984,
+  "tags": [
+   "Wolf",
+   "Animal",
+   "Running"
+  ],
+  "animations": [
+   "wolfDash_A"
+  ],
+  "tris": 984,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/MyLvUaAaXO.glb"
+ },
+ {
+  "publicID": "Coppphok4P",
+  "title": "Running Brown Bear",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "bear",
+  "page": "https://poly.pizza/m/Coppphok4P",
+  "s3id": "29ac9b29-8c13-4c50-a85b-cd68c0e6c044",
+  "animated": true,
+  "tris_model": 984,
+  "tags": [
+   "Bear",
+   "Animal",
+   "Brown"
+  ],
+  "animations": [
+   "bearBrown_B"
+  ],
+  "tris": 984,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/Coppphok4P.glb"
+ },
+ {
+  "publicID": "aWX3f5Oj9J",
+  "title": "Running Black Bear",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "bear",
+  "page": "https://poly.pizza/m/aWX3f5Oj9J",
+  "s3id": "ebc1a754-946c-4bfa-b191-c297f2da1d69",
+  "animated": true,
+  "tris_model": 984,
+  "tags": [
+   "Bear",
+   "Animal",
+   "Wildlife"
+  ],
+  "animations": [
+   "bearRun_B"
+  ],
+  "tris": 984,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/aWX3f5Oj9J.glb"
+ },
+ {
+  "publicID": "WCIGJcF4gm",
+  "title": "Scorpion",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "scorpion",
+  "page": "https://poly.pizza/m/WCIGJcF4gm",
+  "s3id": "f70cac33-05ce-49c0-8240-f0e6e775d57a",
+  "animated": true,
+  "tris_model": 978,
+  "tags": [
+   "Scorpion",
+   "Insect",
+   "Desert"
+  ],
+  "animations": [
+   "scorpSkitter_A"
+  ],
+  "tris": 978,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "none",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/WCIGJcF4gm.glb"
+ },
+ {
+  "publicID": "oaoCcJ1Wmj",
+  "title": "Crab",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "scorpion",
+  "page": "https://poly.pizza/m/oaoCcJ1Wmj",
+  "s3id": "59e80bee-6fee-4eb6-91f2-efe310d97e79",
+  "animated": true,
+  "tris_model": 978,
+  "tags": [
+   "Scorpion",
+   "Insect",
+   "Wildlife"
+  ],
+  "animations": [
+   "crab_walkA"
+  ],
+  "tris": 978,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": true,
+   "fly": false,
+   "swim": false
+  },
+  "locomotion": "walk",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/oaoCcJ1Wmj.glb"
+ },
+ {
+  "publicID": "7PxWOlSbXf",
+  "title": "Blue Butterfly",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "insect",
+  "page": "https://poly.pizza/m/7PxWOlSbXf",
+  "s3id": "1e3f3faf-e414-4f5c-969c-e6af594d5c90",
+  "animated": true,
+  "tris_model": 42,
+  "tags": [
+   "Butterfly",
+   "Insect",
+   "Polygonal"
+  ],
+  "animations": [
+   "butterflyD_flyA"
+  ],
+  "tris": 42,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": true,
+   "swim": false
+  },
+  "locomotion": "fly",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/7PxWOlSbXf.glb"
+ },
+ {
+  "publicID": "5vy7hmmRl9",
+  "title": "Orange Butterfly",
+  "creator": "Google Data Arts Team",
+  "licence": "CC-BY 3.0",
+  "query": "insect",
+  "page": "https://poly.pizza/m/5vy7hmmRl9",
+  "s3id": "2cd1c20b-5712-4b3e-9235-379e1f7ca8d4",
+  "animated": true,
+  "tris_model": 56,
+  "tags": [
+   "Butterfly",
+   "Insect",
+   "Orange"
+  ],
+  "animations": [
+   "butterflyC_flyA"
+  ],
+  "tris": 56,
+  "skins": 0,
+  "bones": 0,
+  "valid": true,
+  "flags": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "walk": false,
+   "fly": true,
+   "swim": false
+  },
+  "locomotion": "fly",
+  "glb": "/home/vake/Sloth/Stuff/ASSETS/3d/assets/_scrape/site_glb/5vy7hmmRl9.glb"
+ }
+]

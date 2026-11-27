@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://fwkkhpdlospr"
+
+[deps]
+
+files=["res://_mob_library/assets/mobs/animations.title.translation", "res://_mob_library/assets/mobs/animations.publicID.translation", "res://_mob_library/assets/mobs/animations.hit.translation", "res://_mob_library/assets/mobs/animations.death.translation", "res://_mob_library/assets/mobs/animations.run.translation", "res://_mob_library/assets/mobs/animations.animation.translation", "res://_mob_library/assets/mobs/animations.tris.translation", "res://_mob_library/assets/mobs/animations.bones.translation", "res://_mob_library/assets/mobs/animations.licence.translation", "res://_mob_library/assets/mobs/animations.page.translation"]
+
+source_file="res://_mob_library/assets/mobs/animations.csv"
+dest_files=["res://_mob_library/assets/mobs/animations.title.translation", "res://_mob_library/assets/mobs/animations.publicID.translation", "res://_mob_library/assets/mobs/animations.hit.translation", "res://_mob_library/assets/mobs/animations.death.translation", "res://_mob_library/assets/mobs/animations.run.translation", "res://_mob_library/assets/mobs/animations.animation.translation", "res://_mob_library/assets/mobs/animations.tris.translation", "res://_mob_library/assets/mobs/animations.bones.translation", "res://_mob_library/assets/mobs/animations.licence.translation", "res://_mob_library/assets/mobs/animations.page.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

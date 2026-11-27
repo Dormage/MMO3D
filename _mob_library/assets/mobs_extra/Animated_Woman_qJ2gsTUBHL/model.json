@@ -1,0 +1,192 @@
+{
+  "folder": "Animated_Woman_qJ2gsTUBHL",
+  "title": "Animated Woman",
+  "publicID": "qJ2gsTUBHL",
+  "page": "https://poly.pizza/m/qJ2gsTUBHL",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "bucket": "character",
+  "tris": 6424,
+  "bones": 62,
+  "files": {
+    "fbx": "Animated_Woman_qJ2gsTUBHL.fbx",
+    "glb": "Animated_Woman_qJ2gsTUBHL.glb",
+    "fbx_bytes": 8122924,
+    "glb_bytes": 1530616
+  },
+  "animation_count": 24,
+  "clips": [
+    "Death",
+    "Gun_Shoot",
+    "HitRecieve",
+    "HitRecieve_2",
+    "Idle",
+    "Idle_Gun",
+    "Idle_Gun_Pointing",
+    "Idle_Gun_Shoot",
+    "Idle_Neutral",
+    "Idle_Sword",
+    "Interact",
+    "Kick_Left",
+    "Kick_Right",
+    "Punch_Left",
+    "Punch_Right",
+    "Roll",
+    "Run",
+    "Run_Back",
+    "Run_Left",
+    "Run_Right",
+    "Run_Shoot",
+    "Sword_Slash",
+    "Walk",
+    "Wave"
+  ],
+  "animations": [
+    {
+      "name": "CharacterArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "CharacterArmature|Gun_Shoot",
+      "clean": "Gun_Shoot"
+    },
+    {
+      "name": "CharacterArmature|HitRecieve",
+      "clean": "HitRecieve"
+    },
+    {
+      "name": "CharacterArmature|HitRecieve_2",
+      "clean": "HitRecieve_2"
+    },
+    {
+      "name": "CharacterArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "CharacterArmature|Idle_Gun",
+      "clean": "Idle_Gun"
+    },
+    {
+      "name": "CharacterArmature|Idle_Gun_Pointing",
+      "clean": "Idle_Gun_Pointing"
+    },
+    {
+      "name": "CharacterArmature|Idle_Gun_Shoot",
+      "clean": "Idle_Gun_Shoot"
+    },
+    {
+      "name": "CharacterArmature|Idle_Neutral",
+      "clean": "Idle_Neutral"
+    },
+    {
+      "name": "CharacterArmature|Idle_Sword",
+      "clean": "Idle_Sword"
+    },
+    {
+      "name": "CharacterArmature|Interact",
+      "clean": "Interact"
+    },
+    {
+      "name": "CharacterArmature|Kick_Left",
+      "clean": "Kick_Left"
+    },
+    {
+      "name": "CharacterArmature|Kick_Right",
+      "clean": "Kick_Right"
+    },
+    {
+      "name": "CharacterArmature|Punch_Left",
+      "clean": "Punch_Left"
+    },
+    {
+      "name": "CharacterArmature|Punch_Right",
+      "clean": "Punch_Right"
+    },
+    {
+      "name": "CharacterArmature|Roll",
+      "clean": "Roll"
+    },
+    {
+      "name": "CharacterArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "CharacterArmature|Run_Back",
+      "clean": "Run_Back"
+    },
+    {
+      "name": "CharacterArmature|Run_Left",
+      "clean": "Run_Left"
+    },
+    {
+      "name": "CharacterArmature|Run_Right",
+      "clean": "Run_Right"
+    },
+    {
+      "name": "CharacterArmature|Run_Shoot",
+      "clean": "Run_Shoot"
+    },
+    {
+      "name": "CharacterArmature|Sword_Slash",
+      "clean": "Sword_Slash"
+    },
+    {
+      "name": "CharacterArmature|Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "CharacterArmature|Wave",
+      "clean": "Wave"
+    }
+  ],
+  "required": {
+    "hit": [
+      "HitRecieve",
+      "HitRecieve_2"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run_Back",
+      "Run_Left",
+      "Run_Right",
+      "Run_Shoot"
+    ]
+  },
+  "fbx_takes": [
+    "CharacterArmature|Death",
+    "CharacterArmature|Gun_Shoot",
+    "CharacterArmature|HitRecieve",
+    "CharacterArmature|HitRecieve_2",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Idle_Gun",
+    "CharacterArmature|Idle_Gun_Pointing",
+    "CharacterArmature|Idle_Gun_Shoot",
+    "CharacterArmature|Idle_Neutral",
+    "CharacterArmature|Idle_Sword",
+    "CharacterArmature|Interact",
+    "CharacterArmature|Kick_Left",
+    "CharacterArmature|Kick_Right",
+    "CharacterArmature|Punch_Left",
+    "CharacterArmature|Punch_Right",
+    "CharacterArmature|Roll",
+    "CharacterArmature|Run",
+    "CharacterArmature|Run_Back",
+    "CharacterArmature|Run_Left",
+    "CharacterArmature|Run_Right",
+    "CharacterArmature|Run_Shoot",
+    "CharacterArmature|Sword_Slash",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave"
+  ],
+  "fbx_anim_stacks": 25,
+  "fbx_curve_nodes": 4537,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

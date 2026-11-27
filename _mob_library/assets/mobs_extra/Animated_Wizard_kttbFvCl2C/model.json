@@ -1,0 +1,135 @@
+{
+  "folder": "Animated_Wizard_kttbFvCl2C",
+  "title": "Animated Wizard",
+  "publicID": "kttbFvCl2C",
+  "page": "https://poly.pizza/m/kttbFvCl2C",
+  "creator": "Quaternius",
+  "licence": "CC-BY 3.0",
+  "bucket": "character",
+  "tris": 5369,
+  "bones": 32,
+  "files": {
+    "fbx": "Animated_Wizard_kttbFvCl2C.fbx",
+    "glb": "Animated_Wizard_kttbFvCl2C.glb",
+    "fbx_bytes": 3526732,
+    "glb_bytes": 1165928
+  },
+  "animation_count": 15,
+  "clips": [
+    "Death",
+    "Idle",
+    "Idle_Attacking",
+    "Idle_Weapon",
+    "PickUp",
+    "Punch",
+    "RecieveHit",
+    "RecieveHit_2",
+    "Roll",
+    "Run",
+    "Run_Weapon",
+    "Spell1",
+    "Spell2",
+    "Staff_Attack",
+    "Walk"
+  ],
+  "animations": [
+    {
+      "name": "CharacterArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "CharacterArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "CharacterArmature|Idle_Attacking",
+      "clean": "Idle_Attacking"
+    },
+    {
+      "name": "CharacterArmature|Idle_Weapon",
+      "clean": "Idle_Weapon"
+    },
+    {
+      "name": "CharacterArmature|PickUp",
+      "clean": "PickUp"
+    },
+    {
+      "name": "CharacterArmature|Punch",
+      "clean": "Punch"
+    },
+    {
+      "name": "CharacterArmature|RecieveHit",
+      "clean": "RecieveHit"
+    },
+    {
+      "name": "CharacterArmature|RecieveHit_2",
+      "clean": "RecieveHit_2"
+    },
+    {
+      "name": "CharacterArmature|Roll",
+      "clean": "Roll"
+    },
+    {
+      "name": "CharacterArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "CharacterArmature|Run_Weapon",
+      "clean": "Run_Weapon"
+    },
+    {
+      "name": "CharacterArmature|Spell1",
+      "clean": "Spell1"
+    },
+    {
+      "name": "CharacterArmature|Spell2",
+      "clean": "Spell2"
+    },
+    {
+      "name": "CharacterArmature|Staff_Attack",
+      "clean": "Staff_Attack"
+    },
+    {
+      "name": "CharacterArmature|Walk",
+      "clean": "Walk"
+    }
+  ],
+  "required": {
+    "hit": [
+      "RecieveHit",
+      "RecieveHit_2"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run_Weapon"
+    ]
+  },
+  "fbx_takes": [
+    "CharacterArmature|Death",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Idle_Attacking",
+    "CharacterArmature|Idle_Weapon",
+    "CharacterArmature|PickUp",
+    "CharacterArmature|Punch",
+    "CharacterArmature|RecieveHit",
+    "CharacterArmature|RecieveHit_2",
+    "CharacterArmature|Roll",
+    "CharacterArmature|Run",
+    "CharacterArmature|Run_Weapon",
+    "CharacterArmature|Spell1",
+    "CharacterArmature|Spell2",
+    "CharacterArmature|Staff_Attack",
+    "CharacterArmature|Walk"
+  ],
+  "fbx_anim_stacks": 16,
+  "fbx_curve_nodes": 1486,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

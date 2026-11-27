@@ -1,0 +1,155 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+Vulkan 1.4.335 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 21.1.8, 256 bits)
+
+sky: cloud-sea shader active
+REGION_STATE regions=5 current=1(island)
+REGION_LIGHT using shared SkySun
+REGION_MATTEX fixed=20 ["M_barrel_wood", "M_prop_stone", "M_prop_stone_dark", "M_palisade_log_dark", "M_palisade_log", "M_prop_cut", "M_stump_cut.001", "M_stump_ring", "M_stump_char.001", "M_prop_stone.003", "M_prop_stone_dark.003", "M_prop_stone.007", "M_prop_char.007", "M_palisade_log.007", "M_pine_needles", "M_ruin_stone", "M_ruin_stone_dark", "M_rubble", "M_altar_stone", "M_altar_stone_dark"]
+REGION_GLOW pieces=34 lights=6
+REGION_BRIDGE SM_Town_Props scale=1.16 offset=(0.0, 0.0, 0.0)
+REGION_BRIDGE SM_Town_Rampart scale=1.00 offset=(0.0, 0.0, 6.0)
+REGION_BRIDGE surfaces=4
+MOVECHK move0 center=(-30.8, 0.0, -15.8) inside=136
+MOVECHK move1 center=(-36.7, 0.0, -4.4) inside=127
+REGION_FENCE surfaces=5 retired_verts=137
+REGION_CRYSTAL surfaces=1 centre=(15.1069, 1.491775, 1.636966)
+REGION_WIND surfaces=89 textured=89 clear_pts=[(-34.64777, 0.218121, -18.31192), (-35.5158, 0.144107, 18.54251), (-16.78413, 0.146347, 22.81201), (-2.037437, 0.146345, 24.86072)]
+REGION_CACHE baked user://region_cache/island.scn
+REGION_DECKS boxes=4200
+REGION_COLLISION GroundCollision layer=1 tris=157202
+REGION_DECK_STRIP faces=23
+REGION_DECK_STRIP faces=3
+REGION_DECK_STRIP faces=46
+REGION_DECK_STRIP faces=448
+REGION_DECK_STRIP faces=1
+REGION_DECK_STRIP faces=2
+REGION_DECK_STRIP faces=24
+REGION_DECK_STRIP faces=8
+REGION_DECK_STRIP faces=192
+REGION_DECK_STRIP faces=1000
+REGION_DECK_STRIP faces=240
+REGION_COLLISION Solid_SM_Town_Buildings layer=2 tris=14517
+REGION_COLLISION Walkable_SM_Town_Buildings layer=1 tris=2924
+REGION_DECK_STRIP faces=204
+REGION_DECK_STRIP faces=121
+REGION_DECK_STRIP faces=389
+REGION_DECK_STRIP faces=1477
+REGION_DECK_STRIP faces=64
+REGION_DECK_STRIP faces=20
+REGION_DECK_STRIP faces=142
+REGION_DECK_STRIP faces=44
+REGION_DECK_STRIP faces=238
+REGION_DECK_STRIP faces=13
+REGION_DECK_STRIP faces=20
+REGION_DECK_STRIP faces=360
+REGION_DECK_STRIP faces=1632
+REGION_DECK_STRIP faces=22
+REGION_DECK_STRIP faces=113
+REGION_DECK_STRIP faces=24
+REGION_DECK_STRIP faces=24
+REGION_DECK_STRIP faces=5
+REGION_COLLISION Solid_SM_Town_Props layer=2 tris=44268
+REGION_COLLISION Walkable_SM_Town_Props layer=1 tris=1300
+REGION_DECOR SM_Town_Props no collision on ["M_cream.002", "M_mushcap.002"]
+REGION_DECK_STRIP faces=315
+REGION_DECK_STRIP faces=360
+REGION_DECK_STRIP faces=1632
+REGION_COLLISION Solid_SM_Town_Rampart layer=2 tris=8021
+REGION_COLLISION Walkable_SM_Town_Rampart layer=1 tris=6044
+REGION_COLLISION SM_Town_Vegetation skipped (non-solid)
+REGION_COLLISION SM_Town_Water skipped (non-solid)
+REGION_COLLISION Walkable_Bridge_SM_Town_Props layer=1 tris=349
+REGION_COLLISION Walkable_Bridge_SM_Town_Rampart layer=1 tris=348
+REGION_BRIDGE_COLLISION bodies=2
+REGION_HOST mounted region_island.tscn
+WEAPON_EQUIPPED slot=0 id=sword weapon=weapon_arming_sword clip=1H_Slash duration=0.95 tip=0.84
+PLAYER_IDLE_FLAT root=(-0.2647,0.3442,-0.9035) keys=232
+ATTACK_ROOT_FLAT clip=1H_Slash track=Armature/Skeleton3D:Hips keys=61 fixed=(-0.014476, -0.038188, -0.792969)
+ATTACK_ROOT_FLAT clip=2H_Slash track=Armature/Skeleton3D:Hips keys=100 fixed=(-0.00021, -0.035535, -1.032923)
+ATTACK_ROOT_FLAT clip=SwordShield track=Armature/Skeleton3D:Hips keys=66 fixed=(-0.003054, -0.020118, -0.979252)
+ATTACK_ROOT_FLAT clip=Thrust track=Armature/Skeleton3D:Hips keys=92 fixed=(0.007976, -0.023152, -0.919269)
+POP_CANDIDATES region=island count=1637 bounds=[P: (-48.95597, -4.35, -48.88682), S: (97.67596, 8.396406, 97.60683)] step=2.00
+POPULATION region=island actors=25 candidates=1637 placement=scatter anim_ok=25
+POP_ACTOR Alien | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Blue Demon | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Bunny | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Cactoro | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Demon | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Demon | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Dino | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Enemy Large | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Goblin | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Monkroose | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mushroom King | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Orc | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Skeleton | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Yeti | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Yeti | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Zombie | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Zombie | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Zombie | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Giant | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mech | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mech | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mech | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mech | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Sharky | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Zombie | walk=walk run=run idle=idle attack=attack hit=hit die=die
+REGION_WATER surfaces=1 plane_tris=9954 verts=5120 cells=4977 extent=78x98m spread=30
+REGION_SPAWN island at (0.0, 0.0) ground=0.000 radius=0.0
+REGION_MAP id=island meshes=6 polys~944459 bounds=[P: (-56.99302, -499.8719, -69.07146), S: (148.6451, 511.8293, 130.0184)] spawn=(0.0, 0.0, 0.0)
+PLAYER_SPAWN pos=(0.0, 0.006, 0.0) ground=0.0000 capsule_bottom=0.0060
+PLAYER_MODEL_FIT sole=0.1060 mesh_low=-0.1749 capsule_bottom=0.0060 pivot_offset=0.0845
+CARVEFLAG carrier=Region value=true
+WATER_LEVEL -0.15 from Region
+NAV_EDGE margin=1.00
+NAV_CUTOUTS rects=0 trunk_circles=0
+NAV_SOLIDS cells=2865 faces_marked=2865 faces_skipped_band=70
+NAV_WALKABLE surfaces faces=3704
+ERROR: Condition "array_len == 0" is true. Returning: ERR_INVALID_DATA
+   at: mesh_create_surface_data_from_arrays (servers/rendering/rendering_server.cpp:1207)
+   GDScript backtrace (most recent call first):
+       [0] _add_bridge_mesh (res://scripts/nav_world.gd:424)
+       [1] build (res://scripts/nav_world.gd:188)
+       [2] _ready (res://scripts/game_controller.gd:129)
+ERROR: Condition "err != OK" is true.
+   at: add_surface_from_arrays (scene/resources/mesh.cpp:1825)
+   GDScript backtrace (most recent call first):
+       [0] _add_bridge_mesh (res://scripts/nav_world.gd:424)
+       [1] build (res://scripts/nav_world.gd:188)
+       [2] _ready (res://scripts/game_controller.gd:129)
+NAV_BRIDGES decks=0 verts=0
+NAV_WATERMASK cells=590 (from region)
+NAV_WATERMASK blocked=14/14 bridgesegs=0
+WARNING: Property agent_max_climb is floored to cell_height voxel units and loses precision.
+     at: generator_bake_from_source_geometry_data (modules/navigation_3d/3d/nav_mesh_generator_3d.cpp:369)
+     GDScript backtrace (most recent call first):
+         [0] build (res://scripts/nav_world.gd:212)
+         [1] _ready (res://scripts/game_controller.gd:129)
+WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision.
+     at: generator_bake_from_source_geometry_data (modules/navigation_3d/3d/nav_mesh_generator_3d.cpp:372)
+     GDScript backtrace (most recent call first):
+         [0] build (res://scripts/nav_world.gd:212)
+         [1] _ready (res://scripts/game_controller.gd:129)
+NAV_FILTER slope=6201 blocked=34178 low=16333
+NAV_BAKE source_tris=83956 bake_ms=733 polygons=2012 vertices=1730 approx_cells=85636 cell=0.25
+NAV_STITCH parts=64 links=54 unreached=0
+SHIPPED_INPUT node=/root/Game in_tree=true unhandled_enabled=true
+SHIPPED_NAV polygons=2012 vertices=1730 region_polys=2012 map_rid_ok=true
+WARNING: Navigation region synchronization had 3 edge error(s).
+More than 2 edges tried to occupy the same map rasterization space.
+This causes a logical error in the navigation mesh geometry and is commonly caused by overlap or too densely placed edges.
+Consider baking with a higher 'cell_size', greater geometry margin, and less detailed bake objects to cause fewer edges.
+Consider lowering the 'navigation/3d/merge_rasterizer_cell_scale' in the project settings.
+This warning can be toggled under 'navigation/3d/warnings/navmesh_edge_merge_errors' in the project settings.
+     at: _build_step_find_edge_connection_pairs (modules/navigation_3d/3d/nav_region_builder_3d.cpp:221)
+PLAYER_MODEL_FIT sole=0.1060 mesh_low=-0.1749 capsule_bottom=0.0060 pivot_offset=0.0845
+SHIPPED_PLAYER pos=(0.0, 0.006, 0.0) in_tree=true
+SHIPPED_PATH a=(0.0, 0.14016, 0.0) b=(5.0, 0.14016, 0.0) points=4 length=5.00
+DEEP_ISLANDS_HIDDEN
+GAME_CAM pitch=60 dist=18.0..26.0 focus_owner=<Object#null>
+NAV_LINKS links=0 tree_obstacles=0
+ISLAND_DETAIL skipped: authored world
+SCREENSHOT region=island i=0 size=(1600, 900) err=0 path=/home/dormage/code/MMO3D2/_runtime/xdg_data/godot/app_userdata/Dragon Inspection - Town/screenshots/island_0.png
+SCREENSHOT region=island i=1 size=(1600, 900) err=0 path=/home/dormage/code/MMO3D2/_runtime/xdg_data/godot/app_userdata/Dragon Inspection - Town/screenshots/island_1.png
+SCREENSHOT region=island i=2 size=(1600, 900) err=0 path=/home/dormage/code/MMO3D2/_runtime/xdg_data/godot/app_userdata/Dragon Inspection - Town/screenshots/island_2.png

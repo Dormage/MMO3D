@@ -1,0 +1,224 @@
+{
+  "folder": "Rabbit_Blond_cMsI6FDhNx",
+  "title": "Rabbit Blond",
+  "publicID": "cMsI6FDhNx",
+  "page": "https://poly.pizza/m/cMsI6FDhNx",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "bucket": "animal",
+  "tris": 5522,
+  "bones": 58,
+  "files": {
+    "fbx": "Rabbit_Blond_cMsI6FDhNx.fbx",
+    "glb": "Rabbit_Blond_cMsI6FDhNx.glb",
+    "fbx_bytes": 9267916,
+    "glb_bytes": 870672
+  },
+  "animation_count": 30,
+  "clips": [
+    "Assembly_End",
+    "Assembly_Loop",
+    "Assembly_Start",
+    "Chop_End",
+    "Chop_Loop",
+    "Chop_Start",
+    "Death",
+    "Duck",
+    "HitReact",
+    "Idle",
+    "Idle_Holding",
+    "Jump",
+    "Jump_Idle",
+    "Jump_Land",
+    "No",
+    "Pan_End",
+    "Pan_Loop",
+    "Pan_Start",
+    "Punch",
+    "Run",
+    "Run_Holding",
+    "Sitting_Eating",
+    "Sitting_End",
+    "Sitting_Idle",
+    "Sitting_Start",
+    "Sword",
+    "Walk",
+    "Walk_Holding",
+    "Wave",
+    "Yes"
+  ],
+  "animations": [
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Assembly_End",
+      "clean": "Assembly_End"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Assembly_Loop",
+      "clean": "Assembly_Loop"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Assembly_Start",
+      "clean": "Assembly_Start"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Chop_End",
+      "clean": "Chop_End"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Chop_Loop",
+      "clean": "Chop_Loop"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Chop_Start",
+      "clean": "Chop_Start"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Duck",
+      "clean": "Duck"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|HitReact",
+      "clean": "HitReact"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Idle_Holding",
+      "clean": "Idle_Holding"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump",
+      "clean": "Jump"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle",
+      "clean": "Jump_Idle"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land",
+      "clean": "Jump_Land"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|No",
+      "clean": "No"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Pan_End",
+      "clean": "Pan_End"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Pan_Loop",
+      "clean": "Pan_Loop"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Pan_Start",
+      "clean": "Pan_Start"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Punch",
+      "clean": "Punch"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Run_Holding",
+      "clean": "Run_Holding"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sitting_Eating",
+      "clean": "Sitting_Eating"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sitting_End",
+      "clean": "Sitting_End"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sitting_Idle",
+      "clean": "Sitting_Idle"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sitting_Start",
+      "clean": "Sitting_Start"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Sword",
+      "clean": "Sword"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Walk_Holding",
+      "clean": "Walk_Holding"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Wave",
+      "clean": "Wave"
+    },
+    {
+      "name": "CharacterArmature|CharacterArmature|CharacterArmature|Yes",
+      "clean": "Yes"
+    }
+  ],
+  "required": {
+    "hit": [
+      "HitReact"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run",
+      "Run_Holding"
+    ]
+  },
+  "fbx_takes": [
+    "CharacterArmature|CharacterArmature|CharacterArmature|Assembly_End",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Assembly_Loop",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Assembly_Start",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Chop_End",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Chop_Loop",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Chop_Start",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Death",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Duck",
+    "CharacterArmature|CharacterArmature|CharacterArmature|HitReact",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Idle",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Idle_Holding",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Idle",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Jump_Land",
+    "CharacterArmature|CharacterArmature|CharacterArmature|No",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Pan_End",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Pan_Loop",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Pan_Start",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Punch",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Run",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Run_Holding",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Sitting_Eating",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Sitting_End",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Sitting_Idle",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Sitting_Start",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Sword",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Walk",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Walk_Holding",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Wave",
+    "CharacterArmature|CharacterArmature|CharacterArmature|Yes"
+  ],
+  "fbx_anim_stacks": 31,
+  "fbx_curve_nodes": 5311,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

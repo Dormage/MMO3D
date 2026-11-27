@@ -1,0 +1,326 @@
+[
+ {
+  "key": "Alien_RRliSQBP7r",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Alien_RRliSQBP7r/Alien_RRliSQBP7r.glb"
+ },
+ {
+  "key": "Blue_Demon_S7jYW6Amye",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Blue_Demon_S7jYW6Amye/Blue_Demon_S7jYW6Amye.glb"
+ },
+ {
+  "key": "Bunny_irZjWFARyl",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Bunny_irZjWFARyl/Bunny_irZjWFARyl.glb"
+ },
+ {
+  "key": "Cactoro_IGn9lhdama",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Cactoro_IGn9lhdama/Cactoro_IGn9lhdama.glb"
+ },
+ {
+  "key": "Character_Enemy_mdGe4IN31v",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Character_Enemy_mdGe4IN31v/Character_Enemy_mdGe4IN31v.glb"
+ },
+ {
+  "key": "Character_Soldier_PpLF4rt4ah",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Character_Soldier_PpLF4rt4ah/Character_Soldier_PpLF4rt4ah.glb"
+ },
+ {
+  "key": "Demon_IkB63XOPvr",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Demon_IkB63XOPvr/Demon_IkB63XOPvr.glb"
+ },
+ {
+  "key": "Demon_LnfIziKv4o",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Demon_LnfIziKv4o/Demon_LnfIziKv4o.glb"
+ },
+ {
+  "key": "Dino_wuerCFCWNR",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Dino_wuerCFCWNR/Dino_wuerCFCWNR.glb"
+ },
+ {
+  "key": "Enemy_Large_UgBmRVnQ9h",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Enemy_Large_UgBmRVnQ9h/Enemy_Large_UgBmRVnQ9h.glb"
+ },
+ {
+  "key": "Fish_ypEYhCImAB",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Fish_ypEYhCImAB/Fish_ypEYhCImAB.glb"
+ },
+ {
+  "key": "Frog_37wofOCOzG",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Frog_37wofOCOzG/Frog_37wofOCOzG.glb"
+ },
+ {
+  "key": "Goblin_OdCOFSmEhl",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Goblin_OdCOFSmEhl/Goblin_OdCOFSmEhl.glb"
+ },
+ {
+  "key": "Monkroose_j4rVPvxyLg",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Monkroose_j4rVPvxyLg/Monkroose_j4rVPvxyLg.glb"
+ },
+ {
+  "key": "Mushroom_King_grnFTziU8u",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Mushroom_King_grnFTziU8u/Mushroom_King_grnFTziU8u.glb"
+ },
+ {
+  "key": "Ninja_xGYmeDpfTu",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Ninja_xGYmeDpfTu/Ninja_xGYmeDpfTu.glb"
+ },
+ {
+  "key": "Orc_5vO2YJsPEf",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Orc_5vO2YJsPEf/Orc_5vO2YJsPEf.glb"
+ },
+ {
+  "key": "Pirate_Captain_sN18LyyHAU",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Pirate_Captain_sN18LyyHAU/Pirate_Captain_sN18LyyHAU.glb"
+ },
+ {
+  "key": "Skeleton_1XZD9GK6Kj",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Skeleton_1XZD9GK6Kj/Skeleton_1XZD9GK6Kj.glb"
+ },
+ {
+  "key": "Skeleton_DM4QScSmbS",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Skeleton_DM4QScSmbS/Skeleton_DM4QScSmbS.glb"
+ },
+ {
+  "key": "Skeleton_yq5ATpujSt",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Skeleton_yq5ATpujSt/Skeleton_yq5ATpujSt.glb"
+ },
+ {
+  "key": "Soldier_oAArCNHjFB",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Soldier_oAArCNHjFB/Soldier_oAArCNHjFB.glb"
+ },
+ {
+  "key": "Yeti_ceRHrn8HHE",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Yeti_ceRHrn8HHE/Yeti_ceRHrn8HHE.glb"
+ },
+ {
+  "key": "Yeti_xtMYEVzyw0",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Yeti_xtMYEVzyw0/Yeti_xtMYEVzyw0.glb"
+ },
+ {
+  "key": "Zombie_22K0aSZkHV",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Zombie_22K0aSZkHV/Zombie_22K0aSZkHV.glb"
+ },
+ {
+  "key": "Zombie_JoBvxIUpZP",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Zombie_JoBvxIUpZP/Zombie_JoBvxIUpZP.glb"
+ },
+ {
+  "key": "Zombie_VlXjG0N8Eg",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Zombie_VlXjG0N8Eg/Zombie_VlXjG0N8Eg.glb"
+ },
+ {
+  "key": "Zombie_half_Htcsn9OrXJ",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Zombie_half_Htcsn9OrXJ/Zombie_half_Htcsn9OrXJ.glb"
+ },
+ {
+  "key": "Adventurer_5EGWBMpuXq",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Adventurer_5EGWBMpuXq/Adventurer_5EGWBMpuXq.glb"
+ },
+ {
+  "key": "Adventurer_ZwF0K7WBmu",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Adventurer_ZwF0K7WBmu/Adventurer_ZwF0K7WBmu.glb"
+ },
+ {
+  "key": "Animated_Platformer_Character_kKtL4zvS3n",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Animated_Platformer_Character_kKtL4zvS3n/Animated_Platformer_Character_kKtL4zvS3n.glb"
+ },
+ {
+  "key": "Animated_Wizard_kttbFvCl2C",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Animated_Wizard_kttbFvCl2C/Animated_Wizard_kttbFvCl2C.glb"
+ },
+ {
+  "key": "Animated_Woman_nIItLV9nxS",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Animated_Woman_nIItLV9nxS/Animated_Woman_nIItLV9nxS.glb"
+ },
+ {
+  "key": "Animated_Woman_qJ2gsTUBHL",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Animated_Woman_qJ2gsTUBHL/Animated_Woman_qJ2gsTUBHL.glb"
+ },
+ {
+  "key": "Anne_tZYaOQ4l94",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Anne_tZYaOQ4l94/Anne_tZYaOQ4l94.glb"
+ },
+ {
+  "key": "Astronaut_0D54W8yfrA",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Astronaut_0D54W8yfrA/Astronaut_0D54W8yfrA.glb"
+ },
+ {
+  "key": "Astronaut_3hC2i0CTuO",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Astronaut_3hC2i0CTuO/Astronaut_3hC2i0CTuO.glb"
+ },
+ {
+  "key": "Astronaut_OgeSH89Nmx",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Astronaut_OgeSH89Nmx/Astronaut_OgeSH89Nmx.glb"
+ },
+ {
+  "key": "Astronaut_zbtPq4dOJL",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Astronaut_zbtPq4dOJL/Astronaut_zbtPq4dOJL.glb"
+ },
+ {
+  "key": "Beach_Character_DojKLcO34E",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Beach_Character_DojKLcO34E/Beach_Character_DojKLcO34E.glb"
+ },
+ {
+  "key": "Big_arm_KaVJET0WHx",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Big_arm_KaVJET0WHx/Big_arm_KaVJET0WHx.glb"
+ },
+ {
+  "key": "Business_Man_JFrLIKqvCH",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Business_Man_JFrLIKqvCH/Business_Man_JFrLIKqvCH.glb"
+ },
+ {
+  "key": "Casual_Character_kZ3DmIoGip",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Casual_Character_kZ3DmIoGip/Casual_Character_kZ3DmIoGip.glb"
+ },
+ {
+  "key": "Character_Animated_DgOCW9ZCRJ",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Character_Animated_DgOCW9ZCRJ/Character_Animated_DgOCW9ZCRJ.glb"
+ },
+ {
+  "key": "Character_Hazmat_z3TSQYx1Kn",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Character_Hazmat_z3TSQYx1Kn/Character_Hazmat_z3TSQYx1Kn.glb"
+ },
+ {
+  "key": "Characters_Matt_66kQ4dBBC7",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Characters_Matt_66kQ4dBBC7/Characters_Matt_66kQ4dBBC7.glb"
+ },
+ {
+  "key": "Characters_Pug_xvcUwuKl4c",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Characters_Pug_xvcUwuKl4c/Characters_Pug_xvcUwuKl4c.glb"
+ },
+ {
+  "key": "Characters_Sam_UcLErL2W37",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Characters_Sam_UcLErL2W37/Characters_Sam_UcLErL2W37.glb"
+ },
+ {
+  "key": "Characters_Shaun_eJFT9MxzOM",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Characters_Shaun_eJFT9MxzOM/Characters_Shaun_eJFT9MxzOM.glb"
+ },
+ {
+  "key": "Cube_Guy_Character_K1IczhnvQ5",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Cube_Guy_Character_K1IczhnvQ5/Cube_Guy_Character_K1IczhnvQ5.glb"
+ },
+ {
+  "key": "Cube_Woman_Character_75ikp7NEDx",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Cube_Woman_Character_75ikp7NEDx/Cube_Woman_Character_75ikp7NEDx.glb"
+ },
+ {
+  "key": "Farmer_7pn3R6hPvE",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Farmer_7pn3R6hPvE/Farmer_7pn3R6hPvE.glb"
+ },
+ {
+  "key": "German_Shepard_Hssa6NPc6W",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/German_Shepard_Hssa6NPc6W/German_Shepard_Hssa6NPc6W.glb"
+ },
+ {
+  "key": "Giant_BldaiPtyJa",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Giant_BldaiPtyJa/Giant_BldaiPtyJa.glb"
+ },
+ {
+  "key": "Henry_yEdSk8tRKc",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Henry_yEdSk8tRKc/Henry_yEdSk8tRKc.glb"
+ },
+ {
+  "key": "Hooded_Adventurer_y9KWOVG21R",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Hooded_Adventurer_y9KWOVG21R/Hooded_Adventurer_y9KWOVG21R.glb"
+ },
+ {
+  "key": "Hoodie_Character_gKLBoRsyKe",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Hoodie_Character_gKLBoRsyKe/Hoodie_Character_gKLBoRsyKe.glb"
+ },
+ {
+  "key": "King_I1gTjmuK2m",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/King_I1gTjmuK2m/King_I1gTjmuK2m.glb"
+ },
+ {
+  "key": "Lis_gjuwleUT1U",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Lis_gjuwleUT1U/Lis_gjuwleUT1U.glb"
+ },
+ {
+  "key": "Mako_2urczqZ9Xf",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mako_2urczqZ9Xf/Mako_2urczqZ9Xf.glb"
+ },
+ {
+  "key": "Mech_4UvIHxnoSR",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mech_4UvIHxnoSR/Mech_4UvIHxnoSR.glb"
+ },
+ {
+  "key": "Mech_D5wW2jDO42",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mech_D5wW2jDO42/Mech_D5wW2jDO42.glb"
+ },
+ {
+  "key": "Mech_o3Ps8z8ByP",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mech_o3Ps8z8ByP/Mech_o3Ps8z8ByP.glb"
+ },
+ {
+  "key": "Mech_tLs9mFVCSU",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mech_tLs9mFVCSU/Mech_tLs9mFVCSU.glb"
+ },
+ {
+  "key": "Panda_q1uJ28Hs8T",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Panda_q1uJ28Hs8T/Panda_q1uJ28Hs8T.glb"
+ },
+ {
+  "key": "Punk_BTALZymknF",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Punk_BTALZymknF/Punk_BTALZymknF.glb"
+ },
+ {
+  "key": "Punk_djXoqejw6w",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Punk_djXoqejw6w/Punk_djXoqejw6w.glb"
+ },
+ {
+  "key": "Rabbit_Blond_cMsI6FDhNx",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_Blond_cMsI6FDhNx/Rabbit_Blond_cMsI6FDhNx.glb"
+ },
+ {
+  "key": "Rabbit_Cyan_Hair_RPZ9gxcFL3",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_Cyan_Hair_RPZ9gxcFL3/Rabbit_Cyan_Hair_RPZ9gxcFL3.glb"
+ },
+ {
+  "key": "Rabbit_Grey_KRnXIKJbqp",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_Grey_KRnXIKJbqp/Rabbit_Grey_KRnXIKJbqp.glb"
+ },
+ {
+  "key": "Rabbit_With_pigtails_SwKX8OIlw8",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_With_pigtails_SwKX8OIlw8/Rabbit_With_pigtails_SwKX8OIlw8.glb"
+ },
+ {
+  "key": "Rabbit_mKev485XTR",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_mKev485XTR/Rabbit_mKev485XTR.glb"
+ },
+ {
+  "key": "SWAT_Btfn3G5Xv4",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/SWAT_Btfn3G5Xv4/SWAT_Btfn3G5Xv4.glb"
+ },
+ {
+  "key": "Sci_Fi_Character_4pUXv5V8kq",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Sci_Fi_Character_4pUXv5V8kq/Sci_Fi_Character_4pUXv5V8kq.glb"
+ },
+ {
+  "key": "Sharky_iPV5YmAoIv",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Sharky_iPV5YmAoIv/Sharky_iPV5YmAoIv.glb"
+ },
+ {
+  "key": "Steve_OF8rWAO1gC",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Steve_OF8rWAO1gC/Steve_OF8rWAO1gC.glb"
+ },
+ {
+  "key": "Suit_sOUciDsoVV",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Suit_sOUciDsoVV/Suit_sOUciDsoVV.glb"
+ },
+ {
+  "key": "Witch_QBEOV9ZUT8",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Witch_QBEOV9ZUT8/Witch_QBEOV9ZUT8.glb"
+ },
+ {
+  "key": "Worker_E8079Ahx7k",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Worker_E8079Ahx7k/Worker_E8079Ahx7k.glb"
+ },
+ {
+  "key": "Worker_Yg2bQZO6Hj",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Worker_Yg2bQZO6Hj/Worker_Yg2bQZO6Hj.glb"
+ },
+ {
+  "key": "Zombie_xqEzosAVYX",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Zombie_xqEzosAVYX/Zombie_xqEzosAVYX.glb"
+ }
+]

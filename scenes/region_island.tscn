@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/region_map.gd" id="1_region"]
+[ext_resource type="Script" path="res://scripts/population_field.gd" id="2_pop"]
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_region")
+region_id = "island"
+display_name = "Floating Island"
+glb_path = "res://assets/worlds/island/island_godot_moved.glb"
+ground_meshes = PackedStringArray("SM_Town_Ground")
+solid_meshes = PackedStringArray("SM_Town_Buildings", "SM_Town_Props", "SM_Town_Rampart")
+spawn_center = Vector2(0, 0)
+spawn_search_radius = 50.0
+nav_stitch_gap = 5.5
+nav_stitch_rise = 2.2
+nav_glb_path = ""
+strip_props_on_decks = true
+
+[node name="Monsters" type="Node3D" parent="."]
+script = ExtResource("2_pop")
+roster_path = "res://data/island_monsters.json"

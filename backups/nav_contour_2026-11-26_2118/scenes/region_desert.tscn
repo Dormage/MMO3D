@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/region_map.gd" id="1_region"]
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_region")
+region_id = "desert"
+display_name = "Ashkari Bazaar"
+glb_path = "res://assets/worlds/desert_town/mmo_desert_town.glb"
+ground_meshes = PackedStringArray("SM_terrain", "SM_ground_floor")
+solid_meshes = PackedStringArray("SM_bld_00_tavern", "SM_bld_01_tavern", "SM_bld_02_tavern", "SM_bld_03_north_c", "SM_bld_04_north_c", "SM_bld_05_north_c", "SM_bld_06_north_e", "SM_bld_07_north_e", "SM_bld_08_north_e", "SM_bld_09_north_e", "SM_bld_10_west_m", "SM_bld_11_west_m", "SM_bld_12_west_s", "SM_bld_13_west_s", "SM_bld_14_west_s", "SM_bld_15_west_sw", "SM_bld_16_west_sw", "SM_bld_17_east_n", "SM_bld_18_east_n", "SM_bld_19_east_m", "SM_bld_20_east_m", "SM_bld_21_east_se", "SM_bld_22_east_se", "SM_bld_23_south_w", "SM_bld_24_south_w", "SM_bld_25_south_w", "SM_bld_26_south_w", "SM_bld_27_south_e", "SM_bld_28_south_e", "SM_bld_29_south_e", "SM_bld_30_south_e", "SM_bld_31_shop_w", "SM_bld_32_shop_e", "SM_bld_33_north_n2", "SM_bld_34_north_ne", "SM_bld_35_north_ne", "SM_bld_36_mid_w", "SM_bld_37_mid_sw", "SM_bld_38_mid_se", "SM_bld_39_shed_n", "SM_bld_40_shed_w", "SM_bld_41_shed_e", "SM_bld_42_shed_s", "SM_gate_stair", "SM_landmark_pavilion", "SM_landmark_south", "SM_rampart")
+spawn_center = Vector2(0, 0)
+spawn_search_radius = 30.0
+nav_carve_solids = false
+water_color = Color(0.13, 0.47, 0.52, 1)
+wind_patterns = PackedStringArray("foliage", "bush", "leaf", "grass", "pine", "needle", "palm")
+wind_exclude_patterns = PackedStringArray("trunk")

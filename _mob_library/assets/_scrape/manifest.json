@@ -1,0 +1,2562 @@
+[
+ {
+  "publicID": "LWKmS30Xxl",
+  "s3id": "55c64684-49a4-4fcc-b393-113126add89b",
+  "title": "Mushnub",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/LWKmS30Xxl",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 1248,
+  "skins": 1,
+  "glb_bytes": 67900,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "AyP8sQmDLh",
+  "s3id": "3ddbff73-430c-4ca0-bb25-11211683fbb9",
+  "title": "Pink Slime",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/AyP8sQmDLh",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 1030,
+  "skins": 2,
+  "glb_bytes": 62652,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "y4kJh8EeYS",
+  "s3id": "64ab590e-1f77-4678-b357-78c430fd73bf",
+  "title": "Green Blob",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/y4kJh8EeYS",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 1520,
+  "skins": 2,
+  "glb_bytes": 74812,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "Q3z8ZX4kUy",
+  "s3id": "3076c5f7-9bdf-4c27-8083-f280ee6cd64b",
+  "title": "Orc Enemy",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/Q3z8ZX4kUy",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2296,
+  "skins": 1,
+  "glb_bytes": 146420,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "mCNoqcqpvC",
+  "s3id": "42162a27-0aaa-40be-b50e-919776021a11",
+  "title": "Ninja",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/mCNoqcqpvC",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2160,
+  "skins": 1,
+  "glb_bytes": 117740,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "2f54vbV0In",
+  "s3id": "7ccb71fe-dabb-4a6f-a98a-8992bb5e6bc7",
+  "title": "Cat",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/2f54vbV0In",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 1772,
+  "skins": 1,
+  "glb_bytes": 111948,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "9NGlBTpDEr",
+  "s3id": "2ad33f9e-e0d5-4a11-821b-7aafe8d13dd3",
+  "title": "Pigeon",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/9NGlBTpDEr",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2184,
+  "skins": 1,
+  "glb_bytes": 110548,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "ineV9pU5VL",
+  "s3id": "a0001762-9352-48c3-9abd-be91e42db114",
+  "title": "Chicken",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/ineV9pU5VL",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2904,
+  "skins": 1,
+  "glb_bytes": 140112,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "66CYX5UhRK",
+  "s3id": "625862f9-590e-4fbd-88bc-9056047885dd",
+  "title": "Cactoro",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/66CYX5UhRK",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2388,
+  "skins": 2,
+  "glb_bytes": 140668,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "sUTLXji0aL",
+  "s3id": "0bb74be9-e9d1-4321-aedb-a9eccecb04a1",
+  "title": "Alien",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/sUTLXji0aL",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2616,
+  "skins": 2,
+  "glb_bytes": 125076,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "0SZyA6MV51",
+  "s3id": "84bc88a5-22d8-44e6-af9b-58f8465eb238",
+  "title": "Mushnub Evolved",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/0SZyA6MV51",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 3072,
+  "skins": 3,
+  "glb_bytes": 149516,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "S1E7idPFhe",
+  "s3id": "085b078d-b72a-4d8e-a030-000d36c58447",
+  "title": "Yeti",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/S1E7idPFhe",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2136,
+  "skins": 1,
+  "glb_bytes": 111224,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "o87Upt5uHX",
+  "s3id": "d206c071-7934-40eb-9091-35ebdf93c317",
+  "title": "Wizard",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/o87Upt5uHX",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 1674,
+  "skins": 2,
+  "glb_bytes": 89464,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "7V4gaDMQV8",
+  "s3id": "f7d91eb6-da8e-405d-a647-18ff54b97752",
+  "title": "Fish",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/7V4gaDMQV8",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 3344,
+  "skins": 3,
+  "glb_bytes": 156880,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "gZ2ExU9OAB",
+  "s3id": "05dac745-bdd0-4169-9e64-f497ca21f69a",
+  "title": "Birb",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/gZ2ExU9OAB",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 3164,
+  "skins": 1,
+  "glb_bytes": 170792,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "IoWG5F9WUc",
+  "s3id": "cd25a048-719e-4ec4-bbf5-a266776fe129",
+  "title": "Green Spiky Blob",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/IoWG5F9WUc",
+  "animations": [
+   "CharacterArmature|Bite_Front",
+   "CharacterArmature|Dance",
+   "CharacterArmature|Death",
+   "CharacterArmature|HitRecieve",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|No",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 4888,
+  "skins": 2,
+  "glb_bytes": 185820,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitRecieve"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "CharacterArmature|Bite_Front",
+    "CharacterArmature|Dance",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|No",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "x59pqJscry",
+  "s3id": "f64d32a9-c1da-4978-8f83-158130703e6c",
+  "title": "Glub",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/x59pqJscry",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2528,
+  "skins": 1,
+  "glb_bytes": 148332,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "42djT5zJnx",
+  "s3id": "de63aaf6-9170-47f7-933d-439af68826a6",
+  "title": "Armabee",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/42djT5zJnx",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2280,
+  "skins": 1,
+  "glb_bytes": 143736,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "AQ8zbFoDln",
+  "s3id": "acb0f155-4a8a-4084-a2a8-9c17cbff7d21",
+  "title": "Alpaking",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/AQ8zbFoDln",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 2508,
+  "skins": 1,
+  "glb_bytes": 147164,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "GcttdvsqsQ",
+  "s3id": "fb7d7a9e-5584-4e0b-a1bf-251fc9946696",
+  "title": "Armabee Evolved",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/GcttdvsqsQ",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 3200,
+  "skins": 1,
+  "glb_bytes": 183812,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "iHEuXiH6Aj",
+  "s3id": "d6308fbf-fa2e-4cfe-b235-def7ede1ab90",
+  "title": "Goleling Evolved",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/iHEuXiH6Aj",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 5864,
+  "skins": 1,
+  "glb_bytes": 310836,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "3rUm1cN3yp",
+  "s3id": "ae5b8510-1fa5-4d53-b943-a4f3b88fb629",
+  "title": "Dragon",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/3rUm1cN3yp",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 4562,
+  "skins": 1,
+  "glb_bytes": 251540,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "71gomWolax",
+  "s3id": "51bf31d7-1aee-4a51-acb1-d667843af205",
+  "title": "Goleling",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/71gomWolax",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 3696,
+  "skins": 1,
+  "glb_bytes": 217332,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "Z9lddNpM1M",
+  "s3id": "27590c4e-41ee-41b5-aaaa-581de0031605",
+  "title": "Glub Evolved",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/Z9lddNpM1M",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 4452,
+  "skins": 1,
+  "glb_bytes": 211496,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "UdJudob66v",
+  "s3id": "c50fd18d-9441-491b-b2c0-835e6a8757e3",
+  "title": "Alpaking Evolved",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/UdJudob66v",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 4684,
+  "skins": 1,
+  "glb_bytes": 248012,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "Iip30bDHmu",
+  "s3id": "810f60a2-6e45-4c4e-a0d5-da91cd7288bd",
+  "title": "Ghost",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/Iip30bDHmu",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 3192,
+  "skins": 1,
+  "glb_bytes": 203360,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "TX8r9WBXpe",
+  "s3id": "0716bf8e-1894-4a90-8d10-34868975a239",
+  "title": "Ghost Skull",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/TX8r9WBXpe",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 3144,
+  "skins": 1,
+  "glb_bytes": 232384,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "zjr7CmWGER",
+  "s3id": "6500a805-0588-4823-bb8d-2f8ffdf338ab",
+  "title": "Hywirl",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/zjr7CmWGER",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 3296,
+  "skins": 1,
+  "glb_bytes": 200868,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "t91lDHaqRW",
+  "s3id": "1b4759ca-2c00-4718-90f6-2f84bc8e44f9",
+  "title": "Tribal",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/t91lDHaqRW",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 5252,
+  "skins": 1,
+  "glb_bytes": 330208,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "Mo2ky6vkf8",
+  "s3id": "c2e39eb4-4b8e-4d31-b014-d637bf4e15c6",
+  "title": "Demon",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/Mo2ky6vkf8",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 4784,
+  "skins": 3,
+  "glb_bytes": 321140,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "54QyRcsogk",
+  "s3id": "cbe8419d-59d4-4ee8-92f1-8bccb25af378",
+  "title": "Squidle",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/54QyRcsogk",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 4880,
+  "skins": 1,
+  "glb_bytes": 308816,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "LlwD0QNUPj",
+  "s3id": "90ed3740-d8c4-4910-88ce-ac2ed426022d",
+  "title": "Dragon Evolved",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/LlwD0QNUPj",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Fast_Flying",
+   "CharacterArmature|Flying_Idle",
+   "CharacterArmature|Headbutt",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 7438,
+  "skins": 1,
+  "glb_bytes": 436000,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Fast_Flying",
+    "CharacterArmature|Flying_Idle"
+   ],
+   "other": [
+    "CharacterArmature|Headbutt",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "37wofOCOzG",
+  "s3id": "9018566d-c4e9-4f20-9c99-964622a6e674",
+  "title": "Frog",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/37wofOCOzG",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 5016,
+  "skins": 1,
+  "glb_bytes": 379892,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "IGn9lhdama",
+  "s3id": "e88090e2-46af-430b-91e5-ad5520de4939",
+  "title": "Cactoro",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/IGn9lhdama",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 6398,
+  "skins": 1,
+  "glb_bytes": 471704,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "xGYmeDpfTu",
+  "s3id": "2ed11876-720e-457a-8a69-4a14ba7234dc",
+  "title": "Ninja",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/xGYmeDpfTu",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 5964,
+  "skins": 1,
+  "glb_bytes": 457204,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "j4rVPvxyLg",
+  "s3id": "54ca5c4d-aa20-40ff-a510-25c1c6a48ee9",
+  "title": "Monkroose",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/j4rVPvxyLg",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 5824,
+  "skins": 1,
+  "glb_bytes": 421164,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "wuerCFCWNR",
+  "s3id": "1c1ae302-b948-4de4-961a-44f762b722cf",
+  "title": "Dino",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/wuerCFCWNR",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 5414,
+  "skins": 1,
+  "glb_bytes": 404176,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "grnFTziU8u",
+  "s3id": "798301fb-b950-460c-9c67-526621ad8500",
+  "title": "Mushroom King",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/grnFTziU8u",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 6044,
+  "skins": 2,
+  "glb_bytes": 444228,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "RRliSQBP7r",
+  "s3id": "b048d82a-7fc2-4631-b859-4bde0ed19b59",
+  "title": "Alien",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/RRliSQBP7r",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 7676,
+  "skins": 1,
+  "glb_bytes": 480976,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "S7jYW6Amye",
+  "s3id": "6fbb8914-bd11-45e1-a906-51ace2ca5d2d",
+  "title": "Blue Demon",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/S7jYW6Amye",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Run2",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 5800,
+  "skins": 1,
+  "glb_bytes": 439488,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run",
+    "CharacterArmature|Run2"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "ypEYhCImAB",
+  "s3id": "6c98561f-4fb5-404c-91e9-a54024e1f6c5",
+  "title": "Fish",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/ypEYhCImAB",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 6854,
+  "skins": 1,
+  "glb_bytes": 461616,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "ceRHrn8HHE",
+  "s3id": "40a831b3-686a-4af8-b189-a13b38a3c26a",
+  "title": "Yeti",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/ceRHrn8HHE",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 6094,
+  "skins": 1,
+  "glb_bytes": 423024,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "LnfIziKv4o",
+  "s3id": "46b52ba4-5d2a-4fc8-85cc-3e980f199141",
+  "title": "Demon",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/LnfIziKv4o",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 6712,
+  "skins": 2,
+  "glb_bytes": 485516,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "5vO2YJsPEf",
+  "s3id": "52a479b3-a635-4a23-92cb-6697eaa5eed5",
+  "title": "Orc",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/5vO2YJsPEf",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 7344,
+  "skins": 2,
+  "glb_bytes": 512984,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "irZjWFARyl",
+  "s3id": "084b5ebe-c3eb-4e64-9b17-06e2d1e3da5d",
+  "title": "Bunny",
+  "pack": "Ultimate Monsters Bundle",
+  "page": "https://poly.pizza/m/irZjWFARyl",
+  "animations": [
+   "CharacterArmature|Death",
+   "CharacterArmature|Duck",
+   "CharacterArmature|HitReact",
+   "CharacterArmature|Idle",
+   "CharacterArmature|Jump",
+   "CharacterArmature|Jump_Idle",
+   "CharacterArmature|Jump_Land",
+   "CharacterArmature|No",
+   "CharacterArmature|Punch",
+   "CharacterArmature|Run",
+   "CharacterArmature|Walk",
+   "CharacterArmature|Wave",
+   "CharacterArmature|Weapon",
+   "CharacterArmature|Yes"
+  ],
+  "tris": 8284,
+  "skins": 2,
+  "glb_bytes": 538360,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "CharacterArmature|HitReact"
+   ],
+   "death": [
+    "CharacterArmature|Death"
+   ],
+   "run": [
+    "CharacterArmature|Run"
+   ],
+   "other": [
+    "CharacterArmature|Duck",
+    "CharacterArmature|Idle",
+    "CharacterArmature|Jump",
+    "CharacterArmature|Jump_Idle",
+    "CharacterArmature|Jump_Land",
+    "CharacterArmature|No",
+    "CharacterArmature|Punch",
+    "CharacterArmature|Walk",
+    "CharacterArmature|Wave",
+    "CharacterArmature|Weapon",
+    "CharacterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "EHHwZ17lWD",
+  "s3id": "9d87fc71-0800-4ee6-9cbe-81f497f477d3",
+  "title": "Skull Enemy",
+  "pack": "Enemies Pack",
+  "page": "https://poly.pizza/m/EHHwZ17lWD",
+  "animations": [
+   "MonsterArmature|Bite_Front",
+   "MonsterArmature|Bite_InPlace",
+   "MonsterArmature|Dance",
+   "MonsterArmature|Death",
+   "MonsterArmature|HitRecieve",
+   "MonsterArmature|Idle",
+   "MonsterArmature|Jump",
+   "MonsterArmature|No",
+   "MonsterArmature|Walk",
+   "MonsterArmature|Yes"
+  ],
+  "tris": 1804,
+  "skins": 1,
+  "glb_bytes": 121376,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "MonsterArmature|HitRecieve"
+   ],
+   "death": [
+    "MonsterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "MonsterArmature|Bite_Front",
+    "MonsterArmature|Bite_InPlace",
+    "MonsterArmature|Dance",
+    "MonsterArmature|Idle",
+    "MonsterArmature|Jump",
+    "MonsterArmature|No",
+    "MonsterArmature|Walk",
+    "MonsterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "eSLKTsbl7F",
+  "s3id": "93e6c3e3-75f8-441f-86d0-b223f7829005",
+  "title": "Slime Enemy",
+  "pack": "Enemies Pack",
+  "page": "https://poly.pizza/m/eSLKTsbl7F",
+  "animations": [
+   "MonsterArmature|Bite_Front",
+   "MonsterArmature|Bite_InPlace",
+   "MonsterArmature|Dance",
+   "MonsterArmature|Death",
+   "MonsterArmature|HitRecieve",
+   "MonsterArmature|Idle",
+   "MonsterArmature|Jump",
+   "MonsterArmature|No",
+   "MonsterArmature|Walk",
+   "MonsterArmature|Yes"
+  ],
+  "tris": 1968,
+  "skins": 3,
+  "glb_bytes": 159796,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "MonsterArmature|HitRecieve"
+   ],
+   "death": [
+    "MonsterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "MonsterArmature|Bite_Front",
+    "MonsterArmature|Bite_InPlace",
+    "MonsterArmature|Dance",
+    "MonsterArmature|Idle",
+    "MonsterArmature|Jump",
+    "MonsterArmature|No",
+    "MonsterArmature|Walk",
+    "MonsterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "6HsU6GQt3a",
+  "s3id": "19203489-125b-41f5-b9c9-801a522cb775",
+  "title": "Bee Enemy",
+  "pack": "Enemies Pack",
+  "page": "https://poly.pizza/m/6HsU6GQt3a",
+  "animations": [
+   "MonsterArmature|Bite_Front",
+   "MonsterArmature|Death",
+   "MonsterArmature|Flying",
+   "MonsterArmature|HitRecieve"
+  ],
+  "tris": 3040,
+  "skins": 1,
+  "glb_bytes": 193200,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "MonsterArmature|HitRecieve"
+   ],
+   "death": [
+    "MonsterArmature|Death"
+   ],
+   "run": [
+    "MonsterArmature|Flying"
+   ],
+   "other": [
+    "MonsterArmature|Bite_Front"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "Gs3yfsV5lB",
+  "s3id": "b9bbf6bd-2b21-4013-bc38-0f5e524ac12c",
+  "title": "Crab Enemy",
+  "pack": "Enemies Pack",
+  "page": "https://poly.pizza/m/Gs3yfsV5lB",
+  "animations": [
+   "MonsterArmature|Bite_Front",
+   "MonsterArmature|Bite_InPlace",
+   "MonsterArmature|Dance",
+   "MonsterArmature|Death",
+   "MonsterArmature|HitRecieve",
+   "MonsterArmature|Idle",
+   "MonsterArmature|Jump",
+   "MonsterArmature|No",
+   "MonsterArmature|Walk",
+   "MonsterArmature|Yes"
+  ],
+  "tris": 3624,
+  "skins": 1,
+  "glb_bytes": 219448,
+  "glb_ok": true,
+  "roles": {
+   "hit": [
+    "MonsterArmature|HitRecieve"
+   ],
+   "death": [
+    "MonsterArmature|Death"
+   ],
+   "run": [],
+   "other": [
+    "MonsterArmature|Bite_Front",
+    "MonsterArmature|Bite_InPlace",
+    "MonsterArmature|Dance",
+    "MonsterArmature|Idle",
+    "MonsterArmature|Jump",
+    "MonsterArmature|No",
+    "MonsterArmature|Walk",
+    "MonsterArmature|Yes"
+   ]
+  },
+  "has": {
+   "hit": true,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "x9x0viZs8V",
+  "s3id": "0f3a551e-743e-48f5-936f-804c6c3b88bd",
+  "title": "Snake",
+  "pack": "Animated Enemies",
+  "page": "https://poly.pizza/m/x9x0viZs8V",
+  "animations": [
+   "SnakeArmature|Snake_Attack",
+   "SnakeArmature|Snake_Idle",
+   "SnakeArmature|Snake_Jump",
+   "SnakeArmature|Snake_Walk"
+  ],
+  "tris": 1618,
+  "skins": 1,
+  "glb_bytes": 216696,
+  "glb_ok": true,
+  "roles": {
+   "hit": [],
+   "death": [],
+   "run": [],
+   "other": [
+    "SnakeArmature|Snake_Attack",
+    "SnakeArmature|Snake_Idle",
+    "SnakeArmature|Snake_Jump",
+    "SnakeArmature|Snake_Walk"
+   ]
+  },
+  "has": {
+   "hit": false,
+   "death": false,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "3aQgc75sUR",
+  "s3id": "71cadefd-8e65-423a-9a95-3cdf7e012586",
+  "title": "Wasp",
+  "pack": "Animated Enemies",
+  "page": "https://poly.pizza/m/3aQgc75sUR",
+  "animations": [
+   "WaspArmature|Wasp_Attack",
+   "WaspArmature|Wasp_Death",
+   "WaspArmature|Wasp_Flying"
+  ],
+  "tris": 3734,
+  "skins": 1,
+  "glb_bytes": 441256,
+  "glb_ok": true,
+  "roles": {
+   "hit": [],
+   "death": [
+    "WaspArmature|Wasp_Death"
+   ],
+   "run": [
+    "WaspArmature|Wasp_Flying"
+   ],
+   "other": [
+    "WaspArmature|Wasp_Attack"
+   ]
+  },
+  "has": {
+   "hit": false,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "iltq5bVNaV",
+  "s3id": "64cb7150-8031-44ab-a0c9-e1529a572b23",
+  "title": "Rat",
+  "pack": "Animated Enemies",
+  "page": "https://poly.pizza/m/iltq5bVNaV",
+  "animations": [
+   "RatArmature|Rat_Attack",
+   "RatArmature|Rat_Death",
+   "RatArmature|Rat_Idle",
+   "RatArmature|Rat_Jump",
+   "RatArmature|Rat_Run",
+   "RatArmature|Rat_Walk"
+  ],
+  "tris": 4004,
+  "skins": 1,
+  "glb_bytes": 550764,
+  "glb_ok": true,
+  "roles": {
+   "hit": [],
+   "death": [
+    "RatArmature|Rat_Death"
+   ],
+   "run": [
+    "RatArmature|Rat_Run"
+   ],
+   "other": [
+    "RatArmature|Rat_Attack",
+    "RatArmature|Rat_Idle",
+    "RatArmature|Rat_Jump",
+    "RatArmature|Rat_Walk"
+   ]
+  },
+  "has": {
+   "hit": false,
+   "death": true,
+   "run": true,
+   "other": true
+  }
+ },
+ {
+  "publicID": "yRYJiAJyiM",
+  "s3id": "4259fbdb-afb5-4d40-9108-363625dd6b6e",
+  "title": "Spider",
+  "pack": "Animated Enemies",
+  "page": "https://poly.pizza/m/yRYJiAJyiM",
+  "animations": [
+   "SpiderArmature|Spider_Attack",
+   "SpiderArmature|Spider_Death",
+   "SpiderArmature|Spider_Idle",
+   "SpiderArmature|Spider_Jump",
+   "SpiderArmature|Spider_Walk"
+  ],
+  "tris": 2712,
+  "skins": 1,
+  "glb_bytes": 449008,
+  "glb_ok": true,
+  "roles": {
+   "hit": [],
+   "death": [
+    "SpiderArmature|Spider_Death"
+   ],
+   "run": [],
+   "other": [
+    "SpiderArmature|Spider_Attack",
+    "SpiderArmature|Spider_Idle",
+    "SpiderArmature|Spider_Jump",
+    "SpiderArmature|Spider_Walk"
+   ]
+  },
+  "has": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ },
+ {
+  "publicID": "9Z2V8fpazF",
+  "s3id": "08416495-b056-4ed7-b23b-5a10e82277a0",
+  "title": "Frog",
+  "pack": "Animated Enemies",
+  "page": "https://poly.pizza/m/9Z2V8fpazF",
+  "animations": [
+   "FrogArmature|Frog_Attack",
+   "FrogArmature|Frog_Death",
+   "FrogArmature|Frog_Idle",
+   "FrogArmature|Frog_Jump"
+  ],
+  "tris": 4920,
+  "skins": 1,
+  "glb_bytes": 587360,
+  "glb_ok": true,
+  "roles": {
+   "hit": [],
+   "death": [
+    "FrogArmature|Frog_Death"
+   ],
+   "run": [],
+   "other": [
+    "FrogArmature|Frog_Attack",
+    "FrogArmature|Frog_Idle",
+    "FrogArmature|Frog_Jump"
+   ]
+  },
+  "has": {
+   "hit": false,
+   "death": true,
+   "run": false,
+   "other": true
+  }
+ }
+]

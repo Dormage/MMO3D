@@ -1,0 +1,4013 @@
+[
+ {
+  "key": "Alien_RRliSQBP7r",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Alien_RRliSQBP7r/Alien_RRliSQBP7r.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6123,
+    -0.963,
+    -0.0033
+   ],
+   "max": [
+    1.6123,
+    0.6514,
+    3.3556
+   ],
+   "size": [
+    3.2246,
+    1.6145,
+    3.359
+   ],
+   "verts": 4227
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Blue_Demon_S7jYW6Amye",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Blue_Demon_S7jYW6Amye/Blue_Demon_S7jYW6Amye.glb",
+  "bounds_pose": {
+   "min": [
+    -1.5995,
+    -1.3311,
+    -0.0074
+   ],
+   "max": [
+    1.5471,
+    0.5468,
+    2.6425
+   ],
+   "size": [
+    3.1467,
+    1.8778,
+    2.6499
+   ],
+   "verts": 3221
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Bunny_irZjWFARyl",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Bunny_irZjWFARyl/Bunny_irZjWFARyl.glb",
+  "bounds_pose": {
+   "min": [
+    -1.615,
+    -0.9263,
+    -0.1916
+   ],
+   "max": [
+    1.5972,
+    0.7866,
+    3.2504
+   ],
+   "size": [
+    3.2121,
+    1.7129,
+    3.442
+   ],
+   "verts": 4545
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Cactoro_IGn9lhdama",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Cactoro_IGn9lhdama/Cactoro_IGn9lhdama.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6087,
+    -1.4089,
+    -0.0033
+   ],
+   "max": [
+    1.6087,
+    0.7322,
+    3.7629
+   ],
+   "size": [
+    3.2173,
+    2.1411,
+    3.7662
+   ],
+   "verts": 3830
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Character_Enemy_mdGe4IN31v",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Character_Enemy_mdGe4IN31v/Character_Enemy_mdGe4IN31v.glb",
+  "bounds_pose": {
+   "min": [
+    -0.822,
+    -1.6506,
+    -0.0194
+   ],
+   "max": [
+    0.857,
+    0.3154,
+    2.1598
+   ],
+   "size": [
+    1.6789,
+    1.966,
+    2.1792
+   ],
+   "verts": 20352
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.027,
+    0.3905
+   ],
+   "Head": [
+    -0.0006,
+    -0.1139,
+    1.4568
+   ],
+   "Foot.L": [
+    0.1881,
+    0.0452,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.1881,
+    0.0452,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Character_Soldier_PpLF4rt4ah",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Character_Soldier_PpLF4rt4ah/Character_Soldier_PpLF4rt4ah.glb",
+  "bounds_pose": {
+   "min": [
+    -0.822,
+    -1.6506,
+    -0.0212
+   ],
+   "max": [
+    0.8559,
+    0.3154,
+    2.0877
+   ],
+   "size": [
+    1.6779,
+    1.966,
+    2.1089
+   ],
+   "verts": 21427
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.027,
+    0.3905
+   ],
+   "Head": [
+    -0.0006,
+    -0.1139,
+    1.4568
+   ],
+   "Foot.L": [
+    0.1881,
+    0.0452,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.1881,
+    0.0452,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Demon_IkB63XOPvr",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Demon_IkB63XOPvr/Demon_IkB63XOPvr.glb",
+  "bounds_pose": {
+   "min": [
+    -1.3749,
+    -0.769,
+    0.0145
+   ],
+   "max": [
+    1.3749,
+    0.3281,
+    2.7078
+   ],
+   "size": [
+    2.7498,
+    1.097,
+    2.6933
+   ],
+   "verts": 2802
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    0.0,
+    0.0
+   ],
+   "Head": [
+    0.0,
+    -0.1838,
+    1.7649
+   ]
+  },
+  "armatures": [
+   "EnemyArmature"
+  ]
+ },
+ {
+  "key": "Demon_LnfIziKv4o",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Demon_LnfIziKv4o/Demon_LnfIziKv4o.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6133,
+    -0.9163,
+    -0.0155
+   ],
+   "max": [
+    2.0279,
+    1.0685,
+    2.9138
+   ],
+   "size": [
+    3.6413,
+    1.9847,
+    2.9293
+   ],
+   "verts": 4167
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Dino_wuerCFCWNR",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Dino_wuerCFCWNR/Dino_wuerCFCWNR.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6162,
+    -1.1857,
+    -0.0033
+   ],
+   "max": [
+    1.6162,
+    0.7584,
+    3.0304
+   ],
+   "size": [
+    3.2323,
+    1.9441,
+    3.0338
+   ],
+   "verts": 3067
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Enemy_Large_UgBmRVnQ9h",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Enemy_Large_UgBmRVnQ9h/Enemy_Large_UgBmRVnQ9h.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6171,
+    -0.7564,
+    -0.0033
+   ],
+   "max": [
+    1.6171,
+    0.5695,
+    3.6031
+   ],
+   "size": [
+    3.2341,
+    1.326,
+    3.6064
+   ],
+   "verts": 3485
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Fish_ypEYhCImAB",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Fish_ypEYhCImAB/Fish_ypEYhCImAB.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6235,
+    -1.2063,
+    -0.0033
+   ],
+   "max": [
+    1.6235,
+    1.1608,
+    3.5546
+   ],
+   "size": [
+    3.247,
+    2.3671,
+    3.5579
+   ],
+   "verts": 3667
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Frog_37wofOCOzG",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Frog_37wofOCOzG/Frog_37wofOCOzG.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6099,
+    -1.1164,
+    -0.0147
+   ],
+   "max": [
+    1.6099,
+    0.5525,
+    2.4921
+   ],
+   "size": [
+    3.2198,
+    1.6689,
+    2.5069
+   ],
+   "verts": 2734
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Goblin_OdCOFSmEhl",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Goblin_OdCOFSmEhl/Goblin_OdCOFSmEhl.glb",
+  "bounds_pose": {
+   "min": [
+    -1.0651,
+    -0.6373,
+    0.0145
+   ],
+   "max": [
+    1.0651,
+    0.5504,
+    2.9629
+   ],
+   "size": [
+    2.1302,
+    1.1877,
+    2.9485
+   ],
+   "verts": 2738
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    0.0,
+    0.0
+   ],
+   "Head": [
+    0.0,
+    -0.1838,
+    1.7649
+   ]
+  },
+  "armatures": [
+   "EnemyArmature"
+  ]
+ },
+ {
+  "key": "Monkroose_j4rVPvxyLg",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Monkroose_j4rVPvxyLg/Monkroose_j4rVPvxyLg.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6125,
+    -0.8661,
+    -0.0033
+   ],
+   "max": [
+    1.6125,
+    0.7697,
+    2.7892
+   ],
+   "size": [
+    3.2251,
+    1.6358,
+    2.7926
+   ],
+   "verts": 3355
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Mushroom_King_grnFTziU8u",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Mushroom_King_grnFTziU8u/Mushroom_King_grnFTziU8u.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6179,
+    -1.3117,
+    -0.0108
+   ],
+   "max": [
+    1.7405,
+    0.739,
+    3.4046
+   ],
+   "size": [
+    3.3584,
+    2.0507,
+    3.4154
+   ],
+   "verts": 3369
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Ninja_xGYmeDpfTu",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Ninja_xGYmeDpfTu/Ninja_xGYmeDpfTu.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6103,
+    -1.8935,
+    -0.0142
+   ],
+   "max": [
+    1.5193,
+    0.8539,
+    2.8889
+   ],
+   "size": [
+    3.1296,
+    2.7474,
+    2.9031
+   ],
+   "verts": 3742
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Orc_5vO2YJsPEf",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Orc_5vO2YJsPEf/Orc_5vO2YJsPEf.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6474,
+    -1.051,
+    -0.0446
+   ],
+   "max": [
+    1.624,
+    0.6256,
+    3.0057
+   ],
+   "size": [
+    3.2713,
+    1.6766,
+    3.0504
+   ],
+   "verts": 4382
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Pirate_Captain_sN18LyyHAU",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Pirate_Captain_sN18LyyHAU/Pirate_Captain_sN18LyyHAU.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6355,
+    -0.6104,
+    -0.0064
+   ],
+   "max": [
+    0.8659,
+    0.6439,
+    1.6075
+   ],
+   "size": [
+    1.5014,
+    1.2543,
+    1.6139
+   ],
+   "verts": 7511
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1289,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0473,
+    0.9852
+   ],
+   "Foot.L": [
+    0.1372,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1372,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Skeleton_1XZD9GK6Kj",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Skeleton_1XZD9GK6Kj/Skeleton_1XZD9GK6Kj.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6808,
+    -0.5361,
+    -0.0061
+   ],
+   "max": [
+    0.6319,
+    0.3775,
+    0.9285
+   ],
+   "size": [
+    1.3127,
+    0.9135,
+    0.9346
+   ],
+   "verts": 7325
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0478,
+    0.9793
+   ],
+   "Foot.L": [
+    0.1682,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1682,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Skeleton_DM4QScSmbS",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Skeleton_DM4QScSmbS/Skeleton_DM4QScSmbS.glb",
+  "bounds_pose": {
+   "min": [
+    -0.9358,
+    -0.4732,
+    0.012
+   ],
+   "max": [
+    0.9358,
+    1.1946,
+    3.051
+   ],
+   "size": [
+    1.8715,
+    1.6679,
+    3.039
+   ],
+   "verts": 5475
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    0.0,
+    0.0
+   ],
+   "Head": [
+    0.0,
+    -0.1838,
+    1.7966
+   ]
+  },
+  "armatures": [
+   "EnemyArmature"
+  ]
+ },
+ {
+  "key": "Skeleton_yq5ATpujSt",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Skeleton_yq5ATpujSt/Skeleton_yq5ATpujSt.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6808,
+    -0.6544,
+    -0.0061
+   ],
+   "max": [
+    0.6319,
+    0.4175,
+    1.3461
+   ],
+   "size": [
+    1.3127,
+    1.0718,
+    1.3522
+   ],
+   "verts": 9143
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0478,
+    0.9793
+   ],
+   "Foot.L": [
+    0.1682,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1682,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Soldier_oAArCNHjFB",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Soldier_oAArCNHjFB/Soldier_oAArCNHjFB.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2509,
+    -0.4394,
+    -0.0017
+   ],
+   "max": [
+    0.2624,
+    0.1754,
+    1.7833
+   ],
+   "size": [
+    0.5133,
+    0.6148,
+    1.785
+   ],
+   "verts": 15864
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Yeti_ceRHrn8HHE",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Yeti_ceRHrn8HHE/Yeti_ceRHrn8HHE.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6103,
+    -0.9692,
+    -0.0108
+   ],
+   "max": [
+    1.6103,
+    0.5616,
+    2.6298
+   ],
+   "size": [
+    3.2207,
+    1.5308,
+    2.6405
+   ],
+   "verts": 3331
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    -0.1877,
+    1.8676
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Yeti_xtMYEVzyw0",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Yeti_xtMYEVzyw0/Yeti_xtMYEVzyw0.glb",
+  "bounds_pose": {
+   "min": [
+    -1.5288,
+    -1.5713,
+    0.0158
+   ],
+   "max": [
+    1.5288,
+    0.4892,
+    3.1278
+   ],
+   "size": [
+    3.0576,
+    2.0605,
+    3.112
+   ],
+   "verts": 2703
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    0.0,
+    0.0
+   ],
+   "Head": [
+    0.0,
+    -1.0141,
+    2.1345
+   ]
+  },
+  "armatures": [
+   "EnemyArmature"
+  ]
+ },
+ {
+  "key": "Zombie_22K0aSZkHV",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Zombie_22K0aSZkHV/Zombie_22K0aSZkHV.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6441,
+    -1.5008,
+    -0.1551
+   ],
+   "max": [
+    0.5257,
+    0.8889,
+    0.6863
+   ],
+   "size": [
+    1.1698,
+    2.3897,
+    0.8415
+   ],
+   "verts": 3980
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0009,
+    0.0371,
+    0.175
+   ],
+   "Head": [
+    -0.0285,
+    -0.6756,
+    0.4871
+   ],
+   "Foot.L": [
+    0.2071,
+    0.3292,
+    0.1364
+   ],
+   "Foot.R": [
+    -0.2742,
+    0.5868,
+    0.1205
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Zombie_JoBvxIUpZP",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Zombie_JoBvxIUpZP/Zombie_JoBvxIUpZP.glb",
+  "bounds_pose": {
+   "min": [
+    -0.811,
+    -0.7079,
+    0.0234
+   ],
+   "max": [
+    0.829,
+    0.2932,
+    2.7584
+   ],
+   "size": [
+    1.6399,
+    1.0011,
+    2.735
+   ],
+   "verts": 3088
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "Head": [
+    0.0,
+    -0.2937,
+    1.6963
+   ]
+  },
+  "armatures": [
+   "EnemyArmature"
+  ]
+ },
+ {
+  "key": "Zombie_VlXjG0N8Eg",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Zombie_VlXjG0N8Eg/Zombie_VlXjG0N8Eg.glb",
+  "bounds_pose": {
+   "min": [
+    -0.5164,
+    -0.8956,
+    -0.0552
+   ],
+   "max": [
+    0.4185,
+    0.844,
+    0.6371
+   ],
+   "size": [
+    0.935,
+    1.7396,
+    0.6923
+   ],
+   "verts": 4824
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0009,
+    0.1367,
+    0.1697
+   ],
+   "Head": [
+    -0.0297,
+    -0.3346,
+    0.2043
+   ],
+   "Foot.L": [
+    0.1463,
+    0.3291,
+    0.1366
+   ],
+   "Foot.R": [
+    -0.2134,
+    0.5867,
+    0.1209
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Zombie_half_Htcsn9OrXJ",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs/Zombie_half_Htcsn9OrXJ/Zombie_half_Htcsn9OrXJ.glb",
+  "bounds_pose": {
+   "min": [
+    -0.3508,
+    -0.4083,
+    -0.04
+   ],
+   "max": [
+    0.4185,
+    0.844,
+    0.3276
+   ],
+   "size": [
+    0.7693,
+    1.2523,
+    0.3676
+   ],
+   "verts": 3038
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0009,
+    0.1367,
+    0.1697
+   ],
+   "Foot.L": [
+    0.1463,
+    0.3291,
+    0.1366
+   ],
+   "Foot.R": [
+    -0.2134,
+    0.5867,
+    0.1209
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Adventurer_5EGWBMpuXq",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Adventurer_5EGWBMpuXq/Adventurer_5EGWBMpuXq.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2673,
+    -0.472,
+    -0.0025
+   ],
+   "max": [
+    0.3309,
+    0.2508,
+    1.8148
+   ],
+   "size": [
+    0.5982,
+    0.7227,
+    1.8173
+   ],
+   "verts": 20569
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    -0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0227
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Adventurer_ZwF0K7WBmu",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Adventurer_ZwF0K7WBmu/Adventurer_ZwF0K7WBmu.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2554,
+    -0.4394,
+    -0.0017
+   ],
+   "max": [
+    0.2624,
+    0.1954,
+    1.7817
+   ],
+   "size": [
+    0.5178,
+    0.6348,
+    1.7834
+   ],
+   "verts": 13709
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Animated_Platformer_Character_kKtL4zvS3n",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Animated_Platformer_Character_kKtL4zvS3n/Animated_Platformer_Character_kKtL4zvS3n.glb",
+  "bounds_pose": {
+   "min": [
+    -1.277,
+    -0.9752,
+    -0.0011
+   ],
+   "max": [
+    1.277,
+    0.5869,
+    3.5992
+   ],
+   "size": [
+    2.5541,
+    1.5621,
+    3.6003
+   ],
+   "verts": 1895
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.027,
+    0.3567
+   ],
+   "Head": [
+    -0.0006,
+    -0.1516,
+    1.6673
+   ],
+   "Foot.L": [
+    0.5459,
+    0.0452,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.5459,
+    0.0452,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Animated_Wizard_kttbFvCl2C",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Animated_Wizard_kttbFvCl2C/Animated_Wizard_kttbFvCl2C.glb",
+  "bounds_pose": {
+   "min": [
+    -1.1002,
+    -0.7956,
+    -0.0053
+   ],
+   "max": [
+    0.6356,
+    1.1715,
+    2.9714
+   ],
+   "size": [
+    1.7358,
+    1.967,
+    2.9767
+   ],
+   "verts": 5409
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.0406,
+    1.0053
+   ],
+   "Head": [
+    -0.0006,
+    -0.0397,
+    2.105
+   ],
+   "Foot.L": [
+    0.2065,
+    0.0452,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.2134,
+    0.0452,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Animated_Woman_nIItLV9nxS",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Animated_Woman_nIItLV9nxS/Animated_Woman_nIItLV9nxS.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2509,
+    -0.4353,
+    -0.0001
+   ],
+   "max": [
+    0.2834,
+    0.158,
+    1.7951
+   ],
+   "size": [
+    0.5344,
+    0.5933,
+    1.7952
+   ],
+   "verts": 12296
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Animated_Woman_qJ2gsTUBHL",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Animated_Woman_qJ2gsTUBHL/Animated_Woman_qJ2gsTUBHL.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2511,
+    -0.4508,
+    -0.0086
+   ],
+   "max": [
+    0.2731,
+    0.1687,
+    1.7979
+   ],
+   "size": [
+    0.5242,
+    0.6195,
+    1.8065
+   ],
+   "verts": 12968
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Anne_tZYaOQ4l94",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Anne_tZYaOQ4l94/Anne_tZYaOQ4l94.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6856,
+    -0.4644,
+    -0.0145
+   ],
+   "max": [
+    0.6453,
+    0.5311,
+    1.4843
+   ],
+   "size": [
+    1.3309,
+    0.9956,
+    1.4988
+   ],
+   "verts": 7902
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0478,
+    0.9793
+   ],
+   "Foot.L": [
+    0.1682,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1682,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Astronaut_0D54W8yfrA",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Astronaut_0D54W8yfrA/Astronaut_0D54W8yfrA.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6145,
+    -0.9395,
+    -0.0193
+   ],
+   "max": [
+    1.6145,
+    0.5544,
+    2.5275
+   ],
+   "size": [
+    3.2289,
+    1.4939,
+    2.5467
+   ],
+   "verts": 8045
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    0.0646,
+    1.9666
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Astronaut_3hC2i0CTuO",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Astronaut_3hC2i0CTuO/Astronaut_3hC2i0CTuO.glb",
+  "bounds_pose": {
+   "min": [
+    -0.272,
+    -0.4583,
+    -0.0013
+   ],
+   "max": [
+    0.3189,
+    0.1721,
+    1.8474
+   ],
+   "size": [
+    0.5909,
+    0.6304,
+    1.8487
+   ],
+   "verts": 20710
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Astronaut_OgeSH89Nmx",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Astronaut_OgeSH89Nmx/Astronaut_OgeSH89Nmx.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6145,
+    -0.4939,
+    -0.0193
+   ],
+   "max": [
+    1.6145,
+    0.5544,
+    2.6103
+   ],
+   "size": [
+    3.2289,
+    1.0483,
+    2.6296
+   ],
+   "verts": 8446
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    0.0646,
+    1.9666
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Astronaut_zbtPq4dOJL",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Astronaut_zbtPq4dOJL/Astronaut_zbtPq4dOJL.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6145,
+    -0.5792,
+    -0.0193
+   ],
+   "max": [
+    1.6145,
+    0.5544,
+    2.6496
+   ],
+   "size": [
+    3.2289,
+    1.1336,
+    2.6688
+   ],
+   "verts": 7543
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.2354,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.2624,
+    0.6528
+   ],
+   "Head": [
+    -0.0006,
+    0.0646,
+    1.9666
+   ],
+   "Foot.L": [
+    0.3506,
+    0.2805,
+    0.0412
+   ],
+   "Foot.R": [
+    -0.3506,
+    0.2805,
+    0.0412
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Beach_Character_DojKLcO34E",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Beach_Character_DojKLcO34E/Beach_Character_DojKLcO34E.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2655,
+    -0.4707,
+    -0.0062
+   ],
+   "max": [
+    0.3275,
+    0.1704,
+    1.8134
+   ],
+   "size": [
+    0.593,
+    0.6411,
+    1.8195
+   ],
+   "verts": 13292
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Big_arm_KaVJET0WHx",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Big_arm_KaVJET0WHx/Big_arm_KaVJET0WHx.glb",
+  "bounds_pose": {
+   "min": [
+    -1.2106,
+    -0.1609,
+    -0.029
+   ],
+   "max": [
+    0.8764,
+    0.4422,
+    1.4226
+   ],
+   "size": [
+    2.087,
+    0.6032,
+    1.4517
+   ],
+   "verts": 3444
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0764,
+    1.0088
+   ],
+   "Foot.L": [
+    0.1463,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1463,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Business_Man_JFrLIKqvCH",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Business_Man_JFrLIKqvCH/Business_Man_JFrLIKqvCH.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2657,
+    -0.472,
+    -0.0015
+   ],
+   "max": [
+    0.3309,
+    0.171,
+    1.8139
+   ],
+   "size": [
+    0.5967,
+    0.6429,
+    1.8154
+   ],
+   "verts": 13335
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Casual_Character_kZ3DmIoGip",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Casual_Character_kZ3DmIoGip/Casual_Character_kZ3DmIoGip.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2655,
+    -0.472,
+    -0.0015
+   ],
+   "max": [
+    0.3309,
+    0.1708,
+    1.8117
+   ],
+   "size": [
+    0.5964,
+    0.6427,
+    1.8132
+   ],
+   "verts": 11660
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Character_Animated_DgOCW9ZCRJ",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Character_Animated_DgOCW9ZCRJ/Character_Animated_DgOCW9ZCRJ.glb",
+  "bounds_pose": {
+   "min": [
+    -0.5124,
+    -1.2025,
+    -0.0184
+   ],
+   "max": [
+    0.512,
+    0.4447,
+    2.667
+   ],
+   "size": [
+    1.0245,
+    1.6473,
+    2.6853
+   ],
+   "verts": 6188
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0817,
+    -0.1018,
+    0.9152
+   ],
+   "Head": [
+    -0.0614,
+    -0.1805,
+    1.95
+   ],
+   "Foot.L": [
+    0.0234,
+    0.3463,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.2397,
+    -0.3266,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Character_Hazmat_z3TSQYx1Kn",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Character_Hazmat_z3TSQYx1Kn/Character_Hazmat_z3TSQYx1Kn.glb",
+  "bounds_pose": {
+   "min": [
+    -0.822,
+    -1.6506,
+    -0.0233
+   ],
+   "max": [
+    0.8542,
+    0.3521,
+    1.9988
+   ],
+   "size": [
+    1.6761,
+    2.0026,
+    2.0221
+   ],
+   "verts": 21091
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.027,
+    0.3905
+   ],
+   "Head": [
+    -0.0006,
+    -0.1139,
+    1.4568
+   ],
+   "Foot.L": [
+    0.1881,
+    0.0452,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.1881,
+    0.0452,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Characters_Matt_66kQ4dBBC7",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Characters_Matt_66kQ4dBBC7/Characters_Matt_66kQ4dBBC7.glb",
+  "bounds_pose": {
+   "min": [
+    -0.681,
+    -0.3161,
+    -0.0083
+   ],
+   "max": [
+    0.4456,
+    0.3612,
+    1.3568
+   ],
+   "size": [
+    1.1267,
+    0.6773,
+    1.3652
+   ],
+   "verts": 5096
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0672,
+    0.8622
+   ],
+   "Foot.L": [
+    0.1559,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1341,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Characters_Pug_xvcUwuKl4c",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Characters_Pug_xvcUwuKl4c/Characters_Pug_xvcUwuKl4c.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2088,
+    -0.6717,
+    -0.0056
+   ],
+   "max": [
+    0.2267,
+    0.5041,
+    0.7085
+   ],
+   "size": [
+    0.4355,
+    1.1758,
+    0.714
+   ],
+   "verts": 2985
+  },
+  "bones_pose": {
+   "Head": [
+    0.0,
+    -0.5228,
+    0.601
+   ]
+  },
+  "armatures": [
+   "AnimalArmature"
+  ]
+ },
+ {
+  "key": "Characters_Sam_UcLErL2W37",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Characters_Sam_UcLErL2W37/Characters_Sam_UcLErL2W37.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6766,
+    -0.4641,
+    -0.0102
+   ],
+   "max": [
+    0.4542,
+    0.4044,
+    1.3796
+   ],
+   "size": [
+    1.1308,
+    0.8685,
+    1.3898
+   ],
+   "verts": 6073
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0672,
+    0.8622
+   ],
+   "Foot.L": [
+    0.1559,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1341,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Characters_Shaun_eJFT9MxzOM",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Characters_Shaun_eJFT9MxzOM/Characters_Shaun_eJFT9MxzOM.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6798,
+    -0.361,
+    -0.0088
+   ],
+   "max": [
+    0.4393,
+    0.5982,
+    1.3899
+   ],
+   "size": [
+    1.119,
+    0.9592,
+    1.3987
+   ],
+   "verts": 8552
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0672,
+    0.8622
+   ],
+   "Foot.L": [
+    0.1559,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1341,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Cube_Guy_Character_K1IczhnvQ5",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Cube_Guy_Character_K1IczhnvQ5/Cube_Guy_Character_K1IczhnvQ5.glb",
+  "bounds_pose": {
+   "min": [
+    -1.291,
+    -0.6611,
+    -0.0096
+   ],
+   "max": [
+    1.291,
+    0.4981,
+    2.6974
+   ],
+   "size": [
+    2.582,
+    1.1592,
+    2.707
+   ],
+   "verts": 1794
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.027,
+    0.6132
+   ],
+   "Head": [
+    -0.0006,
+    -0.0975,
+    1.5468
+   ],
+   "Foot.L": [
+    0.2513,
+    0.1085,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.2513,
+    0.1085,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Cube_Woman_Character_75ikp7NEDx",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Cube_Woman_Character_75ikp7NEDx/Cube_Woman_Character_75ikp7NEDx.glb",
+  "bounds_pose": {
+   "min": [
+    -1.291,
+    -0.7189,
+    -0.0096
+   ],
+   "max": [
+    1.291,
+    0.629,
+    2.5216
+   ],
+   "size": [
+    2.582,
+    1.3479,
+    2.5312
+   ],
+   "verts": 2012
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.027,
+    0.6132
+   ],
+   "Head": [
+    -0.0006,
+    -0.0975,
+    1.5468
+   ],
+   "Foot.L": [
+    0.2513,
+    0.1085,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.2513,
+    0.1085,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Farmer_7pn3R6hPvE",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Farmer_7pn3R6hPvE/Farmer_7pn3R6hPvE.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2624,
+    -0.472,
+    -0.0005
+   ],
+   "max": [
+    0.3309,
+    0.1658,
+    1.8119
+   ],
+   "size": [
+    0.5933,
+    0.6377,
+    1.8124
+   ],
+   "verts": 11006
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "German_Shepard_Hssa6NPc6W",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/German_Shepard_Hssa6NPc6W/German_Shepard_Hssa6NPc6W.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2385,
+    -0.7394,
+    -0.0113
+   ],
+   "max": [
+    0.2546,
+    0.7631,
+    0.8878
+   ],
+   "size": [
+    0.493,
+    1.5025,
+    0.8991
+   ],
+   "verts": 4077
+  },
+  "bones_pose": {
+   "Head": [
+    0.0,
+    -0.5228,
+    0.7059
+   ]
+  },
+  "armatures": [
+   "AnimalArmature"
+  ]
+ },
+ {
+  "key": "Giant_BldaiPtyJa",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Giant_BldaiPtyJa/Giant_BldaiPtyJa.glb",
+  "bounds_pose": {
+   "min": [
+    -1.4761,
+    -1.4013,
+    0.0261
+   ],
+   "max": [
+    1.4761,
+    0.633,
+    3.9106
+   ],
+   "size": [
+    2.9523,
+    2.0343,
+    3.8844
+   ],
+   "verts": 3158
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    0.1227,
+    0.0461
+   ],
+   "Head": [
+    0.0,
+    -0.7875,
+    2.9014
+   ]
+  },
+  "armatures": [
+   "EnemyArmature"
+  ]
+ },
+ {
+  "key": "Henry_yEdSk8tRKc",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Henry_yEdSk8tRKc/Henry_yEdSk8tRKc.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6856,
+    -0.7329,
+    -0.0025
+   ],
+   "max": [
+    0.6453,
+    0.539,
+    1.4203
+   ],
+   "size": [
+    1.3309,
+    1.272,
+    1.4228
+   ],
+   "verts": 7000
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0478,
+    0.9793
+   ],
+   "Foot.L": [
+    0.1682,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1682,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Hooded_Adventurer_y9KWOVG21R",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Hooded_Adventurer_y9KWOVG21R/Hooded_Adventurer_y9KWOVG21R.glb",
+  "bounds_pose": {
+   "min": [
+    -0.3015,
+    -0.6089,
+    -0.0019
+   ],
+   "max": [
+    0.2742,
+    0.1885,
+    1.8938
+   ],
+   "size": [
+    0.5756,
+    0.7974,
+    1.8957
+   ],
+   "verts": 14628
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Hoodie_Character_gKLBoRsyKe",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Hoodie_Character_gKLBoRsyKe/Hoodie_Character_gKLBoRsyKe.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2735,
+    -0.472,
+    -0.0043
+   ],
+   "max": [
+    0.3309,
+    0.171,
+    1.8217
+   ],
+   "size": [
+    0.6044,
+    0.6429,
+    1.826
+   ],
+   "verts": 12518
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "King_I1gTjmuK2m",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/King_I1gTjmuK2m/King_I1gTjmuK2m.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2887,
+    -0.4655,
+    -0.0028
+   ],
+   "max": [
+    0.3103,
+    0.1665,
+    1.8669
+   ],
+   "size": [
+    0.599,
+    0.632,
+    1.8697
+   ],
+   "verts": 21693
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Lis_gjuwleUT1U",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Lis_gjuwleUT1U/Lis_gjuwleUT1U.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6766,
+    -0.6077,
+    -0.0102
+   ],
+   "max": [
+    0.4362,
+    0.3856,
+    1.5683
+   ],
+   "size": [
+    1.1127,
+    0.9933,
+    1.5785
+   ],
+   "verts": 6021
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0672,
+    0.8622
+   ],
+   "Foot.L": [
+    0.1559,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1341,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Mako_2urczqZ9Xf",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mako_2urczqZ9Xf/Mako_2urczqZ9Xf.glb",
+  "bounds_pose": {
+   "min": [
+    -0.8832,
+    -0.8026,
+    -0.0025
+   ],
+   "max": [
+    0.8166,
+    0.3606,
+    1.4415
+   ],
+   "size": [
+    1.6998,
+    1.1632,
+    1.444
+   ],
+   "verts": 11019
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0344,
+    1.0656
+   ],
+   "Foot.L": [
+    0.1682,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1682,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Mech_4UvIHxnoSR",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mech_4UvIHxnoSR/Mech_4UvIHxnoSR.glb",
+  "bounds_pose": {
+   "min": [
+    -1.6365,
+    -1.7133,
+    -0.0009
+   ],
+   "max": [
+    1.5073,
+    0.8295,
+    2.6141
+   ],
+   "size": [
+    3.1438,
+    2.5429,
+    2.615
+   ],
+   "verts": 5841
+  },
+  "bones_pose": {
+   "Head": [
+    -0.2095,
+    0.1416,
+    2.0336
+   ],
+   "Foot.L": [
+    1.3203,
+    0.0297,
+    0.0953
+   ],
+   "Foot.R": [
+    -1.2749,
+    0.0297,
+    0.0953
+   ]
+  },
+  "armatures": [
+   "RobotArmature"
+  ]
+ },
+ {
+  "key": "Mech_D5wW2jDO42",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mech_D5wW2jDO42/Mech_D5wW2jDO42.glb",
+  "bounds_pose": {
+   "min": [
+    -1.5526,
+    -1.564,
+    -0.0009
+   ],
+   "max": [
+    1.4632,
+    0.758,
+    2.7138
+   ],
+   "size": [
+    3.0158,
+    2.322,
+    2.7147
+   ],
+   "verts": 4684
+  },
+  "bones_pose": {
+   "Head": [
+    -0.1632,
+    -0.0165,
+    2.2739
+   ],
+   "Foot.L": [
+    1.3203,
+    -0.0674,
+    0.0953
+   ],
+   "Foot.R": [
+    -1.2749,
+    -0.0674,
+    0.0953
+   ]
+  },
+  "armatures": [
+   "RobotArmature"
+  ]
+ },
+ {
+  "key": "Mech_o3Ps8z8ByP",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mech_o3Ps8z8ByP/Mech_o3Ps8z8ByP.glb",
+  "bounds_pose": {
+   "min": [
+    -2.0827,
+    -1.5962,
+    -0.0191
+   ],
+   "max": [
+    2.3245,
+    0.9697,
+    2.7332
+   ],
+   "size": [
+    4.4071,
+    2.5658,
+    2.7523
+   ],
+   "verts": 6267
+  },
+  "bones_pose": {
+   "Head": [
+    -0.1176,
+    -0.2449,
+    2.3296
+   ],
+   "Foot.L": [
+    1.5187,
+    -0.0674,
+    0.0953
+   ],
+   "Foot.R": [
+    -1.4733,
+    -0.0674,
+    0.0953
+   ]
+  },
+  "armatures": [
+   "RobotArmature"
+  ]
+ },
+ {
+  "key": "Mech_tLs9mFVCSU",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Mech_tLs9mFVCSU/Mech_tLs9mFVCSU.glb",
+  "bounds_pose": {
+   "min": [
+    -1.5526,
+    -1.564,
+    -0.0009
+   ],
+   "max": [
+    1.4632,
+    0.9924,
+    3.1836
+   ],
+   "size": [
+    3.0158,
+    2.5565,
+    3.1845
+   ],
+   "verts": 4811
+  },
+  "bones_pose": {
+   "Head": [
+    -0.126,
+    -0.0407,
+    2.9854
+   ],
+   "Foot.L": [
+    1.3203,
+    -0.0674,
+    0.0953
+   ],
+   "Foot.R": [
+    -1.2749,
+    -0.0674,
+    0.0953
+   ]
+  },
+  "armatures": [
+   "RobotArmature"
+  ]
+ },
+ {
+  "key": "Panda_q1uJ28Hs8T",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Panda_q1uJ28Hs8T/Panda_q1uJ28Hs8T.glb",
+  "bounds_pose": {
+   "min": [
+    -1.167,
+    -1.3463,
+    -0.0048
+   ],
+   "max": [
+    1.167,
+    1.1283,
+    3.0955
+   ],
+   "size": [
+    2.334,
+    2.4746,
+    3.1002
+   ],
+   "verts": 2620
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0016,
+    0.282,
+    -0.0029
+   ],
+   "Hips": [
+    -0.0008,
+    0.2638,
+    0.5868
+   ],
+   "Head": [
+    -0.0008,
+    -0.0401,
+    2.3275
+   ],
+   "Foot.L": [
+    0.4199,
+    0.3359,
+    0.0493
+   ],
+   "Foot.R": [
+    -0.4199,
+    0.3359,
+    0.0493
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Punk_BTALZymknF",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Punk_BTALZymknF/Punk_BTALZymknF.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2655,
+    -0.472,
+    -0.0043
+   ],
+   "max": [
+    0.3309,
+    0.171,
+    1.9199
+   ],
+   "size": [
+    0.5964,
+    0.6429,
+    1.9242
+   ],
+   "verts": 11040
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Punk_djXoqejw6w",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Punk_djXoqejw6w/Punk_djXoqejw6w.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2509,
+    -0.4383,
+    -0.0003
+   ],
+   "max": [
+    0.2588,
+    0.1636,
+    1.9132
+   ],
+   "size": [
+    0.5097,
+    0.6019,
+    1.9135
+   ],
+   "verts": 11960
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Rabbit_Blond_cMsI6FDhNx",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_Blond_cMsI6FDhNx/Rabbit_Blond_cMsI6FDhNx.glb",
+  "bounds_pose": {
+   "min": [
+    -1.1232,
+    -1.2565,
+    -0.0046
+   ],
+   "max": [
+    1.1232,
+    1.0531,
+    3.9219
+   ],
+   "size": [
+    2.2463,
+    2.3096,
+    3.9265
+   ],
+   "verts": 5682
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0015,
+    0.2632,
+    -0.0027
+   ],
+   "Hips": [
+    -0.0007,
+    0.2462,
+    0.5447
+   ],
+   "Head": [
+    -0.0007,
+    -0.0374,
+    2.1694
+   ],
+   "Foot.L": [
+    0.3919,
+    0.3135,
+    0.046
+   ],
+   "Foot.R": [
+    -0.3919,
+    0.3135,
+    0.046
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Rabbit_Cyan_Hair_RPZ9gxcFL3",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_Cyan_Hair_RPZ9gxcFL3/Rabbit_Cyan_Hair_RPZ9gxcFL3.glb",
+  "bounds_pose": {
+   "min": [
+    -1.1232,
+    -1.2775,
+    -0.0046
+   ],
+   "max": [
+    1.1232,
+    1.0531,
+    3.9219
+   ],
+   "size": [
+    2.2463,
+    2.3306,
+    3.9265
+   ],
+   "verts": 2961
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0015,
+    0.2632,
+    -0.0027
+   ],
+   "Hips": [
+    -0.0007,
+    0.2462,
+    0.5447
+   ],
+   "Head": [
+    -0.0007,
+    -0.0374,
+    2.1694
+   ],
+   "Foot.L": [
+    0.3919,
+    0.3135,
+    0.046
+   ],
+   "Foot.R": [
+    -0.3919,
+    0.3135,
+    0.046
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Rabbit_Grey_KRnXIKJbqp",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_Grey_KRnXIKJbqp/Rabbit_Grey_KRnXIKJbqp.glb",
+  "bounds_pose": {
+   "min": [
+    -1.1232,
+    -1.2805,
+    -0.0046
+   ],
+   "max": [
+    1.1232,
+    1.0531,
+    3.9219
+   ],
+   "size": [
+    2.2463,
+    2.3336,
+    3.9265
+   ],
+   "verts": 5340
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0015,
+    0.2632,
+    -0.0027
+   ],
+   "Hips": [
+    -0.0007,
+    0.2462,
+    0.5447
+   ],
+   "Head": [
+    -0.0007,
+    -0.0374,
+    2.1694
+   ],
+   "Foot.L": [
+    0.3919,
+    0.3135,
+    0.046
+   ],
+   "Foot.R": [
+    -0.3919,
+    0.3135,
+    0.046
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Rabbit_With_pigtails_SwKX8OIlw8",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_With_pigtails_SwKX8OIlw8/Rabbit_With_pigtails_SwKX8OIlw8.glb",
+  "bounds_pose": {
+   "min": [
+    -1.4539,
+    -1.2565,
+    -0.0046
+   ],
+   "max": [
+    1.4539,
+    1.0531,
+    3.9219
+   ],
+   "size": [
+    2.9078,
+    2.3096,
+    3.9265
+   ],
+   "verts": 5488
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0015,
+    0.2632,
+    -0.0027
+   ],
+   "Hips": [
+    -0.0007,
+    0.2462,
+    0.5447
+   ],
+   "Head": [
+    -0.0007,
+    -0.0374,
+    2.1694
+   ],
+   "Foot.L": [
+    0.3919,
+    0.3135,
+    0.046
+   ],
+   "Foot.R": [
+    -0.3919,
+    0.3135,
+    0.046
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Rabbit_mKev485XTR",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Rabbit_mKev485XTR/Rabbit_mKev485XTR.glb",
+  "bounds_pose": {
+   "min": [
+    -1.1232,
+    -1.2565,
+    -0.0046
+   ],
+   "max": [
+    1.1232,
+    1.0531,
+    3.9219
+   ],
+   "size": [
+    2.2463,
+    2.3096,
+    3.9265
+   ],
+   "verts": 2481
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0015,
+    0.2632,
+    -0.0027
+   ],
+   "Hips": [
+    -0.0007,
+    0.2462,
+    0.5447
+   ],
+   "Head": [
+    -0.0007,
+    -0.0374,
+    2.1694
+   ],
+   "Foot.L": [
+    0.3919,
+    0.3135,
+    0.046
+   ],
+   "Foot.R": [
+    -0.3919,
+    0.3135,
+    0.046
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "SWAT_Btfn3G5Xv4",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/SWAT_Btfn3G5Xv4/SWAT_Btfn3G5Xv4.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2848,
+    -0.4633,
+    -0.0015
+   ],
+   "max": [
+    0.3235,
+    0.1707,
+    1.8085
+   ],
+   "size": [
+    0.6083,
+    0.634,
+    1.81
+   ],
+   "verts": 14254
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Sci_Fi_Character_4pUXv5V8kq",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Sci_Fi_Character_4pUXv5V8kq/Sci_Fi_Character_4pUXv5V8kq.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2743,
+    -0.4353,
+    -0.0019
+   ],
+   "max": [
+    0.2677,
+    0.158,
+    1.8082
+   ],
+   "size": [
+    0.542,
+    0.5934,
+    1.8101
+   ],
+   "verts": 16139
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Sharky_iPV5YmAoIv",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Sharky_iPV5YmAoIv/Sharky_iPV5YmAoIv.glb",
+  "bounds_pose": {
+   "min": [
+    -0.6856,
+    -0.7155,
+    -0.0025
+   ],
+   "max": [
+    0.6453,
+    0.5694,
+    1.4152
+   ],
+   "size": [
+    1.3309,
+    1.2849,
+    1.4177
+   ],
+   "verts": 8330
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0007,
+    0.124,
+    -0.0013
+   ],
+   "Hips": [
+    -0.0003,
+    0.1676,
+    0.3707
+   ],
+   "Head": [
+    -0.0003,
+    0.0478,
+    0.9793
+   ],
+   "Foot.L": [
+    0.1682,
+    0.1477,
+    0.0217
+   ],
+   "Foot.R": [
+    -0.1682,
+    0.1477,
+    0.0217
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Steve_OF8rWAO1gC",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Steve_OF8rWAO1gC/Steve_OF8rWAO1gC.glb",
+  "bounds_pose": {
+   "min": [
+    -1.291,
+    -0.6777,
+    -0.0096
+   ],
+   "max": [
+    1.291,
+    0.6298,
+    2.5224
+   ],
+   "size": [
+    2.582,
+    1.3076,
+    2.532
+   ],
+   "verts": 1626
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0013,
+    0.0001,
+    -0.0024
+   ],
+   "Hips": [
+    -0.0006,
+    0.027,
+    0.6132
+   ],
+   "Head": [
+    -0.0006,
+    -0.0975,
+    1.5468
+   ],
+   "Foot.L": [
+    0.2513,
+    0.1085,
+    0.0222
+   ],
+   "Foot.R": [
+    -0.2513,
+    0.1085,
+    0.0222
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Suit_sOUciDsoVV",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Suit_sOUciDsoVV/Suit_sOUciDsoVV.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2533,
+    -0.4551,
+    -0.0023
+   ],
+   "max": [
+    0.2869,
+    0.1619,
+    1.7977
+   ],
+   "size": [
+    0.5402,
+    0.6169,
+    1.8001
+   ],
+   "verts": 13072
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Witch_QBEOV9ZUT8",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Witch_QBEOV9ZUT8/Witch_QBEOV9ZUT8.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2814,
+    -0.4412,
+    -0.0018
+   ],
+   "max": [
+    0.2754,
+    0.158,
+    2.0074
+   ],
+   "size": [
+    0.5568,
+    0.5992,
+    2.0092
+   ],
+   "verts": 13884
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Worker_E8079Ahx7k",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Worker_E8079Ahx7k/Worker_E8079Ahx7k.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2509,
+    -0.4551,
+    -0.0023
+   ],
+   "max": [
+    0.2869,
+    0.1619,
+    1.8147
+   ],
+   "size": [
+    0.5378,
+    0.6169,
+    1.817
+   ],
+   "verts": 12368
+  },
+  "bones_pose": {
+   "Root": [
+    0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0041,
+    -0.0771,
+    0.9658
+   ],
+   "Head": [
+    -0.0138,
+    -0.0938,
+    1.5467
+   ],
+   "Foot.L": [
+    0.0969,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0448,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Worker_Yg2bQZO6Hj",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Worker_Yg2bQZO6Hj/Worker_Yg2bQZO6Hj.glb",
+  "bounds_pose": {
+   "min": [
+    -0.2655,
+    -0.472,
+    -0.0038
+   ],
+   "max": [
+    0.3309,
+    0.1662,
+    1.8191
+   ],
+   "size": [
+    0.5964,
+    0.6382,
+    1.823
+   ],
+   "verts": 10534
+  },
+  "bones_pose": {
+   "Root": [
+    -0.0,
+    -0.0723,
+    0.0
+   ],
+   "Hips": [
+    0.0149,
+    -0.0565,
+    0.8576
+   ],
+   "Head": [
+    0.0039,
+    -0.0999,
+    1.5461
+   ],
+   "Foot.L": [
+    0.1206,
+    0.1147,
+    0.0228
+   ],
+   "Foot.R": [
+    -0.0685,
+    -0.246,
+    0.0228
+   ]
+  },
+  "armatures": [
+   "CharacterArmature"
+  ]
+ },
+ {
+  "key": "Zombie_xqEzosAVYX",
+  "file": "/home/dormage/code/MMO3D2/_mob_library/assets/mobs_extra/Zombie_xqEzosAVYX/Zombie_xqEzosAVYX.glb",
+  "bounds_pose": {
+   "min": [
+    -1.224,
+    -1.1531,
+    -0.0364
+   ],
+   "max": [
+    0.9625,
+    0.4561,
+    4.2003
+   ],
+   "size": [
+    2.1865,
+    1.6092,
+    4.2367
+   ],
+   "verts": 4525
+  },
+  "bones_pose": {},
+  "armatures": [
+   "Armature"
+  ]
+ }
+]

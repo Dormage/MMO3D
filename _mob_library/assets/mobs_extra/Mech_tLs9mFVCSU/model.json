@@ -1,0 +1,146 @@
+{
+  "folder": "Mech_tLs9mFVCSU",
+  "title": "Mech",
+  "publicID": "tLs9mFVCSU",
+  "page": "https://poly.pizza/m/tLs9mFVCSU",
+  "creator": "Quaternius",
+  "licence": "CC0 1.0",
+  "bucket": "mob",
+  "tris": 4086,
+  "bones": 13,
+  "files": {
+    "fbx": "Mech_tLs9mFVCSU.fbx",
+    "glb": "Mech_tLs9mFVCSU.glb",
+    "fbx_bytes": 1415068,
+    "glb_bytes": 426804
+  },
+  "animation_count": 17,
+  "clips": [
+    "Dance",
+    "Death",
+    "Hello",
+    "HitRecieve_1",
+    "HitRecieve_2",
+    "Idle",
+    "Jump",
+    "Jump_Landing",
+    "Jump_NoHeight",
+    "Kick",
+    "No",
+    "Pickup",
+    "Run",
+    "Shoot_Big",
+    "Shoot_Small",
+    "Walk",
+    "Yes"
+  ],
+  "animations": [
+    {
+      "name": "RobotArmature|Dance",
+      "clean": "Dance"
+    },
+    {
+      "name": "RobotArmature|Death",
+      "clean": "Death"
+    },
+    {
+      "name": "RobotArmature|Hello",
+      "clean": "Hello"
+    },
+    {
+      "name": "RobotArmature|HitRecieve_1",
+      "clean": "HitRecieve_1"
+    },
+    {
+      "name": "RobotArmature|HitRecieve_2",
+      "clean": "HitRecieve_2"
+    },
+    {
+      "name": "RobotArmature|Idle",
+      "clean": "Idle"
+    },
+    {
+      "name": "RobotArmature|Jump",
+      "clean": "Jump"
+    },
+    {
+      "name": "RobotArmature|Jump_Landing",
+      "clean": "Jump_Landing"
+    },
+    {
+      "name": "RobotArmature|Jump_NoHeight",
+      "clean": "Jump_NoHeight"
+    },
+    {
+      "name": "RobotArmature|Kick",
+      "clean": "Kick"
+    },
+    {
+      "name": "RobotArmature|No",
+      "clean": "No"
+    },
+    {
+      "name": "RobotArmature|Pickup",
+      "clean": "Pickup"
+    },
+    {
+      "name": "RobotArmature|Run",
+      "clean": "Run"
+    },
+    {
+      "name": "RobotArmature|Shoot_Big",
+      "clean": "Shoot_Big"
+    },
+    {
+      "name": "RobotArmature|Shoot_Small",
+      "clean": "Shoot_Small"
+    },
+    {
+      "name": "RobotArmature|Walk",
+      "clean": "Walk"
+    },
+    {
+      "name": "RobotArmature|Yes",
+      "clean": "Yes"
+    }
+  ],
+  "required": {
+    "hit": [
+      "HitRecieve_1",
+      "HitRecieve_2"
+    ],
+    "death": [
+      "Death"
+    ],
+    "run": [
+      "Run"
+    ]
+  },
+  "fbx_takes": [
+    "RobotArmature|Dance",
+    "RobotArmature|Death",
+    "RobotArmature|Hello",
+    "RobotArmature|HitRecieve_1",
+    "RobotArmature|HitRecieve_2",
+    "RobotArmature|Idle",
+    "RobotArmature|Jump",
+    "RobotArmature|Jump_Landing",
+    "RobotArmature|Jump_NoHeight",
+    "RobotArmature|Kick",
+    "RobotArmature|No",
+    "RobotArmature|Pickup",
+    "RobotArmature|Run",
+    "RobotArmature|Shoot_Big",
+    "RobotArmature|Shoot_Small",
+    "RobotArmature|Walk",
+    "RobotArmature|Yes"
+  ],
+  "fbx_anim_stacks": 18,
+  "fbx_curve_nodes": 715,
+  "checks": {
+    "glb_valid": true,
+    "skinned": true,
+    "all_have_channels": true,
+    "fbx_has_animation": true
+  }
+}

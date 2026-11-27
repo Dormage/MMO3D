@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/region_map.gd" id="1_region"]
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_region")
+region_id = "island"
+display_name = "Floating Island"
+glb_path = "res://assets/worlds/island/island_godot.glb"
+ground_meshes = PackedStringArray("SM_Town_Ground")
+solid_meshes = PackedStringArray("SM_Town_Buildings", "SM_Town_Props", "SM_Town_Rampart")
+spawn_center = Vector2(0, 0)
+spawn_search_radius = 50.0
+nav_stitch_gap = 2.6
+nav_stitch_rise = 1.4
+nav_glb_path = "res://assets/worlds/island/nav_island.glb"

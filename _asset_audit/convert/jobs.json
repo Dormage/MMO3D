@@ -1,0 +1,416 @@
+[
+ {
+  "key": "catfish",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Mesh/Catfish_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Animation/Catfish@sturn.FBX",
+    "clip": "stunned"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Textures/Catfish_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Catfish_/Assets/Hatogame_new/Catfish/Textures/Catfish_Normal.png"
+  },
+  "roughness": 0.58,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/catfish.glb"
+ },
+ {
+  "key": "watcher",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Mesh/Watcher_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Animation/Watcher@sturn.FBX",
+    "clip": "stunned"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Textures/Watcher_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Watcher_/Assets/Hatogame_new/Watcher/Textures/Watcher_Normal.png"
+  },
+  "roughness": 0.55,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/watcher.glb"
+ },
+ {
+  "key": "wolf_boss",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Mesh/Wolfboss_skin.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@battleidle.FBX",
+    "clip": "idle_battle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@attack1.FBX",
+    "clip": "attack1"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@attack2.FBX",
+    "clip": "attack2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@die.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@sturn.FBX",
+    "clip": "stunned"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Animation/Wolfboss@attack3.FBX",
+    "clip": "attack3"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Textures/Wolfboss_Albedo.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/01Monster_Wolf_Boss_/Assets/Hatogame_new/BossMonsterPack1/Wolfboss/Textures/Wolfboss_Normal.png"
+  },
+  "roughness": 0.62,
+  "time_scale": 0.25,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/wolf_boss.glb"
+ },
+ {
+  "key": "rhino",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/Mesh/Rino_mesh.FBX",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Walk.FBX",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Run.FBX",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Idle.FBX",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Attack.FBX",
+    "clip": "attack"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Get_Hit.FBX",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Dead.FBX",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@Eats.FBX",
+    "clip": "eat"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/animation/Rhino@shout.FBX",
+    "clip": "shout"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/Texture/Rhinoceros_Albedo.tga",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/Texture/Rhinoceros_normals.tga",
+   "emissive": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Rhino_/Assets/Rhino/Texture/Rhinoceros_Emissive.tga"
+  },
+  "roughness": 0.6,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/rhino.glb"
+ },
+ {
+  "key": "turtle_dragon",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Mesh/turtle_dragon.fbx",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Walk.fbx",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Run.fbx",
+    "clip": "run"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Idle.fbx",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Attack03.fbx",
+    "clip": "attack"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Hit.fbx",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Ani/turtle_dragon_Die.fbx",
+    "clip": "die"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Texture/TurtleDragon_Alb.tga",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/Season2TurtleDragon_/Assets/Season2_Jackpot packV1.5/TurtleDragon/Texture/TurtleDragon_N.tga"
+  },
+  "roughness": 0.55,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/turtle_dragon.glb"
+ },
+ {
+  "key": "monster02",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Monster_3D_Model_02_-_Game_Ready_-_PixeliusVita_/Assets/Stylized3DMonster/Monster02/Monster02_AllAnim.fbx",
+  "anims": [],
+  "clip_map": {
+   "Monster02_Walk": "walk",
+   "Monster02_Run": "run",
+   "Monster02_Idle": "idle",
+   "Monster02_Idle_v02": "idle2",
+   "Monster02_Attack01": "attack1",
+   "Monster02_Attack02": "attack2",
+   "Monster02_Attack03": "attack3",
+   "Monster02_Shoot": "shoot",
+   "Monster02_GetHit": "hit",
+   "Monster02_Die": "die",
+   "Monster02_Stunned": "stunned"
+  },
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Fantasy_Monster_3D_Model_02_-_Game_Ready_-_PixeliusVita_/Assets/Stylized3DMonster/Monster02/Shader_Texture/Texture/Monster02_Color01.png"
+  },
+  "roughness": 0.72,
+  "strip_root": true,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/monster02.glb"
+ },
+ {
+  "key": "ghoul",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Ghoul_Anklegrabber_/Assets/Ghoul/Assets/Meshes/AnkleGrabber.fbx",
+  "anims": [],
+  "clip_map": {
+   "Run": "walk",
+   "AnkleBite": "attack1",
+   "CrochBite": "attack2",
+   "Hit": "hit",
+   "Dies": "die",
+   "IdleOne": "idle",
+   "IdleAlert": "idle_alert",
+   "AngryReaction": "angry",
+   "Sleeps": "sleep",
+   "HushLitteBaby": "hush",
+   "Pose": ""
+  },
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Ghoul_Anklegrabber_/Assets/Ghoul/Assets/Textures/AnkleGrabber/AnkleGrabber_AlbedoTransparency.tga",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/Ghoul_Anklegrabber_/Assets/Ghoul/Assets/Textures/AnkleGrabber/AnkleGrabber_Normal.tga",
+   "alpha": true
+  },
+  "roughness": 0.55,
+  "alpha": true,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/ghoul.glb"
+ },
+ {
+  "key": "swarm08",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Mesh/Character/Swarm08.fbx",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm08/Swarm08_MoveFWD.fbx",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm08/Swarm08_MoveBWD.fbx",
+    "clip": "walk_back"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm08/Swarm08_MoveLFT.fbx",
+    "clip": "walk_left"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm08/Swarm08_MoveRGT.fbx",
+    "clip": "walk_right"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm08/Swarm08_Idle.fbx",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm08/Swarm08_Attack.fbx",
+    "clip": "attack"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm08/Swarm08_GetHit.fbx",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm08/Swarm08_Die.fbx",
+    "clip": "die"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Texture/DefaultPBR/Albedo.png"
+  },
+  "roughness": 0.5,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/swarm08.glb"
+ },
+ {
+  "key": "swarm09",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Mesh/Character/Swarm09.fbx",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm09/Swarm09_MoveFWD.fbx",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm09/Swarm09_MoveBWD.fbx",
+    "clip": "walk_back"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm09/Swarm09_MoveLFT.fbx",
+    "clip": "walk_left"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm09/Swarm09_MoveRGT.fbx",
+    "clip": "walk_right"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm09/Swarm09_Idle.fbx",
+    "clip": "idle"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm09/Swarm09_Attack.fbx",
+    "clip": "attack"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm09/Swarm09_GetHit.fbx",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Animation/Swarm09/Swarm09_Die.fbx",
+    "clip": "die"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Monster_Minion_Survivor_PBR_Polyart_/Assets/Monster Minion Survivor PBR Polyart/Texture/DefaultPBR/Albedo.png"
+  },
+  "roughness": 0.5,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/swarm09.glb"
+ },
+ {
+  "key": "arachnid",
+  "mesh": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Mesh/SKM_ArachnidAlienHead_Lite.fbx",
+  "anims": [
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkFW_Lite.fbx",
+    "clip": "walk"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkFW4_Lite.fbx",
+    "clip": "walk2"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkBW _Lite.fbx",
+    "clip": "walk_back"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkL_Lite.fbx",
+    "clip": "walk_left"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_WalkR_Lite.fbx",
+    "clip": "walk_right"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_Attack4_Lite.fbx",
+    "clip": "attack"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_TakeHit_Lite.fbx",
+    "clip": "hit"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_Dead_Lite.fbx",
+    "clip": "die"
+   },
+   {
+    "file": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Animation/AS_ArachnicAlienHead_BasicJump_Lite.fbx",
+    "clip": "jump"
+   }
+  ],
+  "textures": {
+   "base": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Textures/T_ArachnidHead_Lite1K_BC_Dirt.png",
+   "normal": "/home/dormage/code/MMO3D2/_asset_audit/tree/Arachnid-Alien_Head_Lite_/Assets/Stocklancer/ArachnidAlienHead_Lite/Textures/T_ArachnidHead_Lite1K_N.png"
+  },
+  "roughness": 0.55,
+  "out": "/home/dormage/code/MMO3D2/assets/models/monsters/arachnid.glb"
+ }
+]

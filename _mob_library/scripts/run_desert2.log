@@ -1,0 +1,255 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+sky: cloud-sea shader active
+REGION_STATE regions=5 current=4(desert)
+REGION_LIGHT using shared SkySun
+REGION_NAVMARKERS hidden=1
+REGION_NAVGLB res://assets/worlds/desert_town/nav_desert.glb
+REGION_CACHE hit user://region_cache/desert.scn
+REGION_COLLISION GroundCollision layer=1 tris=4640
+REGION_COLLISION GroundCollision1 layer=1 tris=100352
+REGION_COLLISION Walkable_SM_bld_00_tavern layer=1 tris=932
+REGION_COLLISION Solid_SM_bld_00_tavern layer=2 tris=3802
+REGION_COLLISION Walkable_SM_bld_01_tavern layer=1 tris=1088
+REGION_COLLISION Solid_SM_bld_01_tavern layer=2 tris=3856
+REGION_COLLISION Walkable_SM_bld_02_tavern layer=1 tris=956
+REGION_COLLISION Solid_SM_bld_02_tavern layer=2 tris=3776
+REGION_COLLISION Walkable_SM_bld_03_north_c layer=1 tris=916
+REGION_COLLISION Solid_SM_bld_03_north_c layer=2 tris=4015
+REGION_DECOR SM_bld_03_north_c no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_04_north_c layer=1 tris=716
+REGION_COLLISION Solid_SM_bld_04_north_c layer=2 tris=3955
+REGION_COLLISION Walkable_SM_bld_05_north_c layer=1 tris=852
+REGION_COLLISION Solid_SM_bld_05_north_c layer=2 tris=3050
+REGION_COLLISION Walkable_SM_bld_06_north_e layer=1 tris=1040
+REGION_COLLISION Solid_SM_bld_06_north_e layer=2 tris=3920
+REGION_COLLISION Walkable_SM_bld_07_north_e layer=1 tris=776
+REGION_COLLISION Solid_SM_bld_07_north_e layer=2 tris=2920
+REGION_COLLISION Walkable_SM_bld_08_north_e layer=1 tris=740
+REGION_COLLISION Solid_SM_bld_08_north_e layer=2 tris=3913
+REGION_DECOR SM_bld_08_north_e no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_09_north_e layer=1 tris=1028
+REGION_COLLISION Solid_SM_bld_09_north_e layer=2 tris=3800
+REGION_DECOR SM_bld_09_north_e no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_10_west_m layer=1 tris=500
+REGION_COLLISION Solid_SM_bld_10_west_m layer=2 tris=2308
+REGION_COLLISION Walkable_SM_bld_11_west_m layer=1 tris=884
+REGION_COLLISION Solid_SM_bld_11_west_m layer=2 tris=3998
+REGION_DECOR SM_bld_11_west_m no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_12_west_s layer=1 tris=740
+REGION_COLLISION Solid_SM_bld_12_west_s layer=2 tris=3561
+REGION_COLLISION Walkable_SM_bld_13_west_s layer=1 tris=816
+REGION_COLLISION Solid_SM_bld_13_west_s layer=2 tris=3074
+REGION_DECOR SM_bld_13_west_s no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_14_west_s layer=1 tris=632
+REGION_COLLISION Solid_SM_bld_14_west_s layer=2 tris=2456
+REGION_COLLISION Walkable_SM_bld_15_west_sw layer=1 tris=500
+REGION_COLLISION Solid_SM_bld_15_west_sw layer=2 tris=2887
+REGION_DECOR SM_bld_15_west_sw no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_16_west_sw layer=1 tris=476
+REGION_COLLISION Solid_SM_bld_16_west_sw layer=2 tris=2052
+REGION_COLLISION Walkable_SM_bld_17_east_n layer=1 tris=688
+REGION_COLLISION Solid_SM_bld_17_east_n layer=2 tris=3377
+REGION_DECOR SM_bld_17_east_n no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_18_east_n layer=1 tris=580
+REGION_COLLISION Solid_SM_bld_18_east_n layer=2 tris=2626
+REGION_COLLISION Walkable_SM_bld_19_east_m layer=1 tris=956
+REGION_COLLISION Solid_SM_bld_19_east_m layer=2 tris=3242
+REGION_COLLISION Walkable_SM_bld_20_east_m layer=1 tris=760
+REGION_COLLISION Solid_SM_bld_20_east_m layer=2 tris=3793
+REGION_DECOR SM_bld_20_east_m no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_21_east_se layer=1 tris=476
+REGION_COLLISION Solid_SM_bld_21_east_se layer=2 tris=3507
+REGION_DECOR SM_bld_21_east_se no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_22_east_se layer=1 tris=748
+REGION_COLLISION Solid_SM_bld_22_east_se layer=2 tris=3551
+REGION_DECOR SM_bld_22_east_se no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_23_south_w layer=1 tris=464
+REGION_COLLISION Solid_SM_bld_23_south_w layer=2 tris=2200
+REGION_COLLISION Walkable_SM_bld_24_south_w layer=1 tris=464
+REGION_COLLISION Solid_SM_bld_24_south_w layer=2 tris=2168
+REGION_COLLISION Walkable_SM_bld_25_south_w layer=1 tris=964
+REGION_COLLISION Solid_SM_bld_25_south_w layer=2 tris=3566
+REGION_COLLISION Walkable_SM_bld_26_south_w layer=1 tris=504
+REGION_COLLISION Solid_SM_bld_26_south_w layer=2 tris=1782
+REGION_COLLISION Walkable_SM_bld_27_south_e layer=1 tris=560
+REGION_COLLISION Solid_SM_bld_27_south_e layer=2 tris=2416
+REGION_COLLISION Walkable_SM_bld_28_south_e layer=1 tris=1036
+REGION_COLLISION Solid_SM_bld_28_south_e layer=2 tris=3374
+REGION_COLLISION Walkable_SM_bld_29_south_e layer=1 tris=388
+REGION_COLLISION Solid_SM_bld_29_south_e layer=2 tris=2258
+REGION_COLLISION Walkable_SM_bld_30_south_e layer=1 tris=352
+REGION_COLLISION Solid_SM_bld_30_south_e layer=2 tris=1970
+REGION_COLLISION Walkable_SM_bld_31_shop_w layer=1 tris=656
+REGION_COLLISION Solid_SM_bld_31_shop_w layer=2 tris=3595
+REGION_COLLISION Walkable_SM_bld_32_shop_e layer=1 tris=612
+REGION_COLLISION Solid_SM_bld_32_shop_e layer=2 tris=2414
+REGION_COLLISION Walkable_SM_bld_33_north_n2 layer=1 tris=996
+REGION_COLLISION Solid_SM_bld_33_north_n2 layer=2 tris=3951
+REGION_DECOR SM_bld_33_north_n2 no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_34_north_ne layer=1 tris=928
+REGION_COLLISION Solid_SM_bld_34_north_ne layer=2 tris=3465
+REGION_COLLISION Walkable_SM_bld_35_north_ne layer=1 tris=1204
+REGION_COLLISION Solid_SM_bld_35_north_ne layer=2 tris=4565
+REGION_COLLISION Walkable_SM_bld_36_mid_w layer=1 tris=740
+REGION_COLLISION Solid_SM_bld_36_mid_w layer=2 tris=3553
+REGION_COLLISION Walkable_SM_bld_37_mid_sw layer=1 tris=488
+REGION_COLLISION Solid_SM_bld_37_mid_sw layer=2 tris=2028
+REGION_COLLISION Walkable_SM_bld_38_mid_se layer=1 tris=524
+REGION_COLLISION Solid_SM_bld_38_mid_se layer=2 tris=2775
+REGION_COLLISION Walkable_SM_bld_39_shed_n layer=1 tris=428
+REGION_COLLISION Solid_SM_bld_39_shed_n layer=2 tris=2591
+REGION_COLLISION Walkable_SM_bld_40_shed_w layer=1 tris=452
+REGION_COLLISION Solid_SM_bld_40_shed_w layer=2 tris=3025
+REGION_COLLISION Walkable_SM_bld_41_shed_e layer=1 tris=356
+REGION_COLLISION Solid_SM_bld_41_shed_e layer=2 tris=2727
+REGION_DECOR SM_bld_41_shed_e no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_bld_42_shed_s layer=1 tris=380
+REGION_COLLISION Solid_SM_bld_42_shed_s layer=2 tris=2473
+REGION_DECOR SM_bld_42_shed_s no collision on ["M_cloth_cream"]
+REGION_COLLISION Solid_SM_gate_stair layer=2 tris=1304
+REGION_COLLISION Walkable_SM_gate_stair layer=1 tris=2962
+REGION_COLLISION Walkable_SM_landmark_pavilion layer=1 tris=3740
+REGION_COLLISION Solid_SM_landmark_pavilion layer=2 tris=16693
+REGION_DECOR SM_landmark_pavilion no collision on ["M_cloth_cream"]
+REGION_COLLISION Walkable_SM_landmark_south layer=1 tris=2024
+REGION_COLLISION Solid_SM_landmark_south layer=2 tris=8661
+REGION_COLLISION Solid_SM_rampart layer=2 tris=33928
+REGION_COLLISION Walkable_SM_rampart layer=1 tris=19210
+REGION_DECOR SM_rampart no collision on ["M_cloth_cream"]
+REGION_COLLISION SM_flora_desert skipped (non-solid)
+REGION_COLLISION SM_palms_town skipped (non-solid)
+REGION_COLLISION SM_props_market skipped (non-solid)
+REGION_COLLISION SM_shrubs_town skipped (non-solid)
+REGION_HOST mounted region_desert.tscn
+WEAPON_EQUIPPED slot=0 id=sword weapon=weapon_arming_sword clip=1H_Slash duration=0.95 tip=0.84
+PLAYER_IDLE_FLAT root=(-0.2647,0.3442,-0.9035) keys=232
+ATTACK_ROOT_FLAT clip=1H_Slash track=Armature/Skeleton3D:Hips keys=61 fixed=(-0.014476, -0.038188, -0.792969)
+ATTACK_ROOT_FLAT clip=2H_Slash track=Armature/Skeleton3D:Hips keys=100 fixed=(-0.00021, -0.035535, -1.032923)
+ATTACK_ROOT_FLAT clip=SwordShield track=Armature/Skeleton3D:Hips keys=66 fixed=(-0.003054, -0.020118, -0.979252)
+ATTACK_ROOT_FLAT clip=Thrust track=Armature/Skeleton3D:Hips keys=92 fixed=(0.007976, -0.023152, -0.919269)
+POP_CANDIDATES region=desert count=4934 bounds=[P: (-66.04437, -19.1, -66.17487), S: (131.9645, 50.03, 174.1154)] step=1.80
+POPULATION region=desert actors=45 candidates=4934 placement=districts anim_ok=45
+POP_ACTOR Character Enemy | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Character Soldier | walk=run run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Ninja | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Pirate Captain | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Skeleton | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Skeleton | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Soldier | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Adventurer | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Adventurer | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Animated Platformer Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Animated Wizard | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Animated Woman | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Animated Woman | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Anne | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Astronaut | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Astronaut | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Astronaut | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Astronaut | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Beach Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Big arm | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Business Man | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Casual Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Character Animated | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Character Hazmat | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Characters Matt | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Characters Sam | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Characters Shaun | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Cube Guy Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Cube Woman Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Farmer | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Henry | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Hooded Adventurer | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Hoodie Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR King | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Lis | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Mako | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Punk | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Punk | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR SWAT | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Sci Fi Character | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Steve | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Suit | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Witch | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Worker | walk=walk run=run idle=idle attack=attack hit=hit die=die
+POP_ACTOR Worker | walk=walk run=run idle=idle attack=attack hit=hit die=die
+REGION_WATER surfaces=0 apron=none
+REGION_SPAWN desert at (1.5, 2.598076) ground=0.045 radius=3.0
+REGION_MAP id=desert meshes=52 polys~334709 bounds=[P: (-248.0773, -8.051813, -246.9182), S: (475.5926, 24.98181, 501.0156)] spawn=(1.5, 0.044891, 2.598076)
+PLAYER_SPAWN pos=(1.5, 0.050899, 2.598076) ground=0.0449 capsule_bottom=0.0509
+PLAYER_MODEL_FIT sole=0.1509 mesh_low=-0.1300 capsule_bottom=0.0509 pivot_offset=0.0845
+CARVEFLAG carrier=Region value=false
+WATER_LEVEL 0.80 from Region
+NAV_EDGE margin=1.00
+WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision.
+     at: generator_bake_from_source_geometry_data (modules/navigation_3d/3d/nav_mesh_generator_3d.cpp:372)
+     GDScript backtrace (most recent call first):
+         [0] _build_from_markers (res://scripts/nav_world.gd:757)
+         [1] build (res://scripts/nav_world.gd:88)
+         [2] _ready (res://scripts/game_controller.gd:129)
+NAV_MARKERS meshes=1 tris=219572 polygons=17179 bake_ms=4288
+NAV_STITCH parts=98 links=0 unreached=94
+SHIPPED_INPUT node=/root/Game in_tree=true unhandled_enabled=true
+SHIPPED_NAV polygons=17179 vertices=11262 region_polys=17179 map_rid_ok=true
+WARNING: Navigation region synchronization had 119 edge error(s).
+More than 2 edges tried to occupy the same map rasterization space.
+This causes a logical error in the navigation mesh geometry and is commonly caused by overlap or too densely placed edges.
+Consider baking with a higher 'cell_size', greater geometry margin, and less detailed bake objects to cause fewer edges.
+Consider lowering the 'navigation/3d/merge_rasterizer_cell_scale' in the project settings.
+This warning can be toggled under 'navigation/3d/warnings/navmesh_edge_merge_errors' in the project settings.
+     at: _build_step_find_edge_connection_pairs (modules/navigation_3d/3d/nav_region_builder_3d.cpp:221)
+PLAYER_MODEL_FIT sole=0.1509 mesh_low=-0.1300 capsule_bottom=0.0509 pivot_offset=0.0845
+SHIPPED_PLAYER pos=(1.5, 0.0509, 2.598076) in_tree=true
+SHIPPED_PATH a=(1.5, 0.218999, 2.997002) b=(6.505591, 0.262774, 2.811347) points=7 length=5.21
+DEEP_ISLANDS_HIDDEN
+GAME_CAM pitch=60 dist=18.0..26.0 focus_owner=<Object#null>
+NAV_LINKS links=0 tree_obstacles=0
+ISLAND_DETAIL skipped: authored world
+POP_MOVE character_enemy_0 dist=0.87 character_enemy_0 pos=(-30.1, 0.0, 20.5) home_dist=0.87 anim=idle floor=true
+POP_MOVE character_soldier_0 dist=1.03 character_soldier_0 pos=(25.7, 0.0, -11.3) home_dist=1.03 anim=run floor=true
+POP_MOVE ninja_0 dist=1.72 ninja_0 pos=(-30.3, 0.0, 17.6) home_dist=1.72 anim=idle floor=true
+POP_MOVE pirate_captain_0 dist=0.99 pirate_captain_0 pos=(-30.3, 0.0, 22.2) home_dist=0.99 anim=Wave floor=true
+POP_MOVE skeleton_1xzd_0 dist=1.56 skeleton_1xzd_0 pos=(-27.8, 0.0, 24.6) home_dist=1.89 anim=idle floor=true
+POP_MOVE skeleton_yq5a_0 dist=3.30 skeleton_yq5a_0 pos=(27.1, 0.0, 23.0) home_dist=3.66 anim=Wave floor=true
+POP_MOVE soldier_0 dist=1.09 soldier_0 pos=(-0.4, 0.0, -23.5) home_dist=1.28 anim=idle floor=true
+POP_MOVE adventurer_0 dist=1.64 adventurer_0 pos=(25.8, -3.8, 52.1) home_dist=1.64 anim=idle floor=true
+POP_MOVE adventurer_zwf0_0 dist=2.00 adventurer_zwf0_0 pos=(22.3, 7.7, -11.6) home_dist=2.03 anim=walk floor=true
+POP_MOVE animated_platformer_character_0 dist=1.18 animated_platformer_character_0 pos=(-25.5, -3.8, 52.2) home_dist=1.18 anim=idle floor=true
+POP_MOVE animated_wizard_0 dist=2.03 animated_wizard_0 pos=(26.5, 0.0, 17.9) home_dist=2.14 anim=idle floor=true
+POP_MOVE animated_woman_0 dist=0.99 animated_woman_0 pos=(-0.4, -3.8, 63.6) home_dist=1.29 anim=idle floor=true
+POP_MOVE animated_woman_qj2g_0 dist=1.46 animated_woman_qj2g_0 pos=(4.2, 0.1, 21.8) home_dist=1.46 anim=walk floor=true
+POP_MOVE anne_0 dist=1.53 anne_0 pos=(-3.4, 0.0, -18.2) home_dist=1.53 anim=idle floor=true
+POP_MOVE astronaut_0 dist=2.12 astronaut_0 pos=(30.3, 0.0, 22.1) home_dist=2.12 anim=Wave floor=true
+POP_MOVE astronaut_3hc2_0 dist=1.48 astronaut_3hc2_0 pos=(-23.4, -3.8, 53.8) home_dist=1.48 anim=walk floor=true
+POP_MOVE astronaut_oges_0 dist=2.07 astronaut_oges_0 pos=(4.9, -3.8, 61.5) home_dist=2.07 anim=idle floor=true
+POP_MOVE astronaut_zbtp_0 dist=1.38 astronaut_zbtp_0 pos=(2.4, -3.8, 64.9) home_dist=1.38 anim=walk floor=true
+POP_MOVE beach_character_0 dist=1.74 beach_character_0 pos=(28.1, -3.8, 55.8) home_dist=1.74 anim=walk floor=true
+POP_MOVE big_arm_0 dist=2.51 big_arm_0 pos=(27.4, 0.0, -13.8) home_dist=2.51 anim=idle floor=true
+POP_MOVE business_man_0 dist=0.78 business_man_0 pos=(23.6, -3.8, 54.9) home_dist=0.78 anim=walk floor=true
+POP_MOVE casual_character_0 dist=2.43 casual_character_0 pos=(-28.5, 0.0, 15.0) home_dist=2.43 anim=idle floor=true
+POP_MOVE character_animated_0 dist=2.58 character_animated_0 pos=(33.8, 0.0, 17.4) home_dist=2.58 anim=walk floor=true
+POP_MOVE character_hazmat_0 dist=0.59 character_hazmat_0 pos=(-0.2, 0.2, 24.1) home_dist=0.58 anim=idle floor=true
+POP_MOVE characters_matt_0 dist=1.47 characters_matt_0 pos=(-2.7, 0.0, -22.1) home_dist=1.47 anim=walk floor=true
+POP_MOVE characters_sam_0 dist=1.99 characters_sam_0 pos=(-3.9, 0.1, 24.7) home_dist=1.99 anim=walk floor=true
+POP_MOVE characters_shaun_0 dist=2.75 characters_shaun_0 pos=(-5.6, -3.8, 59.5) home_dist=1.67 anim=walk floor=true
+POP_MOVE cube_guy_character_0 dist=1.76 cube_guy_character_0 pos=(-0.6, -3.8, 64.3) home_dist=1.76 anim=idle floor=true
+POP_MOVE cube_woman_character_0 dist=1.74 cube_woman_character_0 pos=(-0.5, 0.1, 26.3) home_dist=1.74 anim=walk floor=true
+POP_MOVE farmer_0 dist=2.14 farmer_0 pos=(-28.8, -3.8, 56.8) home_dist=2.14 anim=walk floor=true
+POP_MOVE henry_0 dist=1.42 henry_0 pos=(22.1, 7.7, -13.9) home_dist=1.42 anim=idle floor=true
+POP_MOVE hooded_adventurer_0 dist=0.72 hooded_adventurer_0 pos=(-5.9, 0.0, -18.0) home_dist=0.72 anim=walk floor=true
+POP_MOVE hoodie_character_0 dist=2.59 hoodie_character_0 pos=(33.1, 0.0, 20.2) home_dist=2.83 anim=idle floor=true
+POP_MOVE king_0 dist=0.35 king_0 pos=(-25.4, -3.8, 56.9) home_dist=0.35 anim=walk floor=true
+POP_MOVE lis_0 dist=0.42 lis_0 pos=(-4.7, -3.8, 62.3) home_dist=0.57 anim=idle floor=true
+POP_MOVE mako_0 dist=1.44 mako_0 pos=(23.9, -3.8, 55.7) home_dist=1.44 anim=walk floor=true
+POP_MOVE punk_0 dist=1.88 punk_0 pos=(-23.8, -3.8, 54.3) home_dist=1.88 anim=walk floor=true
+POP_MOVE punk_djxo_0 dist=0.35 punk_djxo_0 pos=(1.6, 0.0, -24.1) home_dist=0.35 anim=walk floor=true
+POP_MOVE swat_0 dist=2.09 swat_0 pos=(-30.9, 0.0, 23.1) home_dist=2.09 anim=walk floor=true
+POP_MOVE sci_fi_character_0 dist=2.15 sci_fi_character_0 pos=(27.5, 0.0, 19.0) home_dist=2.15 anim=idle floor=true
+POP_MOVE steve_0 dist=0.45 steve_0 pos=(28.0, -3.8, 52.9) home_dist=0.45 anim=idle floor=true
+POP_MOVE suit_0 dist=0.84 suit_0 pos=(-5.1, 0.2, 21.1) home_dist=0.83 anim=idle floor=true
+POP_MOVE witch_0 dist=2.73 witch_0 pos=(-1.6, 0.1, 28.9) home_dist=2.73 anim=walk floor=true
+POP_MOVE worker_0 dist=1.14 worker_0 pos=(-1.2, 0.0, -24.0) home_dist=1.14 anim=walk floor=true
+POP_MOVE worker_yg2b_0 dist=0.90 worker_yg2b_0 pos=(20.2, 7.7, -13.1) home_dist=0.90 anim=idle floor=true
+POP_CHECK region=desert actors=45 moved=45 anim_ok=45

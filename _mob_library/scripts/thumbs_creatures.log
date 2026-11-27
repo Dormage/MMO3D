@@ -1,0 +1,244 @@
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:06:27 | INFO: Data are loaded, start creating Blender stuff
+01:06:27 | INFO: Blender create Mesh node Alien
+01:06:27 | INFO: glTF import finished in 0.05s
+/home/dormage/code/MMO3D2/_mob_library/scripts/render_thumbs.py:75: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:18)
+00:09.905  render           | Saved: '_mob_library/renders_creatures/Alien_RRliSQBP7r.png'
+@@THUMB Alien_RRliSQBP7r
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:06:36 | INFO: Data are loaded, start creating Blender stuff
+01:06:36 | INFO: Blender create Mesh node BlueDemon
+01:06:36 | INFO: glTF import finished in 0.10s
+00:13.330  render           | Saved: '_mob_library/renders_creatures/Blue_Demon_S7jYW6Amye.png'
+@@THUMB Blue_Demon_S7jYW6Amye
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:06:39 | INFO: Data are loaded, start creating Blender stuff
+01:06:39 | INFO: Blender create Mesh node Bunny
+01:06:40 | INFO: Blender create Mesh node Carrot
+01:06:40 | INFO: glTF import finished in 0.09s
+00:16.259  render           | Saved: '_mob_library/renders_creatures/Bunny_irZjWFARyl.png'
+@@THUMB Bunny_irZjWFARyl
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:06:42 | INFO: Data are loaded, start creating Blender stuff
+01:06:42 | INFO: Blender create Mesh node Cactoro
+01:06:43 | INFO: glTF import finished in 0.07s
+00:20.100  render           | Saved: '_mob_library/renders_creatures/Cactoro_IGn9lhdama.png'
+@@THUMB Cactoro_IGn9lhdama
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:06:46 | INFO: Data are loaded, start creating Blender stuff
+01:06:46 | INFO: Blender create Mesh node Demon
+01:06:46 | INFO: glTF import finished in 0.04s
+00:23.793  render           | Saved: '_mob_library/renders_creatures/Demon_IkB63XOPvr.png'
+@@THUMB Demon_IkB63XOPvr
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:06:50 | INFO: Data are loaded, start creating Blender stuff
+01:06:50 | INFO: Blender create Mesh node Demon
+01:06:50 | INFO: Blender create Mesh node Trident
+01:06:50 | INFO: glTF import finished in 0.11s
+00:27.243  render           | Saved: '_mob_library/renders_creatures/Demon_LnfIziKv4o.png'
+@@THUMB Demon_LnfIziKv4o
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:06:53 | INFO: Data are loaded, start creating Blender stuff
+01:06:53 | INFO: Blender create Mesh node Dino
+01:06:53 | INFO: glTF import finished in 0.06s
+00:30.706  render           | Saved: '_mob_library/renders_creatures/Dino_wuerCFCWNR.png'
+@@THUMB Dino_wuerCFCWNR
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:06:57 | INFO: Data are loaded, start creating Blender stuff
+01:06:57 | INFO: Blender create Mesh node Enemy
+01:06:57 | INFO: glTF import finished in 0.07s
+00:34.035  render           | Saved: '_mob_library/renders_creatures/Enemy_Large_UgBmRVnQ9h.png'
+@@THUMB Enemy_Large_UgBmRVnQ9h
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:00 | INFO: Data are loaded, start creating Blender stuff
+01:07:00 | INFO: Blender create Mesh node Goblin
+01:07:00 | INFO: glTF import finished in 0.02s
+00:37.839  render           | Saved: '_mob_library/renders_creatures/Goblin_OdCOFSmEhl.png'
+@@THUMB Goblin_OdCOFSmEhl
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:04 | INFO: Data are loaded, start creating Blender stuff
+01:07:04 | INFO: Blender create Mesh node Monkroose
+01:07:04 | INFO: glTF import finished in 0.06s
+00:40.728  render           | Saved: '_mob_library/renders_creatures/Monkroose_j4rVPvxyLg.png'
+@@THUMB Monkroose_j4rVPvxyLg
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:07 | INFO: Data are loaded, start creating Blender stuff
+01:07:07 | INFO: Blender create Mesh node MushroomKing
+01:07:07 | INFO: Blender create Mesh node Mushroom
+01:07:07 | INFO: glTF import finished in 0.06s
+00:43.886  render           | Saved: '_mob_library/renders_creatures/Mushroom_King_grnFTziU8u.png'
+@@THUMB Mushroom_King_grnFTziU8u
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:10 | INFO: Data are loaded, start creating Blender stuff
+01:07:10 | INFO: Blender create Mesh node Orc
+01:07:10 | INFO: Blender create Mesh node Orc_Weapon
+01:07:10 | INFO: glTF import finished in 0.07s
+00:46.900  render           | Saved: '_mob_library/renders_creatures/Orc_5vO2YJsPEf.png'
+@@THUMB Orc_5vO2YJsPEf
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:13 | INFO: Data are loaded, start creating Blender stuff
+01:07:13 | INFO: Blender create Mesh node Armor
+01:07:13 | INFO: Blender create Mesh node Skeleton
+01:07:13 | INFO: glTF import finished in 0.04s
+00:49.239  render           | Saved: '_mob_library/renders_creatures/Skeleton_DM4QScSmbS.png'
+@@THUMB Skeleton_DM4QScSmbS
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:15 | INFO: Data are loaded, start creating Blender stuff
+01:07:15 | INFO: Blender create Mesh node Yeti
+01:07:15 | INFO: glTF import finished in 0.05s
+00:52.434  render           | Saved: '_mob_library/renders_creatures/Yeti_ceRHrn8HHE.png'
+@@THUMB Yeti_ceRHrn8HHE
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:19 | INFO: Data are loaded, start creating Blender stuff
+01:07:19 | INFO: Blender create Mesh node Yeti
+01:07:19 | INFO: glTF import finished in 0.03s
+00:56.254  render           | Saved: '_mob_library/renders_creatures/Yeti_xtMYEVzyw0.png'
+@@THUMB Yeti_xtMYEVzyw0
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:22 | INFO: Data are loaded, start creating Blender stuff
+01:07:22 | INFO: Blender create Mesh node Face
+01:07:22 | INFO: Blender create Mesh node Tongue
+01:07:22 | INFO: Blender create Mesh node Zombie_Chubby
+01:07:23 | INFO: glTF import finished in 0.10s
+00:59.125  render           | Saved: '_mob_library/renders_creatures/Zombie_22K0aSZkHV.png'
+@@THUMB Zombie_22K0aSZkHV
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:25 | INFO: Data are loaded, start creating Blender stuff
+01:07:25 | INFO: Blender create Mesh node Cube.000
+01:07:25 | INFO: glTF import finished in 0.02s
+01:02.234  render           | Saved: '_mob_library/renders_creatures/Zombie_JoBvxIUpZP.png'
+@@THUMB Zombie_JoBvxIUpZP
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:28 | INFO: Data are loaded, start creating Blender stuff
+01:07:28 | INFO: Blender create Mesh node Eyelid
+01:07:28 | INFO: Blender create Mesh node Zombie
+01:07:29 | INFO: glTF import finished in 0.22s
+01:05.466  render           | Saved: '_mob_library/renders_creatures/Zombie_VlXjG0N8Eg.png'
+@@THUMB Zombie_VlXjG0N8Eg
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:32 | INFO: Data are loaded, start creating Blender stuff
+01:07:32 | INFO: Blender create Mesh node Zombie
+01:07:32 | INFO: glTF import finished in 0.03s
+01:08.926  render           | Saved: '_mob_library/renders_creatures/Zombie_half_Htcsn9OrXJ.png'
+@@THUMB Zombie_half_Htcsn9OrXJ
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:35 | INFO: Data are loaded, start creating Blender stuff
+01:07:35 | INFO: Blender create Mesh node Giant
+01:07:35 | INFO: glTF import finished in 0.02s
+01:12.831  render           | Saved: '_mob_library/renders_creatures/Giant_BldaiPtyJa.png'
+@@THUMB Giant_BldaiPtyJa
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:39 | INFO: Data are loaded, start creating Blender stuff
+01:07:39 | INFO: Blender create Mesh node BarbaraTheBee
+01:07:39 | INFO: glTF import finished in 0.06s
+01:17.929  render           | Saved: '_mob_library/renders_creatures/Mech_4UvIHxnoSR.png'
+@@THUMB Mech_4UvIHxnoSR
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:44 | INFO: Data are loaded, start creating Blender stuff
+01:07:44 | INFO: Blender create Mesh node RaeTheRedPanda
+01:07:44 | INFO: glTF import finished in 0.05s
+01:21.648  render           | Saved: '_mob_library/renders_creatures/Mech_D5wW2jDO42.png'
+@@THUMB Mech_D5wW2jDO42
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:48 | INFO: Data are loaded, start creating Blender stuff
+01:07:48 | INFO: Blender create Mesh node FinnTheFrog
+01:07:48 | INFO: glTF import finished in 0.05s
+01:24.797  render           | Saved: '_mob_library/renders_creatures/Mech_o3Ps8z8ByP.png'
+@@THUMB Mech_o3Ps8z8ByP
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:51 | INFO: Data are loaded, start creating Blender stuff
+01:07:51 | INFO: Blender create Mesh node FernandoTheFlamingo
+01:07:51 | INFO: glTF import finished in 0.05s
+01:27.941  render           | Saved: '_mob_library/renders_creatures/Mech_tLs9mFVCSU.png'
+@@THUMB Mech_tLs9mFVCSU
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:54 | INFO: Data are loaded, start creating Blender stuff
+01:07:54 | INFO: Blender create Mesh node Weapon_Sword_2
+01:07:54 | INFO: Blender create Mesh node Cube.001
+01:07:54 | INFO: Blender create Mesh node Sharky
+01:07:54 | INFO: glTF import finished in 0.09s
+01:31.900  render           | Saved: '_mob_library/renders_creatures/Sharky_iPV5YmAoIv.png'
+@@THUMB Sharky_iPV5YmAoIv
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:07:58 | INFO: Data are loaded, start creating Blender stuff
+01:07:58 | INFO: Blender create Mesh node Character
+01:07:58 | INFO: glTF import finished in 0.22s
+01:35.067  render           | Saved: '_mob_library/renders_creatures/Zombie_xqEzosAVYX.png'
+@@THUMB Zombie_xqEzosAVYX
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:01 | INFO: Data are loaded, start creating Blender stuff
+01:08:01 | INFO: Blender create Mesh node Fish
+01:08:01 | INFO: glTF import finished in 0.06s
+01:38.172  render           | Saved: '_mob_library/renders_creatures/Fish_ypEYhCImAB.png'
+@@THUMB Fish_ypEYhCImAB
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:04 | INFO: Data are loaded, start creating Blender stuff
+01:08:04 | INFO: Blender create Mesh node Frog
+01:08:04 | INFO: glTF import finished in 0.06s
+01:41.263  render           | Saved: '_mob_library/renders_creatures/Frog_37wofOCOzG.png'
+@@THUMB Frog_37wofOCOzG
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:07 | INFO: Data are loaded, start creating Blender stuff
+01:08:07 | INFO: Blender create Mesh node Pug.001
+01:08:07 | INFO: Blender create Mesh node Pug.002
+01:08:07 | INFO: Blender create Mesh node Pug
+01:08:08 | INFO: glTF import finished in 0.07s
+01:44.965  render           | Saved: '_mob_library/renders_creatures/Characters_Pug_xvcUwuKl4c.png'
+@@THUMB Characters_Pug_xvcUwuKl4c
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:11 | INFO: Data are loaded, start creating Blender stuff
+01:08:11 | INFO: Blender create Mesh node GermanShepherd
+01:08:11 | INFO: glTF import finished in 0.11s
+01:48.097  render           | Saved: '_mob_library/renders_creatures/German_Shepard_Hssa6NPc6W.png'
+@@THUMB German_Shepard_Hssa6NPc6W
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:14 | INFO: Data are loaded, start creating Blender stuff
+01:08:14 | INFO: Blender create Mesh node Headband
+01:08:14 | INFO: Blender create Mesh node Panda
+01:08:14 | INFO: glTF import finished in 0.10s
+01:51.695  render           | Saved: '_mob_library/renders_creatures/Panda_q1uJ28Hs8T.png'
+@@THUMB Panda_q1uJ28Hs8T
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:18 | INFO: Data are loaded, start creating Blender stuff
+01:08:18 | INFO: Blender create Mesh node Rabbit
+01:08:18 | INFO: Blender create Mesh node Eyes
+01:08:18 | INFO: Blender create Mesh node Hair
+01:08:18 | INFO: glTF import finished in 0.13s
+01:55.156  render           | Saved: '_mob_library/renders_creatures/Rabbit_Blond_cMsI6FDhNx.png'
+@@THUMB Rabbit_Blond_cMsI6FDhNx
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:21 | INFO: Data are loaded, start creating Blender stuff
+01:08:21 | INFO: Blender create Mesh node Rabbit
+01:08:21 | INFO: Blender create Mesh node Eyes
+01:08:21 | INFO: Blender create Mesh node Hair
+01:08:21 | INFO: glTF import finished in 0.12s
+01:59.481  render           | Saved: '_mob_library/renders_creatures/Rabbit_Cyan_Hair_RPZ9gxcFL3.png'
+@@THUMB Rabbit_Cyan_Hair_RPZ9gxcFL3
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:26 | INFO: Data are loaded, start creating Blender stuff
+01:08:26 | INFO: Blender create Mesh node Rabbit
+01:08:26 | INFO: Blender create Mesh node Eyes
+01:08:26 | INFO: Blender create Mesh node Hair
+01:08:26 | INFO: glTF import finished in 0.12s
+02:03.196  render           | Saved: '_mob_library/renders_creatures/Rabbit_Grey_KRnXIKJbqp.png'
+@@THUMB Rabbit_Grey_KRnXIKJbqp
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:29 | INFO: Data are loaded, start creating Blender stuff
+01:08:29 | INFO: Blender create Mesh node Rabbit
+01:08:29 | INFO: Blender create Mesh node Eyes
+01:08:29 | INFO: Blender create Mesh node Hair
+01:08:30 | INFO: glTF import finished in 0.13s
+02:06.627  render           | Saved: '_mob_library/renders_creatures/Rabbit_With_pigtails_SwKX8OIlw8.png'
+@@THUMB Rabbit_With_pigtails_SwKX8OIlw8
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/dormage/.config/blender/5.3/extensions/.cache/compat.dat').
+01:08:33 | INFO: Data are loaded, start creating Blender stuff
+01:08:33 | INFO: Blender create Mesh node Rabbit
+01:08:33 | INFO: Blender create Mesh node Eyes
+01:08:33 | INFO: glTF import finished in 0.10s
+02:10.658  render           | Saved: '_mob_library/renders_creatures/Rabbit_mKev485XTR.png'
+@@THUMB Rabbit_mKev485XTR
+@@DONE
+
+Blender quit
