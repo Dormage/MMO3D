@@ -452,14 +452,14 @@ static var _base_ambient := -1.0
 ## reference's tonal floor).  Raising ambient here restores that fill without
 ## blowing the highlights.
 const REGION_AMBIENT := {
-	"ruins2": 2.60,
+	"ruins2": 1.70,
 }
 
 ## Fraction of ambient that comes from the sky rather than a flat colour.  A
 ## flat ambient brightens every face equally, so it greys the stone; sky light
 ## keeps the directional variation the artist lit for.
 const REGION_SKY_CONTRIB := {
-	"ruins2": 0.75,
+	"ruins2": 0.55,
 }
 
 const REGION_EXPOSURE := {
@@ -468,7 +468,7 @@ const REGION_EXPOSURE := {
 	"graveyard": 0.58,
 	"wetlands": 7.20,
 	"desert": 0.26,
-	"ruins2": 1.80,
+	"ruins2": 1.40,
 }
 
 func _apply_region_exposure() -> void:

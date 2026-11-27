@@ -1450,6 +1450,15 @@ func _apply_cli_graphics() -> void:
 	var root := get_tree().root
 	if root == null:
 		return
+	if a.has("--ssao") or a.has("--nossao"):
+		var ssao_on := a.has("--ssao")
+		var s_n := 0
+		for w in root.find_children("*", "WorldEnvironment", true, false):
+			var we := w as WorldEnvironment
+			if we != null and we.environment != null:
+				we.environment.ssao_enabled = ssao_on
+				s_n += 1
+		print("CLI_GFX ssao=%s envs=%d" % [str(ssao_on), s_n])
 	if a.has("--noshadow"):
 		var n := 0
 		for l in root.find_children("*", "Light3D", true, false):
