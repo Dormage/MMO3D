@@ -1,0 +1,1689 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "repository": "https://github.com/Dormage/MMO3D",
+  "base_commit": "fabd7b4",
+  "engine": "4.6.3-stable official",
+  "engine_sha256": "d0bc2113065e481c9c2c2b2c37daa4e8be3fe9e27f0ab9ab0b6096e9a37907f3",
+  "host": {
+    "os": "Linux x86_64",
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "target_user_hardware": false
+  },
+  "interpretation": [
+    "All movement benchmarks are headless CPU and gameplay checks, not rendered FPS measurements.",
+    "Controlled runs differ only by the diagnostic legacy sole sampler; population is disabled on both.",
+    "Map checks cover supported local spawn routes, not every bridge or triangle winding.",
+    "End-to-end readiness samples are separate observations, not a repeated load-time experiment.",
+    "Software OpenGL rendering validates shader compilation and a visible scene, not target-GPU speed."
+  ],
+  "controlled_ab": {
+    "legacy": {
+      "source_log": "mmo_controlled_legacy.log",
+      "events": [
+        {
+          "event": "BENCH_START",
+          "data": {
+            "display": "headless",
+            "engine": "4.6.3-stable (official)",
+            "headless": true,
+            "label": "legacy",
+            "legacy_sole": true,
+            "max_physics_steps_per_frame": 4,
+            "physics_hz_target": 60,
+            "renderer": "gl_compatibility",
+            "user_args": [
+              "--region=island",
+              "--nopop",
+              "--bench-warmup=2",
+              "--bench-idle=3",
+              "--bench-walk=8",
+              "--bench-timeout=240",
+              "--bench-label=legacy",
+              "--bench-legacy-sole"
+            ]
+          }
+        },
+        {
+          "event": "BENCH_READY",
+          "data": {
+            "camera": "RPGCamera",
+            "load_s": 8.843303,
+            "player_position": [
+              0.0,
+              0.00600005965679884,
+              0.0
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 0.0,
+            "distance_xz_m": 0.0,
+            "frame_ms_max": 18.746,
+            "frame_ms_mean": 6.89907586206897,
+            "frame_ms_p50": 6.879,
+            "frame_ms_p95": 7.816,
+            "frame_ms_p99": 9.147,
+            "frames": 435,
+            "glue_ms_tick": 0.0338111111111111,
+            "headless": true,
+            "headless_loop_hz": 144.946949416514,
+            "label": "legacy",
+            "legacy_sole": true,
+            "move_ms_tick": 0.298705555555556,
+            "path_calls": 0,
+            "phase": "idle",
+            "physics_hz": 59.9780480344194,
+            "physics_per_frame": 0.413793103448276,
+            "physics_ticks": 180,
+            "player_ms_tick": 0.354872222222222,
+            "player_ticks": 180,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 0,
+            "sole_ms_call": 0.0,
+            "sole_samples": 2082,
+            "wall_s": 3.001098,
+            "water_ms_tick": 0.0
+          }
+        },
+        {
+          "event": "BENCH_ROUTE",
+          "data": {
+            "end": [
+              8.0,
+              0.140159726142883,
+              0.0
+            ],
+            "length_m": 7.99999970197678,
+            "points": 3,
+            "start": [
+              5.96046447753906e-08,
+              0.140159726142883,
+              -1.9371509552002e-07
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 3.46141851512336,
+            "distance_xz_m": 27.7324386201799,
+            "frame_ms_max": 82.499,
+            "frame_ms_mean": 7.00338374125874,
+            "frame_ms_p50": 6.262,
+            "frame_ms_p95": 14.712,
+            "frame_ms_p99": 18.158,
+            "frames": 1144,
+            "glue_ms_tick": 0.0276049896049896,
+            "headless": true,
+            "headless_loop_hz": 142.788120278022,
+            "label": "legacy",
+            "legacy_sole": true,
+            "move_ms_tick": 0.457191268191268,
+            "path_calls": 0,
+            "phase": "walk",
+            "physics_hz": 60.0359142078049,
+            "physics_per_frame": 0.420454545454545,
+            "physics_ticks": 481,
+            "player_ms_tick": 6.67419542619543,
+            "player_ticks": 481,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 436,
+            "sole_ms_call": 6.77129587155963,
+            "sole_samples": 2082,
+            "wall_s": 8.011871,
+            "water_ms_tick": 0.0175925155925156
+          }
+        },
+        {
+          "event": "BENCH_PASS",
+          "data": {
+            "elapsed_s": 21.860673,
+            "headless": true,
+            "label": "legacy",
+            "results": [
+              {
+                "achieved_mps": 0.0,
+                "distance_xz_m": 0.0,
+                "frame_ms_max": 18.746,
+                "frame_ms_mean": 6.89907586206897,
+                "frame_ms_p50": 6.879,
+                "frame_ms_p95": 7.816,
+                "frame_ms_p99": 9.147,
+                "frames": 435,
+                "glue_ms_tick": 0.0338111111111111,
+                "headless": true,
+                "headless_loop_hz": 144.946949416514,
+                "label": "legacy",
+                "legacy_sole": true,
+                "move_ms_tick": 0.298705555555556,
+                "path_calls": 0,
+                "phase": "idle",
+                "physics_hz": 59.9780480344194,
+                "physics_per_frame": 0.413793103448276,
+                "physics_ticks": 180,
+                "player_ms_tick": 0.354872222222222,
+                "player_ticks": 180,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 0,
+                "sole_ms_call": 0.0,
+                "sole_samples": 2082,
+                "wall_s": 3.001098,
+                "water_ms_tick": 0.0
+              },
+              {
+                "achieved_mps": 3.46141851512336,
+                "distance_xz_m": 27.7324386201799,
+                "frame_ms_max": 82.499,
+                "frame_ms_mean": 7.00338374125874,
+                "frame_ms_p50": 6.262,
+                "frame_ms_p95": 14.712,
+                "frame_ms_p99": 18.158,
+                "frames": 1144,
+                "glue_ms_tick": 0.0276049896049896,
+                "headless": true,
+                "headless_loop_hz": 142.788120278022,
+                "label": "legacy",
+                "legacy_sole": true,
+                "move_ms_tick": 0.457191268191268,
+                "path_calls": 0,
+                "phase": "walk",
+                "physics_hz": 60.0359142078049,
+                "physics_per_frame": 0.420454545454545,
+                "physics_ticks": 481,
+                "player_ms_tick": 6.67419542619543,
+                "player_ticks": 481,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 436,
+                "sole_ms_call": 6.77129587155963,
+                "sole_samples": 2082,
+                "wall_s": 8.011871,
+                "water_ms_tick": 0.0175925155925156
+              }
+            ],
+            "turnarounds": 3
+          }
+        }
+      ],
+      "engine_or_script_errors": [],
+      "warnings": [
+        "WARNING: Navigation region synchronization had 3 edge error(s)."
+      ]
+    },
+    "cached": {
+      "source_log": "mmo_controlled_cached.log",
+      "events": [
+        {
+          "event": "BENCH_START",
+          "data": {
+            "display": "headless",
+            "engine": "4.6.3-stable (official)",
+            "headless": true,
+            "label": "cached",
+            "legacy_sole": false,
+            "max_physics_steps_per_frame": 4,
+            "physics_hz_target": 60,
+            "renderer": "gl_compatibility",
+            "user_args": [
+              "--region=island",
+              "--nopop",
+              "--bench-warmup=2",
+              "--bench-idle=3",
+              "--bench-walk=8",
+              "--bench-timeout=240",
+              "--bench-label=cached"
+            ]
+          }
+        },
+        {
+          "event": "BENCH_READY",
+          "data": {
+            "camera": "RPGCamera",
+            "load_s": 15.372711,
+            "player_position": [
+              0.0,
+              0.00600005965679884,
+              0.0
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 0.0,
+            "distance_xz_m": 0.0,
+            "frame_ms_max": 9.122,
+            "frame_ms_mean": 6.89988045977011,
+            "frame_ms_p50": 6.892,
+            "frame_ms_p95": 7.843,
+            "frame_ms_p99": 8.427,
+            "frames": 435,
+            "glue_ms_tick": 0.0330833333333333,
+            "headless": true,
+            "headless_loop_hz": 144.930047097268,
+            "label": "cached",
+            "legacy_sole": false,
+            "move_ms_tick": 0.304238888888889,
+            "path_calls": 0,
+            "phase": "idle",
+            "physics_hz": 59.9710539712832,
+            "physics_per_frame": 0.413793103448276,
+            "physics_ticks": 180,
+            "player_ms_tick": 0.364766666666667,
+            "player_ticks": 180,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 0,
+            "sole_ms_call": 0.0,
+            "sole_samples": 2082,
+            "wall_s": 3.001448,
+            "water_ms_tick": 0.0
+          }
+        },
+        {
+          "event": "BENCH_ROUTE",
+          "data": {
+            "end": [
+              8.0,
+              0.140159726142883,
+              0.0
+            ],
+            "length_m": 7.99999970197678,
+            "points": 3,
+            "start": [
+              5.96046447753906e-08,
+              0.140159726142883,
+              -1.9371509552002e-07
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 3.47414218778754,
+            "distance_xz_m": 27.7962538078427,
+            "frame_ms_max": 35.158,
+            "frame_ms_mean": 6.91520916162489,
+            "frame_ms_p50": 6.903,
+            "frame_ms_p95": 8.129,
+            "frame_ms_p99": 9.186,
+            "frames": 1157,
+            "glue_ms_tick": 0.0303708333333333,
+            "headless": true,
+            "headless_loop_hz": 144.608785739899,
+            "label": "cached",
+            "legacy_sole": false,
+            "move_ms_tick": 0.45713125,
+            "path_calls": 0,
+            "phase": "walk",
+            "physics_hz": 59.9932732542364,
+            "physics_per_frame": 0.414866032843561,
+            "physics_ticks": 480,
+            "player_ms_tick": 0.652979166666667,
+            "player_ticks": 480,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 437,
+            "sole_ms_call": 0.121578947368421,
+            "sole_samples": 2082,
+            "wall_s": 8.000897,
+            "water_ms_tick": 0.018925
+          }
+        },
+        {
+          "event": "BENCH_PASS",
+          "data": {
+            "elapsed_s": 28.384711,
+            "headless": true,
+            "label": "cached",
+            "results": [
+              {
+                "achieved_mps": 0.0,
+                "distance_xz_m": 0.0,
+                "frame_ms_max": 9.122,
+                "frame_ms_mean": 6.89988045977011,
+                "frame_ms_p50": 6.892,
+                "frame_ms_p95": 7.843,
+                "frame_ms_p99": 8.427,
+                "frames": 435,
+                "glue_ms_tick": 0.0330833333333333,
+                "headless": true,
+                "headless_loop_hz": 144.930047097268,
+                "label": "cached",
+                "legacy_sole": false,
+                "move_ms_tick": 0.304238888888889,
+                "path_calls": 0,
+                "phase": "idle",
+                "physics_hz": 59.9710539712832,
+                "physics_per_frame": 0.413793103448276,
+                "physics_ticks": 180,
+                "player_ms_tick": 0.364766666666667,
+                "player_ticks": 180,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 0,
+                "sole_ms_call": 0.0,
+                "sole_samples": 2082,
+                "wall_s": 3.001448,
+                "water_ms_tick": 0.0
+              },
+              {
+                "achieved_mps": 3.47414218778754,
+                "distance_xz_m": 27.7962538078427,
+                "frame_ms_max": 35.158,
+                "frame_ms_mean": 6.91520916162489,
+                "frame_ms_p50": 6.903,
+                "frame_ms_p95": 8.129,
+                "frame_ms_p99": 9.186,
+                "frames": 1157,
+                "glue_ms_tick": 0.0303708333333333,
+                "headless": true,
+                "headless_loop_hz": 144.608785739899,
+                "label": "cached",
+                "legacy_sole": false,
+                "move_ms_tick": 0.45713125,
+                "path_calls": 0,
+                "phase": "walk",
+                "physics_hz": 59.9932732542364,
+                "physics_per_frame": 0.414866032843561,
+                "physics_ticks": 480,
+                "player_ms_tick": 0.652979166666667,
+                "player_ticks": 480,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 437,
+                "sole_ms_call": 0.121578947368421,
+                "sole_samples": 2082,
+                "wall_s": 8.000897,
+                "water_ms_tick": 0.018925
+              }
+            ],
+            "turnarounds": 3
+          }
+        }
+      ],
+      "engine_or_script_errors": [],
+      "warnings": [
+        "WARNING: Property agent_max_climb is floored to cell_height voxel units and loses precision.",
+        "WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+        "WARNING: Navigation region synchronization had 3 edge error(s)."
+      ]
+    }
+  },
+  "map_checks": {
+    "island": {
+      "source_log": "mmo_map_island.log",
+      "events": [
+        {
+          "event": "BENCH_START",
+          "data": {
+            "display": "headless",
+            "engine": "4.6.3-stable (official)",
+            "headless": true,
+            "label": "map-smoke-island",
+            "legacy_sole": false,
+            "max_physics_steps_per_frame": 4,
+            "physics_hz_target": 60,
+            "renderer": "gl_compatibility",
+            "user_args": [
+              "--region=island",
+              "--bench-warmup=1",
+              "--bench-idle=2",
+              "--bench-walk=5",
+              "--bench-timeout=210",
+              "--bench-label=map-smoke-island"
+            ]
+          }
+        },
+        {
+          "event": "BENCH_READY",
+          "data": {
+            "camera": "RPGCamera",
+            "load_s": 9.693703,
+            "player_position": [
+              0.0,
+              0.00600005965679884,
+              0.0
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 0.0,
+            "distance_xz_m": 0.0,
+            "frame_ms_max": 66.725,
+            "frame_ms_mean": 7.35440808823529,
+            "frame_ms_p50": 6.388,
+            "frame_ms_p95": 17.284,
+            "frame_ms_p99": 25.988,
+            "frames": 272,
+            "glue_ms_tick": 0.0343583333333333,
+            "headless": true,
+            "headless_loop_hz": 135.972873411754,
+            "label": "map-smoke-island",
+            "legacy_sole": false,
+            "move_ms_tick": 0.3009,
+            "path_calls": 0,
+            "phase": "idle",
+            "physics_hz": 59.9880323875387,
+            "physics_per_frame": 0.441176470588235,
+            "physics_ticks": 120,
+            "player_ms_tick": 0.356725,
+            "player_ticks": 120,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 0,
+            "sole_ms_call": 0.0,
+            "sole_samples": 2082,
+            "wall_s": 2.000399,
+            "water_ms_tick": 0.0
+          }
+        },
+        {
+          "event": "BENCH_ROUTE",
+          "data": {
+            "end": [
+              8.0,
+              0.140159726142883,
+              0.0
+            ],
+            "length_m": 7.99999970197678,
+            "points": 3,
+            "start": [
+              5.96046447753906e-08,
+              0.140159726142883,
+              -1.9371509552002e-07
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 3.4079220662185,
+            "distance_xz_m": 17.0492445267737,
+            "frame_ms_max": 20.036,
+            "frame_ms_mean": 6.90045103448276,
+            "frame_ms_p50": 5.623,
+            "frame_ms_p95": 15.274,
+            "frame_ms_p99": 17.452,
+            "frames": 725,
+            "glue_ms_tick": 0.0349133333333333,
+            "headless": true,
+            "headless_loop_hz": 144.918063326995,
+            "label": "map-smoke-island",
+            "legacy_sole": false,
+            "move_ms_tick": 0.380773333333333,
+            "path_calls": 0,
+            "phase": "walk",
+            "physics_hz": 59.966095169791,
+            "physics_per_frame": 0.413793103448276,
+            "physics_ticks": 300,
+            "player_ms_tick": 0.55416,
+            "player_ticks": 300,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 268,
+            "sole_ms_call": 0.110212686567164,
+            "sole_samples": 2082,
+            "wall_s": 5.002827,
+            "water_ms_tick": 0.01495
+          }
+        },
+        {
+          "event": "BENCH_PASS",
+          "data": {
+            "elapsed_s": 17.700941,
+            "headless": true,
+            "label": "map-smoke-island",
+            "results": [
+              {
+                "achieved_mps": 0.0,
+                "distance_xz_m": 0.0,
+                "frame_ms_max": 66.725,
+                "frame_ms_mean": 7.35440808823529,
+                "frame_ms_p50": 6.388,
+                "frame_ms_p95": 17.284,
+                "frame_ms_p99": 25.988,
+                "frames": 272,
+                "glue_ms_tick": 0.0343583333333333,
+                "headless": true,
+                "headless_loop_hz": 135.972873411754,
+                "label": "map-smoke-island",
+                "legacy_sole": false,
+                "move_ms_tick": 0.3009,
+                "path_calls": 0,
+                "phase": "idle",
+                "physics_hz": 59.9880323875387,
+                "physics_per_frame": 0.441176470588235,
+                "physics_ticks": 120,
+                "player_ms_tick": 0.356725,
+                "player_ticks": 120,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 0,
+                "sole_ms_call": 0.0,
+                "sole_samples": 2082,
+                "wall_s": 2.000399,
+                "water_ms_tick": 0.0
+              },
+              {
+                "achieved_mps": 3.4079220662185,
+                "distance_xz_m": 17.0492445267737,
+                "frame_ms_max": 20.036,
+                "frame_ms_mean": 6.90045103448276,
+                "frame_ms_p50": 5.623,
+                "frame_ms_p95": 15.274,
+                "frame_ms_p99": 17.452,
+                "frames": 725,
+                "glue_ms_tick": 0.0349133333333333,
+                "headless": true,
+                "headless_loop_hz": 144.918063326995,
+                "label": "map-smoke-island",
+                "legacy_sole": false,
+                "move_ms_tick": 0.380773333333333,
+                "path_calls": 0,
+                "phase": "walk",
+                "physics_hz": 59.966095169791,
+                "physics_per_frame": 0.413793103448276,
+                "physics_ticks": 300,
+                "player_ms_tick": 0.55416,
+                "player_ticks": 300,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 268,
+                "sole_ms_call": 0.110212686567164,
+                "sole_samples": 2082,
+                "wall_s": 5.002827,
+                "water_ms_tick": 0.01495
+              }
+            ],
+            "turnarounds": 2
+          }
+        }
+      ],
+      "engine_or_script_errors": [],
+      "warnings": [
+        "WARNING: Navigation region synchronization had 3 edge error(s)."
+      ]
+    },
+    "town": {
+      "source_log": "mmo_map_town.log",
+      "events": [
+        {
+          "event": "BENCH_START",
+          "data": {
+            "display": "headless",
+            "engine": "4.6.3-stable (official)",
+            "headless": true,
+            "label": "map-smoke-town",
+            "legacy_sole": false,
+            "max_physics_steps_per_frame": 4,
+            "physics_hz_target": 60,
+            "renderer": "gl_compatibility",
+            "user_args": [
+              "--region=town",
+              "--bench-warmup=1",
+              "--bench-idle=2",
+              "--bench-walk=5",
+              "--bench-timeout=210",
+              "--bench-label=map-smoke-town",
+              "--nopop"
+            ]
+          }
+        },
+        {
+          "event": "BENCH_READY",
+          "data": {
+            "camera": "RPGCamera",
+            "load_s": 10.754197,
+            "player_position": [
+              1.25,
+              0.00439985375851393,
+              5.69903802871704
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 0.0,
+            "distance_xz_m": 0.0,
+            "frame_ms_max": 9.08,
+            "frame_ms_mean": 6.90418620689655,
+            "frame_ms_p50": 6.894,
+            "frame_ms_p95": 8.447,
+            "frame_ms_p99": 8.758,
+            "frames": 290,
+            "glue_ms_tick": 0.0456528925619835,
+            "headless": true,
+            "headless_loop_hz": 144.83966249362,
+            "label": "map-smoke-town",
+            "legacy_sole": false,
+            "move_ms_tick": 1.02580991735537,
+            "path_calls": 0,
+            "phase": "idle",
+            "physics_hz": 60.4331005576826,
+            "physics_per_frame": 0.417241379310345,
+            "physics_ticks": 121,
+            "player_ms_tick": 1.08979338842975,
+            "player_ticks": 121,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 0,
+            "sole_ms_call": 0.0,
+            "sole_samples": 2082,
+            "wall_s": 2.002214,
+            "water_ms_tick": 0.0
+          }
+        },
+        {
+          "event": "BENCH_ROUTE",
+          "data": {
+            "end": [
+              9.25000095367432,
+              0.102000430226326,
+              5.69903802871704
+            ],
+            "length_m": 8.7117193043232,
+            "points": 9,
+            "start": [
+              1.24999952316284,
+              0.102000430226326,
+              5.69903802871704
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 3.4122984243157,
+            "distance_xz_m": 17.0659554079175,
+            "frame_ms_max": 11.793,
+            "frame_ms_mean": 6.89835586206897,
+            "frame_ms_p50": 6.907,
+            "frame_ms_p95": 9.111,
+            "frame_ms_p99": 9.73,
+            "frames": 725,
+            "glue_ms_tick": 0.04532,
+            "headless": true,
+            "headless_loop_hz": 144.962077920416,
+            "label": "map-smoke-town",
+            "legacy_sole": false,
+            "move_ms_tick": 1.28834666666667,
+            "path_calls": 0,
+            "phase": "walk",
+            "physics_hz": 59.9843081049997,
+            "physics_per_frame": 0.413793103448276,
+            "physics_ticks": 300,
+            "player_ms_tick": 1.46424333333333,
+            "player_ticks": 300,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 268,
+            "sole_ms_call": 0.110891791044776,
+            "sole_samples": 2082,
+            "wall_s": 5.001308,
+            "water_ms_tick": 0.00467333333333333
+          }
+        },
+        {
+          "event": "BENCH_PASS",
+          "data": {
+            "elapsed_s": 18.765573,
+            "headless": true,
+            "label": "map-smoke-town",
+            "results": [
+              {
+                "achieved_mps": 0.0,
+                "distance_xz_m": 0.0,
+                "frame_ms_max": 9.08,
+                "frame_ms_mean": 6.90418620689655,
+                "frame_ms_p50": 6.894,
+                "frame_ms_p95": 8.447,
+                "frame_ms_p99": 8.758,
+                "frames": 290,
+                "glue_ms_tick": 0.0456528925619835,
+                "headless": true,
+                "headless_loop_hz": 144.83966249362,
+                "label": "map-smoke-town",
+                "legacy_sole": false,
+                "move_ms_tick": 1.02580991735537,
+                "path_calls": 0,
+                "phase": "idle",
+                "physics_hz": 60.4331005576826,
+                "physics_per_frame": 0.417241379310345,
+                "physics_ticks": 121,
+                "player_ms_tick": 1.08979338842975,
+                "player_ticks": 121,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 0,
+                "sole_ms_call": 0.0,
+                "sole_samples": 2082,
+                "wall_s": 2.002214,
+                "water_ms_tick": 0.0
+              },
+              {
+                "achieved_mps": 3.4122984243157,
+                "distance_xz_m": 17.0659554079175,
+                "frame_ms_max": 11.793,
+                "frame_ms_mean": 6.89835586206897,
+                "frame_ms_p50": 6.907,
+                "frame_ms_p95": 9.111,
+                "frame_ms_p99": 9.73,
+                "frames": 725,
+                "glue_ms_tick": 0.04532,
+                "headless": true,
+                "headless_loop_hz": 144.962077920416,
+                "label": "map-smoke-town",
+                "legacy_sole": false,
+                "move_ms_tick": 1.28834666666667,
+                "path_calls": 0,
+                "phase": "walk",
+                "physics_hz": 59.9843081049997,
+                "physics_per_frame": 0.413793103448276,
+                "physics_ticks": 300,
+                "player_ms_tick": 1.46424333333333,
+                "player_ticks": 300,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 268,
+                "sole_ms_call": 0.110891791044776,
+                "sole_samples": 2082,
+                "wall_s": 5.001308,
+                "water_ms_tick": 0.00467333333333333
+              }
+            ],
+            "turnarounds": 2
+          }
+        }
+      ],
+      "engine_or_script_errors": [],
+      "warnings": [
+        "WARNING: RegionState: no region id 'town'",
+        "WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision."
+      ]
+    },
+    "desert": {
+      "source_log": "mmo_map_desert.log",
+      "events": [
+        {
+          "event": "BENCH_START",
+          "data": {
+            "display": "headless",
+            "engine": "4.6.3-stable (official)",
+            "headless": true,
+            "label": "map-smoke-desert",
+            "legacy_sole": false,
+            "max_physics_steps_per_frame": 4,
+            "physics_hz_target": 60,
+            "renderer": "gl_compatibility",
+            "user_args": [
+              "--region=desert",
+              "--bench-warmup=1",
+              "--bench-idle=2",
+              "--bench-walk=5",
+              "--bench-timeout=210",
+              "--bench-label=map-smoke-desert",
+              "--nopop"
+            ]
+          }
+        },
+        {
+          "event": "BENCH_READY",
+          "data": {
+            "camera": "RPGCamera",
+            "load_s": 12.497281,
+            "player_position": [
+              1.5,
+              0.0509000010788441,
+              2.5980761051178
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 0.0,
+            "distance_xz_m": 0.0,
+            "frame_ms_max": 8.953,
+            "frame_ms_mean": 6.89965862068965,
+            "frame_ms_p50": 6.884,
+            "frame_ms_p95": 7.616,
+            "frame_ms_p99": 8.038,
+            "frames": 290,
+            "glue_ms_tick": 0.0282583333333333,
+            "headless": true,
+            "headless_loop_hz": 144.934706914535,
+            "label": "map-smoke-desert",
+            "legacy_sole": false,
+            "move_ms_tick": 0.13905,
+            "path_calls": 0,
+            "phase": "idle",
+            "physics_hz": 59.9729821715317,
+            "physics_per_frame": 0.413793103448276,
+            "physics_ticks": 120,
+            "player_ms_tick": 0.187625,
+            "player_ticks": 120,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 0,
+            "sole_ms_call": 0.0,
+            "sole_samples": 2082,
+            "wall_s": 2.000901,
+            "water_ms_tick": 0.0
+          }
+        },
+        {
+          "event": "BENCH_ROUTE",
+          "data": {
+            "end": [
+              9.50455379486084,
+              0.223467215895653,
+              2.77178120613098
+            ],
+            "length_m": 8.12993366271257,
+            "points": 7,
+            "start": [
+              1.5,
+              0.21899938583374,
+              2.99700164794922
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 3.43681233936784,
+            "distance_xz_m": 17.2086967676878,
+            "frame_ms_max": 9.522,
+            "frame_ms_mean": 6.89692561983471,
+            "frame_ms_p50": 6.89,
+            "frame_ms_p95": 7.617,
+            "frame_ms_p99": 8.528,
+            "frames": 726,
+            "glue_ms_tick": 0.0240265780730897,
+            "headless": true,
+            "headless_loop_hz": 144.992139269144,
+            "label": "map-smoke-desert",
+            "legacy_sole": false,
+            "move_ms_tick": 0.0584485049833887,
+            "path_calls": 0,
+            "phase": "walk",
+            "physics_hz": 60.1138208264632,
+            "physics_per_frame": 0.414600550964187,
+            "physics_ticks": 301,
+            "player_ms_tick": 0.215156146179402,
+            "player_ticks": 301,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 269,
+            "sole_ms_call": 0.115661710037175,
+            "sole_samples": 2082,
+            "wall_s": 5.007168,
+            "water_ms_tick": 0.00506976744186047
+          }
+        },
+        {
+          "event": "BENCH_PASS",
+          "data": {
+            "elapsed_s": 20.514074,
+            "headless": true,
+            "label": "map-smoke-desert",
+            "results": [
+              {
+                "achieved_mps": 0.0,
+                "distance_xz_m": 0.0,
+                "frame_ms_max": 8.953,
+                "frame_ms_mean": 6.89965862068965,
+                "frame_ms_p50": 6.884,
+                "frame_ms_p95": 7.616,
+                "frame_ms_p99": 8.038,
+                "frames": 290,
+                "glue_ms_tick": 0.0282583333333333,
+                "headless": true,
+                "headless_loop_hz": 144.934706914535,
+                "label": "map-smoke-desert",
+                "legacy_sole": false,
+                "move_ms_tick": 0.13905,
+                "path_calls": 0,
+                "phase": "idle",
+                "physics_hz": 59.9729821715317,
+                "physics_per_frame": 0.413793103448276,
+                "physics_ticks": 120,
+                "player_ms_tick": 0.187625,
+                "player_ticks": 120,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 0,
+                "sole_ms_call": 0.0,
+                "sole_samples": 2082,
+                "wall_s": 2.000901,
+                "water_ms_tick": 0.0
+              },
+              {
+                "achieved_mps": 3.43681233936784,
+                "distance_xz_m": 17.2086967676878,
+                "frame_ms_max": 9.522,
+                "frame_ms_mean": 6.89692561983471,
+                "frame_ms_p50": 6.89,
+                "frame_ms_p95": 7.617,
+                "frame_ms_p99": 8.528,
+                "frames": 726,
+                "glue_ms_tick": 0.0240265780730897,
+                "headless": true,
+                "headless_loop_hz": 144.992139269144,
+                "label": "map-smoke-desert",
+                "legacy_sole": false,
+                "move_ms_tick": 0.0584485049833887,
+                "path_calls": 0,
+                "phase": "walk",
+                "physics_hz": 60.1138208264632,
+                "physics_per_frame": 0.414600550964187,
+                "physics_ticks": 301,
+                "player_ms_tick": 0.215156146179402,
+                "player_ticks": 301,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 269,
+                "sole_ms_call": 0.115661710037175,
+                "sole_samples": 2082,
+                "wall_s": 5.007168,
+                "water_ms_tick": 0.00506976744186047
+              }
+            ],
+            "turnarounds": 2
+          }
+        }
+      ],
+      "engine_or_script_errors": [],
+      "warnings": [
+        "WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+        "WARNING: Navigation region synchronization had 119 edge error(s)."
+      ]
+    },
+    "graveyard": {
+      "source_log": "mmo_map_graveyard.log",
+      "events": [
+        {
+          "event": "BENCH_START",
+          "data": {
+            "display": "headless",
+            "engine": "4.6.3-stable (official)",
+            "headless": true,
+            "label": "map-smoke-graveyard",
+            "legacy_sole": false,
+            "max_physics_steps_per_frame": 4,
+            "physics_hz_target": 60,
+            "renderer": "gl_compatibility",
+            "user_args": [
+              "--region=graveyard",
+              "--bench-warmup=1",
+              "--bench-idle=2",
+              "--bench-walk=5",
+              "--bench-timeout=210",
+              "--bench-label=map-smoke-graveyard",
+              "--nopop"
+            ]
+          }
+        },
+        {
+          "event": "BENCH_READY",
+          "data": {
+            "camera": "RPGCamera",
+            "load_s": 40.340181,
+            "player_position": [
+              0.0,
+              0.230602875351906,
+              0.0
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 0.0,
+            "distance_xz_m": 0.0,
+            "frame_ms_max": 10.589,
+            "frame_ms_mean": 6.89815172413793,
+            "frame_ms_p50": 6.879,
+            "frame_ms_p95": 7.906,
+            "frame_ms_p99": 8.959,
+            "frames": 290,
+            "glue_ms_tick": 0.036453781512605,
+            "headless": true,
+            "headless_loop_hz": 144.96636780267,
+            "label": "map-smoke-graveyard",
+            "legacy_sole": false,
+            "move_ms_tick": 0.264294117647059,
+            "path_calls": 0,
+            "phase": "idle",
+            "physics_hz": 59.4861992017852,
+            "physics_per_frame": 0.410344827586207,
+            "physics_ticks": 119,
+            "player_ms_tick": 0.32681512605042,
+            "player_ticks": 119,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 0,
+            "sole_ms_call": 0.0,
+            "sole_samples": 2082,
+            "wall_s": 2.000464,
+            "water_ms_tick": 0.0
+          }
+        },
+        {
+          "event": "BENCH_ROUTE",
+          "data": {
+            "end": [
+              7.99955797195435,
+              0.260159373283386,
+              0.000316232442855835
+            ],
+            "length_m": 8.00436073541641,
+            "points": 10,
+            "start": [
+              0.0,
+              0.330000281333923,
+              -5.96046447753906e-08
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 3.42096342531383,
+            "distance_xz_m": 17.125938154757,
+            "frame_ms_max": 40.298,
+            "frame_ms_mean": 6.97238718662953,
+            "frame_ms_p50": 6.899,
+            "frame_ms_p95": 8.582,
+            "frame_ms_p99": 10.361,
+            "frames": 718,
+            "glue_ms_tick": 0.043953488372093,
+            "headless": true,
+            "headless_loop_hz": 143.42290140135,
+            "label": "map-smoke-graveyard",
+            "legacy_sole": false,
+            "move_ms_tick": 0.351598006644518,
+            "path_calls": 0,
+            "phase": "walk",
+            "physics_hz": 60.1257567156076,
+            "physics_per_frame": 0.419220055710306,
+            "physics_ticks": 301,
+            "player_ms_tick": 0.580740863787375,
+            "player_ticks": 301,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 269,
+            "sole_ms_call": 0.134412639405204,
+            "sole_samples": 2082,
+            "wall_s": 5.006174,
+            "water_ms_tick": 0.0156810631229236
+          }
+        },
+        {
+          "event": "BENCH_PASS",
+          "data": {
+            "elapsed_s": 48.35632,
+            "headless": true,
+            "label": "map-smoke-graveyard",
+            "results": [
+              {
+                "achieved_mps": 0.0,
+                "distance_xz_m": 0.0,
+                "frame_ms_max": 10.589,
+                "frame_ms_mean": 6.89815172413793,
+                "frame_ms_p50": 6.879,
+                "frame_ms_p95": 7.906,
+                "frame_ms_p99": 8.959,
+                "frames": 290,
+                "glue_ms_tick": 0.036453781512605,
+                "headless": true,
+                "headless_loop_hz": 144.96636780267,
+                "label": "map-smoke-graveyard",
+                "legacy_sole": false,
+                "move_ms_tick": 0.264294117647059,
+                "path_calls": 0,
+                "phase": "idle",
+                "physics_hz": 59.4861992017852,
+                "physics_per_frame": 0.410344827586207,
+                "physics_ticks": 119,
+                "player_ms_tick": 0.32681512605042,
+                "player_ticks": 119,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 0,
+                "sole_ms_call": 0.0,
+                "sole_samples": 2082,
+                "wall_s": 2.000464,
+                "water_ms_tick": 0.0
+              },
+              {
+                "achieved_mps": 3.42096342531383,
+                "distance_xz_m": 17.125938154757,
+                "frame_ms_max": 40.298,
+                "frame_ms_mean": 6.97238718662953,
+                "frame_ms_p50": 6.899,
+                "frame_ms_p95": 8.582,
+                "frame_ms_p99": 10.361,
+                "frames": 718,
+                "glue_ms_tick": 0.043953488372093,
+                "headless": true,
+                "headless_loop_hz": 143.42290140135,
+                "label": "map-smoke-graveyard",
+                "legacy_sole": false,
+                "move_ms_tick": 0.351598006644518,
+                "path_calls": 0,
+                "phase": "walk",
+                "physics_hz": 60.1257567156076,
+                "physics_per_frame": 0.419220055710306,
+                "physics_ticks": 301,
+                "player_ms_tick": 0.580740863787375,
+                "player_ticks": 301,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 269,
+                "sole_ms_call": 0.134412639405204,
+                "sole_samples": 2082,
+                "wall_s": 5.006174,
+                "water_ms_tick": 0.0156810631229236
+              }
+            ],
+            "turnarounds": 2
+          }
+        }
+      ],
+      "engine_or_script_errors": [],
+      "warnings": [
+        "WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+        "WARNING: Navigation region synchronization had 1 edge error(s)."
+      ]
+    },
+    "wetlands": {
+      "source_log": "mmo_map_wetlands.log",
+      "events": [
+        {
+          "event": "BENCH_START",
+          "data": {
+            "display": "headless",
+            "engine": "4.6.3-stable (official)",
+            "headless": true,
+            "label": "map-smoke-wetlands",
+            "legacy_sole": false,
+            "max_physics_steps_per_frame": 4,
+            "physics_hz_target": 60,
+            "renderer": "gl_compatibility",
+            "user_args": [
+              "--region=wetlands",
+              "--bench-warmup=1",
+              "--bench-idle=2",
+              "--bench-walk=5",
+              "--bench-timeout=210",
+              "--bench-label=map-smoke-wetlands",
+              "--nopop"
+            ]
+          }
+        },
+        {
+          "event": "BENCH_READY",
+          "data": {
+            "camera": "RPGCamera",
+            "load_s": 52.741681,
+            "player_position": [
+              0.0,
+              1.64121890068054,
+              0.0
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 0.0,
+            "distance_xz_m": 0.0,
+            "frame_ms_max": 8.501,
+            "frame_ms_mean": 6.89784482758621,
+            "frame_ms_p50": 6.911,
+            "frame_ms_p95": 7.513,
+            "frame_ms_p99": 7.885,
+            "frames": 290,
+            "glue_ms_tick": 0.0276333333333333,
+            "headless": true,
+            "headless_loop_hz": 144.972817596701,
+            "label": "map-smoke-wetlands",
+            "legacy_sole": false,
+            "move_ms_tick": 0.0499,
+            "path_calls": 0,
+            "phase": "idle",
+            "physics_hz": 59.9887521089796,
+            "physics_per_frame": 0.413793103448276,
+            "physics_ticks": 120,
+            "player_ms_tick": 0.0973166666666667,
+            "player_ticks": 120,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 0,
+            "sole_ms_call": 0.0,
+            "sole_samples": 2082,
+            "wall_s": 2.000375,
+            "water_ms_tick": 0.0
+          }
+        },
+        {
+          "event": "BENCH_ROUTE",
+          "data": {
+            "end": [
+              7.99010992050171,
+              1.98527812957764,
+              0.0231364071369171
+            ],
+            "length_m": 8.0007920563221,
+            "points": 7,
+            "start": [
+              -0.00210404396057129,
+              1.85158109664917,
+              -0.000852108001708984
+            ]
+          }
+        },
+        {
+          "event": "BENCH_RESULT",
+          "data": {
+            "achieved_mps": 3.39075128813917,
+            "distance_xz_m": 16.9580050520599,
+            "frame_ms_max": 10.897,
+            "frame_ms_mean": 6.89828,
+            "frame_ms_p50": 6.901,
+            "frame_ms_p95": 7.839,
+            "frame_ms_p99": 8.252,
+            "frames": 725,
+            "glue_ms_tick": 0.02378,
+            "headless": true,
+            "headless_loop_hz": 144.963672103771,
+            "label": "map-smoke-wetlands",
+            "legacy_sole": false,
+            "move_ms_tick": 0.234456666666667,
+            "path_calls": 0,
+            "phase": "walk",
+            "physics_hz": 59.9849677670776,
+            "physics_per_frame": 0.413793103448276,
+            "physics_ticks": 300,
+            "player_ms_tick": 0.39465,
+            "player_ticks": 300,
+            "renderer": "gl_compatibility",
+            "sole_bones": 4,
+            "sole_calls": 268,
+            "sole_ms_call": 0.114966417910448,
+            "sole_samples": 2082,
+            "wall_s": 5.001253,
+            "water_ms_tick": 0.00622
+          }
+        },
+        {
+          "event": "BENCH_PASS",
+          "data": {
+            "elapsed_s": 60.752305,
+            "headless": true,
+            "label": "map-smoke-wetlands",
+            "results": [
+              {
+                "achieved_mps": 0.0,
+                "distance_xz_m": 0.0,
+                "frame_ms_max": 8.501,
+                "frame_ms_mean": 6.89784482758621,
+                "frame_ms_p50": 6.911,
+                "frame_ms_p95": 7.513,
+                "frame_ms_p99": 7.885,
+                "frames": 290,
+                "glue_ms_tick": 0.0276333333333333,
+                "headless": true,
+                "headless_loop_hz": 144.972817596701,
+                "label": "map-smoke-wetlands",
+                "legacy_sole": false,
+                "move_ms_tick": 0.0499,
+                "path_calls": 0,
+                "phase": "idle",
+                "physics_hz": 59.9887521089796,
+                "physics_per_frame": 0.413793103448276,
+                "physics_ticks": 120,
+                "player_ms_tick": 0.0973166666666667,
+                "player_ticks": 120,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 0,
+                "sole_ms_call": 0.0,
+                "sole_samples": 2082,
+                "wall_s": 2.000375,
+                "water_ms_tick": 0.0
+              },
+              {
+                "achieved_mps": 3.39075128813917,
+                "distance_xz_m": 16.9580050520599,
+                "frame_ms_max": 10.897,
+                "frame_ms_mean": 6.89828,
+                "frame_ms_p50": 6.901,
+                "frame_ms_p95": 7.839,
+                "frame_ms_p99": 8.252,
+                "frames": 725,
+                "glue_ms_tick": 0.02378,
+                "headless": true,
+                "headless_loop_hz": 144.963672103771,
+                "label": "map-smoke-wetlands",
+                "legacy_sole": false,
+                "move_ms_tick": 0.234456666666667,
+                "path_calls": 0,
+                "phase": "walk",
+                "physics_hz": 59.9849677670776,
+                "physics_per_frame": 0.413793103448276,
+                "physics_ticks": 300,
+                "player_ms_tick": 0.39465,
+                "player_ticks": 300,
+                "renderer": "gl_compatibility",
+                "sole_bones": 4,
+                "sole_calls": 268,
+                "sole_ms_call": 0.114966417910448,
+                "sole_samples": 2082,
+                "wall_s": 5.001253,
+                "water_ms_tick": 0.00622
+              }
+            ],
+            "turnarounds": 2
+          }
+        }
+      ],
+      "engine_or_script_errors": [],
+      "warnings": [
+        "WARNING: Property agent_max_climb is floored to cell_height voxel units and loses precision.",
+        "WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision.",
+        "WARNING: Navigation region synchronization had 4 edge error(s)."
+      ]
+    }
+  },
+  "before_deck_index_populated_island": {
+    "source_log": "mmo_benchmark_after.log",
+    "events": [
+      {
+        "event": "BENCH_START",
+        "data": {
+          "display": "headless",
+          "engine": "4.6.3-stable (official)",
+          "headless": true,
+          "label": "optimized-full-scene",
+          "legacy_sole": false,
+          "max_physics_steps_per_frame": 4,
+          "physics_hz_target": 60,
+          "renderer": "gl_compatibility",
+          "user_args": [
+            "--region=island",
+            "--bench-warmup=2",
+            "--bench-idle=3",
+            "--bench-walk=8",
+            "--bench-timeout=300",
+            "--bench-label=optimized-full-scene"
+          ]
+        }
+      },
+      {
+        "event": "BENCH_READY",
+        "data": {
+          "camera": "RPGCamera",
+          "load_s": 58.346606,
+          "player_position": [
+            0.0,
+            0.00600000005215406,
+            0.0
+          ]
+        }
+      },
+      {
+        "event": "BENCH_RESULT",
+        "data": {
+          "achieved_mps": 0.0,
+          "distance_xz_m": 0.0,
+          "frame_ms_max": 21.046,
+          "frame_ms_mean": 6.91368894009217,
+          "frame_ms_p50": 2.958,
+          "frame_ms_p95": 17.682,
+          "frame_ms_p99": 18.799,
+          "frames": 434,
+          "glue_ms_tick": 0.0272346368715084,
+          "headless": true,
+          "headless_loop_hz": 144.640583148172,
+          "label": "optimized-full-scene",
+          "legacy_sole": false,
+          "move_ms_tick": 0.297994413407821,
+          "path_calls": 0,
+          "phase": "idle",
+          "physics_hz": 59.6559087177946,
+          "physics_per_frame": 0.412442396313364,
+          "physics_ticks": 179,
+          "player_ms_tick": 0.340234636871508,
+          "player_ticks": 179,
+          "renderer": "gl_compatibility",
+          "sole_bones": 4,
+          "sole_calls": 0,
+          "sole_ms_call": 0.0,
+          "sole_samples": 2082,
+          "wall_s": 3.000541,
+          "water_ms_tick": 0.0
+        }
+      },
+      {
+        "event": "BENCH_ROUTE",
+        "data": {
+          "end": [
+            7.99999952316284,
+            0.140390634536743,
+            0.0
+          ],
+          "length_m": 7.99999970197678,
+          "points": 3,
+          "start": [
+            0.0,
+            0.140390634536743,
+            0.0
+          ]
+        }
+      },
+      {
+        "event": "BENCH_RESULT",
+        "data": {
+          "achieved_mps": 3.48186552819283,
+          "distance_xz_m": 27.8604464642704,
+          "frame_ms_max": 53.628,
+          "frame_ms_mean": 7.34090458715596,
+          "frame_ms_p50": 3.984,
+          "frame_ms_p95": 17.739,
+          "frame_ms_p99": 21.017,
+          "frames": 1090,
+          "glue_ms_tick": 0.0338232848232848,
+          "headless": true,
+          "headless_loop_hz": 136.222993791481,
+          "label": "optimized-full-scene",
+          "legacy_sole": false,
+          "move_ms_tick": 0.406621621621622,
+          "path_calls": 0,
+          "phase": "walk",
+          "physics_hz": 60.1130825813782,
+          "physics_per_frame": 0.441284403669725,
+          "physics_ticks": 481,
+          "player_ms_tick": 0.596555093555094,
+          "player_ticks": 481,
+          "renderer": "gl_compatibility",
+          "sole_bones": 4,
+          "sole_calls": 438,
+          "sole_ms_call": 0.11534703196347,
+          "sole_samples": 2082,
+          "wall_s": 8.001586,
+          "water_ms_tick": 0.015985446985447
+        }
+      },
+      {
+        "event": "BENCH_PASS",
+        "data": {
+          "elapsed_s": 71.36279,
+          "headless": true,
+          "label": "optimized-full-scene",
+          "results": [
+            {
+              "achieved_mps": 0.0,
+              "distance_xz_m": 0.0,
+              "frame_ms_max": 21.046,
+              "frame_ms_mean": 6.91368894009217,
+              "frame_ms_p50": 2.958,
+              "frame_ms_p95": 17.682,
+              "frame_ms_p99": 18.799,
+              "frames": 434,
+              "glue_ms_tick": 0.0272346368715084,
+              "headless": true,
+              "headless_loop_hz": 144.640583148172,
+              "label": "optimized-full-scene",
+              "legacy_sole": false,
+              "move_ms_tick": 0.297994413407821,
+              "path_calls": 0,
+              "phase": "idle",
+              "physics_hz": 59.6559087177946,
+              "physics_per_frame": 0.412442396313364,
+              "physics_ticks": 179,
+              "player_ms_tick": 0.340234636871508,
+              "player_ticks": 179,
+              "renderer": "gl_compatibility",
+              "sole_bones": 4,
+              "sole_calls": 0,
+              "sole_ms_call": 0.0,
+              "sole_samples": 2082,
+              "wall_s": 3.000541,
+              "water_ms_tick": 0.0
+            },
+            {
+              "achieved_mps": 3.48186552819283,
+              "distance_xz_m": 27.8604464642704,
+              "frame_ms_max": 53.628,
+              "frame_ms_mean": 7.34090458715596,
+              "frame_ms_p50": 3.984,
+              "frame_ms_p95": 17.739,
+              "frame_ms_p99": 21.017,
+              "frames": 1090,
+              "glue_ms_tick": 0.0338232848232848,
+              "headless": true,
+              "headless_loop_hz": 136.222993791481,
+              "label": "optimized-full-scene",
+              "legacy_sole": false,
+              "move_ms_tick": 0.406621621621622,
+              "path_calls": 0,
+              "phase": "walk",
+              "physics_hz": 60.1130825813782,
+              "physics_per_frame": 0.441284403669725,
+              "physics_ticks": 481,
+              "player_ms_tick": 0.596555093555094,
+              "player_ticks": 481,
+              "renderer": "gl_compatibility",
+              "sole_bones": 4,
+              "sole_calls": 438,
+              "sole_ms_call": 0.11534703196347,
+              "sole_samples": 2082,
+              "wall_s": 8.001586,
+              "water_ms_tick": 0.015985446985447
+            }
+          ],
+          "turnarounds": 3
+        }
+      }
+    ],
+    "engine_or_script_errors": [
+      "ERROR: Condition \"array_len == 0\" is true. Returning: ERR_INVALID_DATA",
+      "ERROR: Condition \"err != OK\" is true."
+    ],
+    "warnings": [
+      "WARNING: Property agent_max_climb is floored to cell_height voxel units and loses precision.",
+      "WARNING: Property agent_radius is ceiled to cell_size voxel units and loses precision."
+    ]
+  },
+  "final_integration_suite": [
+    {
+      "test": "import",
+      "exit_code": 0,
+      "seconds": 9.096,
+      "errors": []
+    },
+    {
+      "test": "sole",
+      "exit_code": 0,
+      "seconds": 1.298,
+      "errors": []
+    },
+    {
+      "test": "metrics",
+      "exit_code": 0,
+      "seconds": 0.662,
+      "errors": []
+    },
+    {
+      "test": "lods",
+      "exit_code": 0,
+      "seconds": 0.285,
+      "errors": []
+    },
+    {
+      "test": "deck_index",
+      "exit_code": 0,
+      "seconds": 4.955,
+      "errors": []
+    },
+    {
+      "test": "population",
+      "exit_code": 0,
+      "seconds": 0.584,
+      "errors": []
+    },
+    {
+      "test": "nopop",
+      "exit_code": 0,
+      "seconds": 0.757,
+      "errors": []
+    },
+    {
+      "test": "minphys",
+      "exit_code": 0,
+      "seconds": 0.464,
+      "errors": []
+    }
+  ],
+  "sole_regression_output": [
+    "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org",
+    "",
+    "sky: cloud-sea shader active",
+    "REGION_STATE regions=5 current=0(town)",
+    "SOLE_BENCH synthetic vertices=12000 samples=480 bones=2 original=5.464ms cached=0.026ms speedup=211.2x",
+    "SOLE_BENCH player GLB vertices=10616 samples=2082 bones=4 original=6.135ms cached=0.106ms speedup=58.0x",
+    "SOLE_CACHE_TEST checks=85 failures=0"
+  ],
+  "deck_index_real_source_check": {
+    "boxes": 4200,
+    "queries": 7707,
+    "all_queries_equal": true,
+    "exhaustive_query_ms": 4372.96,
+    "indexed_query_ms": 55.97,
+    "index_build_ms": 8.38
+  },
+  "render_smoke": {
+    "engine": "4.6.3-stable official",
+    "renderer": "gl_compatibility",
+    "driver": "opengl3",
+    "graphics_device": "Mesa llvmpipe (LLVM 19.1.7, 256 bits)",
+    "opengl": "4.5 Core Profile Mesa 25.0.7-2+deb13u1",
+    "scene": "game.tscn",
+    "region": "island",
+    "population": false,
+    "shader_and_script_errors": [],
+    "visual_review": "Player, terrain, vegetation, shadows and shoreline water visible in captured frame. Both water shader render smoke checks passed."
+  }
+}

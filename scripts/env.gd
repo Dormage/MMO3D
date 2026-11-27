@@ -193,6 +193,9 @@ func _ready() -> void:
 
 
 func _build() -> void:
+	# Keep unsupported Forward+ effects out of Compatibility/Mobile. The
+	# exported preferences still apply when launched with forward_plus.
+	var forward_plus := RenderingServer.get_current_rendering_method() == "forward_plus"
 	var shader := load("res://shaders/sky_cloud_sea.gdshader") as Shader
 	var sky_mat: Material
 	var sky := Sky.new()
@@ -258,12 +261,12 @@ func _build() -> void:
 	_env.ssao_sharpness = ssao_sharpness
 	_env.ssao_light_affect = ssao_light_affect
 
-	_env.ssil_enabled = ssil_enabled
+	_env.ssil_enabled = ssil_enabled and forward_plus
 	_env.ssil_radius = ssil_radius
 	_env.ssil_intensity = ssil_intensity
 	_env.ssil_sharpness = ssil_sharpness
 
-	_env.sdfgi_enabled = sdfgi_enabled
+	_env.sdfgi_enabled = sdfgi_enabled and forward_plus
 	_env.sdfgi_cascades = sdfgi_cascades
 	_env.sdfgi_min_cell_size = sdfgi_min_cell_size
 	_env.sdfgi_cascade0_distance = sdfgi_cascade0_distance
@@ -301,7 +304,7 @@ func _build() -> void:
 	_env.fog_height = fog_height
 	_env.fog_height_density = fog_height_density
 
-	_env.volumetric_fog_enabled = volumetric_fog_enabled
+	_env.volumetric_fog_enabled = volumetric_fog_enabled and forward_plus
 	_env.volumetric_fog_density = volumetric_fog_density
 	_env.volumetric_fog_albedo = volumetric_fog_albedo
 	_env.volumetric_fog_anisotropy = volumetric_fog_anisotropy

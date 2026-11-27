@@ -23,6 +23,9 @@ var _rng := RandomNumberGenerator.new()
 func _ready() -> void:
 	if Engine.is_editor_hint() or not enabled:
 		return
+	if OS.get_cmdline_user_args().has("--nopop"):
+		print("NOPOP skipped_spawner=%s" % name)
+		return
 	_rng.randomize()
 	await _wait_for_ground()
 	_spawn_roster()

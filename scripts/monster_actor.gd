@@ -37,9 +37,22 @@ var _rng := RandomNumberGenerator.new()
 
 
 func _ready() -> void:
+	var diagnostic_args := OS.get_cmdline_user_args()
+	if diagnostic_args.has("--nopop"):
+		visible = false
+		collision_layer = 0
+		collision_mask = 0
+		set_physics_process(false)
+		process_mode = Node.PROCESS_MODE_DISABLED
+		return
 	_rng.randomize()
 	_home = global_position
-	_build_body()
+	if diagnostic_args.has("--minphys"):
+		collision_layer = 0
+		collision_mask = 0
+		set_physics_process(false)
+	else:
+		_build_body()
 	_load_model()
 	_wait = _rng.randf_range(0.2, idle_max)
 

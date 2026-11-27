@@ -25,6 +25,8 @@ shader_type spatial;
 
 render_mode blend_mix, depth_draw_never, cull_back, diffuse_burley, specular_schlick_ggx;
 
+#include "res://shaders/depth_compat.gdshaderinc"
+
 uniform vec4 shallow_color : source_color = vec4(0.24, 0.62, 0.62, 1.0);
 uniform vec4 deep_color : source_color = vec4(0.015, 0.115, 0.20, 1.0);
 uniform vec4 foam_color : source_color = vec4(0.74, 0.84, 0.87, 1.0);
@@ -180,7 +182,7 @@ void vertex() {
 // inside fragment()/vertex(), not in user-defined functions.
 vec3 world_from_depth(vec2 uv, mat4 inv_proj, mat4 inv_view) {
 	float raw = texture(depth_tex, uv).r;
-	vec4 vp = inv_proj * vec4(uv * 2.0 - 1.0, raw, 1.0);
+	vec4 vp = inv_proj * vec4(depth_to_ndc(uv, raw), 1.0);
 	vp.xyz /= vp.w;
 	return (inv_view * vec4(vp.xyz, 1.0)).xyz;
 }
@@ -192,7 +194,7 @@ vec3 world_from_depth(vec2 uv, mat4 inv_proj, mat4 inv_view) {
 // and vertex(), not inside user-defined functions.
 float depth_at(vec2 uv, mat4 inv_proj) {
 	float raw = texture(depth_tex, uv).r;
-	vec4 vp = inv_proj * vec4(uv * 2.0 - 1.0, raw, 1.0);
+	vec4 vp = inv_proj * vec4(depth_to_ndc(uv, raw), 1.0);
 	vp.xyz /= vp.w;
 	return -vp.z;
 }

@@ -38,6 +38,7 @@ const FEET_LIFT := 0.10
 const SelectionMarker := preload("res://scripts/selection_marker.gd")
 const WeaponHolder := preload("res://scripts/weapon_holder.gd")
 const WeaponTrail := preload("res://scripts/weapon_trail.gd")
+const SoleSampleCache := preload("res://scripts/sole_sample_cache.gd")
 ## Equipped classes.  The animation clips are the ones already authored in the
 ## player GLB; no new skeleton animation is fabricated here.  Bows are absent
 ## because the rig has no bow-shot clip (see report).
@@ -105,6 +106,7 @@ var _grounded := false
 var _jump_glue_skip := 0.0
 var _model_low := 0.0
 var _foot_bones: Array[int] = []
+var _sole_cache := SoleSampleCache.new()
 var _marker: Node3D
 var _rim_meshes: Array[MeshInstance3D] = []
 var _rim_material: ShaderMaterial
@@ -115,6 +117,13 @@ var _nav_agent: NavigationAgent3D
 var _water_nav: Node = null
 var _prof_move_us := 0
 var _prof_water_us := 0
+var _perf_enabled := false
+var _prof_ticks := 0
+var _prof_player_us := 0
+var _prof_glue_us := 0
+var _prof_sole_us := 0
+var _prof_sole_calls := 0
+var _prof_distance_xz := 0.0
 var _path_calls := 0
 var _guard_tick := 0
 var _nav_active := false
@@ -134,6 +143,7 @@ var _step_cooldown := 0.0
 
 
 func _ready() -> void:
+	_perf_enabled = OS.get_environment("PERF_LOG") == "1"
 	collision_layer = 4
 	collision_mask = 3
 	up_direction = Vector3.UP
@@ -309,6 +319,7 @@ func _build_visual() -> void:
 					nm, str(loc.track_get_path(t)), keys, str(first)])
 		_flatten_attack_roots()
 		_ap.animation_finished.connect(_on_anim_finished)
+	_sole_cache.build(_model, _sk, _foot_bones, _is_weapon_part)
 
 
 func _equip_loadout(index: int) -> void:
@@ -551,32 +562,11 @@ func _fit_model_to_capsule() -> void:
 
 
 func _sole_lowest_world() -> float:
-	# Skinned sole height: transform each foot-weighted vertex by
-	#   skeleton_global * bone_pose * bind_pose^-1
-	# so the value follows the Idle/Walk animation instead of the bind mesh.
-	if _sk == null or _foot_bones.is_empty():
-		return 1.0e20
-	var low := 1.0e20
-	for n in _model.find_children("*", "MeshInstance3D", true, false):
-		var mi := n as MeshInstance3D
-		if mi.mesh == null or _is_weapon_part(mi) or mi.skin == null:
-			continue
-		var arr := mi.mesh.surface_get_arrays(0)
-		if arr.is_empty() or arr[Mesh.ARRAY_BONES] == null:
-			continue
-		var vs: PackedVector3Array = arr[Mesh.ARRAY_VERTEX]
-		var bones: PackedInt32Array = arr[Mesh.ARRAY_BONES]
-		var weights: PackedFloat32Array = arr[Mesh.ARRAY_WEIGHTS]
-		for i in vs.size():
-			for k in 4:
-				var bi := bones[i * 4 + k]
-				var w := weights[i * 4 + k]
-				if w < 0.25 or not (bi in _foot_bones):
-					continue
-				var live := _sk.get_bone_global_pose(bi)
-				var bind := mi.skin.get_bind_pose(bi)
-				var p := _sk.global_transform * (live * bind.affine_inverse() * vs[i])
-				low = minf(low, p.y)
+	var started := Time.get_ticks_usec() if _perf_enabled else 0
+	var low := _sole_cache.lowest_world(_sk)
+	if _perf_enabled:
+		_prof_sole_us += Time.get_ticks_usec() - started
+		_prof_sole_calls += 1
 	return low
 
 
@@ -642,10 +632,15 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _physics_process(delta: float) -> void:
+	var _t_player := Time.get_ticks_usec() if _perf_enabled else 0
+	if _perf_enabled:
+		_prof_ticks += 1
 	if inspection_freeze:
 		# Inspection camera holds the player at the exact transform, velocity
 		# and animation state.  Do not gravity-step, cancel a path or re-ground.
 		velocity = Vector3.ZERO
+		if _perf_enabled:
+			_prof_player_us += Time.get_ticks_usec() - _t_player
 		return
 	if _settle_timer > 0.0:
 		_settle_timer = maxf(0.0, _settle_timer - delta)
@@ -717,9 +712,10 @@ func _physics_process(delta: float) -> void:
 	if has_input:
 		velocity.x = dir.x * speed
 		velocity.z = dir.z * speed
-		var _t_w := Time.get_ticks_usec()
+		var _t_w := Time.get_ticks_usec() if _perf_enabled else 0
 		_water_guard(delta)
-		_prof_water_us += Time.get_ticks_usec() - _t_w
+		if _perf_enabled:
+			_prof_water_us += Time.get_ticks_usec() - _t_w
 	else:
 		# No residual horizontal velocity, ever.  Do not clear the jump
 		# request here: it must be consumed before any no-input bookkeeping,
@@ -746,9 +742,10 @@ func _physics_process(delta: float) -> void:
 
 	var was_navating := _nav_active
 	var before := global_position
-	var _t_move := Time.get_ticks_usec()
+	var _t_move := Time.get_ticks_usec() if _perf_enabled else 0
 	move_and_slide()
-	_prof_move_us += Time.get_ticks_usec() - _t_move
+	if _perf_enabled:
+		_prof_move_us += Time.get_ticks_usec() - _t_move
 	if not has_input and not was_navating:
 		# Collision resolution must not accumulate into visible drift when no
 		# key is held.  This is the no-input proof at the end of the frame.
@@ -759,7 +756,10 @@ func _physics_process(delta: float) -> void:
 		global_position.z = before.z
 		velocity.x = 0.0
 		velocity.z = 0.0
+	var _t_glue := Time.get_ticks_usec() if _perf_enabled else 0
 	_glue_to_surface()
+	if _perf_enabled:
+		_prof_glue_us += Time.get_ticks_usec() - _t_glue
 	_step_cooldown = maxf(0.0, _step_cooldown - delta)
 	if _nav_active and has_input:
 		# `velocity` is the desired velocity, not the achieved one.  A step lip
@@ -804,6 +804,10 @@ func _physics_process(delta: float) -> void:
 		# Keep the planted sole on the surface while walking.  Idle is frozen:
 		# a per-frame Idle fit made the visible model bob 6 cm in place.
 		_fit_model_sole_only()
+	if _perf_enabled:
+		_prof_distance_xz += Vector2(global_position.x - before.x,
+				global_position.z - before.z).length()
+		_prof_player_us += Time.get_ticks_usec() - _t_player
 
 
 func _try_step_up(dir: Vector3) -> bool:
@@ -1156,9 +1160,20 @@ func _water_guard(delta: float) -> void:
 
 
 ## Consume the movement counters for the perf log (call once per sample).
-func perf_take() -> Array:
-	var r := [_prof_move_us, _prof_water_us, _path_calls]
+func perf_take() -> Dictionary:
+	var r := {"ticks": _prof_ticks, "player_us": _prof_player_us,
+		"move_us": _prof_move_us, "water_us": _prof_water_us,
+		"glue_us": _prof_glue_us, "sole_us": _prof_sole_us,
+		"sole_calls": _prof_sole_calls, "path_calls": _path_calls,
+		"distance_xz": _prof_distance_xz, "sole_samples": _sole_cache.sample_count,
+		"sole_bones": _sole_cache.bone_count()}
+	_prof_ticks = 0
+	_prof_player_us = 0
 	_prof_move_us = 0
 	_prof_water_us = 0
+	_prof_glue_us = 0
+	_prof_sole_us = 0
+	_prof_sole_calls = 0
+	_prof_distance_xz = 0.0
 	_path_calls = 0
 	return r
