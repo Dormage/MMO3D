@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/region_map.gd" id="1_region"]
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_region")
+region_id = "ruins2"
+display_name = "Second City"
+glb_path = "res://assets/worlds/ruins2/ruins2_terrain.glb"
+extra_glb_paths = PackedStringArray("res://assets/worlds/ruins2/ruins2_keep.glb", "res://assets/worlds/ruins2/ruins2_landmarks.glb", "res://assets/worlds/ruins2/ruins2_flora.glb")
+ground_meshes = PackedStringArray("Terrain_GT")
+solid_meshes = PackedStringArray("")
+default_meshes_solid = true
+decor_meshes = PackedStringArray("Flora_", "Backdrop")
+spawn_center = Vector2(23, -62)
+spawn_search_radius = 80.0
+snap_fragments = true
+snap_meshes = PackedStringArray("Flora_Marsh_Dead_Trees_GT", "Flora_East_Forest_GT")

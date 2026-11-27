@@ -20,12 +20,24 @@ extends Node3D
 @export var display_name := ""
 
 @export_file("*.glb") var glb_path := ""
+## Extra GLB layers merged into the same region (a town split into terrain,
+## architecture and flora by the artist).  They are attached as children of
+## RegionWorld before classification, so collision, navmesh and the HUD treat
+## the whole stack as one map.
+@export var extra_glb_paths: PackedStringArray = PackedStringArray()
 
 @export_group("Collision roles")
 @export var ground_meshes: PackedStringArray = PackedStringArray(["SM_Town_Ground"])
 @export var solid_meshes: PackedStringArray = PackedStringArray(
 		["SM_Town_Buildings", "SM_Town_Props", "SM_Town_Rampart"])
 @export var mesh_prefix := "SM_Town_"
+## Meshes whose NAME matches one of these are decoration (no collision).
+## The name lists (ground_meshes/solid_meshes) only work for maps that merge
+## their geometry into a few big meshes; an asset split into 200 objects needs
+## the inverse rule instead.
+@export var decor_meshes: PackedStringArray = PackedStringArray()
+## When true, every mesh that is neither ground nor decoration becomes solid.
+@export var default_meshes_solid := false
 
 @export_group("Rendering")
 ## Repair passes replace imported meshes, discarding their automatic LODs.
@@ -439,6 +451,7 @@ const REGION_EXPOSURE := {
 	"graveyard": 0.58,
 	"wetlands": 7.20,
 	"desert": 0.26,
+	"ruins2": 1.00,
 }
 
 func _apply_region_exposure() -> void:
@@ -491,6 +504,7 @@ func _build_editor_preview() -> void:
 		return
 	node.name = "RegionWorld"
 	add_child(node)
+	_attach_extra_layers(node)
 	# The apron and water colour are runtime-built, so build them here too --
 	# otherwise the editor viewport shows the same gap the game no longer has.
 	for n in node.find_children("*", "MeshInstance3D", true, false):
@@ -802,6 +816,7 @@ func _load_region() -> void:
 	node = fresh as Node3D
 	node.name = "RegionWorld"
 	add_child(node)
+	_attach_extra_layers(node)
 	phase = _load_phase("region.attach", phase)
 	_hide_nav_markers(node)
 	_load_nav_markers()
@@ -874,6 +889,15 @@ func _bake(node: Node3D, paths: Array[String]) -> void:
 ##
 ## Runs for a fresh parse and for a cache load alike, because those lists drive
 ## collision, spawning and the nav bake.
+## True when the mesh name matches one of the decor_meshes patterns.
+func _is_decor_mesh(nm: String) -> bool:
+	for p in decor_meshes:
+		var pat := String(p)
+		if not pat.is_empty() and nm.contains(pat):
+			return true
+	return false
+
+
 func _classify(node: Node) -> void:
 	for n in node.find_children("*", "MeshInstance3D", true, false):
 		var mi := n as MeshInstance3D
@@ -889,8 +913,29 @@ func _classify(node: Node) -> void:
 				_ground = mi
 		elif nm in solid_meshes:
 			_solids.append(mi)
+		elif _is_decor_mesh(nm):
+			_others.append(mi)
+		elif default_meshes_solid:
+			_solids.append(mi)
 		else:
 			_others.append(mi)
+	# Diagnostic: are the artist's layers actually visible after conditioning?
+	if OS.get_cmdline_user_args().has("--meshdiag"):
+		var vis := 0
+		var hid := 0
+		var shown := 0
+		for mm in node.find_children("*", "MeshInstance3D", true, false):
+			var m2 := mm as MeshInstance3D
+			if m2.is_visible_in_tree():
+				vis += 1
+				if shown < 6 and not m2.global_position.is_equal_approx(Vector3.ZERO):
+					print("MESH_VIS %s pos=%s" % [m2.name, str(m2.global_position)])
+					shown += 1
+			else:
+				hid += 1
+		print("MESH_DIAG visible=%d hidden=%d" % [vis, hid])
+	print("REGION_CLASSIFY grounds=%d solids=%d others=%d" % [
+		_grounds.size(), _solids.size(), _others.size()])
 
 
 ## Drop triangles that contain a corrupt vertex.
@@ -2907,3 +2952,31 @@ func _add_heightmap_body(mi: MeshInstance3D, body_name: String) -> void:
 	body.add_child(cs)
 	print("REGION_HEIGHTMAP %s w=%d d=%d step=%.2f cells=%d filled=%d" % [
 		body_name, w, d, step, w * d, have])
+
+
+## Attach the artist's extra layers under RegionWorld.
+func _attach_extra_layers(node: Node3D) -> void:
+	if extra_glb_paths.is_empty():
+		return
+	var util := preload("res://scripts/glb_util.gd")
+	var added := 0
+	for path in extra_glb_paths:
+		var p := String(path)
+		if p.is_empty():
+			continue
+		var layer := util.instantiate_raw(p)
+		if layer == null:
+			push_warning("region_map: extra layer failed to load: %s" % p)
+			continue
+		var n3 := layer as Node3D
+		if n3 == null:
+			push_warning("region_map: extra layer is not 3D: %s" % p)
+			continue
+		n3.name = p.get_file().get_basename()
+		node.add_child(n3)
+		var mc := 0
+		for _m in n3.find_children("*", "MeshInstance3D", true, false):
+			mc += 1
+		print("REGION_LAYER %s meshes=%d" % [n3.name, mc])
+		added += 1
+	print("REGION_LAYERS attached=%d (+base) paths=%s" % [added, str(extra_glb_paths)])

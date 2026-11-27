@@ -29,6 +29,12 @@
       "name": "Ashkari Bazaar",
       "scene": "res://scenes/region_desert.tscn",
       "index": 5
+    },
+    {
+      "id": "ruins2",
+      "name": "Second City",
+      "scene": "res://scenes/region_ruins2.tscn",
+      "index": 6
     }
   ]
 }

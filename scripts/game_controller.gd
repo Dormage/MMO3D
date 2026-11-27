@@ -1598,7 +1598,14 @@ func _maybe_lum_probe() -> void:
 	_lum_frames += 1
 	if _lum_frames != 120:
 		return
-	await RenderingServer.frame_post_draw
+	if OS.get_cmdline_user_args().has("--overview") and camera != null:
+		_debug_free_cam = true
+		var tgt := Vector3(0.0, 4.0, 0.0)
+		camera.global_position = tgt + Vector3(110.0, 85.0, 110.0)
+		camera.look_at(tgt, Vector3.UP)
+		await RenderingServer.frame_post_draw
+		await RenderingServer.frame_post_draw
+		await RenderingServer.frame_post_draw
 	var img := get_viewport().get_texture().get_image()
 	if img == null:
 		print("LUM no image")
