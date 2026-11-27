@@ -1601,7 +1601,18 @@ func _maybe_lum_probe() -> void:
 	if OS.get_cmdline_user_args().has("--overview") and camera != null:
 		_debug_free_cam = true
 		var tgt := Vector3(0.0, 4.0, 0.0)
-		camera.global_position = tgt + Vector3(110.0, 85.0, 110.0)
+		var off := Vector3(110.0, 85.0, 110.0)
+		var tv := OS.get_environment("OVERVIEW_TGT")
+		var ov := OS.get_environment("OVERVIEW_OFF")
+		if tv != "":
+			var tp := tv.split(",")
+			if tp.size() == 3:
+				tgt = Vector3(float(tp[0]), float(tp[1]), float(tp[2]))
+		if ov != "":
+			var op := ov.split(",")
+			if op.size() == 3:
+				off = Vector3(float(op[0]), float(op[1]), float(op[2]))
+		camera.global_position = tgt + off
 		camera.look_at(tgt, Vector3.UP)
 		await RenderingServer.frame_post_draw
 		await RenderingServer.frame_post_draw

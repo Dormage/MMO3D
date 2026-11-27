@@ -921,6 +921,22 @@ func _classify(node: Node) -> void:
 			_others.append(mi)
 	# Diagnostic: are the artist's layers actually visible after conditioning?
 	if OS.get_cmdline_user_args().has("--meshdiag"):
+		for mm in node.find_children("*", "MeshInstance3D", true, false):
+			var m3 := mm as MeshInstance3D
+			if m3.mesh == null:
+				continue
+			var tris := 0
+			for si in m3.mesh.get_surface_count():
+				var arr := m3.mesh.surface_get_arrays(si)
+				var idx: Variant = arr[Mesh.ARRAY_INDEX]
+				if idx is PackedInt32Array and (idx as PackedInt32Array).size() > 0:
+					tris += (idx as PackedInt32Array).size() / 3
+				else:
+					var vv: Variant = arr[Mesh.ARRAY_VERTEX]
+					if vv is PackedVector3Array:
+						tris += (vv as PackedVector3Array).size() / 3
+			if m3.name.begins_with("Flora") and tris > 0:
+				print("TRI %s = %d" % [m3.name, tris])
 		var vis := 0
 		var hid := 0
 		var shown := 0
