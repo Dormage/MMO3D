@@ -351,6 +351,7 @@ func _ready() -> void:
 	var started := _load_stamp()
 	var phase := started
 	_build_environment()
+	_apply_region_exposure()
 	phase = _load_phase("region.environment", phase)
 	_load_region()
 	phase = _load_phase("region.load_total", phase)
@@ -422,6 +423,43 @@ func _build_hud() -> void:
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	label.text = "%s \u2014 Left click: move \u00b7 Right click: attack \u00b7 1-7: weapon \u00b7 Wheel: zoom \u00b7 MMB/Arrows: pan \u00b7 R: recentre \u00b7 F: free camera \u00b7 F11: fullscreen \u00b7 Tab / Shift+Tab: switch map" % region_label()
 	panel.add_child(label)
+
+
+## Per-region exposure correction.
+##
+## All maps share one sun and one Environment, but the assets were authored at
+## very different brightness: measured screen luminance was 0.04 on the wetlands
+## and 0.76 on the desert against 0.38 on the town.  One global exposure cannot
+## suit all five, so each map carries a multiplier.
+static var _base_exposure := -1.0
+
+const REGION_EXPOSURE := {
+	"town": 1.00,
+	"island": 0.38,
+	"graveyard": 0.58,
+	"wetlands": 7.20,
+	"desert": 0.26,
+}
+
+func _apply_region_exposure() -> void:
+	var id := ""
+	var rs := get_node_or_null("/root/RegionState")
+	if rs != null:
+		id = String(rs.call("current_id"))
+	if id.is_empty():
+		return
+	var scale := float(REGION_EXPOSURE.get(id, 1.0))
+	var w3 := get_viewport().world_3d
+	if w3 == null or w3.environment == null:
+		return
+	var env := w3.environment
+	# Capture the authored exposure once; the Environment survives scene reloads,
+	# so multiplying repeatedly would compound on every map switch.
+	if _base_exposure < 0.0:
+		_base_exposure = env.tonemap_exposure if env.tonemap_exposure > 0.0001 else 1.0
+	env.tonemap_exposure = clampf(_base_exposure * scale, 0.05, 16.0)
+	w3.environment = env
+	print("REGION_EXPOSURE id=%s scale=%.2f exposure=%.2f" % [id, scale, env.tonemap_exposure])
 
 
 func _build_environment() -> void:

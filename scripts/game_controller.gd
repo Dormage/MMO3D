@@ -405,6 +405,7 @@ func _interpolated_player_position() -> Vector3:
 func _process(delta: float) -> void:
 	_perf_sample(delta)
 	_throttle_actors(delta)
+	_maybe_lum_probe()
 	_maybe_auto_switch()
 	if not _nopop_done:
 		_nopop_done = true
@@ -1583,3 +1584,38 @@ func _maybe_auto_switch() -> void:
 		return
 	print("SWITCHTEST firing")
 	_switch_region(1)
+
+
+## --lum: measure the average screen luminance of the running map.
+##
+## Per-region lighting is not authored, so brightness differences come from the
+## assets themselves.  This turns "too dark / too bright" into a number.
+var _lum_frames := 0
+
+func _maybe_lum_probe() -> void:
+	if not OS.get_cmdline_user_args().has("--lum"):
+		return
+	_lum_frames += 1
+	if _lum_frames != 120:
+		return
+	await RenderingServer.frame_post_draw
+	var img := get_viewport().get_texture().get_image()
+	if img == null:
+		print("LUM no image")
+		get_tree().quit()
+		return
+	var shot := OS.get_environment("SHOT")
+	if shot != "":
+		img.save_png(shot)
+		print("LUM saved=%s" % shot)
+	img.resize(64, 36, Image.INTERPOLATE_BILINEAR)
+	var total := 0.0
+	var n := 0
+	for y in img.get_height():
+		for x in img.get_width():
+			var c := img.get_pixel(x, y)
+			total += 0.2126 * c.r + 0.7152 * c.g + 0.0722 * c.b
+			n += 1
+	var mean := total / maxf(float(n), 1.0)
+	print("LUM region=%s mean=%.4f" % [str(RegionState.current_id()), mean])
+	get_tree().quit()
