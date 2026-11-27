@@ -495,8 +495,9 @@ func _apply_region_exposure() -> void:
 	if REGION_SKY_CONTRIB.has(id):
 		env.ambient_light_sky_contribution = float(REGION_SKY_CONTRIB[id])
 	w3.environment = env
-	print("REGION_EXPOSURE id=%s scale=%.2f exposure=%.2f ambient=%.2f" % [
-		id, scale, env.tonemap_exposure, env.ambient_light_energy])
+	print("REGION_EXPOSURE id=%s scale=%.2f exposure=%.2f ambient=%.2f ssao=%s ssil=%s" % [
+		id, scale, env.tonemap_exposure, env.ambient_light_energy,
+		str(env.ssao_enabled), str(env.ssil_enabled)])
 
 
 func _build_environment() -> void:
