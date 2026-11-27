@@ -542,6 +542,7 @@ func _build_editor_preview() -> void:
 	# the running game shows textured ones.
 	_ensure_vertex_colour_albedo(node)
 	_ensure_texture_mipmaps(node)
+	_enhance_vegetation_colour(node)
 	_fix_material_textures(node)
 	_strip_outliers(node)
 	_cull_oversized_faces(node)
@@ -853,6 +854,7 @@ func _load_region() -> void:
 	phase = _load_phase("region.classify", phase)
 	_ensure_vertex_colour_albedo(node)
 	_ensure_texture_mipmaps(node)
+	_enhance_vegetation_colour(node)
 	_fix_material_textures(node)
 	_strip_outliers(node)
 	_cull_oversized_faces(node)
@@ -975,6 +977,36 @@ func _classify(node: Node) -> void:
 		near.sort_custom(func(a, b): return a[0] < b[0])
 		for i in mini(5, near.size()):
 			print("NEAR d=%.1fm %s height=%.1f" % [near[i][0], near[i][1], near[i][2]])
+		var forest := node.find_child("Flora_NW_Forest_GT", true, false) as MeshInstance3D
+		if forest != null and forest.mesh != null:
+			for si in mini(4, forest.mesh.get_surface_count()):
+				var mf: Variant = forest.mesh.surface_get_material(si)
+				if mf is StandardMaterial3D:
+					var sf := mf as StandardMaterial3D
+					var tint := sf.albedo_color
+					print("FOREST s%d name=%s albedo=%s texture=%s tex_size=%s vcol=%s" % [
+						si, sf.resource_name, str(tint),
+						"yes" if sf.albedo_texture != null else "none",
+						str(sf.albedo_texture.get_size()) if sf.albedo_texture != null else "-",
+						str(sf.vertex_color_use_as_albedo)])
+		var veg_shown := 0
+		for mm in node.find_children("*", "MeshInstance3D", true, false):
+			var m7 := mm as MeshInstance3D
+			if m7.mesh == null or veg_shown >= 5:
+				continue
+			for si in m7.mesh.get_surface_count():
+				var mt7: Variant = m7.mesh.surface_get_material(si)
+				if mt7 is ShaderMaterial:
+					var shm := mt7 as ShaderMaterial
+					print("VEGMAT %s/%d shader=%s tint=%s use_tex=%s tex=%s vc=%s" % [
+						m7.name, si,
+						"yes" if shm.shader != null else "none",
+						str(shm.get_shader_parameter("tint")),
+						str(shm.get_shader_parameter("use_texture")),
+						"yes" if shm.get_shader_parameter("albedo_tex") != null else "none",
+						str(shm.get_shader_parameter("use_vertex_color"))])
+					veg_shown += 1
+					break
 		var untextured: Array = []
 		for mm in node.find_children("*", "MeshInstance3D", true, false):
 			var m6 := mm as MeshInstance3D
@@ -1750,6 +1782,48 @@ func _ensure_vertex_colour_albedo(node: Node) -> void:
 				fixed += 1
 	if fixed > 0:
 		print("REGION_VCOL enabled vertex-colour albedo on %d surfaces" % fixed)
+
+
+## Restore colour in vegetation that ships as flat desaturated albedo.
+##
+## The flora materials carry no texture: the canopy colour is (base colour factor
+## x vertex colour), and both are close to grey, so under exposure the trees read
+## as pale mint.  Measured albedo for GT_M_leaf_mid is 0.41/0.44/0.37 - almost
+## neutral.  Boosting saturation keeps the value the artist chose while putting
+## the green back.
+@export var vegetation_saturation := 1.0
+## Multiplies foliage value.  The canopies carry no texture, so their colour is
+## flat and exposure drives it straight into the tonemapper's shoulder; darkening
+## keeps them green instead of pastel.
+@export var vegetation_value := 1.0
+@export var vegetation_patterns: PackedStringArray = PackedStringArray([
+	"leaf", "conifer", "bush", "grass", "reed", "canopy", "foliage", "ivy", "vine"])
+
+func _enhance_vegetation_colour(node: Node) -> void:
+	if is_equal_approx(vegetation_saturation, 1.0) and is_equal_approx(vegetation_value, 1.0):
+		return
+	var touched := 0
+	for n in node.find_children("*", "MeshInstance3D", true, false):
+		var mi := n as MeshInstance3D
+		if mi.mesh == null:
+			continue
+		for s in mi.mesh.get_surface_count():
+			var m: Variant = mi.mesh.surface_get_material(s)
+			if not (m is StandardMaterial3D):
+				continue
+			var sm := m as StandardMaterial3D
+			if not _pattern_hit(String(sm.resource_name).to_lower(), vegetation_patterns):
+				continue
+			if sm.has_meta("veg_tinted"):
+				continue
+			var c := sm.albedo_color
+			sm.albedo_color = Color.from_hsv(c.h,
+					clampf(c.s * vegetation_saturation, 0.0, 1.0),
+					clampf(c.v * vegetation_value, 0.0, 1.0), c.a)
+			sm.set_meta("veg_tinted", true)
+			touched += 1
+	if touched > 0:
+		print("REGION_VEGCOLOUR saturated=%d x%.2f" % [touched, vegetation_saturation])
 
 
 ## Give every albedo texture a mip chain.
