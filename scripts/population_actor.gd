@@ -47,10 +47,26 @@ var _rng := RandomNumberGenerator.new()
 
 
 func _ready() -> void:
+	var diagnostic_args := OS.get_cmdline_user_args()
+	if diagnostic_args.has("--nopop"):
+		# Also cover directly authored actors and actors added after the
+		# controller's diagnostic pass; do not even load their visual assets.
+		visible = false
+		collision_layer = 0
+		collision_mask = 0
+		set_physics_process(false)
+		process_mode = Node.PROCESS_MODE_DISABLED
+		return
 	_rng.randomize()
 	add_to_group("population")
 	_home = global_position
-	_build_body()
+	if diagnostic_args.has("--minphys"):
+		# Keep the model and idle animation so this switch isolates physics.
+		collision_layer = 0
+		collision_mask = 0
+		set_physics_process(false)
+	else:
+		_build_body()
 	_load_model()
 	_wait = _rng.randf_range(0.3, idle_max)
 	_play_idle()

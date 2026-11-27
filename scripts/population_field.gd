@@ -28,6 +28,11 @@ var _candidates: Array[Vector3] = []
 func _ready() -> void:
 	if Engine.is_editor_hint() or not enabled:
 		return
+	# Population waits for collision asynchronously. A one-shot hide in the
+	# controller can run before these actors exist, so skip generation here.
+	if OS.get_cmdline_user_args().has("--nopop"):
+		print("NOPOP skipped_spawner=%s" % name)
+		return
 	_rng.randomize()
 	_map = get_parent()
 	await _wait_for_ground()

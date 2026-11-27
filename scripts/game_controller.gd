@@ -1262,37 +1262,114 @@ func debug_probe_screen(s: Vector2) -> Dictionary:
 		"interactive": _is_interactive_node(col) if col != null else false}
 
 
-## Periodic frame breakdown for diagnosing movement stutter.
-##
-## Run with PERF_LOG=1 and walk around; the split between process, physics and
-## the renderer says which side is costing the frame instead of guessing.
-var _perf_clock := 0.0
+## Opt-in, wall-clock profiling. Physics may fall behind real time when the
+## step cap is reached, so neither `delta` nor a presumed 120 ticks is a valid
+## denominator. Timers below use the actual player tick/call counts.
+## Engine process/physics monitors are last-frame snapshots, not additive
+## components of our wall-clock frame measurements. Render "primitives" count
+## vertices/indices over passes; they must not be labelled as triangle counts.
+var _perf_enabled := OS.get_environment("PERF_LOG") == "1"
+## The standalone benchmark consumes the same counters in defined phases.
+var _perf_external_sampling := false
+var _perf_start_us := -1
+var _perf_previous_us := -1
+var _perf_start_physics := 0
+var _perf_frame_ms := PackedFloat64Array()
 
-func _perf_sample(delta: float) -> void:
-	if OS.get_environment("PERF_LOG") != "1":
+
+func _perf_sample(_delta: float) -> void:
+	if not _perf_enabled or _perf_external_sampling:
 		return
-	_perf_clock += delta
-	if _perf_clock < 2.0:
+	_perf_sample_at(Time.get_ticks_usec())
+
+
+func _perf_sample_at(now: int) -> void:
+	if _perf_start_us < 0:
+		_perf_start_us = now
+		_perf_previous_us = now
+		_perf_start_physics = Engine.get_physics_frames()
+		# Discard work before this window, including initial model fitting.
+		if player != null:
+			player.call("perf_take")
+		print("PERF_CONTEXT godot=%s renderer=%s driver=%s display=%s physics_target_hz=%d max_steps_per_frame=%d time_scale=%.3f" % [
+			Engine.get_version_info().get("string", "unknown"),
+			RenderingServer.get_current_rendering_method(),
+			RenderingServer.get_current_rendering_driver_name(),
+			DisplayServer.get_name(), Engine.physics_ticks_per_second,
+			Engine.max_physics_steps_per_frame, Engine.time_scale])
 		return
-	_perf_clock = 0.0
-	var spd := 0.0
-	if player != null:
-		spd = Vector2(player.velocity.x, player.velocity.z).length()
-	print("PERF fps=%d proc=%.1fms phys=%.1fms draws=%d prims=%d objs=%d speed=%.1f" % [
-		int(Performance.get_monitor(Performance.TIME_FPS)),
+	_perf_frame_ms.append(float(now - _perf_previous_us) / 1000.0)
+	_perf_previous_us = now
+	var elapsed_us := now - _perf_start_us
+	if elapsed_us < 2000000:
+		return
+	var physics_frames := Engine.get_physics_frames()
+	var counters: Dictionary = player.call("perf_take") if player != null else {}
+	var m := _perf_window_metrics(_perf_frame_ms, elapsed_us,
+		physics_frames - _perf_start_physics, counters)
+	var spd := Vector2(player.velocity.x, player.velocity.z).length() if player != null else 0.0
+	print("PERF wall_s=%.3f frames=%d fps=%.1f frame_ms_mean=%.2f p50=%.2f p95=%.2f p99=%.2f max=%.2f engine_proc_last_ms=%.2f engine_phys_last_ms=%.2f draws=%d vertex_indices=%d render_objs=%d velocity_xz=%.2f" % [
+		m.wall_s, m.frames, m.fps, m.frame_ms_mean, m.frame_ms_p50,
+		m.frame_ms_p95, m.frame_ms_p99, m.frame_ms_max,
 		Performance.get_monitor(Performance.TIME_PROCESS) * 1000.0,
 		Performance.get_monitor(Performance.TIME_PHYSICS_PROCESS) * 1000.0,
 		int(Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)),
 		int(Performance.get_monitor(Performance.RENDER_TOTAL_PRIMITIVES_IN_FRAME)),
-		int(Performance.get_monitor(Performance.RENDER_TOTAL_OBJECTS_IN_FRAME)),
-		spd])
-	print("PHYS3D active_objs=%d pairs=%d islands=%d" % [
+		int(Performance.get_monitor(Performance.RENDER_TOTAL_OBJECTS_IN_FRAME)), spd])
+	# active_objs is the engine physics monitor, not an actor/AI count.
+	print("PHYS3D ticks=%d hz=%.2f ticks_per_frame=%.2f target_hz=%d active_objs=%d pairs=%d islands=%d" % [
+		physics_frames - _perf_start_physics, m.physics_hz, m.physics_per_frame,
+		Engine.physics_ticks_per_second,
 		int(Performance.get_monitor(Performance.PHYSICS_3D_ACTIVE_OBJECTS)),
 		int(Performance.get_monitor(Performance.PHYSICS_3D_COLLISION_PAIRS)),
 		int(Performance.get_monitor(Performance.PHYSICS_3D_ISLAND_COUNT))])
-	var mc: Array = player.call("perf_take")
-	print("MOVECOST move=%.1fms water=%.1fms pathcalls=%d" % [
-		float(mc[0]) / 2000.0, float(mc[1]) / 2000.0, int(mc[2])])
+	print("PLAYERCOST ticks=%d total_ms_tick=%.3f move_ms_tick=%.3f water_ms_tick=%.3f glue_ms_tick=%.3f path_calls=%d distance_xz=%.3f achieved_mps=%.3f" % [
+		m.player_ticks, m.player_ms_tick, m.move_ms_tick, m.water_ms_tick,
+		m.glue_ms_tick, int(counters.get("path_calls", 0)),
+		float(counters.get("distance_xz", 0.0)), m.achieved_mps])
+	# Sole queries may also come from a diagnostic; use calls, not ticks.
+	print("SOLECOST calls=%d ms_call=%.3f cache_samples=%d cache_bones=%d" % [
+		int(counters.get("sole_calls", 0)), m.sole_ms_call,
+		int(counters.get("sole_samples", 0)), int(counters.get("sole_bones", 0))])
+	_perf_start_us = now
+	_perf_start_physics = physics_frames
+	_perf_frame_ms.clear()
+
+
+## Separate arithmetic from sampling so units and low-FPS windows can be
+## regression-tested without a renderer, imported assets, or real-time waits.
+static func _perf_window_metrics(frame_ms: PackedFloat64Array, elapsed_us: int,
+		physics_ticks: int, counters: Dictionary) -> Dictionary:
+	var wall_s := maxf(float(elapsed_us) / 1000000.0, 0.000001)
+	var frames := frame_ms.size()
+	var ticks := int(counters.get("ticks", 0))
+	var tick_divisor := float(maxi(ticks, 1)) * 1000.0
+	var ordered := frame_ms.duplicate()
+	ordered.sort()
+	return {
+		"wall_s": wall_s, "frames": frames, "fps": float(frames) / wall_s,
+		"frame_ms_mean": wall_s * 1000.0 / float(maxi(frames, 1)) if frames > 0 else 0.0,
+		"frame_ms_p50": _perf_percentile(ordered, 0.50),
+		"frame_ms_p95": _perf_percentile(ordered, 0.95),
+		"frame_ms_p99": _perf_percentile(ordered, 0.99),
+		"frame_ms_max": ordered[-1] if not ordered.is_empty() else 0.0,
+		"physics_hz": float(physics_ticks) / wall_s,
+		"physics_per_frame": float(physics_ticks) / float(maxi(frames, 1)),
+		"player_ticks": ticks,
+		"player_ms_tick": float(counters.get("player_us", 0)) / tick_divisor,
+		"move_ms_tick": float(counters.get("move_us", 0)) / tick_divisor,
+		"water_ms_tick": float(counters.get("water_us", 0)) / tick_divisor,
+		"glue_ms_tick": float(counters.get("glue_us", 0)) / tick_divisor,
+		"sole_ms_call": float(counters.get("sole_us", 0)) / (float(maxi(int(counters.get("sole_calls", 0)), 1)) * 1000.0),
+		"achieved_mps": float(counters.get("distance_xz", 0.0)) / wall_s,
+	}
+
+
+static func _perf_percentile(ordered: PackedFloat64Array, fraction: float) -> float:
+	if ordered.is_empty():
+		return 0.0
+	# Nearest-rank percentile; at least one sample contributes, even below 1 Hz.
+	return ordered[clampi(ceili(fraction * ordered.size()) - 1, 0, ordered.size() - 1)]
 
 
 ## Distant actors do not need to simulate.
@@ -1311,6 +1388,11 @@ func _throttle_actors(delta: float) -> void:
 	if _throttle_clock < 0.5:
 		return
 	_throttle_clock = 0.0
+	# Diagnostics deliberately disable actor physics regardless of distance.
+	# Never resurrect those callbacks when an actor is near the player.
+	var diagnostic_args := OS.get_cmdline_user_args()
+	if diagnostic_args.has("--nopop") or diagnostic_args.has("--minphys"):
+		return
 	var root := get_tree().current_scene
 	if root == null:
 		return
@@ -1337,12 +1419,16 @@ func _throttle_actors(delta: float) -> void:
 ##   --noshadow   disable every light's shadow
 ##   --norefl     SSR / SSAO / SSIL / SDFGI / glow off
 ##   --noocc      same as --norefl (ambient occlusion family)
+##   --nofog      disable regular and volumetric fog
 ##   --unshaded   viewport unshaded debug draw (no lighting, no shaders)
+##   --no-render-lods  disable automatic mesh LOD selection for an A/B test
 var _cli_gfx_applied := false
 
 func _apply_cli_graphics() -> void:
 	var a := OS.get_cmdline_user_args()
-	var root := get_tree().current_scene
+	# Atmosphere owns the active sun and environment outside current_scene.
+	# Searching only Game left its sun shadows on during --noshadow tests.
+	var root := get_tree().root
 	if root == null:
 		return
 	if a.has("--noshadow"):
@@ -1353,18 +1439,23 @@ func _apply_cli_graphics() -> void:
 				lt.shadow_enabled = false
 				n += 1
 		print("CLI_GFX shadow_off lights=%d" % n)
-	if a.has("--norefl") or a.has("--noocc"):
+	if a.has("--norefl") or a.has("--noocc") or a.has("--nofog"):
+		var no_reflections := a.has("--norefl") or a.has("--noocc")
 		var e_count := 0
 		for w in root.find_children("*", "WorldEnvironment", true, false):
 			var we := w as WorldEnvironment
 			if we == null or we.environment == null:
 				continue
 			var env := we.environment
-			env.ssr_enabled = false
-			env.ssao_enabled = false
-			env.ssil_enabled = false
-			env.sdfgi_enabled = false
-			env.glow_enabled = false
+			if no_reflections:
+				env.ssr_enabled = false
+				env.ssao_enabled = false
+				env.ssil_enabled = false
+				env.sdfgi_enabled = false
+				env.glow_enabled = false
+			if a.has("--nofog"):
+				env.fog_enabled = false
+				env.volumetric_fog_enabled = false
 			we.environment = env
 			e_count += 1
 		if e_count == 0:
@@ -1373,14 +1464,22 @@ func _apply_cli_graphics() -> void:
 			var w3 := get_viewport().world_3d
 			if w3 != null and w3.environment != null:
 				var env3 := w3.environment
-				env3.ssr_enabled = false
-				env3.ssao_enabled = false
-				env3.ssil_enabled = false
-				env3.sdfgi_enabled = false
-				env3.glow_enabled = false
+				if no_reflections:
+					env3.ssr_enabled = false
+					env3.ssao_enabled = false
+					env3.ssil_enabled = false
+					env3.sdfgi_enabled = false
+					env3.glow_enabled = false
+				if a.has("--nofog"):
+					env3.fog_enabled = false
+					env3.volumetric_fog_enabled = false
 				w3.environment = env3
 				e_count = 1
-		print("CLI_GFX env_flat environments=%d" % e_count)
+		print("CLI_GFX environments=%d effects_off=%s fog_off=%s" % [
+			e_count, str(no_reflections), str(a.has("--nofog"))])
+	if a.has("--no-render-lods"):
+		get_viewport().mesh_lod_threshold = 0.0
+		print("CLI_GFX render_lods_off")
 	if a.has("--unshaded"):
 		get_viewport().debug_draw = Viewport.DEBUG_DRAW_UNSHADED
 		print("CLI_GFX unshaded")
@@ -1421,8 +1520,9 @@ func _apply_minphys() -> void:
 	print("MINPHYS kept_ground=%d disabled=%d" % [kept, off])
 
 
-## --nopop: hide population actors and monsters entirely, to measure what the
-## ~1500 rendered objects actually cost.
+## --nopop: spawners skip generation and actor _ready guards handle late actors.
+## This pass also disables any already-authored population, including child
+## animation work and collision, without hiding unrelated monster-named props.
 var _nopop_done := false
 
 func _apply_nopop() -> void:
@@ -1432,17 +1532,16 @@ func _apply_nopop() -> void:
 	if root == null:
 		return
 	var hidden := 0
-	for n in get_tree().get_nodes_in_group("population"):
-		var n3 := n as Node3D
-		if n3 == null:
+	for n in root.find_children("*", "CharacterBody3D", true, false):
+		var body := n as CharacterBody3D
+		if body == null or body == player:
 			continue
-		n3.visible = false
-		n3.set_physics_process(false)
+		if not (body is PopulationActor or body is MonsterActor or body.is_in_group("population")):
+			continue
+		body.visible = false
+		body.collision_layer = 0
+		body.collision_mask = 0
+		body.set_physics_process(false)
+		body.process_mode = Node.PROCESS_MODE_DISABLED
 		hidden += 1
-	for n in root.find_children("*", "", true, false):
-		var nm := String(n.name).to_lower()
-		if nm.contains("monster") and n is Node3D:
-			((n as Node3D)).visible = false
-			(n as Node3D).set_physics_process(false)
-			hidden += 1
 	print("NOPOP hidden=%d" % hidden)

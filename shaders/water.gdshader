@@ -1,6 +1,8 @@
 shader_type spatial;
 render_mode unshaded, blend_mix, cull_disabled, depth_draw_never;
 
+#include "res://shaders/depth_compat.gdshaderinc"
+
 // Minimal pond water.  One view-dependent fresnel term, one uniform sky colour,
 // one scene-depth body blend, one sun specular, two rotated value-noise octaves
 // that only perturb NORMAL, and a thin depth-based foam line.  Opaque.
@@ -75,8 +77,7 @@ void fragment() {
 
 	// Direct scene depth.  Reconstruct view-space position from the depth texture.
 	float raw_depth = texture(depth_tex, SCREEN_UV).r;
-	vec4 view_pos = INV_PROJECTION_MATRIX * vec4(
-			SCREEN_UV * 2.0 - 1.0, raw_depth, 1.0);
+	vec4 view_pos = INV_PROJECTION_MATRIX * vec4(depth_to_ndc(SCREEN_UV, raw_depth), 1.0);
 	view_pos.xyz /= view_pos.w;
 	float scene_z = -view_pos.z;
 	float frag_z = -VERTEX.z;
@@ -126,7 +127,7 @@ void fragment() {
 		// Do not reflect the water pixel back into itself.
 		if (distance(ruv, SCREEN_UV) < 0.012) { t += 0.55 + t * 0.16; continue; }
 		float sd = texture(depth_tex, ruv).r;
-		vec4 vp = INV_PROJECTION_MATRIX * vec4(ruv * 2.0 - 1.0, sd, 1.0);
+		vec4 vp = INV_PROJECTION_MATRIX * vec4(depth_to_ndc(ruv, sd), 1.0);
 		vp.xyz /= vp.w;
 		float scene_z = -vp.z;
 		float ray_z = -p.z;

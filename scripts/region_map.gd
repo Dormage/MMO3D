@@ -27,6 +27,11 @@ extends Node3D
 		["SM_Town_Buildings", "SM_Town_Props", "SM_Town_Rampart"])
 @export var mesh_prefix := "SM_Town_"
 
+@export_group("Rendering")
+## Repair passes replace imported meshes, discarding their automatic LODs.
+## Restore alternative render indices once, before caching the region.
+@export var generate_render_lods := true
+
 @export_group("Collision roles by material")
 ## Materials matching these substrings get NO collision.  Decorative props --
 ## flowers, grass tufts, reeds, ground cover -- must not fence the player in.
@@ -467,7 +472,8 @@ func _cache_key() -> String:
 	# Missing any of them means an edit silently keeps using an older bake.
 	var deps := ""
 	for path in [get_script().resource_path if get_script() != null else "",
-			"res://scripts/glb_util.gd"]:
+			"res://scripts/glb_util.gd", "res://scripts/region_render_lods.gd",
+			"res://shaders/depth_compat.gdshaderinc"]:
 		var f2 := FileAccess.open(path, FileAccess.READ)
 		var sz := f2.get_length() if f2 != null else -1
 		if f2 != null:
@@ -476,10 +482,10 @@ func _cache_key() -> String:
 	# Asset, loader script and every exported parameter all feed the key.  Keying
 	# on the asset alone would let a bake outlive a change to the passes or to
 	# this scene's settings, which is a silent wrong-result bug.
-	return "%s|%d|%d|%s|%s" % [
+	return "%s|%d|%d|%s|%s|render_lods=%s" % [
 		glb_path,
 		int(FileAccess.get_modified_time(glb_path)), int(size),
-		deps, _params_fingerprint()]
+		deps, _params_fingerprint(), str(_render_lods_enabled())]
 
 
 ## Hash of the exported settings that change how a map is conditioned.
@@ -509,7 +515,13 @@ func _params_fingerprint() -> String:
 
 func _cache_paths() -> Array[String]:
 	var base := "%s/%s" % [CACHE_DIR, region_id]
+	if not _render_lods_enabled():
+		base += "_no_render_lods"
 	return [base + ".scn", base + ".key"]
+
+
+func _render_lods_enabled() -> bool:
+	return generate_render_lods and not OS.get_cmdline_user_args().has("--no-render-lods")
 
 
 ## Load the region, reusing a previous bake when the asset has not changed.
@@ -654,7 +666,6 @@ func _load_region() -> void:
 	node.name = "RegionWorld"
 	add_child(node)
 	_hide_nav_markers(node)
-	_maybe_hide_vegetation(node)
 	_load_nav_markers()
 	_measure_water(node)
 	_classify(node)
@@ -672,11 +683,19 @@ func _load_region() -> void:
 	_shorten_fences_at_stone(node)
 	_add_crystal_glow(node)
 	_apply_vegetation_wind(node)
+	if _render_lods_enabled():
+		var lods := preload("res://scripts/region_render_lods.gd").generate(node)
+		print("REGION_RENDER_LODS meshes=%d surfaces=%d levels=%d base_tris=%d lowest_tris=%d ms=%d" % [
+			lods.meshes, lods.surfaces, lods.levels, lods.base_triangles,
+			lods.lowest_triangles, lods.elapsed_ms])
 	# Pack outside the tree: a node with a parent cannot be a scene root, and
 	# the passes above must keep running while it is in the tree.
 	remove_child(node)
 	_bake(node, paths)
 	add_child(node)
+	# Diagnostic visibility is session state, never part of the baked asset.
+	# Otherwise a first run with --noveg poisoned later normal cache hits.
+	_maybe_hide_vegetation(node)
 
 
 func _cache_valid(paths: Array[String]) -> bool:
@@ -2548,6 +2567,7 @@ func _load_nav_markers() -> void:
 ## Boxes covering every bridge deck triangle, so props lying on a deck can be
 ## told apart from the deck itself.
 var _deck_boxes: Array = []
+var _deck_box_index := preload("res://scripts/deck_box_index.gd").new()
 
 
 ## Record the deck surface for every plank-material triangle on the map.
@@ -2575,7 +2595,9 @@ func _collect_deck_boxes() -> void:
 					minf(a.z, minf(b.z, c.z)) - 0.8, maxf(a.z, maxf(b.z, c.z)) + 0.8,
 					minf(a.y, minf(b.y, c.y)) - 0.15,
 					maxf(a.y, maxf(b.y, c.y)) + 1.6])
-	print("REGION_DECKS boxes=%d" % _deck_boxes.size())
+	_deck_box_index.build(_deck_boxes)
+	print("REGION_DECKS boxes=%d cells=%d fallback=%d" % [
+		_deck_boxes.size(), _deck_box_index.cell_count(), _deck_box_index.fallback_count()])
 
 
 ## Drop triangles that lie inside a deck box: a boulder dumped across a bridge
@@ -2591,13 +2613,7 @@ func _strip_faces_on_decks(faces: PackedVector3Array) -> PackedVector3Array:
 		var cx := (a.x + b.x + c.x) / 3.0
 		var cy := (a.y + b.y + c.y) / 3.0
 		var cz := (a.z + b.z + c.z) / 3.0
-		var on_deck := false
-		for box in _deck_boxes:
-			if cx >= box[0] and cx <= box[1] and cz >= box[2] and cz <= box[3] \
-					and cy >= box[4] and cy <= box[5]:
-				on_deck = true
-				break
-		if on_deck:
+		if _deck_box_index.contains(cx, cy, cz):
 			dropped += 1
 			continue
 		out.append(a); out.append(b); out.append(c)

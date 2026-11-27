@@ -418,6 +418,11 @@ func _add_bridge_mesh(map: Node3D) -> ArrayMesh:
 			_quad_up(faces, a, b, cc, d)
 			n += 1
 	var mesh := ArrayMesh.new()
+	# Authored regions use concave Walkable_* bridge bodies, already collected
+	# above. With no legacy box decks there is no surface to submit to the engine.
+	if faces.is_empty():
+		print("NAV_BRIDGES decks=0 verts=0")
+		return mesh
 	var arr := []
 	arr.resize(Mesh.ARRAY_MAX)
 	arr[Mesh.ARRAY_VERTEX] = faces
