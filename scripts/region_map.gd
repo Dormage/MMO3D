@@ -444,6 +444,23 @@ func _build_hud() -> void:
 ## and 0.76 on the desert against 0.38 on the town.  One global exposure cannot
 ## suit all five, so each map carries a multiplier.
 static var _base_exposure := -1.0
+static var _base_ambient := -1.0
+
+## Shadow fill per region.  A Blender render of the same asset bounces light
+## around the courtyard; our single sun plus flat ambient does not, so shadowed
+## stone reads far darker than the reference (measured 0.12 vs 0.22 of the
+## reference's tonal floor).  Raising ambient here restores that fill without
+## blowing the highlights.
+const REGION_AMBIENT := {
+	"ruins2": 2.60,
+}
+
+## Fraction of ambient that comes from the sky rather than a flat colour.  A
+## flat ambient brightens every face equally, so it greys the stone; sky light
+## keeps the directional variation the artist lit for.
+const REGION_SKY_CONTRIB := {
+	"ruins2": 0.75,
+}
 
 const REGION_EXPOSURE := {
 	"town": 1.00,
@@ -451,7 +468,7 @@ const REGION_EXPOSURE := {
 	"graveyard": 0.58,
 	"wetlands": 7.20,
 	"desert": 0.26,
-	"ruins2": 1.00,
+	"ruins2": 1.80,
 }
 
 func _apply_region_exposure() -> void:
@@ -471,8 +488,15 @@ func _apply_region_exposure() -> void:
 	if _base_exposure < 0.0:
 		_base_exposure = env.tonemap_exposure if env.tonemap_exposure > 0.0001 else 1.0
 	env.tonemap_exposure = clampf(_base_exposure * scale, 0.05, 16.0)
+	var amb := float(REGION_AMBIENT.get(id, 1.0))
+	if _base_ambient < 0.0:
+		_base_ambient = env.ambient_light_energy if env.ambient_light_energy > 0.0001 else 1.0
+	env.ambient_light_energy = clampf(_base_ambient * amb, 0.0, 8.0)
+	if REGION_SKY_CONTRIB.has(id):
+		env.ambient_light_sky_contribution = float(REGION_SKY_CONTRIB[id])
 	w3.environment = env
-	print("REGION_EXPOSURE id=%s scale=%.2f exposure=%.2f" % [id, scale, env.tonemap_exposure])
+	print("REGION_EXPOSURE id=%s scale=%.2f exposure=%.2f ambient=%.2f" % [
+		id, scale, env.tonemap_exposure, env.ambient_light_energy])
 
 
 func _build_environment() -> void:
@@ -516,6 +540,7 @@ func _build_editor_preview() -> void:
 	# applied at load time, so without this the editor shows bare canopies while
 	# the running game shows textured ones.
 	_ensure_vertex_colour_albedo(node)
+	_ensure_texture_mipmaps(node)
 	_fix_material_textures(node)
 	_strip_outliers(node)
 	_cull_oversized_faces(node)
@@ -826,6 +851,7 @@ func _load_region() -> void:
 	_classify(node)
 	phase = _load_phase("region.classify", phase)
 	_ensure_vertex_colour_albedo(node)
+	_ensure_texture_mipmaps(node)
 	_fix_material_textures(node)
 	_strip_outliers(node)
 	_cull_oversized_faces(node)
@@ -948,6 +974,37 @@ func _classify(node: Node) -> void:
 		near.sort_custom(func(a, b): return a[0] < b[0])
 		for i in mini(5, near.size()):
 			print("NEAR d=%.1fm %s height=%.1f" % [near[i][0], near[i][1], near[i][2]])
+		var untextured: Array = []
+		for mm in node.find_children("*", "MeshInstance3D", true, false):
+			var m6 := mm as MeshInstance3D
+			if m6.mesh == null:
+				continue
+			var with_tex := 0
+			var total := 0
+			for si in m6.mesh.get_surface_count():
+				var mt: Variant = m6.mesh.surface_get_material(si)
+				if mt is StandardMaterial3D:
+					total += 1
+					if (mt as StandardMaterial3D).albedo_texture != null:
+						with_tex += 1
+			if total > 0 and with_tex == 0:
+				untextured.append(String(m6.name))
+		print("UNTEXTURED meshes=%d sample=%s" % [untextured.size(), str(untextured.slice(0, 8))])
+		var tex_shown := 0
+		for mm in node.find_children("*", "MeshInstance3D", true, false):
+			var m5 := mm as MeshInstance3D
+			if m5.mesh == null or tex_shown >= 4:
+				continue
+			var mat5: Variant = m5.mesh.surface_get_material(0)
+			if mat5 is StandardMaterial3D:
+				var tex: Texture2D = (mat5 as StandardMaterial3D).albedo_texture
+				if tex != null:
+					var img := tex.get_image()
+					print("TEX %s size=%s mipmaps=%s filter=%d" % [
+						m5.name, str(img.get_size()) if img != null else "?",
+						str(img.has_mipmaps()) if img != null else "?",
+						(mat5 as StandardMaterial3D).texture_filter])
+					tex_shown += 1
 		var mats_shown := 0
 		var vis := 0
 		var hid := 0
@@ -1692,6 +1749,42 @@ func _ensure_vertex_colour_albedo(node: Node) -> void:
 				fixed += 1
 	if fixed > 0:
 		print("REGION_VCOL enabled vertex-colour albedo on %d surfaces" % fixed)
+
+
+## Give every albedo texture a mip chain.
+##
+## The artist's GLBs embed textures without mipmaps.  At any distance a tiled
+## floor then samples one texel per pixel and the grout lines crawl into black
+## crosses; the terrain texture happens to ship mipmaps, which is why only the
+## buildings and paving shimmered.
+func _ensure_texture_mipmaps(node: Node) -> void:
+	var fixed := 0
+	var seen := {}
+	for n in node.find_children("*", "MeshInstance3D", true, false):
+		var mi := n as MeshInstance3D
+		if mi.mesh == null:
+			continue
+		for s in mi.mesh.get_surface_count():
+			var m: Variant = mi.mesh.surface_get_material(s)
+			if not (m is StandardMaterial3D):
+				continue
+			var sm := m as StandardMaterial3D
+			var tex := sm.albedo_texture
+			if tex == null:
+				continue
+			var rid := tex.get_rid()
+			if seen.has(rid):
+				continue
+			seen[rid] = true
+			var img := tex.get_image()
+			if img == null or img.has_mipmaps():
+				continue
+			var copy := img.duplicate()
+			copy.generate_mipmaps()
+			sm.albedo_texture = ImageTexture.create_from_image(copy)
+			fixed += 1
+	if fixed > 0:
+		print("REGION_MIPMAPS generated=%d" % fixed)
 
 
 ## Triplanar detail over the vertex-coloured ground.
