@@ -310,7 +310,7 @@ and prints `SOLE_BENCH` timings; it exits nonzero if LFS assets are still pointe
 ## 7. Completed validation — 2026-11-27
 
 Tests used official Godot **4.6.3** on a Linux x86-64 host exposing an AMD EPYC
-7763 CPU. The exact engine binary's SHA-256 is
+7763 CPU. The official Linux x86-64 download archive's SHA-256 is
 `d0bc2113065e481c9c2c2b2c37daa4e8be3fe9e27f0ab9ab0b6096e9a37907f3`.
 The repository base was `fabd7b4`. Measurements below are from this test host,
 not the user's integrated GPU. Machine-readable benchmark output is preserved

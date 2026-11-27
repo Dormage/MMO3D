@@ -116,6 +116,11 @@ func _ready() -> void:
 		print("WATER_LEVEL %.2f from %s" % [float(carrier.get("_water_level")), String(carrier.name)])
 	nav.set("cache_id", String(carrier.get("region_id")) if carrier != null else "")
 	if carrier != null:
+		# Marker cache lookup happens before triangle counting; identify its
+		# source file so a fresh NavWorld can reuse the previous scene's bake.
+		var marker_path = carrier.get("nav_glb_path")
+		if marker_path is String:
+			nav.set("marker_file", marker_path)
 		var g = carrier.get("nav_stitch_gap")
 		var r = carrier.get("nav_stitch_rise")
 		if g != null:
@@ -611,37 +616,35 @@ func _input(event: InputEvent) -> void:
 ## bound to whichever region was present in _ready(), and rebuilding them from
 ## scratch is the only way to be certain none of it goes stale.
 func _switch_region(step: int) -> void:
+	if not _region_switch_ready():
+		return
 	if not RegionState.cycle(step):
 		return
 	_reload_for_region()
 
 
 func _jump_region(index: int) -> void:
+	if not _region_switch_ready():
+		return
 	if index >= RegionState.count() or index == RegionState.current:
 		return
 	if RegionState.select(index):
 		_reload_for_region()
 
 
+func _region_switch_ready() -> bool:
+	# The new scene is attached before its async _ready() finishes. Do not let
+	# another key press tear it down while camera/nav construction is pending.
+	return not RegionState.transition_in_progress and links_ready \
+			and is_instance_valid(camera) and camera.current and is_instance_valid(player)
+
+
 func _reload_for_region() -> void:
 	print("REGION_SWITCH -> %d:%s (%s)" % [
 		RegionState.current, RegionState.current_id(), RegionState.current_name()])
-	# Deferred: we are inside input dispatch and the node cannot be freed mid-event.
-	# Two-step reload: release the old scene first, let the GL backend finish its
-	# cleanup over a couple of frames, then build the new one.  Doing both in the
-	# same frame segfaults the Compatibility (OpenGL) renderer.
-	_reload_two_step.call_deferred()
-
-func _reload_two_step() -> void:
-	var tree := get_tree()
-	var cur := tree.current_scene
-	if cur != null:
-		cur.queue_free()
-		await tree.process_frame
-		await tree.process_frame
-	if not is_inside_tree():
-		return
-	tree.change_scene_to_file("res://game.tscn")
+	# A Game-owned coroutine would be canceled when the old Game is freed.
+	# RegionState survives that teardown and owns both the delay and replacement.
+	RegionState.reload_game_scene()
 
 
 func _handle_left_click(mb: InputEventMouseButton) -> void:

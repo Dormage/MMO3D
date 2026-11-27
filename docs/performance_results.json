@@ -4,7 +4,8 @@
   "repository": "https://github.com/Dormage/MMO3D",
   "base_commit": "fabd7b4",
   "engine": "4.6.3-stable official",
-  "engine_sha256": "d0bc2113065e481c9c2c2b2c37daa4e8be3fe9e27f0ab9ab0b6096e9a37907f3",
+  "engine_archive_sha256": "d0bc2113065e481c9c2c2b2c37daa4e8be3fe9e27f0ab9ab0b6096e9a37907f3",
+  "engine_binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
   "host": {
     "os": "Linux x86_64",
     "cpu": "AMD EPYC 7763 64-Core Processor",

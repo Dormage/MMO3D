@@ -12,9 +12,13 @@ extends Node
 const REGISTRY := "res://data/regions.json"
 
 signal changed(index: int, id: String)
+signal transition_started()
+signal transition_finished()
+signal transition_failed(error: int)
 
 var regions: Array = []
 var current := 0
+var transition_in_progress := false
 
 
 func _ready() -> void:
@@ -73,7 +77,7 @@ func index_of(id: String) -> int:
 
 
 func select(index: int) -> bool:
-	if index < 0 or index >= regions.size() or index == current:
+	if transition_in_progress or index < 0 or index >= regions.size() or index == current:
 		return false
 	current = index
 	changed.emit(current, current_id())
@@ -91,3 +95,47 @@ func cycle(step: int = 1) -> bool:
 		return false
 	var n := regions.size()
 	return select(((current + step) % n + n) % n)
+
+
+## Own the transition here: this autoload survives removal of the Game scene.
+## The optional path also lets lightweight fixtures exercise the real lifecycle.
+func reload_game_scene(scene_path: String = "res://game.tscn") -> bool:
+	if transition_in_progress:
+		return false
+	# Reject an invalid target before removing the currently playable scene.
+	if not ResourceLoader.exists(scene_path, "PackedScene"):
+		push_warning("RegionState: transition scene is missing: %s" % scene_path)
+		transition_failed.emit(ERR_FILE_NOT_FOUND)
+		return false
+	var next_scene := ResourceLoader.load(scene_path, "PackedScene") as PackedScene
+	if next_scene == null:
+		push_warning("RegionState: cannot load transition scene: %s" % scene_path)
+		transition_failed.emit(ERR_CANT_OPEN)
+		return false
+	# Set the guard before deferring, so repeated input cannot change the selected
+	# region or queue a second teardown during the remainder of this frame.
+	transition_in_progress = true
+	transition_started.emit()
+	_reload_two_step.call_deferred(next_scene)
+	return true
+
+
+func _reload_two_step(next_scene: PackedScene) -> void:
+	var tree := get_tree()
+	if tree.current_scene != null:
+		tree.unload_current_scene()
+	# Keep the existing separation between outgoing renderer cleanup and
+	# incoming scene creation. The waiting coroutine must outlive the old scene.
+	await tree.process_frame
+	await tree.process_frame
+	var error := tree.change_scene_to_packed(next_scene)
+	if error != OK:
+		transition_in_progress = false
+		transition_failed.emit(error)
+		push_error("RegionState: scene transition failed (%d)" % error)
+		return
+	await tree.scene_changed
+	transition_in_progress = false
+	transition_finished.emit()
+	# Game._ready() continues asynchronously after scene_changed; its own
+	# readiness guard blocks further switches until its camera and nav are ready.
