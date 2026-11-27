@@ -400,6 +400,7 @@ func _interpolated_player_position() -> Vector3:
 func _process(delta: float) -> void:
 	_perf_sample(delta)
 	_throttle_actors(delta)
+	_maybe_auto_switch()
 	if not _nopop_done:
 		_nopop_done = true
 		call_deferred("_apply_nopop")
@@ -626,7 +627,21 @@ func _reload_for_region() -> void:
 	print("REGION_SWITCH -> %d:%s (%s)" % [
 		RegionState.current, RegionState.current_id(), RegionState.current_name()])
 	# Deferred: we are inside input dispatch and the node cannot be freed mid-event.
-	get_tree().call_deferred("change_scene_to_file", "res://game.tscn")
+	# Two-step reload: release the old scene first, let the GL backend finish its
+	# cleanup over a couple of frames, then build the new one.  Doing both in the
+	# same frame segfaults the Compatibility (OpenGL) renderer.
+	_reload_two_step.call_deferred()
+
+func _reload_two_step() -> void:
+	var tree := get_tree()
+	var cur := tree.current_scene
+	if cur != null:
+		cur.queue_free()
+		await tree.process_frame
+		await tree.process_frame
+	if not is_inside_tree():
+		return
+	tree.change_scene_to_file("res://game.tscn")
 
 
 func _handle_left_click(mb: InputEventMouseButton) -> void:
@@ -1545,3 +1560,23 @@ func _apply_nopop() -> void:
 		body.process_mode = Node.PROCESS_MODE_DISABLED
 		hidden += 1
 	print("NOPOP hidden=%d" % hidden)
+
+
+## --switchtest: switch region automatically N frames after start, so the
+## reload path can be reproduced without a display or keyboard.
+var _switch_frames := -1
+
+func _maybe_auto_switch() -> void:
+	var target := ""
+	for a in OS.get_cmdline_user_args():
+		if a.begins_with("--switchtest"):
+			target = a
+	if target == "":
+		return
+	if _switch_frames < 0:
+		_switch_frames = 0
+	_switch_frames += 1
+	if _switch_frames != 90:
+		return
+	print("SWITCHTEST firing")
+	_switch_region(1)

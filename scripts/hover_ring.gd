@@ -1,6 +1,8 @@
 extends Node3D
 ## Single-quad landing marker.  One mesh, one material; show_at only moves it.
 
+const HOVER_SHADER := preload("res://shaders/hover_ring.gdshader")
+
 var _mi: MeshInstance3D
 var _mat: ShaderMaterial
 
@@ -12,7 +14,7 @@ func _ready() -> void:
 	_mi.mesh = q
 	_mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	_mat = ShaderMaterial.new()
-	_mat.shader = load("res://shaders/hover_ring.gdshader")
+	_mat.shader = HOVER_SHADER
 	_mi.material_override = _mat
 	_mi.rotation.x = -PI * 0.5
 	_mi.visible = false
