@@ -871,8 +871,21 @@ func _cache_valid(paths: Array[String]) -> bool:
 
 
 ## Pack the conditioned tree so the next load skips parsing and every pass.
+## Give every node in the branch the scene root as owner.
+##
+## PackedScene.pack() only serialises nodes that have an owner, and anything
+## attached at runtime (the extra GLB layers) has none.  Without this the bake
+## silently saved only the base layer, so the map looked complete on the run
+## that built the cache and lost its city on every run after that.
+func _own_recursive(n: Node, root: Node) -> void:
+	for c in n.get_children():
+		c.owner = root
+		_own_recursive(c, root)
+
+
 func _bake(node: Node3D, paths: Array[String]) -> void:
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(CACHE_DIR))
+	_own_recursive(node, node)
 	var packed := PackedScene.new()
 	if packed.pack(node) != OK:
 		return
@@ -921,6 +934,20 @@ func _classify(node: Node) -> void:
 			_others.append(mi)
 	# Diagnostic: are the artist's layers actually visible after conditioning?
 	if OS.get_cmdline_user_args().has("--meshdiag"):
+		# Where the map's structures actually are, relative to the spawn point:
+		# a map can load perfectly and still spawn in an empty field.
+		var sp := Vector3(spawn_xz.x, 0.0, spawn_xz.y)
+		var near: Array = []
+		for mm in node.find_children("*", "MeshInstance3D", true, false):
+			var m4 := mm as MeshInstance3D
+			if m4.mesh == null:
+				continue
+			var box := m4.global_transform * m4.get_aabb()
+			var d := box.get_center().distance_to(sp)
+			near.append([d, String(m4.name), box.size.y])
+		near.sort_custom(func(a, b): return a[0] < b[0])
+		for i in mini(5, near.size()):
+			print("NEAR d=%.1fm %s height=%.1f" % [near[i][0], near[i][1], near[i][2]])
 		var mats_shown := 0
 		var vis := 0
 		var hid := 0

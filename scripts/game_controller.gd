@@ -1598,6 +1598,31 @@ func _maybe_lum_probe() -> void:
 	_lum_frames += 1
 	if _lum_frames != 120:
 		return
+	# Isolate the asset from the region pipeline: hide the conditioned map and
+	# drop in the untouched GLBs, so a missing city can be attributed to one or
+	# the other.
+	if OS.get_cmdline_user_args().has("--rawscene"):
+		var scene := get_tree().current_scene
+		if scene == null:
+			scene = get_parent()
+		var map_node := scene.get_node_or_null("Map") if scene != null else null
+		if map_node is Node3D:
+			(map_node as Node3D).visible = false
+		var raw := Node3D.new()
+		raw.name = "RawLayers"
+		scene.add_child(raw)
+		var util := preload("res://scripts/glb_util.gd")
+		for p in ["res://assets/worlds/ruins2/ruins2_terrain.glb",
+				"res://assets/worlds/ruins2/ruins2_keep.glb",
+				"res://assets/worlds/ruins2/ruins2_landmarks.glb",
+				"res://assets/worlds/ruins2/ruins2_flora.glb"]:
+			var inst = util.instantiate_raw(p)
+			if inst != null:
+				raw.add_child(inst)
+		print("RAWSCENE layers=%d" % raw.get_child_count())
+		await RenderingServer.frame_post_draw
+		await RenderingServer.frame_post_draw
+
 	if OS.get_cmdline_user_args().has("--overview") and camera != null:
 		_debug_free_cam = true
 		var tgt := Vector3(0.0, 4.0, 0.0)
