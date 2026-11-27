@@ -921,6 +921,10 @@ func _classify(node: Node) -> void:
 			_others.append(mi)
 	# Diagnostic: are the artist's layers actually visible after conditioning?
 	if OS.get_cmdline_user_args().has("--meshdiag"):
+		var mats_shown := 0
+		var vis := 0
+		var hid := 0
+		var tris_total := 0
 		for mm in node.find_children("*", "MeshInstance3D", true, false):
 			var m3 := mm as MeshInstance3D
 			if m3.mesh == null:
@@ -929,27 +933,32 @@ func _classify(node: Node) -> void:
 			for si in m3.mesh.get_surface_count():
 				var arr := m3.mesh.surface_get_arrays(si)
 				var idx: Variant = arr[Mesh.ARRAY_INDEX]
-				if idx is PackedInt32Array and (idx as PackedInt32Array).size() > 0:
+				if idx != null and (idx as PackedInt32Array).size() > 0:
 					tris += (idx as PackedInt32Array).size() / 3
 				else:
 					var vv: Variant = arr[Mesh.ARRAY_VERTEX]
 					if vv is PackedVector3Array:
 						tris += (vv as PackedVector3Array).size() / 3
-			if m3.name.begins_with("Flora") and tris > 0:
-				print("TRI %s = %d" % [m3.name, tris])
-		var vis := 0
-		var hid := 0
-		var shown := 0
-		for mm in node.find_children("*", "MeshInstance3D", true, false):
-			var m2 := mm as MeshInstance3D
-			if m2.is_visible_in_tree():
+			tris_total += tris
+			if mats_shown < 4 and String(m3.name).begins_with("Flora_") and m3.mesh.get_surface_count() > 0:
+				var arr0: Array = m3.mesh.surface_get_arrays(0)
+				var cols0: Variant = arr0[Mesh.ARRAY_COLOR]
+				print("COLOURS %s n=%d" % [m3.name, 0 if cols0 == null else (cols0 as PackedColorArray).size()])
+				var mat: Variant = m3.mesh.surface_get_material(0)
+				var cls := "null" if mat == null else (mat as Resource).get_class()
+				var extra := ""
+				if mat is StandardMaterial3D:
+					var sm := mat as StandardMaterial3D
+					extra = " albedo=%s vcol=%s tex=%s" % [
+						str(sm.albedo_color), str(sm.vertex_color_use_as_albedo),
+						"yes" if sm.albedo_texture != null else "none"]
+				print("MAT %s surface0=%s%s" % [m3.name, cls, extra])
+				mats_shown += 1
+			if m3.is_visible_in_tree():
 				vis += 1
-				if shown < 6 and not m2.global_position.is_equal_approx(Vector3.ZERO):
-					print("MESH_VIS %s pos=%s" % [m2.name, str(m2.global_position)])
-					shown += 1
 			else:
 				hid += 1
-		print("MESH_DIAG visible=%d hidden=%d" % [vis, hid])
+		print("MESH_DIAG visible=%d hidden=%d tris=%d" % [vis, hid, tris_total])
 	print("REGION_CLASSIFY grounds=%d solids=%d others=%d" % [
 		_grounds.size(), _solids.size(), _others.size()])
 
